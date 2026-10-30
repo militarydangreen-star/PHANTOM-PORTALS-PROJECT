@@ -1,0 +1,29 @@
+{
+  "id": "PP-TPL-001",
+  "file": "youtube-thumbnail-1280x720.svg",
+  "title": "YouTube thumbnail template 1280×720",
+  "status": "CURRENT",
+  "canon_version": "1.0.0",
+  "kind": "template",
+  "format": "svg",
+  "dimensions": "1280x720",
+  "bytes": 34960,
+  "sha256": "c94ffe064f750831e508c17f64f759bfae27a862ae3d55320d1d9064c21c633b",
+  "usage": "YouTube thumbnail. Edit the TEXT layer (episode label, two-line title, subtitle); keep or replace the ART layer with art from PP-IMG-THUMB-001/002. Export PNG ≤ 2 MB.",
+  "rules": [
+    "Title readable at 160 px wide: two lines, ≤ 18 characters each.",
+    "Keep the bottom-right 180×70 px clear (timestamp overlay).",
+    "One crimson cut; three inks only."
+  ],
+  "tags": [
+    "youtube",
+    "thumbnail",
+    "template"
+  ],
+  "license": "Project-original artwork for Phantom Portals. Owner-controlled; all rights reserved by the project owner.",
+  "source": {
+    "origin": "Drawn for the canon on 2026-10-29 by 80_TOOLS/generators/make-media-templates.py (native SVG art; wordmark linked from 30_ASSETS/brand)",
+    "author": "Claude Code for the project owner",
+    "date": "2026-10-29"
+  }
+}

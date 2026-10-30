@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Phantom Portals · Diagnostics</title>
+<script src="./support.js"></script>
+<link rel="stylesheet" href="ds/phantomportals/tokens.css">
+<link rel="stylesheet" href="ds/phantomportals/components/bundle.css">
+<script src="ds/phantomportals/components/bundle.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<style>
+body{margin:0;background:#f6f5f2}
+a{color:#a0112b}a:hover{color:#7e0d22}
+</style>
+</helmet>
+<x-import component-from-global-scope="PhantomPortals.PortalRoot">
+<div style="min-height: 100vh; display: flex; flex-direction: column; background: var(--surface-canvas, #f6f5f2); color: var(--ink-primary, #151519); font-family: var(--font-sans, Inter, sans-serif);">
+  <x-import component-from-global-scope="PhantomPortals.TabStrip" tabs="{{tabs}}" active-id="diag"></x-import>
+  <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px; padding: 6px 12px; background: var(--surface-primary, #ffffff); border-bottom: 1px solid var(--border-default, #d8d5d6);">
+    <div style="display: flex; align-items: center; gap: 4px;">
+      <x-import component-from-global-scope="PhantomPortals.IconButton" icon="back" label="Back" size="sm"></x-import>
+      <x-import component-from-global-scope="PhantomPortals.IconButton" icon="forward" label="Forward" size="sm"></x-import>
+      <x-import component-from-global-scope="PhantomPortals.IconButton" icon="reload" label="Reload" size="sm"></x-import>
+    </div>
+    <x-import component-from-global-scope="PhantomPortals.Omnibox" label="Address and search" icon="diagnostics" default-value="portal://diagnostics/full-scan" style="flex: 1 1 320px; min-width: 0;"></x-import>
+    <x-import component-from-global-scope="PhantomPortals.IconButton" icon="bookmark" label="Bookmark this page" size="sm"></x-import>
+  </div>
+  <x-import component-from-global-scope="PhantomPortals.BookmarksBar" items="{{bookmarks}}"></x-import>
+  <div style="flex: 1 1 auto; display: flex; flex-wrap: wrap; align-items: stretch;">
+    <x-import component-from-global-scope="PhantomPortals.UtilityRail" items="{{rail}}" active-id="diag" label="Workspaces" style="flex: 0 0 56px;"></x-import>
+    <main style="flex: 999 1 560px; min-width: 0; box-sizing: border-box; max-width: 1384px; padding: 32px 40px 48px; display: flex; flex-direction: column; gap: 24px;">
+
+      <header style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 16px 32px;">
+        <div style="display: flex; flex-direction: column; gap: 4px; min-width: 0;">
+          <span style="font: var(--text-mono-label, 500 11px/16px 'JetBrains Mono', monospace); letter-spacing: 0.06em; text-transform: uppercase; color: var(--accent-crimson, #a0112b);">MOD-01 · Diagnostics</span>
+          <h1 style="margin: 0; font: var(--text-h1, 700 36px/44px 'Space Grotesk', sans-serif); letter-spacing: -0.01em;">Full System Scan</h1>
+          <span style="font: var(--text-mono-sm, 400 12px/18px 'JetBrains Mono', monospace); color: var(--ink-secondary, #55525a);">Target [HOSTNAME] · Windows 11 · Offline · Started [TIME]</span>
+        </div>
+        <div style="display: flex; flex-wrap: wrap; gap: 12px;">
+          <x-import component-from-global-scope="PhantomPortals.Button" variant="ghost" icon="folder">Export Report</x-import>
+          <x-import component-from-global-scope="PhantomPortals.Button" variant="secondary" icon="close">Stop Scan</x-import>
+          <x-import component-from-global-scope="PhantomPortals.Button" variant="primary" icon="tools">Repair Selected</x-import>
+        </div>
+      </header>
+
+      <div role="status" aria-label="Scan summary" style="display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center;">
+        <x-import component-from-global-scope="PhantomPortals.StatusBadge" status="ok">5 passed</x-import>
+        <x-import component-from-global-scope="PhantomPortals.StatusBadge" status="warn">1 warning</x-import>
+        <x-import component-from-global-scope="PhantomPortals.StatusBadge" status="error">1 error</x-import>
+        <x-import component-from-global-scope="PhantomPortals.StatusBadge" status="run">1 running</x-import>
+      </div>
+
+      <x-import component-from-global-scope="PhantomPortals.Tabs" tabs="{{sections}}" default-value="overview" label="Scan sections"></x-import>
+
+      <div style="display: flex; flex-wrap: wrap; align-items: flex-start; gap: 24px;">
+        <div style="flex: 3 1 560px; min-width: 0; overflow-x: auto;">
+          <x-import component-from-global-scope="PhantomPortals.DiagnosticTable" id="full-scan" caption="Checks in this scan" columns="{{columns}}" rows="{{rows}}" selected-id="disk"></x-import>
+        </div>
+        <aside aria-label="Findings" style="flex: 2 1 340px; min-width: 0; display: flex; flex-direction: column; gap: 16px;">
+          <x-import component-from-global-scope="PhantomPortals.AIResponse" model="Phantom AI Core" local="{{yes}}" sources="{{sources}}">
+            <p style="margin: 0 0 12px;">Disk 0 (C:) reports reallocated sectors in its SMART data. The drive is still readable, but sectors are failing.</p>
+            <p style="margin: 0;">Copy user data off first with <a href="#">File Recovery</a>, then run <code style="font: var(--text-mono-sm, 400 12px/18px 'JetBrains Mono', monospace); background: var(--surface-sunken, #eceae6); padding: 1px 4px;">chkdsk C: /r</code>. A full surface scan on a failing drive can make it worse.</p>
+          </x-import>
+          <x-import component-from-global-scope="PhantomPortals.Progress" label="Memory pattern test" value="{{memValue}}" max="{{memMax}}" detail="Pass 1 of 2"></x-import>
+          <x-import component-from-global-scope="PhantomPortals.Notification" tone="error" title="1 unsigned driver" icon="alert">A driver in the store has no valid signature. Review it before repair.</x-import>
+        </aside>
+      </div>
+
+      <x-import component-from-global-scope="PhantomPortals.Terminal" title="Terminal · Administrator" prompt="PS C:\&gt;" lines="{{lines}}"></x-import>
+    </main>
+  </div>
+</div>
+</x-import>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":1440}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      yes: true,
+      memValue: 62,
+      memMax: 100,
+      tabs: [
+        { id: 'home', title: 'Command Center', icon: 'home-portal' },
+        { id: 'diag', title: 'Diagnostics', icon: 'diagnostics' },
+        { id: 'net', title: 'Network Repair', icon: 'network' }
+      ],
+      bookmarks: [
+        { label: 'Device Manager', href: '#', icon: 'cpu' },
+        { label: 'Disk Management', href: '#', icon: 'folder' },
+        { label: 'Event Log', href: '#', icon: 'diagnostics' },
+        { label: 'Startup Items', href: '#', icon: 'power' },
+        { label: 'Recovery Options', href: '#', icon: 'shield' }
+      ],
+      rail: [
+        { id: 'home', label: 'Command Center', icon: 'home-portal' },
+        { id: 'diag', label: 'Diagnostics', icon: 'diagnostics' },
+        { id: 'term', label: 'Terminal', icon: 'terminal' },
+        { id: 'files', label: 'Files', icon: 'folder' },
+        { id: 'net', label: 'Network', icon: 'network' },
+        { id: 'sec', label: 'Security', icon: 'shield' },
+        { id: 'ai', label: 'AI Core', icon: 'ai-core' },
+        { id: 'settings', label: 'Settings', icon: 'settings' }
+      ],
+      sections: [
+        { id: 'overview', label: 'Overview' },
+        { id: 'storage', label: 'Storage' },
+        { id: 'memory', label: 'Memory' },
+        { id: 'drivers', label: 'Drivers' },
+        { id: 'events', label: 'Event Log' }
+      ],
+      columns: [
+        { key: 'check', label: 'Check' },
+        { key: 'component', label: 'Component' },
+        { key: 'result', label: 'Result' },
+        { key: 'time', label: 'Duration', numeric: true }
+      ],
+      rows: [
+        { id: 'cpu', check: 'Processor stress', component: 'CPU', result: 'Pass', time: '0:42' },
+        { id: 'mem', check: 'Memory pattern test', component: 'RAM', result: 'Running', time: '—' },
+        { id: 'disk', check: 'SMART health', component: 'Disk 0 · C:', result: 'Warning', time: '0:03' },
+        { id: 'fs', check: 'File system integrity', component: 'C:', result: 'Pass', time: '1:18' },
+        { id: 'sfc', check: 'Protected system files', component: 'Windows', result: 'Pass', time: '6:02' },
+        { id: 'drv', check: 'Driver signatures', component: 'Driver store', result: 'Error', time: '0:21' },
+        { id: 'net', check: 'Adapter and DNS', component: 'Network', result: 'Pass', time: '0:09' },
+        { id: 'boot', check: 'Boot configuration', component: 'BCD', result: 'Pass', time: '0:02' }
+      ],
+      sources: [
+        { label: 'SMART attribute 05 · Reallocated Sectors Count', href: '#' },
+        { label: 'chkdsk command reference', href: '#' }
+      ],
+      lines: [
+        { kind: 'cmd', text: 'sfc /scannow' },
+        { kind: 'out', text: 'Beginning system scan.  This process will take some time.' },
+        { kind: 'out', text: 'Beginning verification phase of system scan.' },
+        { kind: 'out', text: 'Verification 100% complete.' },
+        { kind: 'out', text: 'Windows Resource Protection did not find any integrity violations.' },
+        { kind: 'cmd', text: 'chkdsk C: /scan' },
+        { kind: 'dim', text: 'Stage 1: Examining basic file system structure ...' },
+        { kind: 'out', text: 'Windows has scanned the file system and found no problems.' },
+        { kind: 'cmd', text: 'Get-PhysicalDisk | Select FriendlyName, HealthStatus' },
+        { kind: 'err', text: 'Disk 0    Warning', note: 'SMART' }
+      ]
+    };
+  }
+}
+</script>
+</body>
+</html>

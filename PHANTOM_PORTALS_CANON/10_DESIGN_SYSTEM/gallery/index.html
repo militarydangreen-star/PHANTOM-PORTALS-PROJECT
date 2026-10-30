@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Phantom Portals · Design system gallery</title>
+<!--
+  Offline gallery for the Phantom Portals canon. Open this file in any browser — no network needed.
+  Everything comes from the canon: tokens (../tokens/build), the component library (../components/library),
+  icons (../iconography) and assets (../../30_ASSETS). If icons render blank when opened from disk,
+  serve the canon root instead: python3 -m http.server, then open /10_DESIGN_SYSTEM/gallery/.
+-->
+<link rel="icon" href="../../30_ASSETS/brand/logo/phantom-monogram.svg">
+<link rel="stylesheet" href="../tokens/build/index.css">
+<link rel="stylesheet" href="../components/library/bundle.css">
+<style>
+  body { margin: 0; background: var(--surface-canvas); color: var(--ink-primary); font: var(--text-body); }
+  .g-wrap { max-width: 1440px; margin: 0 auto; padding: 0 var(--space-32) var(--space-64); box-sizing: border-box; }
+  .g-head { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--space-16); padding: var(--space-24) 0 var(--space-16); }
+  .g-head img { height: 64px; width: auto; }
+  .g-meta { font: var(--text-mono-sm); color: var(--ink-secondary); text-align: right; }
+  .g-nav { position: sticky; top: 0; z-index: 5; margin: 0 calc(-1 * var(--space-32)); border-bottom: 1px solid var(--border-default); }
+  .g-section { padding-top: var(--space-48); scroll-margin-top: 48px; }
+  .g-section > header { display: grid; gap: var(--space-4); margin-bottom: var(--space-24); }
+  .g-section > header p { margin: 0; color: var(--ink-secondary); max-width: 72ch; }
+  .g-grid { display: grid; gap: var(--space-16); grid-template-columns: repeat(auto-fill, minmax(min(220px, 100%), 1fr)); }
+  .g-grid--wide { grid-template-columns: repeat(auto-fill, minmax(min(320px, 100%), 1fr)); }
+  .g-card { background: var(--surface-primary); border: 1px solid var(--border-default); border-radius: var(--radius-8); padding: var(--space-16); display: grid; gap: var(--space-8); align-content: start; min-width: 0; }
+  .g-card h3 { margin: 0; font: var(--text-label); }
+  .g-card p { margin: 0; font: var(--text-caption); color: var(--ink-secondary); }
+  .g-code { font: var(--text-mono-sm); color: var(--ink-secondary); overflow-wrap: anywhere; }
+  .g-swatch { height: 72px; border-radius: var(--radius-0); border: 1px solid var(--border-default); display: flex; align-items: flex-end; justify-content: space-between; padding: var(--space-8); font: var(--text-mono-label); }
+  .g-type-row { display: grid; grid-template-columns: 180px 1fr; gap: var(--space-24); align-items: baseline; padding: var(--space-16) 0; border-bottom: 1px solid var(--border-default); }
+  .g-type-row:last-child { border-bottom: 0; }
+  .g-scale { display: grid; gap: var(--space-8); }
+  .g-bar { height: 12px; background: var(--accent-crimson); }
+  .g-row { display: flex; flex-wrap: wrap; gap: var(--space-12); align-items: center; }
+  .g-stack { display: grid; gap: var(--space-16); }
+  .g-demo { background: var(--surface-canvas); border: 1px dashed var(--border-control); padding: var(--space-24); display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--space-16); min-width: 0; }
+  .g-demo > * { min-width: 0; max-width: 100%; }
+  .g-label { font: var(--text-mono-label); letter-spacing: .06em; text-transform: uppercase; color: var(--ink-secondary); }
+  .g-art { background: var(--surface-primary); aspect-ratio: 4 / 3; display: grid; place-items: center; overflow: hidden; border-bottom: 1px solid var(--border-default); margin: calc(-1 * var(--space-16)) calc(-1 * var(--space-16)) 0; }
+  .g-art img { max-width: 86%; max-height: 86%; }
+  .g-art--dark { background: var(--surface-inverse); }
+  .g-shell { border: 1px solid var(--border-default); overflow: hidden; display: grid; grid-template-rows: auto auto auto 1fr; min-height: 420px; }
+  .g-shell__body { display: grid; grid-template-columns: var(--rail-width) 1fr; min-height: 0; }
+  .g-shell__work { padding: var(--space-24); display: grid; gap: var(--space-16); align-content: start; background: var(--surface-canvas); }
+  .g-omnirow { display: flex; align-items: center; gap: var(--space-8); padding: 0 var(--space-8); background: var(--surface-primary); border-bottom: 1px solid var(--border-default); min-height: var(--omnibox-height); }
+  .g-omnirow .pp-omni { flex: 1; }
+  .g-foot { margin-top: var(--space-64); padding-top: var(--space-24); border-top: 1px solid var(--border-default); font: var(--text-mono-sm); color: var(--ink-secondary); }
+  .g-note { font: var(--text-caption); color: var(--ink-secondary); }
+  @media (max-width: 767px) {
+    .g-wrap { padding: 0 var(--space-16) var(--space-48); }
+    .g-nav { margin: 0 calc(-1 * var(--space-16)); overflow-x: auto; }
+    .g-type-row { grid-template-columns: 1fr; gap: var(--space-4); }
+    .g-shell__body { grid-template-columns: 1fr; }
+    .g-shell__body > nav { display: none; }
+  }
+</style>
+<script src="../tokens/build/tokens.global.js"></script>
+<script src="../../30_ASSETS/INDEX.js"></script>
+<script src="../iconography/icons.data.js"></script>
+<script src="../components/status-vocabulary.js"></script>
+<script src="../components/library/lib/react.production.min.js"></script>
+<script src="../components/library/lib/react-dom.production.min.js"></script>
+<script src="../components/library/bundle.js"></script>
+</head>
+<body>
+<div id="root"></div>
+<noscript>This gallery renders the live component library and needs JavaScript. The documentation in ../ is plain Markdown.</noscript>
+<script>
+(function () {
+  var P = window.PhantomPortals, h = React.createElement, F = React.Fragment;
+  var ASSETS = '../../30_ASSETS/';
+
+  // ADR-0005: point the library at local files instead of the hosted asset store.
+  // UI icons are CSS masks: a url() inside a custom property resolves against bundle.css, not this page,
+  // and browsers refuse mask images from file://. Data URIs (icons.data.js) avoid both problems.
+  var abs = function (p) { return new URL(p, location.href).href; };
+  P.configureIcons(window.PhantomIconData || function (n) { return abs('../iconography/icons/svg/' + n + '.svg'); });
+  P.configureFeatureIcons(function (n) { return abs('../iconography/icons/feature-svg/' + n + '.svg'); });
+  P.configureArt({
+    emblem: ASSETS + 'brand/phantom-hero/phantom-emblem-512.png',
+    slash: ASSETS + 'textures/brush-strokes/brush-slash.svg',
+    splatter: ASSETS + 'textures/ink-splash/splatter-ink.svg',
+    halftone: ASSETS + 'textures/halftone/halftone-fade.svg'
+  });
+
+  var TOKENS = window.PhantomTokens || [];
+  var CATALOG = window.PhantomAssets || { assets: [] };
+  var byType = function (t) { return TOKENS.filter(function (x) { return x.type === t; }); };
+  var byGroup = function (g) { return TOKENS.filter(function (x) { return x.path.split('.')[0] === g; }); };
+
+  // WCAG relative-luminance contrast, for the swatch labels.
+  function rgb(v) {
+    var m = /^#([0-9a-f]{6})$/i.exec(v);
+    if (m) return [0, 2, 4].map(function (i) { return parseInt(m[1].substr(i, 2), 16); });
+    var r = /rgba?\(([^)]+)\)/.exec(v);
+    return r ? r[1].split(',').slice(0, 3).map(Number) : null;
+  }
+  function lum(c) {
+    return c.map(function (x) { x /= 255; return x <= 0.04045 ? x / 12.92 : Math.pow((x + 0.055) / 1.055, 2.4); })
+      .reduce(function (s, x, i) { return s + x * [0.2126, 0.7152, 0.0722][i]; }, 0);
+  }
+  function contrast(a, b) {
+    var la = lum(rgb(a)), lb = lum(rgb(b));
+    return (Math.max(la, lb) + 0.05) / (Math.min(la, lb) + 0.05);
+  }
+  function resolve(v) {
+    var m = /^\{(.+)\}$/.exec(v);
+    if (!m) return v;
+    var t = TOKENS.filter(function (x) { return x.path === m[1]; })[0];
+    return t ? resolve(t.value) : v;
+  }
+
+  function Section(props) {
+    return h('section', { className: 'g-section', id: props.id, 'aria-labelledby': props.id + '-h' },
+      h('header', null,
+        h('span', { className: 'pp-eyebrow' }, props.eyebrow),
+        h('h2', { className: 'h2', id: props.id + '-h', style: { margin: 0 } }, props.title),
+        props.intro && h('p', null, props.intro)),
+      props.children);
+  }
+
+  function Swatch(t) {
+    var v = resolve(t.value), c = rgb(v);
+    var dark = c && lum(c) < 0.25;
+    var vsWhite = c ? contrast(v, '#ffffff').toFixed(2) : '—';
+    var vsInk = c ? contrast(v, '#151519').toFixed(2) : '—';
+    return h('div', { className: 'g-card', key: t.name },
+      h('div', { className: 'g-swatch', style: { background: v, color: dark ? '#ffffff' : '#151519' } },
+        h('span', null, t.value.indexOf('{') === 0 ? '→ ' + t.value.slice(1, -1) : v.toUpperCase()), h('span', null, '')),
+      h('h3', null, h('code', null, '--' + t.name)),
+      h('p', null, t.description),
+      h('span', { className: 'g-code' }, 'vs white ' + vsWhite + ':1 · vs ink ' + vsInk + ':1'));
+  }
+
+  function Colors() {
+    var groups = [['surface', 'Surfaces'], ['ink', 'Ink'], ['accent', 'Accent'], ['border', 'Borders'], ['status', 'Status'], ['focus', 'Focus'], ['overlay', 'Overlays']];
+    return h(Section, { id: 'color', eyebrow: '01 — Colour', title: 'White · black · blood crimson',
+      intro: '55–65 % white, 25–35 % black, 5–10 % crimson. Ratios below are computed live from the tokens; the full matrix is in accessibility/contrast-matrix.md.' },
+      groups.map(function (g) {
+        return h('div', { key: g[0], className: 'g-stack', style: { marginBottom: 24 } },
+          h('span', { className: 'g-label' }, g[1]),
+          h('div', { className: 'g-grid' }, byGroup(g[0]).map(Swatch)));
+      }));
+  }
+
+  function Type() {
+    return h(Section, { id: 'type', eyebrow: '02 — Typography', title: 'Space Grotesk · Inter · JetBrains Mono',
+      intro: 'Sixteen styles. Headings speak in Space Grotesk, people read Inter, machines speak JetBrains Mono. All fonts load from 30_ASSETS/fonts.' },
+      h('div', { className: 'g-card' }, byType('typography').map(function (t) {
+        var cls = t.path.split('.')[1], p = t.parts || {};
+        var sample = (t.meta && t.meta.sample) || cls;
+        return h('div', { className: 'g-type-row', key: t.name },
+          h('div', null, h('div', { className: 'g-code' }, '.' + cls), h('div', { className: 'g-code' }, p.fontSize + ' / ' + p.lineHeight + ' · ' + p.fontWeight)),
+          h('div', { className: cls, style: { color: 'var(--ink-primary)', textTransform: cls === 'eyebrow' ? 'uppercase' : 'none', fontVariantNumeric: cls === 'stat' ? 'tabular-nums' : 'normal' } }, sample));
+      })));
+  }
+
+  function Scale() {
+    var space = byGroup('space'), radius = byGroup('radius'), chamfer = byGroup('chamfer');
+    var shadows = byType('shadow');
+    return h(Section, { id: 'space', eyebrow: '03 — Space, shape, depth', title: 'A 4 px system with the Phantom Cut' },
+      h('div', { className: 'g-grid g-grid--wide' },
+        h('div', { className: 'g-card' }, h('h3', null, 'Spacing'), h('div', { className: 'g-scale' },
+          space.map(function (t) {
+            return h('div', { key: t.name, className: 'g-row' },
+              h('span', { className: 'g-code', style: { width: 80 } }, t.name), h('div', { className: 'g-bar', style: { width: t.value } }), h('span', { className: 'g-code' }, t.value));
+          }))),
+        h('div', { className: 'g-card' }, h('h3', null, 'Radius'), h('div', { className: 'g-row' },
+          radius.map(function (t) {
+            return h('div', { key: t.name, style: { display: 'grid', gap: 6, justifyItems: 'center' } },
+              h('div', { style: { width: 56, height: 56, background: 'var(--surface-inverse)', borderRadius: t.value } }), h('span', { className: 'g-code' }, t.name));
+          }))),
+        h('div', { className: 'g-card' }, h('h3', null, 'Phantom Cut (chamfer)'), h('div', { className: 'g-row' },
+          chamfer.map(function (t) {
+            var c = t.value;
+            return h('div', { key: t.name, style: { display: 'grid', gap: 6, justifyItems: 'center' } },
+              h('div', { style: { width: 72, height: 56, background: 'var(--accent-crimson)', clipPath: 'polygon(0 0, calc(100% - ' + c + ') 0, 100% ' + c + ', 100% 100%, ' + c + ' 100%, 0 calc(100% - ' + c + '))' } }),
+              h('span', { className: 'g-code' }, t.name));
+          })), h('p', null, 'Top-right and bottom-left. Drawn on ::before so focus rings are never clipped.')),
+        h('div', { className: 'g-card' }, h('h3', null, 'Depth'), h('div', { className: 'g-row', style: { gap: 20, padding: 8 } },
+          shadows.map(function (t) {
+            return h('div', { key: t.name, style: { display: 'grid', gap: 8, justifyItems: 'center' } },
+              h('div', { style: { width: 72, height: 56, background: 'var(--surface-primary)', boxShadow: 'var(--' + t.name + ')', borderRadius: 8 } }),
+              h('span', { className: 'g-code' }, t.name));
+          })))));
+  }
+
+  function Icons() {
+    var names = Object.keys(P.iconUrls);
+    return h(Section, { id: 'icons', eyebrow: '04 — Iconography', title: '20 icons, one ink, one crimson accent',
+      intro: 'UI icons render as masks and take currentColor. Feature icons are the Trash Polka badges for tiles, launchers and empty states — never dense UI.' },
+      h('div', { className: 'g-card' },
+        h('div', { className: 'g-row', style: { gap: 24 } }, names.map(function (n) {
+          return h('span', { key: n, title: n, style: { display: 'grid', justifyItems: 'center', gap: 6, width: 96 } }, h(P.Icon, { name: n, size: 24, label: n }), h('span', { className: 'g-code', style: { whiteSpace: 'nowrap' } }, n));
+        })),
+        h('div', { className: 'g-row', style: { gap: 24, padding: 12, background: 'var(--surface-inverse)', color: 'var(--ink-on-inverse-secondary)' } },
+          names.slice(0, 10).map(function (n) { return h(P.Icon, { key: n, name: n, size: 24 }); }),
+          h('span', { style: { color: 'var(--accent-crimson-on-inverse)', display: 'inline-flex' } }, h(P.Icon, { name: 'alert', size: 24, label: 'alert, active on black' })))),
+      h('div', { className: 'g-grid', style: { marginTop: 16, gridTemplateColumns: 'repeat(auto-fill, minmax(120px, 1fr))' } },
+        names.map(function (n) {
+          return h('div', { key: n, className: 'g-card', style: { justifyItems: 'center' } }, h(P.FeatureIcon, { name: n, size: 88 }), h('span', { className: 'g-code' }, n));
+        })));
+  }
+
+  function Demo(props) {
+    return h('div', { className: 'g-demo' }, h('span', { className: 'g-label' }, props.label), props.children);
+  }
+
+  function Components() {
+    var tabsState = React.useState('home'), sel = React.useState('mem'), depth = React.useState(3), offline = React.useState(true);
+    var st = function (r) { return h(P.StatusBadge, { status: r.status }, r.result); };
+    return h(Section, { id: 'components', eyebrow: '05 — Components', title: 'The live library',
+      intro: 'Every component below is the real bundle (window.PhantomPortals) rendering offline. Readings and log lines are sample data that demonstrate layout — production screens show real readings only.' },
+      h('div', { className: 'g-grid g-grid--wide' },
+        h(Demo, { label: 'Button · IconButton' },
+          h('div', { className: 'g-row' }, h(P.Button, { variant: 'primary', size: 'lg', icon: 'diagnostics' }, 'Run Diagnostics'), h(P.Button, { variant: 'secondary', icon: 'terminal' }, 'Open Terminal'), h(P.Button, { variant: 'ghost' }, 'Export Report')),
+          h('div', { className: 'g-row' }, h(P.Button, { variant: 'primary', loading: true }, 'Scanning…'), h(P.Button, { disabled: true }, 'Unavailable'),
+            h(P.Tooltip, { content: 'Reload', shortcut: 'CTRL R' }, h(P.IconButton, { icon: 'reload', label: 'Reload' })), h(P.IconButton, { icon: 'bookmark', label: 'Bookmark', pressed: true }))),
+        h(Demo, { label: 'Omnibox' },
+          h(P.Omnibox, { placeholder: 'Search tools, docs, machines — or type > for commands', shortcut: 'CTRL K' })),
+        h(Demo, { label: 'Tabs · Toggle · Slider · Select' },
+          h(P.Tabs, { label: 'Device sections', tabs: [{ id: 'o', label: 'Overview' }, { id: 'h', label: 'Hardware' }, { id: 'd', label: 'Drivers' }] }),
+          h(P.Toggle, { label: 'Offline mode', checked: offline[0], onChange: offline[1] }),
+          h(P.Toggle, { label: 'Cloud sync', disabled: true, stateText: 'NOT CONFIGURED' }),
+          h(P.Slider, { label: 'Scan depth', min: 1, max: 5, value: depth[0], onChange: depth[1], format: function (v) { return 'Level ' + v; }, ticks: ['1 QUICK', '3', '5 FORENSIC'] }),
+          h(P.Select, { label: 'Boot target', hint: 'Applies on next restart', defaultValue: 'pe', options: [{ value: 'pe', label: 'Windows PE 11 (x64)' }, { value: 'ventoy', label: 'Ventoy multi-boot' }] })),
+        h(Demo, { label: 'StatusBadge · Notification · Progress' },
+          h('div', { className: 'g-row' }, h(P.StatusBadge, { status: 'ok' }, 'Passed'), h(P.StatusBadge, { status: 'warn' }, '1 warning'), h(P.StatusBadge, { status: 'error' }, '3 errors'), h(P.StatusBadge, { status: 'run' }, 'Running'), h(P.StatusBadge, null, 'Idle')),
+          h(P.Notification, { tone: 'error', title: 'Driver rollback failed', onDismiss: function () {} }, 'Access denied. Run as administrator.'),
+          h(P.Progress, { label: 'Imaging drive', value: 62, detail: '62% · 4 MIN LEFT' }),
+          h(P.Progress, { label: 'Scanning registry' })),
+        h(Demo, { label: 'ToolTile · FeatureIcon tile' },
+          h('div', { className: 'g-grid', style: { gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))' } },
+            h(P.ToolTile, { icon: 'diagnostics', title: 'Run Diagnostics', description: 'Hardware, drivers and OS health in one pass.', meta: 'MOD-01', current: true }),
+            h(P.ToolTile, { icon: 'network', feature: true, title: 'Network Repair', description: 'Winsock, DNS and adapter resets.', meta: 'MOD-02' }))),
+        h(Demo, { label: 'StatusPanel · HudRing' },
+          h(P.StatusPanel, { title: 'TELEMETRY · SAMPLE', metrics: [{ label: 'CPU', value: '23%', percent: 23 }, { label: 'DISK C: — HIGH', value: '91%', percent: 91, hot: true }, { label: 'GPU', value: 'Unavailable' }] }),
+          h('div', { style: { display: 'flex', justifyContent: 'center' } }, h(P.HudRing, { value: '98.6%', label: 'SYSTEM HEALTH', live: true }))),
+        h(Demo, { label: 'CommandModule' },
+          h(P.CommandModule, { moduleId: 'MOD-04', title: 'Recovery Toolkit', defaultOpen: true },
+            h('p', { style: { margin: 0, color: 'var(--ink-secondary)' } }, 'Restore points, offline registry repair and boot-record rebuild. Requires WinPE.')),
+          h(P.CommandModule, { moduleId: 'MOD-05', title: 'Imaging & Deployment' }, '…')),
+        h(Demo, { label: 'AIResponse' },
+          h(P.AIResponse, { model: 'PHANTOM AI', local: true, sources: [{ label: 'SOP-047 Memory triage', href: '#' }, { label: 'run.log', href: '#' }],
+            actions: h(F, null, h(P.Button, null, 'Rerun Test'), h(P.Button, { variant: 'ghost' }, 'Copy')) },
+            h('p', null, 'DIMM A1 failed 3 of 12 passes. Reseat it, then rerun ', h('code', null, 'mdsched /quick'), '.'))),
+        h(Demo, { label: 'Terminal' },
+          h(P.Terminal, { title: h(F, null, h('b', null, 'PS 7.4'), ' · ADMIN · C:\\'), prompt: 'PS>', lines: [
+            { kind: 'cmd', text: 'sfc /scannow' }, { text: 'Beginning system scan.  This process will take some time.' },
+            { text: 'Verification 100% complete.' }, { kind: 'err', text: 'Windows Resource Protection found corrupt files.', note: 'sample' }],
+            onCommand: function () {} })),
+        h(Demo, { label: 'DiagnosticTable' },
+          h(P.DiagnosticTable, { caption: 'Diagnostic results (sample)', selectedId: sel[0], onSelect: sel[1],
+            columns: [{ key: 'check', label: 'Check' }, { key: 'result', label: 'Result', render: st }, { key: 'time', label: 'Time', numeric: true }],
+            rows: [{ id: 'smart', check: 'SMART health', result: 'Passed', status: 'ok', time: '0.8 s' }, { id: 'mem', check: 'Memory test', result: '3 errors', status: 'error', time: '41.2 s' },
+              { id: 'therm', check: 'Thermal', result: '88 °C', status: 'warn', time: '5.0 s' }, { id: 'drv', check: 'Driver audit', result: 'Running', status: 'run', time: '—' }] }))));
+  }
+
+  function Status() {
+    var V = window.PhantomStatus || { capability_states: [], evidence_labels: [] };
+    var row = function (s) {
+      return h('div', { className: 'g-row g-status-row', key: s.code, 'data-code': s.code },
+        h('span', { style: { width: 190, flex: 'none' } }, h(P.StatusBadge, { status: s.badge }, s.label)),
+        h('span', { className: 'g-code', style: { width: 190, flex: 'none' } }, s.code),
+        h('span', { style: { color: 'var(--ink-secondary)' } }, s.meaning));
+    };
+    return h(Section, { id: 'status', eyebrow: '06 — Truthful states', title: 'Status vocabulary',
+      intro: 'The only words a screen may use for capability and evidence (Universal Canon v4, Law 3). Shape + colour + word, never colour alone. Rendered from components/status-vocabulary.json.' },
+      h('div', { className: 'g-card', style: { display: 'grid', gap: 10 } }, h('h3', null, 'Capability states'), V.capability_states.map(row)),
+      h('div', { className: 'g-card', style: { display: 'grid', gap: 10, marginTop: 16 } }, h('h3', null, 'Evidence labels'), V.evidence_labels.map(row)),
+      h('p', { className: 'g-code', style: { marginTop: 12 } }, 'Command preview label: ' + (V.command_preview ? V.command_preview.label : '')));
+  }
+
+  function Shell() {
+    var active = React.useState('cc');
+    return h(Section, { id: 'shell', eyebrow: '07 — Composition', title: 'Browser shell + Command Center',
+      intro: 'TabStrip (40), omnibox row (44), BookmarksBar (32), UtilityRail (56) framing a white workspace. Black is the frame; white holds the work; the active tab is the only crimson in the frame.' },
+      h('div', { className: 'g-shell' },
+        h(P.TabStrip, { tabs: [{ id: 'cc', title: 'Command Center', icon: 'home-portal' }, { id: 'dg', title: 'Diagnostics', icon: 'diagnostics' }, { id: 'nw', title: 'Network Repair', icon: 'network' }], activeId: 'cc', onNew: function () {} }),
+        h('div', { className: 'g-omnirow' }, h(P.IconButton, { icon: 'back', label: 'Back', size: 'sm' }), h(P.IconButton, { icon: 'forward', label: 'Forward', size: 'sm' }), h(P.IconButton, { icon: 'reload', label: 'Reload', size: 'sm' }),
+          h(P.Omnibox, { label: 'Address and search', icon: 'home-portal', defaultValue: 'portal://command-center' })),
+        h(P.BookmarksBar, { items: [{ label: 'PowerShell Toolkit', href: '#', icon: 'terminal' }, { label: 'Network Map', href: '#', icon: 'network' }, 'separator', { label: 'SOP Library', href: '#', icon: 'folder' }] }),
+        h('div', { className: 'g-shell__body' },
+          h(P.UtilityRail, { activeId: active[0], onSelect: active[1], items: [{ id: 'cc', label: 'Command Center', icon: 'home-portal' }, { id: 'dg', label: 'Diagnostics', icon: 'diagnostics' }, { id: 'tm', label: 'Terminal', icon: 'terminal' }, { id: 'ai', label: 'AI Core', icon: 'ai-core' }, 'separator', { id: 'st', label: 'Settings', icon: 'settings' }] }),
+          h('div', { className: 'g-shell__work' },
+            h(P.PhantomHero, { eyebrow: 'OFFLINE-FIRST IT COMMAND CENTER', title: 'Enter the', accent: 'Portal', description: 'Diagnose, repair and recover machines from one portable toolkit.',
+              actions: h(P.Button, { variant: 'primary', size: 'lg', icon: 'diagnostics' }, 'Run Diagnostics') }),
+            h(P.Omnibox, { label: 'Ask Phantom or run a command', icon: 'ai-core', placeholder: 'Ask Phantom, or type > to run a command', shortcut: 'CTRL K' })))));
+  }
+
+  function Assets() {
+    var show = CATALOG.assets.filter(function (a) { return /^30_ASSETS\/(brand|textures|hud-geometry)\//.test(a.path); });
+    return h(Section, { id: 'assets', eyebrow: '08 — Brand & art', title: 'Ink Protocol assets',
+      intro: CATALOG.count + ' files catalogued in 30_ASSETS/INDEX.json (generated). Each has a sidecar with origin, licence, SHA-256 and usage rules. At most three vectors per composition, one crimson; pair each chaos mark with a precision mark.' },
+      h('div', { className: 'g-grid' }, show.map(function (a) {
+        var dark = /inverse|app-icon/.test(a.path);
+        return h('div', { className: 'g-card', key: a.path },
+          h('div', { className: 'g-art' + (dark ? ' g-art--dark' : '') }, h('img', { src: '../../' + a.path, alt: a.title, loading: 'lazy' })),
+          h('h3', null, a.title),
+          h('span', { className: 'g-code' }, a.id + ' · ' + a.status + ' · ' + (a.dimensions || '') + ' · ' + Math.round(a.bytes / 1024) + ' KB'),
+          h('span', { className: 'g-code' }, a.path.replace('30_ASSETS/', '')));
+      })));
+  }
+
+  function App() {
+    var nav = [['color', 'Colour', 'cloud'], ['type', 'Typography', 'terminal'], ['space', 'Space & depth', 'tools'], ['icons', 'Icons', 'search'],
+      ['components', 'Components', 'cpu'], ['status', 'Status', 'check'], ['shell', 'Shell', 'home-portal'], ['assets', 'Brand & art', 'bookmark']];
+    return h(P.PortalRoot, null,
+      h('div', { className: 'g-wrap' },
+        h('header', { className: 'g-head' },
+          h('img', { src: ASSETS + 'brand/wordmark/phantom-wordmark.svg', alt: 'Phantom Portals' }),
+          h('div', { className: 'g-meta' }, 'DESIGN SYSTEM GALLERY · CANON 1.1.0', h('br'), 'TOKENS v2 · OFFLINE · ' + TOKENS.length + ' TOKENS')),
+        h('div', { className: 'g-nav' }, h(P.BookmarksBar, { items: nav.map(function (n) { return { label: n[1], href: '#' + n[0], icon: n[2] }; }) })),
+        h('main', null, h(Colors), h(Type), h(Scale), h(Icons), h(Components), h(Status), h(Shell), h(Assets)),
+        h('footer', { className: 'g-foot' }, 'Generated views of 10_DESIGN_SYSTEM/tokens/tokens.json and 30_ASSETS/INDEX.json. Rebuild with 80_TOOLS/build-tokens and index-assets; validate with 80_TOOLS/validate-canon.py.')));
+  }
+
+  ReactDOM.createRoot(document.getElementById('root')).render(h(App));
+})();
+</script>
+</body>
+</html>

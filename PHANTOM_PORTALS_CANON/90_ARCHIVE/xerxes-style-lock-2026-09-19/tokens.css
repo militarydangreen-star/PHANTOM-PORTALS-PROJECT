@@ -1,0 +1,36 @@
+:root {
+  --pp-black: #050607;
+  --pp-graphite: #1A1A1A;
+  --pp-gold: #D4AF37;
+  --pp-purple: #8B5CF6;
+  --pp-white: #F5F5F5;
+
+  --pp-bg: var(--pp-black);
+  --pp-panel: rgba(26,26,26,.78);
+  --pp-panel-2: rgba(5,6,7,.88);
+  --pp-border: rgba(245,245,245,.14);
+  --pp-border-gold: rgba(212,175,55,.68);
+  --pp-border-purple: rgba(139,92,246,.62);
+
+  --pp-text: var(--pp-white);
+  --pp-text-dim: rgba(245,245,245,.68);
+  --pp-text-faint: rgba(245,245,245,.45);
+
+  --pp-font-display: "Montserrat","Segoe UI",Arial,sans-serif;
+  --pp-font-ui: "Inter","Segoe UI",Arial,sans-serif;
+  --pp-font-mono: "JetBrains Mono","Cascadia Mono",Consolas,monospace;
+
+  --pp-radius-sm: 4px;
+  --pp-radius-md: 8px;
+  --pp-radius-lg: 12px;
+  --pp-space-1: 4px;
+  --pp-space-2: 8px;
+  --pp-space-3: 12px;
+  --pp-space-4: 16px;
+  --pp-space-6: 24px;
+  --pp-space-8: 32px;
+
+  --pp-shadow-panel: 0 10px 40px rgba(0,0,0,.45);
+  --pp-glow-gold: 0 0 18px rgba(212,175,55,.28);
+  --pp-glow-purple: 0 0 18px rgba(139,92,246,.30);
+}

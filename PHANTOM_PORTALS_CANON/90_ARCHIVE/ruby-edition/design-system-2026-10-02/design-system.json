@@ -1,0 +1,25 @@
+{
+  "v": 3,
+  "assetGroups": {},
+  "blobs": {},
+  "createdOnFiles": {
+    "at": "2026-10-02T00:36:37Z",
+    "v": 1
+  },
+  "docs": {
+    "readme": "project/README.md",
+    "sections": []
+  },
+  "groups": [],
+  "lastChange": {
+    "at": "2026-10-02T00:36:37Z",
+    "by": "XerXes",
+    "note": "First draft from the stated Ruby Edition spec; GitHub repo was empty, so no code sync yet.",
+    "via": "Claude · Ruby Edition spec"
+  },
+  "layout": "files",
+  "libraries": [],
+  "namespace": "PhantomPortals",
+  "sections": {},
+  "title": "Phantom Portals"
+}

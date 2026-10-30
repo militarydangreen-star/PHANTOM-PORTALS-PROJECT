@@ -1,0 +1,2953 @@
+{
+  "manifestVersion": 3,
+  "name": "Phantom Portals",
+  "namespace": "PhantomPortals",
+  "files": [
+    "assets/FONTS/cinzel-LICENSE.txt",
+    "assets/FONTS/ibm-plex-mono-LICENSE.txt",
+    "assets/FONTS/space-grotesk-LICENSE.txt",
+    "assets/ICONS/manifest.json",
+    "assets/LICENSE/cinzel-LICENSE (2).txt",
+    "assets/LICENSE/cinzel-LICENSE.txt",
+    "assets/LICENSE/ibm-plex-mono-LICENSE (2).txt",
+    "assets/LICENSE/ibm-plex-mono-LICENSE.txt",
+    "assets/LICENSE/space-grotesk-LICENSE (2).txt",
+    "assets/LICENSE/space-grotesk-LICENSE.txt",
+    "assets/Logos/README.md",
+    "assets/PHANTOM ICONS/manifest (2).json",
+    "assets/PHANTOM ICONS/manifest.json",
+    "assets/PROMPTS/GENERATION-PROMPT.md",
+    "assets/PROMPTS/README.md",
+    "assets/PROMPTS/THIRD-PARTY-NOTICES.md",
+    "assets/STYLES-2/phantom (2).css",
+    "assets/STYLES-2/phantom.css",
+    "assets/STYLES-2/ruby (2).css",
+    "assets/STYLES-2/ruby.css",
+    "assets/STYLES-2/tokens (2).css",
+    "assets/STYLES-2/tokens.css",
+    "assets/STYLES/phantom.css",
+    "assets/STYLES/ruby.css",
+    "assets/STYLES/tokens.css",
+    "components/Button/README.md",
+    "components/CommandCard/README.md",
+    "components/CommandMasthead/README.md",
+    "components/CommandPalette/README.md",
+    "components/ContextPanel/README.md",
+    "components/DataTable/README.md",
+    "components/DeviceCard/README.md",
+    "components/Dropdown/README.md",
+    "components/EmptyState/README.md",
+    "components/LoadingSystem/README.md",
+    "components/LogViewer/README.md",
+    "components/ModuleIcons/README.md",
+    "components/NavigationRail/README.md",
+    "components/NumericReadout/README.md",
+    "components/OperationCard/README.md",
+    "components/OperatorMatrix/README.md",
+    "components/PhantomCut/README.md",
+    "components/PhantomEmblem/README.md",
+    "components/PhantomLine/README.md",
+    "components/PhantomWordmark/README.md",
+    "components/RadialCommandWheel/README.md",
+    "components/StatusIndicator/README.md",
+    "components/TelemetryRail/README.md",
+    "components/TerminalSurface/README.md",
+    "components/Toggle/README.md",
+    "components/bundle.css",
+    "fonts/ibm-plex-mono-regular.ttf",
+    "fonts/space-grotesk-variable.ttf",
+    "guidelines/10-materials.md",
+    "guidelines/20-architecture.md",
+    "guidelines/30-motion.md",
+    "guidelines/40-accessibility.md",
+    "guidelines/50-offline-and-field.md",
+    "guidelines/60-what-this-is-not.md",
+    "tokens.css"
+  ],
+  "libraries": [],
+  "components": [
+    {
+      "name": "Button",
+      "group": "Controls",
+      "summary": "Five buttons, and the primary one is an illuminated edge rather than a solid neon rectangle."
+    },
+    {
+      "name": "CommandCard",
+      "group": "Content",
+      "summary": "A card that launches a meaningful workflow, not a tile that holds a sentence."
+    },
+    {
+      "name": "CommandMasthead",
+      "group": "Shell",
+      "summary": "The masthead establishes authority."
+    },
+    {
+      "name": "CommandPalette",
+      "group": "Controls",
+      "summary": "The command palette is a core Phantom interaction: a centered smoked-glass surface over the workspace, holding search, grouped commands, keyboard shortcuts, re…"
+    },
+    {
+      "name": "ContextPanel",
+      "group": "Shell",
+      "summary": "The contextual right-hand zone: details of whatever is selected, with the actions that apply to it."
+    },
+    {
+      "name": "DataTable",
+      "group": "Content",
+      "summary": "Technical tables are first-class here."
+    },
+    {
+      "name": "DeviceCard",
+      "group": "Content",
+      "summary": "A card representing hardware: a connected device, a target system, a bench slot."
+    },
+    {
+      "name": "Dropdown",
+      "group": "Controls",
+      "summary": "A dropdown opens like a drawer in the machine: a Carbon panel edged in platinum, categorized entries, a selected-state rail, keyboard hints at the trailing edg…"
+    },
+    {
+      "name": "EmptyState",
+      "group": "Feedback",
+      "summary": "An empty region always says what would be here and how to get one."
+    },
+    {
+      "name": "LoadingSystem",
+      "group": "Feedback",
+      "summary": "Loading indicators that communicate actual state."
+    },
+    {
+      "name": "LogViewer",
+      "group": "Content",
+      "summary": "System log output at dense row height, with a fixed line grammar: timestamp, severity, source, message."
+    },
+    {
+      "name": "ModuleIcons",
+      "group": "Identity",
+      "summary": "The module icon family: sixteen marks on one 24px grid at a 1.5px stroke, with square caps and mitred joins."
+    },
+    {
+      "name": "NavigationRail",
+      "group": "Shell",
+      "summary": "A narrow structural rail rather than a list of filled buttons."
+    },
+    {
+      "name": "NumericReadout",
+      "group": "Content",
+      "summary": "A measured value presented as instrumentation: a large monospace figure with a micro-label beneath, and a segmented bar where a proportion is meaningful."
+    },
+    {
+      "name": "OperationCard",
+      "group": "Content",
+      "summary": "An operation in flight: imaging, scanning, building, verifying."
+    },
+    {
+      "name": "OperatorMatrix",
+      "group": "Operator",
+      "summary": "The full operator matrix: seven permanent identities, each with its symbol, name, function and energy."
+    },
+    {
+      "name": "PhantomCut",
+      "group": "Identity",
+      "summary": "The Phantom Cut: a diagonal chamfer on the upper-right corner, or the lower-left when a panel's weight sits the other way."
+    },
+    {
+      "name": "PhantomEmblem",
+      "group": "Identity",
+      "summary": "The emblem is the primary brand anchor, in four treatments that are used at four different scales."
+    },
+    {
+      "name": "PhantomLine",
+      "group": "Identity",
+      "summary": "The system's clearest signature: a neutral line running into a gold node and out as an operator-energy segment."
+    },
+    {
+      "name": "PhantomWordmark",
+      "group": "Identity",
+      "summary": "The wordmark lockup: the glyph leading, THE above, PHANT&#216;M as the mark, and PHANTOM &#183; PORTALS on a gold rule beneath."
+    },
+    {
+      "name": "RadialCommandWheel",
+      "group": "Operator",
+      "summary": "The radial wheel: a central emblem, a concentric ring, seven segmented operator commands, targeting lines and the active operator's energy."
+    },
+    {
+      "name": "StatusIndicator",
+      "group": "Feedback",
+      "summary": "One status vocabulary across the whole system: READY ACTIVE SCANNING PROCESSING CONNECTED OFFLINE DEGRADED WARNING FAILED COMPLETE VERIFIED UNKNOWN."
+    },
+    {
+      "name": "TelemetryRail",
+      "group": "Shell",
+      "summary": "The bottom rail: machine state in one line of monospace."
+    },
+    {
+      "name": "TerminalSurface",
+      "group": "Content",
+      "summary": "A terminal that belongs to Phantom Portals rather than a generic console dropped into it."
+    },
+    {
+      "name": "Toggle",
+      "group": "Controls",
+      "summary": "A toggle should read as a switch on a machine, not a rounded consumer pill."
+    }
+  ],
+  "assetGroups": [
+    {
+      "name": "Logos",
+      "files": [
+        {
+          "path": "assets/Logos/ChatGPT Image Sep 19, 2026, 10_00_53 PM (2).png",
+          "id": "9c6b9af87120fa65c89ac934cb851da3"
+        },
+        {
+          "path": "assets/Logos/ChatGPT Image Sep 19, 2026, 10_00_53 PM.png",
+          "id": "9c6b9af87120fa65c89ac934cb851da3"
+        },
+        {
+          "path": "assets/Logos/ChatGPT Image Sep 19, 2026, 10_01_13 PM (2).png",
+          "id": "ab8aa1f674005f3031aa8a91c40be5f6"
+        },
+        {
+          "path": "assets/Logos/ChatGPT Image Sep 19, 2026, 10_01_13 PM.png",
+          "id": "ab8aa1f674005f3031aa8a91c40be5f6"
+        },
+        {
+          "path": "assets/Logos/ChatGPT Image Sep 19, 2026, 10_36_39 PM.png",
+          "id": "890a318630fd4552525ec5427ca9c4fe"
+        },
+        {
+          "path": "assets/Logos/ChatGPT Image Sep 20, 2026, 02_47_57 PM.png",
+          "id": "890a318630fd4552525ec5427ca9c4fe"
+        },
+        {
+          "path": "assets/Logos/ChatGPT Image Sep 20, 2026, 02_49_50 PM.png",
+          "id": "2a3e960b26cae29c2a5f5b4042c96637"
+        },
+        {
+          "path": "assets/Logos/ChatGPT Image Sep 20, 2026, 03_08_42 PM.png",
+          "id": "b62da1d9f85012c4b67ec92371bbec60"
+        }
+      ]
+    },
+    {
+      "name": "Theme Final",
+      "files": [
+        {
+          "path": "assets/Theme Final/ChatGPT Image Sep 19, 2026, 10_00_53 PM.png",
+          "id": "9c6b9af87120fa65c89ac934cb851da3"
+        },
+        {
+          "path": "assets/Theme Final/ChatGPT Image Sep 19, 2026, 10_01_13 PM.png",
+          "id": "ab8aa1f674005f3031aa8a91c40be5f6"
+        }
+      ]
+    },
+    {
+      "name": "FONTS"
+    },
+    {
+      "name": "BRAND",
+      "files": [
+        {
+          "path": "assets/BRAND/phantom-corner-frame.svg",
+          "id": "b3f626a46739c85612dcd300b5b84fa1"
+        },
+        {
+          "path": "assets/BRAND/phantom-divider.svg",
+          "id": "3eef5315be700d8148e80bbd0f8a8e13"
+        },
+        {
+          "path": "assets/BRAND/phantom-gateway.svg",
+          "id": "000031cc23f152e904bb052b8b9f5b97"
+        },
+        {
+          "path": "assets/BRAND/phantom-hood-black.svg",
+          "id": "63a75e4ed8f0ce54ee3b719ecb302e6b"
+        },
+        {
+          "path": "assets/BRAND/phantom-hood-gold.svg",
+          "id": "afd1a305864b186d3ed090e3ad04ff98"
+        },
+        {
+          "path": "assets/BRAND/phantom-hood-platinum.svg",
+          "id": "336e88f13c58eb82e2604d6c42760a97"
+        },
+        {
+          "path": "assets/BRAND/phantom-hood-ruby.svg",
+          "id": "d917210c9aa9b51ee22aecf8fcb73628"
+        },
+        {
+          "path": "assets/BRAND/phantom-mark-black.svg",
+          "id": "5636d517b441ef058ee5367490f9ab4c"
+        },
+        {
+          "path": "assets/BRAND/phantom-mark-gold.svg",
+          "id": "d5fa5a1090a2c522db959370af5c9517"
+        },
+        {
+          "path": "assets/BRAND/phantom-mark-platinum.svg",
+          "id": "a41b273f6a3e2122ce902bbf0d69732e"
+        },
+        {
+          "path": "assets/BRAND/phantom-mark-ruby.svg",
+          "id": "efaea6dac1efe35f425a15655edc4ca8"
+        },
+        {
+          "path": "assets/BRAND/phantom-sovereign-crest.svg",
+          "id": "020f24144df9e17584359e2300d51b9b"
+        },
+        {
+          "path": "assets/BRAND/phantom-standard.svg",
+          "id": "a120d62cb68ceb4c4b17d76f153960fb"
+        }
+      ]
+    },
+    {
+      "name": "ARTWORK",
+      "files": [
+        {
+          "path": "assets/ARTWORK/phantom-ruby-hero.png",
+          "id": "890a318630fd4552525ec5427ca9c4fe"
+        }
+      ]
+    },
+    {
+      "name": "ICONS",
+      "files": [
+        {
+          "path": "assets/ICONS/phantom-activity.svg",
+          "id": "9094f570740e072892517d58e38ad719"
+        },
+        {
+          "path": "assets/ICONS/phantom-archive.svg",
+          "id": "edb9a203011db3329fc2e194f76e9856"
+        },
+        {
+          "path": "assets/ICONS/phantom-arrow-right.svg",
+          "id": "c54d0f73db4c195f3a9217fb5b6803b3"
+        },
+        {
+          "path": "assets/ICONS/phantom-arrow-up-right.svg",
+          "id": "fcc210df307975e0ad252bacfc517b08"
+        },
+        {
+          "path": "assets/ICONS/phantom-blade.svg",
+          "id": "fcc5f0a67e98010bbb38c1534adede19"
+        },
+        {
+          "path": "assets/ICONS/phantom-check.svg",
+          "id": "60c53c46a74af846419f46348dc693ed"
+        },
+        {
+          "path": "assets/ICONS/phantom-chevron-down.svg",
+          "id": "78085540fecc0f1f7066853f94263d05"
+        },
+        {
+          "path": "assets/ICONS/phantom-citadel.svg",
+          "id": "c6e0bf28ef0887bbb36697eca78747c4"
+        },
+        {
+          "path": "assets/ICONS/phantom-close.svg",
+          "id": "a026590a40cd5d0e906ad94398792064"
+        },
+        {
+          "path": "assets/ICONS/phantom-command.svg",
+          "id": "0513503837e9c4bb013e98f71bb57e7a"
+        },
+        {
+          "path": "assets/ICONS/phantom-copy.svg",
+          "id": "e2be4078e8be2ee3e9f821352ad61b29"
+        },
+        {
+          "path": "assets/ICONS/phantom-crest.svg",
+          "id": "21aa8eee2c6c2c8c52c7e70fea977fa5"
+        },
+        {
+          "path": "assets/ICONS/phantom-danger.svg",
+          "id": "192a3a14209335bb00dc561c6e105532"
+        },
+        {
+          "path": "assets/ICONS/phantom-document.svg",
+          "id": "b737ba8bd6d6d0477459aad93d94a4ad"
+        },
+        {
+          "path": "assets/ICONS/phantom-download.svg",
+          "id": "48534f947408509a50a1f46a510f6a38"
+        },
+        {
+          "path": "assets/ICONS/phantom-drive.svg",
+          "id": "776372f210e28c13e464c8ac68794b19"
+        },
+        {
+          "path": "assets/ICONS/phantom-expand.svg",
+          "id": "212e9824e03e0d1a2710c1d755470a0a"
+        },
+        {
+          "path": "assets/ICONS/phantom-folder.svg",
+          "id": "5120d42e2c85f2afb4243b34fd177e86"
+        },
+        {
+          "path": "assets/ICONS/phantom-hood.svg",
+          "id": "2f144d288b4b00e40093d9940008573e"
+        },
+        {
+          "path": "assets/ICONS/phantom-info.svg",
+          "id": "89f7692fca63f15599d27a2c76093f6e"
+        },
+        {
+          "path": "assets/ICONS/phantom-library.svg",
+          "id": "a898bb634b80cc67a97babe6e0852ac2"
+        },
+        {
+          "path": "assets/ICONS/phantom-link.svg",
+          "id": "cb821793d73edfeb908b1c8eb93c62cc"
+        },
+        {
+          "path": "assets/ICONS/phantom-lock.svg",
+          "id": "e5629f40aa4b0cf8ff88f6dafae561d9"
+        },
+        {
+          "path": "assets/ICONS/phantom-menu.svg",
+          "id": "4fbcd1e6b96bcde797977d70f2a97d62"
+        },
+        {
+          "path": "assets/ICONS/phantom-network.svg",
+          "id": "892f259743234d84227afd77f7507868"
+        },
+        {
+          "path": "assets/ICONS/phantom-neural.svg",
+          "id": "a33af91d85012c1736bae44a097d7bd8"
+        },
+        {
+          "path": "assets/ICONS/phantom-offline.svg",
+          "id": "e7b505b84751433df275ac20eff202dc"
+        },
+        {
+          "path": "assets/ICONS/phantom-phantom-mask.svg",
+          "id": "3176c0c7a1172a7e1cd1d1d82534e4ab"
+        },
+        {
+          "path": "assets/ICONS/phantom-phantom.svg",
+          "id": "a5c22a9e0fbd77419516c08837dfa865"
+        },
+        {
+          "path": "assets/ICONS/phantom-portal.svg",
+          "id": "3149c5d7d18a3795384e62195a8c0cd4"
+        },
+        {
+          "path": "assets/ICONS/phantom-power.svg",
+          "id": "2244ba0155de7c624f702bdd9f123d55"
+        },
+        {
+          "path": "assets/ICONS/phantom-processor.svg",
+          "id": "45b6d541004148ed8e8c4ed891c878ce"
+        },
+        {
+          "path": "assets/ICONS/phantom-recovery.svg",
+          "id": "0e54d191a35d7f2f4b1a7f4b53285b38"
+        },
+        {
+          "path": "assets/ICONS/phantom-ring-spire.svg",
+          "id": "44d5e8c6cb4f9cfb9c353763e63e24bd"
+        },
+        {
+          "path": "assets/ICONS/phantom-search.svg",
+          "id": "2d9cb1dc2d2857893127abbdb6aa4a63"
+        },
+        {
+          "path": "assets/ICONS/phantom-sentinel.svg",
+          "id": "176230decf9901ae28eaae4dab96f9e4"
+        },
+        {
+          "path": "assets/ICONS/phantom-settings.svg",
+          "id": "90deaf47a9b78c474f11b5fac32e60d3"
+        },
+        {
+          "path": "assets/ICONS/phantom-shield.svg",
+          "id": "7f1570a45f3d41f1653f389b18821cad"
+        },
+        {
+          "path": "assets/ICONS/phantom-sigil.svg",
+          "id": "48188a0070436948dc2da7b45fd29796"
+        },
+        {
+          "path": "assets/ICONS/phantom-sprite.svg",
+          "id": "4394ee70f430c9e4ce861097ea9f8de6"
+        },
+        {
+          "path": "assets/ICONS/phantom-terminal.svg",
+          "id": "d96d1c408a225dfbe47778ba52496664"
+        },
+        {
+          "path": "assets/ICONS/phantom-toolkit.svg",
+          "id": "5fc105e166395ca67bebd5fa05c7a82b"
+        },
+        {
+          "path": "assets/ICONS/phantom-usb.svg",
+          "id": "9ede27c02fefe6087f6f2c4d90e1e201"
+        },
+        {
+          "path": "assets/ICONS/phantom-warning.svg",
+          "id": "625fc6a1e514474d4b837bd4b4931abf"
+        },
+        {
+          "path": "assets/ICONS/phantom-workstation.svg",
+          "id": "c65b5527ea1b0076d74399a6aaa7eaa3"
+        }
+      ]
+    },
+    {
+      "name": "STYLES"
+    },
+    {
+      "name": "PROMPTS"
+    },
+    {
+      "name": "STYLES-2"
+    },
+    {
+      "name": "LICENSE"
+    },
+    {
+      "name": "BRAND2",
+      "files": [
+        {
+          "path": "assets/BRAND2/phantom-corner-frame (2).svg",
+          "id": "b3f626a46739c85612dcd300b5b84fa1"
+        },
+        {
+          "path": "assets/BRAND2/phantom-corner-frame.svg",
+          "id": "b3f626a46739c85612dcd300b5b84fa1"
+        },
+        {
+          "path": "assets/BRAND2/phantom-divider (2).svg",
+          "id": "3eef5315be700d8148e80bbd0f8a8e13"
+        },
+        {
+          "path": "assets/BRAND2/phantom-divider.svg",
+          "id": "3eef5315be700d8148e80bbd0f8a8e13"
+        },
+        {
+          "path": "assets/BRAND2/phantom-gateway (2).svg",
+          "id": "000031cc23f152e904bb052b8b9f5b97"
+        },
+        {
+          "path": "assets/BRAND2/phantom-gateway.svg",
+          "id": "000031cc23f152e904bb052b8b9f5b97"
+        },
+        {
+          "path": "assets/BRAND2/phantom-hood-black (2).svg",
+          "id": "63a75e4ed8f0ce54ee3b719ecb302e6b"
+        },
+        {
+          "path": "assets/BRAND2/phantom-hood-black.svg",
+          "id": "63a75e4ed8f0ce54ee3b719ecb302e6b"
+        },
+        {
+          "path": "assets/BRAND2/phantom-hood-gold (2).svg",
+          "id": "afd1a305864b186d3ed090e3ad04ff98"
+        },
+        {
+          "path": "assets/BRAND2/phantom-hood-gold.svg",
+          "id": "afd1a305864b186d3ed090e3ad04ff98"
+        },
+        {
+          "path": "assets/BRAND2/phantom-hood-platinum (2).svg",
+          "id": "336e88f13c58eb82e2604d6c42760a97"
+        },
+        {
+          "path": "assets/BRAND2/phantom-hood-platinum.svg",
+          "id": "336e88f13c58eb82e2604d6c42760a97"
+        },
+        {
+          "path": "assets/BRAND2/phantom-hood-ruby (2).svg",
+          "id": "d917210c9aa9b51ee22aecf8fcb73628"
+        },
+        {
+          "path": "assets/BRAND2/phantom-hood-ruby.svg",
+          "id": "d917210c9aa9b51ee22aecf8fcb73628"
+        },
+        {
+          "path": "assets/BRAND2/phantom-mark-black (2).svg",
+          "id": "5636d517b441ef058ee5367490f9ab4c"
+        },
+        {
+          "path": "assets/BRAND2/phantom-mark-black.svg",
+          "id": "5636d517b441ef058ee5367490f9ab4c"
+        },
+        {
+          "path": "assets/BRAND2/phantom-mark-gold (2).svg",
+          "id": "d5fa5a1090a2c522db959370af5c9517"
+        },
+        {
+          "path": "assets/BRAND2/phantom-mark-gold.svg",
+          "id": "d5fa5a1090a2c522db959370af5c9517"
+        },
+        {
+          "path": "assets/BRAND2/phantom-mark-platinum (2).svg",
+          "id": "a41b273f6a3e2122ce902bbf0d69732e"
+        },
+        {
+          "path": "assets/BRAND2/phantom-mark-platinum.svg",
+          "id": "a41b273f6a3e2122ce902bbf0d69732e"
+        },
+        {
+          "path": "assets/BRAND2/phantom-mark-ruby (2).svg",
+          "id": "efaea6dac1efe35f425a15655edc4ca8"
+        },
+        {
+          "path": "assets/BRAND2/phantom-mark-ruby.svg",
+          "id": "efaea6dac1efe35f425a15655edc4ca8"
+        },
+        {
+          "path": "assets/BRAND2/phantom-sovereign-crest (2).svg",
+          "id": "020f24144df9e17584359e2300d51b9b"
+        },
+        {
+          "path": "assets/BRAND2/phantom-sovereign-crest.svg",
+          "id": "020f24144df9e17584359e2300d51b9b"
+        },
+        {
+          "path": "assets/BRAND2/phantom-standard (2).svg",
+          "id": "a120d62cb68ceb4c4b17d76f153960fb"
+        },
+        {
+          "path": "assets/BRAND2/phantom-standard.svg",
+          "id": "a120d62cb68ceb4c4b17d76f153960fb"
+        }
+      ]
+    },
+    {
+      "name": "ART",
+      "files": [
+        {
+          "path": "assets/ART/phantom-ruby-hero (2).png",
+          "id": "890a318630fd4552525ec5427ca9c4fe"
+        },
+        {
+          "path": "assets/ART/phantom-ruby-hero.png",
+          "id": "890a318630fd4552525ec5427ca9c4fe"
+        }
+      ]
+    },
+    {
+      "name": "PHANTOM ICONS",
+      "files": [
+        {
+          "path": "assets/PHANTOM ICONS/phantom-activity (2).svg",
+          "id": "9094f570740e072892517d58e38ad719"
+        },
+        {
+          "path": "assets/PHANTOM ICONS/phantom-activity.svg",
+          "id": "9094f570740e072892517d58e38ad719"
+        },
+        {
+          "path": "assets/PHANTOM ICONS/phantom-archive (2).svg",
+          "id": "edb9a203011db3329fc2e194f76e9856"
+        },
+        {
+          "path": "assets/PHANTOM ICONS/phantom-archive.svg",
+          "id": "edb9a203011db3329fc2e194f76e9856"
+        },
+        {
+          "path": "assets/PHANTOM ICONS/phantom-arrow-right (2).svg",
+          "id": "c54d0f73db4c195f3a9217fb5b6803b3"
+        },
+        {
+          "path": "assets/PHANTOM ICONS/phantom-arrow-right.svg",
+          "id": "c54d0f73db4c195f3a9217fb5b6803b3"
+        },
+        {
+          "path": "assets/PHANTOM ICONS/phantom-arrow-up-right (2).svg",
+          "id": "fcc210df307975e0ad252bacfc517b08"
+        },
+        {
+          "path": "assets/PHANTOM ICONS/phantom-arrow-up-right.svg",
+          "id": "fcc210df307975e0ad252bacfc517b08"
+        },
+        {
+          "path": "assets/PHANTOM ICONS/phantom-blade (2).svg",
+          "id": "fcc5f0a67e98010bbb38c1534adede19"
+        },
+        {
+          "path": "assets/PHANTOM ICONS/phantom-blade.svg",
+          "id": "fcc5f0a67e98010bbb38c1534adede19"
+        },
+        {
+          "path": "assets/PHANTOM ICONS/phantom-check (2).svg",
+          "id": "60c53c46a74af846419f46348dc693ed"
+        },
+        {
+          "path": "assets/PHANTOM ICONS/phantom-check.svg",
+          "id": "60c53c46a74af846419f46348dc693ed"
+        },
+        {
+          "path": "assets/PHANTOM ICONS/phantom-chevron-down (2).svg",
+          "id": "78085540fecc0f1f7066853f94263d05"
+        },
+        {
+          "path": "assets/PHANTOM ICONS/phantom-chevron-down.svg",
+          "id": "78085540fecc0f1f7066853f94263d05"
+        },
+        {
+          "path": "assets/PHANTOM ICONS/phantom-citadel (2).svg",
+          "id": "c6e0bf28ef0887bbb36697eca78747c4"
+        },
+        {
+          "path": "assets/PHANTOM ICONS/phantom-citadel.svg",
+          "id": "c6e0bf28ef0887bbb36697eca78747c4"
+        },
+        {
+          "path": "assets/PHANTOM ICONS/phantom-close (2).svg",
+          "id": "a026590a40cd5d0e906ad94398792064"
+        },
+        {
+          "path": "assets/PHANTOM ICONS/phantom-close.svg",
+          "id": "a026590a40cd5d0e906ad94398792064"
+        },
+        {
+          "path": "assets/PHANTOM ICONS/phantom-command (2).svg",
+          "id": "0513503837e9c4bb013e98f71bb57e7a"
+        },
+        {
+          "path": "assets/PHANTOM ICONS/phantom-command.svg",
+          "id": "0513503837e9c4bb013e98f71bb57e7a"
+        },
+        {
+          "path": "assets/PHANTOM ICONS/phantom-copy (2).svg",
+          "id": "e2be4078e8be2ee3e9f821352ad61b29"
+        },
+        {
+          "path": "assets/PHANTOM ICONS/phantom-copy.svg",
+          "id": "e2be4078e8be2ee3e9f821352ad61b29"
+        },
+        {
+          "path": "assets/PHANTOM ICONS/phantom-crest (2).svg",
+          "id": "21aa8eee2c6c2c8c52c7e70fea977fa5"
+        },
+        {
+          "path": "assets/PHANTOM ICONS/phantom-crest.svg",
+          "id": "21aa8eee2c6c2c8c52c7e70fea977fa5"
+        },
+        {
+          "path": "assets/PHANTOM ICONS/phantom-danger (2).svg",
+          "id": "192a3a14209335bb00dc561c6e105532"
+        },
+        {
+          "path": "assets/PHANTOM ICONS/phantom-danger.svg",
+          "id": "192a3a14209335bb00dc561c6e105532"
+        },
+        {
+          "path": "assets/PHANTOM ICONS/phantom-document (2).svg",
+          "id": "b737ba8bd6d6d0477459aad93d94a4ad"
+        },
+        {
+          "path": "assets/PHANTOM ICONS/phantom-document.svg",
+          "id": "b737ba8bd6d6d0477459aad93d94a4ad"
+        },
+        {
+          "path": "assets/PHANTOM ICONS/phantom-download (2).svg",
+          "id": "48534f947408509a50a1f46a510f6a38"
+        },
+        {
+          "path": "assets/PHANTOM ICONS/phantom-download.svg",
+          "id": "48534f947408509a50a1f46a510f6a38"
+        },
+        {
+          "path": "assets/PHANTOM ICONS/phantom-drive (2).svg",
+          "id": "776372f210e28c13e464c8ac68794b19"
+        },
+        {
+          "path": "assets/PHANTOM ICONS/phantom-drive.svg",
+          "id": "776372f210e28c13e464c8ac68794b19"
+        },
+        {
+          "path": "assets/PHANTOM ICONS/phantom-expand (2).svg",
+          "id": "212e9824e03e0d1a2710c1d755470a0a"
+        },
+        {
+          "path": "assets/PHANTOM ICONS/phantom-expand.svg",
+          "id": "212e9824e03e0d1a2710c1d755470a0a"
+        },
+        {
+          "path": "assets/PHANTOM ICONS/phantom-folder (2).svg",
+          "id": "5120d42e2c85f2afb4243b34fd177e86"
+        },
+        {
+          "path": "assets/PHANTOM ICONS/phantom-folder.svg",
+          "id": "5120d42e2c85f2afb4243b34fd177e86"
+        },
+        {
+          "path": "assets/PHANTOM ICONS/phantom-hood (2).svg",
+          "id": "2f144d288b4b00e40093d9940008573e"
+        },
+        {
+          "path": "assets/PHANTOM ICONS/phantom-hood.svg",
+          "id": "2f144d288b4b00e40093d9940008573e"
+        },
+        {
+          "path": "assets/PHANTOM ICONS/phantom-info (2).svg",
+          "id": "89f7692fca63f15599d27a2c76093f6e"
+        },
+        {
+          "path": "assets/PHANTOM ICONS/phantom-info.svg",
+          "id": "89f7692fca63f15599d27a2c76093f6e"
+        },
+        {
+          "path": "assets/PHANTOM ICONS/phantom-library (2).svg",
+          "id": "a898bb634b80cc67a97babe6e0852ac2"
+        },
+        {
+          "path": "assets/PHANTOM ICONS/phantom-library.svg",
+          "id": "a898bb634b80cc67a97babe6e0852ac2"
+        },
+        {
+          "path": "assets/PHANTOM ICONS/phantom-link (2).svg",
+          "id": "cb821793d73edfeb908b1c8eb93c62cc"
+        },
+        {
+          "path": "assets/PHANTOM ICONS/phantom-link.svg",
+          "id": "cb821793d73edfeb908b1c8eb93c62cc"
+        },
+        {
+          "path": "assets/PHANTOM ICONS/phantom-lock (2).svg",
+          "id": "e5629f40aa4b0cf8ff88f6dafae561d9"
+        },
+        {
+          "path": "assets/PHANTOM ICONS/phantom-lock.svg",
+          "id": "e5629f40aa4b0cf8ff88f6dafae561d9"
+        },
+        {
+          "path": "assets/PHANTOM ICONS/phantom-menu (2).svg",
+          "id": "4fbcd1e6b96bcde797977d70f2a97d62"
+        },
+        {
+          "path": "assets/PHANTOM ICONS/phantom-menu.svg",
+          "id": "4fbcd1e6b96bcde797977d70f2a97d62"
+        },
+        {
+          "path": "assets/PHANTOM ICONS/phantom-network (2).svg",
+          "id": "892f259743234d84227afd77f7507868"
+        },
+        {
+          "path": "assets/PHANTOM ICONS/phantom-network.svg",
+          "id": "892f259743234d84227afd77f7507868"
+        },
+        {
+          "path": "assets/PHANTOM ICONS/phantom-neural (2).svg",
+          "id": "a33af91d85012c1736bae44a097d7bd8"
+        },
+        {
+          "path": "assets/PHANTOM ICONS/phantom-neural.svg",
+          "id": "a33af91d85012c1736bae44a097d7bd8"
+        },
+        {
+          "path": "assets/PHANTOM ICONS/phantom-offline (2).svg",
+          "id": "e7b505b84751433df275ac20eff202dc"
+        },
+        {
+          "path": "assets/PHANTOM ICONS/phantom-offline.svg",
+          "id": "e7b505b84751433df275ac20eff202dc"
+        },
+        {
+          "path": "assets/PHANTOM ICONS/phantom-phantom (2).svg",
+          "id": "a5c22a9e0fbd77419516c08837dfa865"
+        },
+        {
+          "path": "assets/PHANTOM ICONS/phantom-phantom-mask (2).svg",
+          "id": "3176c0c7a1172a7e1cd1d1d82534e4ab"
+        },
+        {
+          "path": "assets/PHANTOM ICONS/phantom-phantom-mask.svg",
+          "id": "3176c0c7a1172a7e1cd1d1d82534e4ab"
+        },
+        {
+          "path": "assets/PHANTOM ICONS/phantom-phantom.svg",
+          "id": "a5c22a9e0fbd77419516c08837dfa865"
+        },
+        {
+          "path": "assets/PHANTOM ICONS/phantom-portal (2).svg",
+          "id": "3149c5d7d18a3795384e62195a8c0cd4"
+        },
+        {
+          "path": "assets/PHANTOM ICONS/phantom-portal.svg",
+          "id": "3149c5d7d18a3795384e62195a8c0cd4"
+        },
+        {
+          "path": "assets/PHANTOM ICONS/phantom-power (2).svg",
+          "id": "2244ba0155de7c624f702bdd9f123d55"
+        },
+        {
+          "path": "assets/PHANTOM ICONS/phantom-power.svg",
+          "id": "2244ba0155de7c624f702bdd9f123d55"
+        },
+        {
+          "path": "assets/PHANTOM ICONS/phantom-processor (2).svg",
+          "id": "45b6d541004148ed8e8c4ed891c878ce"
+        },
+        {
+          "path": "assets/PHANTOM ICONS/phantom-processor.svg",
+          "id": "45b6d541004148ed8e8c4ed891c878ce"
+        },
+        {
+          "path": "assets/PHANTOM ICONS/phantom-recovery (2).svg",
+          "id": "0e54d191a35d7f2f4b1a7f4b53285b38"
+        },
+        {
+          "path": "assets/PHANTOM ICONS/phantom-recovery.svg",
+          "id": "0e54d191a35d7f2f4b1a7f4b53285b38"
+        },
+        {
+          "path": "assets/PHANTOM ICONS/phantom-ring-spire (2).svg",
+          "id": "44d5e8c6cb4f9cfb9c353763e63e24bd"
+        },
+        {
+          "path": "assets/PHANTOM ICONS/phantom-ring-spire.svg",
+          "id": "44d5e8c6cb4f9cfb9c353763e63e24bd"
+        },
+        {
+          "path": "assets/PHANTOM ICONS/phantom-search (2).svg",
+          "id": "2d9cb1dc2d2857893127abbdb6aa4a63"
+        },
+        {
+          "path": "assets/PHANTOM ICONS/phantom-search.svg",
+          "id": "2d9cb1dc2d2857893127abbdb6aa4a63"
+        },
+        {
+          "path": "assets/PHANTOM ICONS/phantom-sentinel (2).svg",
+          "id": "176230decf9901ae28eaae4dab96f9e4"
+        },
+        {
+          "path": "assets/PHANTOM ICONS/phantom-sentinel.svg",
+          "id": "176230decf9901ae28eaae4dab96f9e4"
+        },
+        {
+          "path": "assets/PHANTOM ICONS/phantom-settings (2).svg",
+          "id": "90deaf47a9b78c474f11b5fac32e60d3"
+        },
+        {
+          "path": "assets/PHANTOM ICONS/phantom-settings.svg",
+          "id": "90deaf47a9b78c474f11b5fac32e60d3"
+        },
+        {
+          "path": "assets/PHANTOM ICONS/phantom-shield (2).svg",
+          "id": "7f1570a45f3d41f1653f389b18821cad"
+        },
+        {
+          "path": "assets/PHANTOM ICONS/phantom-shield.svg",
+          "id": "7f1570a45f3d41f1653f389b18821cad"
+        },
+        {
+          "path": "assets/PHANTOM ICONS/phantom-sigil (2).svg",
+          "id": "48188a0070436948dc2da7b45fd29796"
+        },
+        {
+          "path": "assets/PHANTOM ICONS/phantom-sigil.svg",
+          "id": "48188a0070436948dc2da7b45fd29796"
+        },
+        {
+          "path": "assets/PHANTOM ICONS/phantom-sprite (2).svg",
+          "id": "4394ee70f430c9e4ce861097ea9f8de6"
+        },
+        {
+          "path": "assets/PHANTOM ICONS/phantom-sprite.svg",
+          "id": "4394ee70f430c9e4ce861097ea9f8de6"
+        },
+        {
+          "path": "assets/PHANTOM ICONS/phantom-terminal (2).svg",
+          "id": "d96d1c408a225dfbe47778ba52496664"
+        },
+        {
+          "path": "assets/PHANTOM ICONS/phantom-terminal.svg",
+          "id": "d96d1c408a225dfbe47778ba52496664"
+        },
+        {
+          "path": "assets/PHANTOM ICONS/phantom-toolkit (2).svg",
+          "id": "5fc105e166395ca67bebd5fa05c7a82b"
+        },
+        {
+          "path": "assets/PHANTOM ICONS/phantom-toolkit.svg",
+          "id": "5fc105e166395ca67bebd5fa05c7a82b"
+        },
+        {
+          "path": "assets/PHANTOM ICONS/phantom-usb (2).svg",
+          "id": "9ede27c02fefe6087f6f2c4d90e1e201"
+        },
+        {
+          "path": "assets/PHANTOM ICONS/phantom-usb.svg",
+          "id": "9ede27c02fefe6087f6f2c4d90e1e201"
+        },
+        {
+          "path": "assets/PHANTOM ICONS/phantom-warning (2).svg",
+          "id": "625fc6a1e514474d4b837bd4b4931abf"
+        },
+        {
+          "path": "assets/PHANTOM ICONS/phantom-warning.svg",
+          "id": "625fc6a1e514474d4b837bd4b4931abf"
+        },
+        {
+          "path": "assets/PHANTOM ICONS/phantom-workstation (2).svg",
+          "id": "c65b5527ea1b0076d74399a6aaa7eaa3"
+        },
+        {
+          "path": "assets/PHANTOM ICONS/phantom-workstation.svg",
+          "id": "c65b5527ea1b0076d74399a6aaa7eaa3"
+        }
+      ]
+    }
+  ],
+  "storage": {
+    "files": {
+      "assets/ART/phantom-ruby-hero (2).png": {
+        "store": "blob",
+        "id": "890a318630fd4552525ec5427ca9c4fe",
+        "sha256": "94da4916f71eaf526d6bf2d0767bb79ef0bfe34146b6e9e3f572e7fb17a9e421",
+        "bytes": 2013840,
+        "type": "image/png",
+        "name": "phantom-ruby-hero (2).png",
+        "addedAt": "2026-09-20T19:26:56.350Z",
+        "via": "page"
+      },
+      "assets/ART/phantom-ruby-hero.png": {
+        "store": "blob",
+        "id": "890a318630fd4552525ec5427ca9c4fe",
+        "sha256": "94da4916f71eaf526d6bf2d0767bb79ef0bfe34146b6e9e3f572e7fb17a9e421",
+        "bytes": 2013840,
+        "type": "image/png",
+        "name": "phantom-ruby-hero.png",
+        "addedAt": "2026-09-20T19:26:56.732Z",
+        "via": "page"
+      },
+      "assets/ARTWORK/phantom-ruby-hero.png": {
+        "store": "blob",
+        "id": "890a318630fd4552525ec5427ca9c4fe",
+        "sha256": "94da4916f71eaf526d6bf2d0767bb79ef0bfe34146b6e9e3f572e7fb17a9e421",
+        "bytes": 2013840,
+        "type": "image/png",
+        "name": "phantom-ruby-hero.png",
+        "addedAt": "2026-09-20T19:23:22.336Z",
+        "via": "page"
+      },
+      "assets/BRAND/phantom-corner-frame.svg": {
+        "store": "blob",
+        "id": "b3f626a46739c85612dcd300b5b84fa1",
+        "sha256": "df7b508a28269d1afcd0c5b92abbff3e9810a20894f7edc41eea1e494d8eb0f7",
+        "bytes": 464,
+        "type": "image/svg+xml",
+        "name": "phantom-corner-frame.svg",
+        "addedAt": "2026-09-20T19:23:00.928Z",
+        "via": "page"
+      },
+      "assets/BRAND/phantom-divider.svg": {
+        "store": "blob",
+        "id": "3eef5315be700d8148e80bbd0f8a8e13",
+        "sha256": "687ca761e003caec0f6f8d0f8eb66aab6c877112ed3aed40517d98a9d5879ac3",
+        "bytes": 373,
+        "type": "image/svg+xml",
+        "name": "phantom-divider.svg",
+        "addedAt": "2026-09-20T19:23:01.715Z",
+        "via": "page"
+      },
+      "assets/BRAND/phantom-gateway.svg": {
+        "store": "blob",
+        "id": "000031cc23f152e904bb052b8b9f5b97",
+        "sha256": "7cf6123e6446e74f1278ddccb3d666440706cef2ccfc98970342159a5362ee6f",
+        "bytes": 8360,
+        "type": "image/svg+xml",
+        "name": "phantom-gateway.svg",
+        "addedAt": "2026-09-20T19:23:02.416Z",
+        "via": "page"
+      },
+      "assets/BRAND/phantom-hood-black.svg": {
+        "store": "blob",
+        "id": "63a75e4ed8f0ce54ee3b719ecb302e6b",
+        "sha256": "e526a4d8b85f45e2b3dc8eed9db6c0fc2aaae2770ede0b30ee161847d061b023",
+        "bytes": 342,
+        "type": "image/svg+xml",
+        "name": "phantom-hood-black.svg",
+        "addedAt": "2026-09-20T19:23:03.135Z",
+        "via": "page"
+      },
+      "assets/BRAND/phantom-hood-gold.svg": {
+        "store": "blob",
+        "id": "afd1a305864b186d3ed090e3ad04ff98",
+        "sha256": "7c61bc50c5a73a72b191948ee7ada2320fb43f78d37eeeddb235781d8f4d6a09",
+        "bytes": 342,
+        "type": "image/svg+xml",
+        "name": "phantom-hood-gold.svg",
+        "addedAt": "2026-09-20T19:23:03.785Z",
+        "via": "page"
+      },
+      "assets/BRAND/phantom-hood-platinum.svg": {
+        "store": "blob",
+        "id": "336e88f13c58eb82e2604d6c42760a97",
+        "sha256": "cb996ecbba0d97c90dcf3e44c6f1296f121150a3ab80e3132239521d4ce7f835",
+        "bytes": 342,
+        "type": "image/svg+xml",
+        "name": "phantom-hood-platinum.svg",
+        "addedAt": "2026-09-20T19:23:04.577Z",
+        "via": "page"
+      },
+      "assets/BRAND/phantom-hood-ruby.svg": {
+        "store": "blob",
+        "id": "d917210c9aa9b51ee22aecf8fcb73628",
+        "sha256": "e530491afc1f5b14f16e73ef2d013f1f1ba8ad335d018b1c6ec0e3b094f7c475",
+        "bytes": 342,
+        "type": "image/svg+xml",
+        "name": "phantom-hood-ruby.svg",
+        "addedAt": "2026-09-20T19:23:05.215Z",
+        "via": "page"
+      },
+      "assets/BRAND/phantom-mark-black.svg": {
+        "store": "blob",
+        "id": "5636d517b441ef058ee5367490f9ab4c",
+        "sha256": "efefc6baf48014e4ee9fbd26829fa144f5ea4f9089285042a09fe5919ea56840",
+        "bytes": 247,
+        "type": "image/svg+xml",
+        "name": "phantom-mark-black.svg",
+        "addedAt": "2026-09-20T19:23:05.842Z",
+        "via": "page"
+      },
+      "assets/BRAND/phantom-mark-gold.svg": {
+        "store": "blob",
+        "id": "d5fa5a1090a2c522db959370af5c9517",
+        "sha256": "f39382f6f1a7fb83d9717359e872f845c92930cf0e2c3caba52cf207c02a2cdf",
+        "bytes": 247,
+        "type": "image/svg+xml",
+        "name": "phantom-mark-gold.svg",
+        "addedAt": "2026-09-20T19:23:06.495Z",
+        "via": "page"
+      },
+      "assets/BRAND/phantom-mark-platinum.svg": {
+        "store": "blob",
+        "id": "a41b273f6a3e2122ce902bbf0d69732e",
+        "sha256": "0cfae44ba93ad8738b5944e1720df85e87c7a5fc9c0626e0046fc2ff128e7133",
+        "bytes": 247,
+        "type": "image/svg+xml",
+        "name": "phantom-mark-platinum.svg",
+        "addedAt": "2026-09-20T19:23:07.300Z",
+        "via": "page"
+      },
+      "assets/BRAND/phantom-mark-ruby.svg": {
+        "store": "blob",
+        "id": "efaea6dac1efe35f425a15655edc4ca8",
+        "sha256": "cdca466b6f00287ccb096207c84097476b2909fcc04268af9f44bf1a5b6d2983",
+        "bytes": 247,
+        "type": "image/svg+xml",
+        "name": "phantom-mark-ruby.svg",
+        "addedAt": "2026-09-20T19:23:08.316Z",
+        "via": "page"
+      },
+      "assets/BRAND/phantom-sovereign-crest.svg": {
+        "store": "blob",
+        "id": "020f24144df9e17584359e2300d51b9b",
+        "sha256": "99720252c8e693ad6280614d7693cd1be68cd30640049776ea922c87adc50150",
+        "bytes": 2083,
+        "type": "image/svg+xml",
+        "name": "phantom-sovereign-crest.svg",
+        "addedAt": "2026-09-20T19:23:08.955Z",
+        "via": "page"
+      },
+      "assets/BRAND/phantom-standard.svg": {
+        "store": "blob",
+        "id": "a120d62cb68ceb4c4b17d76f153960fb",
+        "sha256": "809cc2e9e9479d455f38a1043ba825b834283debd861ab95bcc87f533bfe0245",
+        "bytes": 568,
+        "type": "image/svg+xml",
+        "name": "phantom-standard.svg",
+        "addedAt": "2026-09-20T19:23:09.598Z",
+        "via": "page"
+      },
+      "assets/BRAND2/phantom-corner-frame (2).svg": {
+        "store": "blob",
+        "id": "b3f626a46739c85612dcd300b5b84fa1",
+        "sha256": "df7b508a28269d1afcd0c5b92abbff3e9810a20894f7edc41eea1e494d8eb0f7",
+        "bytes": 464,
+        "type": "image/svg+xml",
+        "name": "phantom-corner-frame (2).svg",
+        "addedAt": "2026-09-20T19:26:34.456Z",
+        "via": "page"
+      },
+      "assets/BRAND2/phantom-corner-frame.svg": {
+        "store": "blob",
+        "id": "b3f626a46739c85612dcd300b5b84fa1",
+        "sha256": "df7b508a28269d1afcd0c5b92abbff3e9810a20894f7edc41eea1e494d8eb0f7",
+        "bytes": 464,
+        "type": "image/svg+xml",
+        "name": "phantom-corner-frame.svg",
+        "addedAt": "2026-09-20T19:26:38.824Z",
+        "via": "page"
+      },
+      "assets/BRAND2/phantom-divider (2).svg": {
+        "store": "blob",
+        "id": "3eef5315be700d8148e80bbd0f8a8e13",
+        "sha256": "687ca761e003caec0f6f8d0f8eb66aab6c877112ed3aed40517d98a9d5879ac3",
+        "bytes": 373,
+        "type": "image/svg+xml",
+        "name": "phantom-divider (2).svg",
+        "addedAt": "2026-09-20T19:26:34.821Z",
+        "via": "page"
+      },
+      "assets/BRAND2/phantom-divider.svg": {
+        "store": "blob",
+        "id": "3eef5315be700d8148e80bbd0f8a8e13",
+        "sha256": "687ca761e003caec0f6f8d0f8eb66aab6c877112ed3aed40517d98a9d5879ac3",
+        "bytes": 373,
+        "type": "image/svg+xml",
+        "name": "phantom-divider.svg",
+        "addedAt": "2026-09-20T19:26:39.020Z",
+        "via": "page"
+      },
+      "assets/BRAND2/phantom-gateway (2).svg": {
+        "store": "blob",
+        "id": "000031cc23f152e904bb052b8b9f5b97",
+        "sha256": "7cf6123e6446e74f1278ddccb3d666440706cef2ccfc98970342159a5362ee6f",
+        "bytes": 8360,
+        "type": "image/svg+xml",
+        "name": "phantom-gateway (2).svg",
+        "addedAt": "2026-09-20T19:26:35.020Z",
+        "via": "page"
+      },
+      "assets/BRAND2/phantom-gateway.svg": {
+        "store": "blob",
+        "id": "000031cc23f152e904bb052b8b9f5b97",
+        "sha256": "7cf6123e6446e74f1278ddccb3d666440706cef2ccfc98970342159a5362ee6f",
+        "bytes": 8360,
+        "type": "image/svg+xml",
+        "name": "phantom-gateway.svg",
+        "addedAt": "2026-09-20T19:26:39.232Z",
+        "via": "page"
+      },
+      "assets/BRAND2/phantom-hood-black (2).svg": {
+        "store": "blob",
+        "id": "63a75e4ed8f0ce54ee3b719ecb302e6b",
+        "sha256": "e526a4d8b85f45e2b3dc8eed9db6c0fc2aaae2770ede0b30ee161847d061b023",
+        "bytes": 342,
+        "type": "image/svg+xml",
+        "name": "phantom-hood-black (2).svg",
+        "addedAt": "2026-09-20T19:26:35.285Z",
+        "via": "page"
+      },
+      "assets/BRAND2/phantom-hood-black.svg": {
+        "store": "blob",
+        "id": "63a75e4ed8f0ce54ee3b719ecb302e6b",
+        "sha256": "e526a4d8b85f45e2b3dc8eed9db6c0fc2aaae2770ede0b30ee161847d061b023",
+        "bytes": 342,
+        "type": "image/svg+xml",
+        "name": "phantom-hood-black.svg",
+        "addedAt": "2026-09-20T19:26:39.473Z",
+        "via": "page"
+      },
+      "assets/BRAND2/phantom-hood-gold (2).svg": {
+        "store": "blob",
+        "id": "afd1a305864b186d3ed090e3ad04ff98",
+        "sha256": "7c61bc50c5a73a72b191948ee7ada2320fb43f78d37eeeddb235781d8f4d6a09",
+        "bytes": 342,
+        "type": "image/svg+xml",
+        "name": "phantom-hood-gold (2).svg",
+        "addedAt": "2026-09-20T19:26:35.515Z",
+        "via": "page"
+      },
+      "assets/BRAND2/phantom-hood-gold.svg": {
+        "store": "blob",
+        "id": "afd1a305864b186d3ed090e3ad04ff98",
+        "sha256": "7c61bc50c5a73a72b191948ee7ada2320fb43f78d37eeeddb235781d8f4d6a09",
+        "bytes": 342,
+        "type": "image/svg+xml",
+        "name": "phantom-hood-gold.svg",
+        "addedAt": "2026-09-20T19:26:39.675Z",
+        "via": "page"
+      },
+      "assets/BRAND2/phantom-hood-platinum (2).svg": {
+        "store": "blob",
+        "id": "336e88f13c58eb82e2604d6c42760a97",
+        "sha256": "cb996ecbba0d97c90dcf3e44c6f1296f121150a3ab80e3132239521d4ce7f835",
+        "bytes": 342,
+        "type": "image/svg+xml",
+        "name": "phantom-hood-platinum (2).svg",
+        "addedAt": "2026-09-20T19:26:35.761Z",
+        "via": "page"
+      },
+      "assets/BRAND2/phantom-hood-platinum.svg": {
+        "store": "blob",
+        "id": "336e88f13c58eb82e2604d6c42760a97",
+        "sha256": "cb996ecbba0d97c90dcf3e44c6f1296f121150a3ab80e3132239521d4ce7f835",
+        "bytes": 342,
+        "type": "image/svg+xml",
+        "name": "phantom-hood-platinum.svg",
+        "addedAt": "2026-09-20T19:26:39.851Z",
+        "via": "page"
+      },
+      "assets/BRAND2/phantom-hood-ruby (2).svg": {
+        "store": "blob",
+        "id": "d917210c9aa9b51ee22aecf8fcb73628",
+        "sha256": "e530491afc1f5b14f16e73ef2d013f1f1ba8ad335d018b1c6ec0e3b094f7c475",
+        "bytes": 342,
+        "type": "image/svg+xml",
+        "name": "phantom-hood-ruby (2).svg",
+        "addedAt": "2026-09-20T19:26:36.014Z",
+        "via": "page"
+      },
+      "assets/BRAND2/phantom-hood-ruby.svg": {
+        "store": "blob",
+        "id": "d917210c9aa9b51ee22aecf8fcb73628",
+        "sha256": "e530491afc1f5b14f16e73ef2d013f1f1ba8ad335d018b1c6ec0e3b094f7c475",
+        "bytes": 342,
+        "type": "image/svg+xml",
+        "name": "phantom-hood-ruby.svg",
+        "addedAt": "2026-09-20T19:26:37.455Z",
+        "via": "page"
+      },
+      "assets/BRAND2/phantom-mark-black (2).svg": {
+        "store": "blob",
+        "id": "5636d517b441ef058ee5367490f9ab4c",
+        "sha256": "efefc6baf48014e4ee9fbd26829fa144f5ea4f9089285042a09fe5919ea56840",
+        "bytes": 247,
+        "type": "image/svg+xml",
+        "name": "phantom-mark-black (2).svg",
+        "addedAt": "2026-09-20T19:26:36.202Z",
+        "via": "page"
+      },
+      "assets/BRAND2/phantom-mark-black.svg": {
+        "store": "blob",
+        "id": "5636d517b441ef058ee5367490f9ab4c",
+        "sha256": "efefc6baf48014e4ee9fbd26829fa144f5ea4f9089285042a09fe5919ea56840",
+        "bytes": 247,
+        "type": "image/svg+xml",
+        "name": "phantom-mark-black.svg",
+        "addedAt": "2026-09-20T19:26:37.687Z",
+        "via": "page"
+      },
+      "assets/BRAND2/phantom-mark-gold (2).svg": {
+        "store": "blob",
+        "id": "d5fa5a1090a2c522db959370af5c9517",
+        "sha256": "f39382f6f1a7fb83d9717359e872f845c92930cf0e2c3caba52cf207c02a2cdf",
+        "bytes": 247,
+        "type": "image/svg+xml",
+        "name": "phantom-mark-gold (2).svg",
+        "addedAt": "2026-09-20T19:26:36.418Z",
+        "via": "page"
+      },
+      "assets/BRAND2/phantom-mark-gold.svg": {
+        "store": "blob",
+        "id": "d5fa5a1090a2c522db959370af5c9517",
+        "sha256": "f39382f6f1a7fb83d9717359e872f845c92930cf0e2c3caba52cf207c02a2cdf",
+        "bytes": 247,
+        "type": "image/svg+xml",
+        "name": "phantom-mark-gold.svg",
+        "addedAt": "2026-09-20T19:26:37.870Z",
+        "via": "page"
+      },
+      "assets/BRAND2/phantom-mark-platinum (2).svg": {
+        "store": "blob",
+        "id": "a41b273f6a3e2122ce902bbf0d69732e",
+        "sha256": "0cfae44ba93ad8738b5944e1720df85e87c7a5fc9c0626e0046fc2ff128e7133",
+        "bytes": 247,
+        "type": "image/svg+xml",
+        "name": "phantom-mark-platinum (2).svg",
+        "addedAt": "2026-09-20T19:26:36.608Z",
+        "via": "page"
+      },
+      "assets/BRAND2/phantom-mark-platinum.svg": {
+        "store": "blob",
+        "id": "a41b273f6a3e2122ce902bbf0d69732e",
+        "sha256": "0cfae44ba93ad8738b5944e1720df85e87c7a5fc9c0626e0046fc2ff128e7133",
+        "bytes": 247,
+        "type": "image/svg+xml",
+        "name": "phantom-mark-platinum.svg",
+        "addedAt": "2026-09-20T19:26:38.092Z",
+        "via": "page"
+      },
+      "assets/BRAND2/phantom-mark-ruby (2).svg": {
+        "store": "blob",
+        "id": "efaea6dac1efe35f425a15655edc4ca8",
+        "sha256": "cdca466b6f00287ccb096207c84097476b2909fcc04268af9f44bf1a5b6d2983",
+        "bytes": 247,
+        "type": "image/svg+xml",
+        "name": "phantom-mark-ruby (2).svg",
+        "addedAt": "2026-09-20T19:26:36.806Z",
+        "via": "page"
+      },
+      "assets/BRAND2/phantom-mark-ruby.svg": {
+        "store": "blob",
+        "id": "efaea6dac1efe35f425a15655edc4ca8",
+        "sha256": "cdca466b6f00287ccb096207c84097476b2909fcc04268af9f44bf1a5b6d2983",
+        "bytes": 247,
+        "type": "image/svg+xml",
+        "name": "phantom-mark-ruby.svg",
+        "addedAt": "2026-09-20T19:26:38.263Z",
+        "via": "page"
+      },
+      "assets/BRAND2/phantom-sovereign-crest (2).svg": {
+        "store": "blob",
+        "id": "020f24144df9e17584359e2300d51b9b",
+        "sha256": "99720252c8e693ad6280614d7693cd1be68cd30640049776ea922c87adc50150",
+        "bytes": 2083,
+        "type": "image/svg+xml",
+        "name": "phantom-sovereign-crest (2).svg",
+        "addedAt": "2026-09-20T19:26:37.033Z",
+        "via": "page"
+      },
+      "assets/BRAND2/phantom-sovereign-crest.svg": {
+        "store": "blob",
+        "id": "020f24144df9e17584359e2300d51b9b",
+        "sha256": "99720252c8e693ad6280614d7693cd1be68cd30640049776ea922c87adc50150",
+        "bytes": 2083,
+        "type": "image/svg+xml",
+        "name": "phantom-sovereign-crest.svg",
+        "addedAt": "2026-09-20T19:26:38.447Z",
+        "via": "page"
+      },
+      "assets/BRAND2/phantom-standard (2).svg": {
+        "store": "blob",
+        "id": "a120d62cb68ceb4c4b17d76f153960fb",
+        "sha256": "809cc2e9e9479d455f38a1043ba825b834283debd861ab95bcc87f533bfe0245",
+        "bytes": 568,
+        "type": "image/svg+xml",
+        "name": "phantom-standard (2).svg",
+        "addedAt": "2026-09-20T19:26:37.237Z",
+        "via": "page"
+      },
+      "assets/BRAND2/phantom-standard.svg": {
+        "store": "blob",
+        "id": "a120d62cb68ceb4c4b17d76f153960fb",
+        "sha256": "809cc2e9e9479d455f38a1043ba825b834283debd861ab95bcc87f533bfe0245",
+        "bytes": 568,
+        "type": "image/svg+xml",
+        "name": "phantom-standard.svg",
+        "addedAt": "2026-09-20T19:26:38.643Z",
+        "via": "page"
+      },
+      "assets/ICONS/phantom-activity.svg": {
+        "store": "blob",
+        "id": "9094f570740e072892517d58e38ad719",
+        "sha256": "0460c6defd500a59808ca667dd53aa9b5e283b54c2737a480137b9319be29a22",
+        "bytes": 1745,
+        "type": "image/svg+xml",
+        "name": "phantom-activity.svg",
+        "addedAt": "2026-09-20T19:24:07.595Z",
+        "via": "page"
+      },
+      "assets/ICONS/phantom-archive.svg": {
+        "store": "blob",
+        "id": "edb9a203011db3329fc2e194f76e9856",
+        "sha256": "8509f670e9e3f90ab12cc650fdcd36a22b3e49e3c1f55d8f24e32ae7c1679efb",
+        "bytes": 1747,
+        "type": "image/svg+xml",
+        "name": "phantom-archive.svg",
+        "addedAt": "2026-09-20T19:24:08.214Z",
+        "via": "page"
+      },
+      "assets/ICONS/phantom-arrow-right.svg": {
+        "store": "blob",
+        "id": "c54d0f73db4c195f3a9217fb5b6803b3",
+        "sha256": "94463538a18327c4c92ab102b4f7c95e74723b312f64904f0519c056c3624912",
+        "bytes": 1768,
+        "type": "image/svg+xml",
+        "name": "phantom-arrow-right.svg",
+        "addedAt": "2026-09-20T19:24:08.856Z",
+        "via": "page"
+      },
+      "assets/ICONS/phantom-arrow-up-right.svg": {
+        "store": "blob",
+        "id": "fcc210df307975e0ad252bacfc517b08",
+        "sha256": "654c3808b956d10cf55daa04842f0bec735e2d444eed50bee2def4c6b3326e5d",
+        "bytes": 1791,
+        "type": "image/svg+xml",
+        "name": "phantom-arrow-up-right.svg",
+        "addedAt": "2026-09-20T19:24:09.502Z",
+        "via": "page"
+      },
+      "assets/ICONS/phantom-blade.svg": {
+        "store": "blob",
+        "id": "fcc5f0a67e98010bbb38c1534adede19",
+        "sha256": "ee0a4740b86853b766c8a1bdfb34e6ce53442333e01204aba45b26517085cecd",
+        "bytes": 1750,
+        "type": "image/svg+xml",
+        "name": "phantom-blade.svg",
+        "addedAt": "2026-09-20T19:24:10.202Z",
+        "via": "page"
+      },
+      "assets/ICONS/phantom-check.svg": {
+        "store": "blob",
+        "id": "60c53c46a74af846419f46348dc693ed",
+        "sha256": "a7f5168cd81bad1bcd684e027cce2d2ddf226c5e475cca421f9ffa3ed8573b35",
+        "bytes": 1713,
+        "type": "image/svg+xml",
+        "name": "phantom-check.svg",
+        "addedAt": "2026-09-20T19:24:10.848Z",
+        "via": "page"
+      },
+      "assets/ICONS/phantom-chevron-down.svg": {
+        "store": "blob",
+        "id": "78085540fecc0f1f7066853f94263d05",
+        "sha256": "c1e8ebcb4e15792d70730b30ee11fac32cf982eeacb8c303d8abb9090bccee4e",
+        "bytes": 1767,
+        "type": "image/svg+xml",
+        "name": "phantom-chevron-down.svg",
+        "addedAt": "2026-09-20T19:24:11.706Z",
+        "via": "page"
+      },
+      "assets/ICONS/phantom-citadel.svg": {
+        "store": "blob",
+        "id": "c6e0bf28ef0887bbb36697eca78747c4",
+        "sha256": "2cfd1020d68d3551eb34443e42cbe322547b7c9c2523b0330d3829a3f1004445",
+        "bytes": 1787,
+        "type": "image/svg+xml",
+        "name": "phantom-citadel.svg",
+        "addedAt": "2026-09-20T19:24:12.476Z",
+        "via": "page"
+      },
+      "assets/ICONS/phantom-close.svg": {
+        "store": "blob",
+        "id": "a026590a40cd5d0e906ad94398792064",
+        "sha256": "e72174a38ce4cd7c7ecfc4e32c51ead573739d3698e3efeb242de042bf724746",
+        "bytes": 1719,
+        "type": "image/svg+xml",
+        "name": "phantom-close.svg",
+        "addedAt": "2026-09-20T19:23:43.905Z",
+        "via": "page"
+      },
+      "assets/ICONS/phantom-command.svg": {
+        "store": "blob",
+        "id": "0513503837e9c4bb013e98f71bb57e7a",
+        "sha256": "9ea4aacf3e13a8515b34885d480456f00ae7d31d40e2529e2e00ef914bf76ca1",
+        "bytes": 1906,
+        "type": "image/svg+xml",
+        "name": "phantom-command.svg",
+        "addedAt": "2026-09-20T19:23:44.702Z",
+        "via": "page"
+      },
+      "assets/ICONS/phantom-copy.svg": {
+        "store": "blob",
+        "id": "e2be4078e8be2ee3e9f821352ad61b29",
+        "sha256": "6af4e9997fe5dd50c76e1d003503aff4ea6c1fde523f6710b4e0c5d5677634fb",
+        "bytes": 1718,
+        "type": "image/svg+xml",
+        "name": "phantom-copy.svg",
+        "addedAt": "2026-09-20T19:23:45.306Z",
+        "via": "page"
+      },
+      "assets/ICONS/phantom-crest.svg": {
+        "store": "blob",
+        "id": "21aa8eee2c6c2c8c52c7e70fea977fa5",
+        "sha256": "1bef03ca39500f22469cc3739b471e3d0fec87a1708ea932e2f2c73ecbbed7ee",
+        "bytes": 1751,
+        "type": "image/svg+xml",
+        "name": "phantom-crest.svg",
+        "addedAt": "2026-09-20T19:23:45.924Z",
+        "via": "page"
+      },
+      "assets/ICONS/phantom-danger.svg": {
+        "store": "blob",
+        "id": "192a3a14209335bb00dc561c6e105532",
+        "sha256": "e93b854520083ee228e55914b625efce5aabd3b270e09aad48e13ab51bdd2d5d",
+        "bytes": 1752,
+        "type": "image/svg+xml",
+        "name": "phantom-danger.svg",
+        "addedAt": "2026-09-20T19:23:46.557Z",
+        "via": "page"
+      },
+      "assets/ICONS/phantom-document.svg": {
+        "store": "blob",
+        "id": "b737ba8bd6d6d0477459aad93d94a4ad",
+        "sha256": "137b26eb28faa3de61772710165eb8e4a0f21143bbbb280a5dab10f0884d8ba5",
+        "bytes": 1761,
+        "type": "image/svg+xml",
+        "name": "phantom-document.svg",
+        "addedAt": "2026-09-20T19:23:47.171Z",
+        "via": "page"
+      },
+      "assets/ICONS/phantom-download.svg": {
+        "store": "blob",
+        "id": "48534f947408509a50a1f46a510f6a38",
+        "sha256": "4e0280540519ae5dfa33b70e408d035159782fc186c45edcdb493f309eb25bcd",
+        "bytes": 1757,
+        "type": "image/svg+xml",
+        "name": "phantom-download.svg",
+        "addedAt": "2026-09-20T19:23:47.799Z",
+        "via": "page"
+      },
+      "assets/ICONS/phantom-drive.svg": {
+        "store": "blob",
+        "id": "776372f210e28c13e464c8ac68794b19",
+        "sha256": "e7c8eb6ab3d9152ebfd77585765b27fd3d0e61688b0170ea364c30c68fba8746",
+        "bytes": 1743,
+        "type": "image/svg+xml",
+        "name": "phantom-drive.svg",
+        "addedAt": "2026-09-20T19:23:48.425Z",
+        "via": "page"
+      },
+      "assets/ICONS/phantom-expand.svg": {
+        "store": "blob",
+        "id": "212e9824e03e0d1a2710c1d755470a0a",
+        "sha256": "dc5e3c1b54506ca03890fa7ab5858716d60928f2da85527b4fcfb0f5973f16ef",
+        "bytes": 1742,
+        "type": "image/svg+xml",
+        "name": "phantom-expand.svg",
+        "addedAt": "2026-09-20T19:23:49.076Z",
+        "via": "page"
+      },
+      "assets/ICONS/phantom-folder.svg": {
+        "store": "blob",
+        "id": "5120d42e2c85f2afb4243b34fd177e86",
+        "sha256": "8204b4f4b10d7d4906212771137ea8b65ca532ffa7eda9c1c94c83ba11998981",
+        "bytes": 1726,
+        "type": "image/svg+xml",
+        "name": "phantom-folder.svg",
+        "addedAt": "2026-09-20T19:23:49.728Z",
+        "via": "page"
+      },
+      "assets/ICONS/phantom-hood.svg": {
+        "store": "blob",
+        "id": "2f144d288b4b00e40093d9940008573e",
+        "sha256": "03e181f155f414f3182e5d7cd87ac89d86ff2ec848d333e726488fcfcd69f6ef",
+        "bytes": 1756,
+        "type": "image/svg+xml",
+        "name": "phantom-hood.svg",
+        "addedAt": "2026-09-20T19:23:50.335Z",
+        "via": "page"
+      },
+      "assets/ICONS/phantom-info.svg": {
+        "store": "blob",
+        "id": "89f7692fca63f15599d27a2c76093f6e",
+        "sha256": "f07a02970a827d653273a250124bd464d352e7ca135d7447c8f142bb46466cac",
+        "bytes": 1746,
+        "type": "image/svg+xml",
+        "name": "phantom-info.svg",
+        "addedAt": "2026-09-20T19:23:50.931Z",
+        "via": "page"
+      },
+      "assets/ICONS/phantom-library.svg": {
+        "store": "blob",
+        "id": "a898bb634b80cc67a97babe6e0852ac2",
+        "sha256": "86e74f060f944910ae7185abea82338d8e47988cb2209116a5c0b740519930db",
+        "bytes": 1783,
+        "type": "image/svg+xml",
+        "name": "phantom-library.svg",
+        "addedAt": "2026-09-20T19:23:51.515Z",
+        "via": "page"
+      },
+      "assets/ICONS/phantom-link.svg": {
+        "store": "blob",
+        "id": "cb821793d73edfeb908b1c8eb93c62cc",
+        "sha256": "2b23d45036540450f8beaa3b79a9ce4e59ba3b995b764bdfbaa24d232b8a00ee",
+        "bytes": 1756,
+        "type": "image/svg+xml",
+        "name": "phantom-link.svg",
+        "addedAt": "2026-09-20T19:23:52.119Z",
+        "via": "page"
+      },
+      "assets/ICONS/phantom-lock.svg": {
+        "store": "blob",
+        "id": "e5629f40aa4b0cf8ff88f6dafae561d9",
+        "sha256": "b2acdba03e354c81a52594d2f26895c385245df3c3932b5965808b57db9fd6c0",
+        "bytes": 1778,
+        "type": "image/svg+xml",
+        "name": "phantom-lock.svg",
+        "addedAt": "2026-09-20T19:23:52.785Z",
+        "via": "page"
+      },
+      "assets/ICONS/phantom-menu.svg": {
+        "store": "blob",
+        "id": "4fbcd1e6b96bcde797977d70f2a97d62",
+        "sha256": "6f0cce1a693267e9a2a536b3e8c27b6a746852fe75fa9bc5c8f35445a95ba559",
+        "bytes": 1714,
+        "type": "image/svg+xml",
+        "name": "phantom-menu.svg",
+        "addedAt": "2026-09-20T19:23:53.371Z",
+        "via": "page"
+      },
+      "assets/ICONS/phantom-network.svg": {
+        "store": "blob",
+        "id": "892f259743234d84227afd77f7507868",
+        "sha256": "dde02a238276d01405f35fef40ec80f3f47b9e19164a8d198564736dd3ca6cd4",
+        "bytes": 1771,
+        "type": "image/svg+xml",
+        "name": "phantom-network.svg",
+        "addedAt": "2026-09-20T19:23:54.040Z",
+        "via": "page"
+      },
+      "assets/ICONS/phantom-neural.svg": {
+        "store": "blob",
+        "id": "a33af91d85012c1736bae44a097d7bd8",
+        "sha256": "c0d18755979b9ea31c2b238186930fef43ce37ea4747b6bcd28ae9c55eb97f2e",
+        "bytes": 1813,
+        "type": "image/svg+xml",
+        "name": "phantom-neural.svg",
+        "addedAt": "2026-09-20T19:23:54.699Z",
+        "via": "page"
+      },
+      "assets/ICONS/phantom-offline.svg": {
+        "store": "blob",
+        "id": "e7b505b84751433df275ac20eff202dc",
+        "sha256": "804c5e18e1d4894bd8e4446255dd76d8c3ee9c75308334adae9f7970430a9e5e",
+        "bytes": 1825,
+        "type": "image/svg+xml",
+        "name": "phantom-offline.svg",
+        "addedAt": "2026-09-20T19:23:55.303Z",
+        "via": "page"
+      },
+      "assets/ICONS/phantom-phantom-mask.svg": {
+        "store": "blob",
+        "id": "3176c0c7a1172a7e1cd1d1d82534e4ab",
+        "sha256": "0b8900217d8a6d22d47e061accc48a716b45e46829cf5fcae88ededf40ff0d29",
+        "bytes": 1826,
+        "type": "image/svg+xml",
+        "name": "phantom-phantom-mask.svg",
+        "addedAt": "2026-09-20T19:23:56.598Z",
+        "via": "page"
+      },
+      "assets/ICONS/phantom-phantom.svg": {
+        "store": "blob",
+        "id": "a5c22a9e0fbd77419516c08837dfa865",
+        "sha256": "f048505584af4693f4b0cca25a42bbe15a623085f211661e6fed878d0d43aa61",
+        "bytes": 1815,
+        "type": "image/svg+xml",
+        "name": "phantom-phantom.svg",
+        "addedAt": "2026-09-20T19:23:55.957Z",
+        "via": "page"
+      },
+      "assets/ICONS/phantom-portal.svg": {
+        "store": "blob",
+        "id": "3149c5d7d18a3795384e62195a8c0cd4",
+        "sha256": "6622f13988ca4defa07c51860f389014aac62333cead395fdfc0a1f451d9fadd",
+        "bytes": 1756,
+        "type": "image/svg+xml",
+        "name": "phantom-portal.svg",
+        "addedAt": "2026-09-20T19:23:57.216Z",
+        "via": "page"
+      },
+      "assets/ICONS/phantom-power.svg": {
+        "store": "blob",
+        "id": "2244ba0155de7c624f702bdd9f123d55",
+        "sha256": "7ad134eae9833e00f787dd97a68432e9cf064a8bfef73fc6498d2681f1697f29",
+        "bytes": 1726,
+        "type": "image/svg+xml",
+        "name": "phantom-power.svg",
+        "addedAt": "2026-09-20T19:23:57.813Z",
+        "via": "page"
+      },
+      "assets/ICONS/phantom-processor.svg": {
+        "store": "blob",
+        "id": "45b6d541004148ed8e8c4ed891c878ce",
+        "sha256": "1f2dba9a1781553cf5c668da3d78677ffc435e00cdd0d56d7d1a21351e25f334",
+        "bytes": 1807,
+        "type": "image/svg+xml",
+        "name": "phantom-processor.svg",
+        "addedAt": "2026-09-20T19:23:58.465Z",
+        "via": "page"
+      },
+      "assets/ICONS/phantom-recovery.svg": {
+        "store": "blob",
+        "id": "0e54d191a35d7f2f4b1a7f4b53285b38",
+        "sha256": "924b3154c40fab7c5104eda202e015547a3d0c1a4d9b27c8e20befca36b88af0",
+        "bytes": 1759,
+        "type": "image/svg+xml",
+        "name": "phantom-recovery.svg",
+        "addedAt": "2026-09-20T19:23:59.076Z",
+        "via": "page"
+      },
+      "assets/ICONS/phantom-ring-spire.svg": {
+        "store": "blob",
+        "id": "44d5e8c6cb4f9cfb9c353763e63e24bd",
+        "sha256": "20cb6f4541d817a909339a40b2edfae08def447655fa93bffc0e3b500e181455",
+        "bytes": 1785,
+        "type": "image/svg+xml",
+        "name": "phantom-ring-spire.svg",
+        "addedAt": "2026-09-20T19:23:59.811Z",
+        "via": "page"
+      },
+      "assets/ICONS/phantom-search.svg": {
+        "store": "blob",
+        "id": "2d9cb1dc2d2857893127abbdb6aa4a63",
+        "sha256": "72a321e45734dfe3b8b491b80caf6fba02a57bd966dd99b16570c4f33261d7e5",
+        "bytes": 1756,
+        "type": "image/svg+xml",
+        "name": "phantom-search.svg",
+        "addedAt": "2026-09-20T19:24:00.395Z",
+        "via": "page"
+      },
+      "assets/ICONS/phantom-sentinel.svg": {
+        "store": "blob",
+        "id": "176230decf9901ae28eaae4dab96f9e4",
+        "sha256": "b51cb0e5646c8069986b498ccfd201e02c50e7ac6e547d25fe4b77acc2c5c57f",
+        "bytes": 1786,
+        "type": "image/svg+xml",
+        "name": "phantom-sentinel.svg",
+        "addedAt": "2026-09-20T19:24:01.017Z",
+        "via": "page"
+      },
+      "assets/ICONS/phantom-settings.svg": {
+        "store": "blob",
+        "id": "90deaf47a9b78c474f11b5fac32e60d3",
+        "sha256": "9f4f5b51fdd53f3b2b855f2ff159d792352709661b5f0526970aa7fd70f50ccc",
+        "bytes": 1766,
+        "type": "image/svg+xml",
+        "name": "phantom-settings.svg",
+        "addedAt": "2026-09-20T19:24:01.664Z",
+        "via": "page"
+      },
+      "assets/ICONS/phantom-shield.svg": {
+        "store": "blob",
+        "id": "7f1570a45f3d41f1653f389b18821cad",
+        "sha256": "c5c00ba82ce91f702a486c1dabb7de97aa562164fc241179372d66cb6c498d45",
+        "bytes": 1776,
+        "type": "image/svg+xml",
+        "name": "phantom-shield.svg",
+        "addedAt": "2026-09-20T19:24:02.244Z",
+        "via": "page"
+      },
+      "assets/ICONS/phantom-sigil.svg": {
+        "store": "blob",
+        "id": "48188a0070436948dc2da7b45fd29796",
+        "sha256": "df627237b279ca2e775e1b02b4c771e78b6caaf160ee9b82f3ad9f1af9db8565",
+        "bytes": 1762,
+        "type": "image/svg+xml",
+        "name": "phantom-sigil.svg",
+        "addedAt": "2026-09-20T19:24:02.960Z",
+        "via": "page"
+      },
+      "assets/ICONS/phantom-sprite.svg": {
+        "store": "blob",
+        "id": "4394ee70f430c9e4ce861097ea9f8de6",
+        "sha256": "1cfeae3e05f5a6baa11414c8d3193daa63910fbfb9a0262640d8f38ce760e80a",
+        "bytes": 10232,
+        "type": "image/svg+xml",
+        "name": "phantom-sprite.svg",
+        "addedAt": "2026-09-20T19:24:03.567Z",
+        "via": "page"
+      },
+      "assets/ICONS/phantom-terminal.svg": {
+        "store": "blob",
+        "id": "d96d1c408a225dfbe47778ba52496664",
+        "sha256": "55441a8534e8ca047c4ac344f416b06b2f332626138a282d02ff2b3164ca7c5d",
+        "bytes": 1796,
+        "type": "image/svg+xml",
+        "name": "phantom-terminal.svg",
+        "addedAt": "2026-09-20T19:24:04.204Z",
+        "via": "page"
+      },
+      "assets/ICONS/phantom-toolkit.svg": {
+        "store": "blob",
+        "id": "5fc105e166395ca67bebd5fa05c7a82b",
+        "sha256": "93da68f7c7d0c8aea41a74270b6d61060a3d6492078d117ad99d8dacb69e5d7f",
+        "bytes": 1758,
+        "type": "image/svg+xml",
+        "name": "phantom-toolkit.svg",
+        "addedAt": "2026-09-20T19:24:04.851Z",
+        "via": "page"
+      },
+      "assets/ICONS/phantom-usb.svg": {
+        "store": "blob",
+        "id": "9ede27c02fefe6087f6f2c4d90e1e201",
+        "sha256": "e207c09b628c1219111d16124b8b8bb9f4c8b751e1a44e95815c64546781ef14",
+        "bytes": 1835,
+        "type": "image/svg+xml",
+        "name": "phantom-usb.svg",
+        "addedAt": "2026-09-20T19:24:05.568Z",
+        "via": "page"
+      },
+      "assets/ICONS/phantom-warning.svg": {
+        "store": "blob",
+        "id": "625fc6a1e514474d4b837bd4b4931abf",
+        "sha256": "395a7744f9a4151dde2cc4aa87d7e660c954d6065094a7b44a3083a0b79cbf35",
+        "bytes": 1742,
+        "type": "image/svg+xml",
+        "name": "phantom-warning.svg",
+        "addedAt": "2026-09-20T19:24:06.201Z",
+        "via": "page"
+      },
+      "assets/ICONS/phantom-workstation.svg": {
+        "store": "blob",
+        "id": "c65b5527ea1b0076d74399a6aaa7eaa3",
+        "sha256": "db3c458884832e888d98e787788187098998aa84b9cda105d4692c17a0cd1814",
+        "bytes": 1824,
+        "type": "image/svg+xml",
+        "name": "phantom-workstation.svg",
+        "addedAt": "2026-09-20T19:24:06.804Z",
+        "via": "page"
+      },
+      "assets/Logos/ChatGPT Image Sep 19, 2026, 10_00_53 PM (2).png": {
+        "store": "blob",
+        "id": "9c6b9af87120fa65c89ac934cb851da3",
+        "sha256": "56f792162b0e4bbf977e03cec21ff8bc4c3131d8487cf4d161ad869cbf9c646f",
+        "bytes": 1807901,
+        "type": "image/png",
+        "name": "ChatGPT Image Sep 19, 2026, 10_00_53 PM.png",
+        "addedAt": "2026-09-20T19:28:25.230Z",
+        "via": "page"
+      },
+      "assets/Logos/ChatGPT Image Sep 19, 2026, 10_00_53 PM.png": {
+        "store": "blob",
+        "id": "9c6b9af87120fa65c89ac934cb851da3",
+        "sha256": "56f792162b0e4bbf977e03cec21ff8bc4c3131d8487cf4d161ad869cbf9c646f",
+        "bytes": 1807901,
+        "type": "image/png"
+      },
+      "assets/Logos/ChatGPT Image Sep 19, 2026, 10_01_13 PM (2).png": {
+        "store": "blob",
+        "id": "ab8aa1f674005f3031aa8a91c40be5f6",
+        "sha256": "53e3a10c6e782ae67d664a21d628002ebfd2d2ba767e3b3485e2f12487f5f249",
+        "bytes": 2227462,
+        "type": "image/png",
+        "name": "ChatGPT Image Sep 19, 2026, 10_01_13 PM.png",
+        "addedAt": "2026-09-20T19:28:25.540Z",
+        "via": "page"
+      },
+      "assets/Logos/ChatGPT Image Sep 19, 2026, 10_01_13 PM.png": {
+        "store": "blob",
+        "id": "ab8aa1f674005f3031aa8a91c40be5f6",
+        "sha256": "53e3a10c6e782ae67d664a21d628002ebfd2d2ba767e3b3485e2f12487f5f249",
+        "bytes": 2227462,
+        "type": "image/png"
+      },
+      "assets/Logos/ChatGPT Image Sep 19, 2026, 10_36_39 PM.png": {
+        "store": "blob",
+        "id": "890a318630fd4552525ec5427ca9c4fe",
+        "sha256": "94da4916f71eaf526d6bf2d0767bb79ef0bfe34146b6e9e3f572e7fb17a9e421",
+        "bytes": 2013840,
+        "type": "image/png",
+        "name": "ChatGPT Image Sep 19, 2026, 10_36_39 PM.png",
+        "addedAt": "2026-09-20T19:28:25.819Z",
+        "via": "page"
+      },
+      "assets/Logos/ChatGPT Image Sep 20, 2026, 02_47_57 PM.png": {
+        "store": "blob",
+        "id": "890a318630fd4552525ec5427ca9c4fe",
+        "sha256": "94da4916f71eaf526d6bf2d0767bb79ef0bfe34146b6e9e3f572e7fb17a9e421",
+        "bytes": 2013840,
+        "type": "image/png",
+        "name": "ChatGPT Image Sep 20, 2026, 02_47_57 PM.png",
+        "addedAt": "2026-09-20T19:28:26.090Z",
+        "via": "page"
+      },
+      "assets/Logos/ChatGPT Image Sep 20, 2026, 02_49_50 PM.png": {
+        "store": "blob",
+        "id": "2a3e960b26cae29c2a5f5b4042c96637",
+        "sha256": "40aa8802398bf0aaa8a632dfc27a8122ee1f86d3795f4d1817ed1346d3ee3698",
+        "bytes": 1424056,
+        "type": "image/png",
+        "name": "ChatGPT Image Sep 20, 2026, 02_49_50 PM.png",
+        "addedAt": "2026-09-20T19:28:27.298Z",
+        "via": "page"
+      },
+      "assets/Logos/ChatGPT Image Sep 20, 2026, 03_08_42 PM.png": {
+        "store": "blob",
+        "id": "b62da1d9f85012c4b67ec92371bbec60",
+        "sha256": "0f017bbdbd90d6244a08c78181262a861262509a153c1262c9a67d6eee8fc6f5",
+        "bytes": 358333,
+        "type": "image/png",
+        "name": "ChatGPT Image Sep 20, 2026, 03_08_42 PM.png",
+        "addedAt": "2026-09-20T19:28:28.270Z",
+        "via": "page"
+      },
+      "assets/PHANTOM ICONS/phantom-activity (2).svg": {
+        "store": "blob",
+        "id": "9094f570740e072892517d58e38ad719",
+        "sha256": "0460c6defd500a59808ca667dd53aa9b5e283b54c2737a480137b9319be29a22",
+        "bytes": 1745,
+        "type": "image/svg+xml",
+        "name": "phantom-activity (2).svg",
+        "addedAt": "2026-09-20T19:27:39.820Z",
+        "via": "page"
+      },
+      "assets/PHANTOM ICONS/phantom-activity.svg": {
+        "store": "blob",
+        "id": "9094f570740e072892517d58e38ad719",
+        "sha256": "0460c6defd500a59808ca667dd53aa9b5e283b54c2737a480137b9319be29a22",
+        "bytes": 1745,
+        "type": "image/svg+xml",
+        "name": "phantom-activity.svg",
+        "addedAt": "2026-09-20T19:27:41.647Z",
+        "via": "page"
+      },
+      "assets/PHANTOM ICONS/phantom-archive (2).svg": {
+        "store": "blob",
+        "id": "edb9a203011db3329fc2e194f76e9856",
+        "sha256": "8509f670e9e3f90ab12cc650fdcd36a22b3e49e3c1f55d8f24e32ae7c1679efb",
+        "bytes": 1747,
+        "type": "image/svg+xml",
+        "name": "phantom-archive (2).svg",
+        "addedAt": "2026-09-20T19:27:40.031Z",
+        "via": "page"
+      },
+      "assets/PHANTOM ICONS/phantom-archive.svg": {
+        "store": "blob",
+        "id": "edb9a203011db3329fc2e194f76e9856",
+        "sha256": "8509f670e9e3f90ab12cc650fdcd36a22b3e49e3c1f55d8f24e32ae7c1679efb",
+        "bytes": 1747,
+        "type": "image/svg+xml",
+        "name": "phantom-archive.svg",
+        "addedAt": "2026-09-20T19:27:41.927Z",
+        "via": "page"
+      },
+      "assets/PHANTOM ICONS/phantom-arrow-right (2).svg": {
+        "store": "blob",
+        "id": "c54d0f73db4c195f3a9217fb5b6803b3",
+        "sha256": "94463538a18327c4c92ab102b4f7c95e74723b312f64904f0519c056c3624912",
+        "bytes": 1768,
+        "type": "image/svg+xml",
+        "name": "phantom-arrow-right (2).svg",
+        "addedAt": "2026-09-20T19:27:40.231Z",
+        "via": "page"
+      },
+      "assets/PHANTOM ICONS/phantom-arrow-right.svg": {
+        "store": "blob",
+        "id": "c54d0f73db4c195f3a9217fb5b6803b3",
+        "sha256": "94463538a18327c4c92ab102b4f7c95e74723b312f64904f0519c056c3624912",
+        "bytes": 1768,
+        "type": "image/svg+xml",
+        "name": "phantom-arrow-right.svg",
+        "addedAt": "2026-09-20T19:27:42.141Z",
+        "via": "page"
+      },
+      "assets/PHANTOM ICONS/phantom-arrow-up-right (2).svg": {
+        "store": "blob",
+        "id": "fcc210df307975e0ad252bacfc517b08",
+        "sha256": "654c3808b956d10cf55daa04842f0bec735e2d444eed50bee2def4c6b3326e5d",
+        "bytes": 1791,
+        "type": "image/svg+xml",
+        "name": "phantom-arrow-up-right (2).svg",
+        "addedAt": "2026-09-20T19:27:40.459Z",
+        "via": "page"
+      },
+      "assets/PHANTOM ICONS/phantom-arrow-up-right.svg": {
+        "store": "blob",
+        "id": "fcc210df307975e0ad252bacfc517b08",
+        "sha256": "654c3808b956d10cf55daa04842f0bec735e2d444eed50bee2def4c6b3326e5d",
+        "bytes": 1791,
+        "type": "image/svg+xml",
+        "name": "phantom-arrow-up-right.svg",
+        "addedAt": "2026-09-20T19:27:42.358Z",
+        "via": "page"
+      },
+      "assets/PHANTOM ICONS/phantom-blade (2).svg": {
+        "store": "blob",
+        "id": "fcc5f0a67e98010bbb38c1534adede19",
+        "sha256": "ee0a4740b86853b766c8a1bdfb34e6ce53442333e01204aba45b26517085cecd",
+        "bytes": 1750,
+        "type": "image/svg+xml",
+        "name": "phantom-blade (2).svg",
+        "addedAt": "2026-09-20T19:27:40.659Z",
+        "via": "page"
+      },
+      "assets/PHANTOM ICONS/phantom-blade.svg": {
+        "store": "blob",
+        "id": "fcc5f0a67e98010bbb38c1534adede19",
+        "sha256": "ee0a4740b86853b766c8a1bdfb34e6ce53442333e01204aba45b26517085cecd",
+        "bytes": 1750,
+        "type": "image/svg+xml",
+        "name": "phantom-blade.svg",
+        "addedAt": "2026-09-20T19:27:42.580Z",
+        "via": "page"
+      },
+      "assets/PHANTOM ICONS/phantom-check (2).svg": {
+        "store": "blob",
+        "id": "60c53c46a74af846419f46348dc693ed",
+        "sha256": "a7f5168cd81bad1bcd684e027cce2d2ddf226c5e475cca421f9ffa3ed8573b35",
+        "bytes": 1713,
+        "type": "image/svg+xml",
+        "name": "phantom-check (2).svg",
+        "addedAt": "2026-09-20T19:27:40.850Z",
+        "via": "page"
+      },
+      "assets/PHANTOM ICONS/phantom-check.svg": {
+        "store": "blob",
+        "id": "60c53c46a74af846419f46348dc693ed",
+        "sha256": "a7f5168cd81bad1bcd684e027cce2d2ddf226c5e475cca421f9ffa3ed8573b35",
+        "bytes": 1713,
+        "type": "image/svg+xml",
+        "name": "phantom-check.svg",
+        "addedAt": "2026-09-20T19:27:42.795Z",
+        "via": "page"
+      },
+      "assets/PHANTOM ICONS/phantom-chevron-down (2).svg": {
+        "store": "blob",
+        "id": "78085540fecc0f1f7066853f94263d05",
+        "sha256": "c1e8ebcb4e15792d70730b30ee11fac32cf982eeacb8c303d8abb9090bccee4e",
+        "bytes": 1767,
+        "type": "image/svg+xml",
+        "name": "phantom-chevron-down (2).svg",
+        "addedAt": "2026-09-20T19:27:31.167Z",
+        "via": "page"
+      },
+      "assets/PHANTOM ICONS/phantom-chevron-down.svg": {
+        "store": "blob",
+        "id": "78085540fecc0f1f7066853f94263d05",
+        "sha256": "c1e8ebcb4e15792d70730b30ee11fac32cf982eeacb8c303d8abb9090bccee4e",
+        "bytes": 1767,
+        "type": "image/svg+xml",
+        "name": "phantom-chevron-down.svg",
+        "addedAt": "2026-09-20T19:27:43.005Z",
+        "via": "page"
+      },
+      "assets/PHANTOM ICONS/phantom-citadel (2).svg": {
+        "store": "blob",
+        "id": "c6e0bf28ef0887bbb36697eca78747c4",
+        "sha256": "2cfd1020d68d3551eb34443e42cbe322547b7c9c2523b0330d3829a3f1004445",
+        "bytes": 1787,
+        "type": "image/svg+xml",
+        "name": "phantom-citadel (2).svg",
+        "addedAt": "2026-09-20T19:27:31.563Z",
+        "via": "page"
+      },
+      "assets/PHANTOM ICONS/phantom-citadel.svg": {
+        "store": "blob",
+        "id": "c6e0bf28ef0887bbb36697eca78747c4",
+        "sha256": "2cfd1020d68d3551eb34443e42cbe322547b7c9c2523b0330d3829a3f1004445",
+        "bytes": 1787,
+        "type": "image/svg+xml",
+        "name": "phantom-citadel.svg",
+        "addedAt": "2026-09-20T19:27:43.242Z",
+        "via": "page"
+      },
+      "assets/PHANTOM ICONS/phantom-close (2).svg": {
+        "store": "blob",
+        "id": "a026590a40cd5d0e906ad94398792064",
+        "sha256": "e72174a38ce4cd7c7ecfc4e32c51ead573739d3698e3efeb242de042bf724746",
+        "bytes": 1719,
+        "type": "image/svg+xml",
+        "name": "phantom-close (2).svg",
+        "addedAt": "2026-09-20T19:27:31.785Z",
+        "via": "page"
+      },
+      "assets/PHANTOM ICONS/phantom-close.svg": {
+        "store": "blob",
+        "id": "a026590a40cd5d0e906ad94398792064",
+        "sha256": "e72174a38ce4cd7c7ecfc4e32c51ead573739d3698e3efeb242de042bf724746",
+        "bytes": 1719,
+        "type": "image/svg+xml",
+        "name": "phantom-close.svg",
+        "addedAt": "2026-09-20T19:27:43.446Z",
+        "via": "page"
+      },
+      "assets/PHANTOM ICONS/phantom-command (2).svg": {
+        "store": "blob",
+        "id": "0513503837e9c4bb013e98f71bb57e7a",
+        "sha256": "9ea4aacf3e13a8515b34885d480456f00ae7d31d40e2529e2e00ef914bf76ca1",
+        "bytes": 1906,
+        "type": "image/svg+xml",
+        "name": "phantom-command (2).svg",
+        "addedAt": "2026-09-20T19:27:32.052Z",
+        "via": "page"
+      },
+      "assets/PHANTOM ICONS/phantom-command.svg": {
+        "store": "blob",
+        "id": "0513503837e9c4bb013e98f71bb57e7a",
+        "sha256": "9ea4aacf3e13a8515b34885d480456f00ae7d31d40e2529e2e00ef914bf76ca1",
+        "bytes": 1906,
+        "type": "image/svg+xml",
+        "name": "phantom-command.svg",
+        "addedAt": "2026-09-20T19:27:43.657Z",
+        "via": "page"
+      },
+      "assets/PHANTOM ICONS/phantom-copy (2).svg": {
+        "store": "blob",
+        "id": "e2be4078e8be2ee3e9f821352ad61b29",
+        "sha256": "6af4e9997fe5dd50c76e1d003503aff4ea6c1fde523f6710b4e0c5d5677634fb",
+        "bytes": 1718,
+        "type": "image/svg+xml",
+        "name": "phantom-copy (2).svg",
+        "addedAt": "2026-09-20T19:27:32.297Z",
+        "via": "page"
+      },
+      "assets/PHANTOM ICONS/phantom-copy.svg": {
+        "store": "blob",
+        "id": "e2be4078e8be2ee3e9f821352ad61b29",
+        "sha256": "6af4e9997fe5dd50c76e1d003503aff4ea6c1fde523f6710b4e0c5d5677634fb",
+        "bytes": 1718,
+        "type": "image/svg+xml",
+        "name": "phantom-copy.svg",
+        "addedAt": "2026-09-20T19:27:43.884Z",
+        "via": "page"
+      },
+      "assets/PHANTOM ICONS/phantom-crest (2).svg": {
+        "store": "blob",
+        "id": "21aa8eee2c6c2c8c52c7e70fea977fa5",
+        "sha256": "1bef03ca39500f22469cc3739b471e3d0fec87a1708ea932e2f2c73ecbbed7ee",
+        "bytes": 1751,
+        "type": "image/svg+xml",
+        "name": "phantom-crest (2).svg",
+        "addedAt": "2026-09-20T19:27:32.518Z",
+        "via": "page"
+      },
+      "assets/PHANTOM ICONS/phantom-crest.svg": {
+        "store": "blob",
+        "id": "21aa8eee2c6c2c8c52c7e70fea977fa5",
+        "sha256": "1bef03ca39500f22469cc3739b471e3d0fec87a1708ea932e2f2c73ecbbed7ee",
+        "bytes": 1751,
+        "type": "image/svg+xml",
+        "name": "phantom-crest.svg",
+        "addedAt": "2026-09-20T19:27:44.099Z",
+        "via": "page"
+      },
+      "assets/PHANTOM ICONS/phantom-danger (2).svg": {
+        "store": "blob",
+        "id": "192a3a14209335bb00dc561c6e105532",
+        "sha256": "e93b854520083ee228e55914b625efce5aabd3b270e09aad48e13ab51bdd2d5d",
+        "bytes": 1752,
+        "type": "image/svg+xml",
+        "name": "phantom-danger (2).svg",
+        "addedAt": "2026-09-20T19:27:32.757Z",
+        "via": "page"
+      },
+      "assets/PHANTOM ICONS/phantom-danger.svg": {
+        "store": "blob",
+        "id": "192a3a14209335bb00dc561c6e105532",
+        "sha256": "e93b854520083ee228e55914b625efce5aabd3b270e09aad48e13ab51bdd2d5d",
+        "bytes": 1752,
+        "type": "image/svg+xml",
+        "name": "phantom-danger.svg",
+        "addedAt": "2026-09-20T19:27:44.314Z",
+        "via": "page"
+      },
+      "assets/PHANTOM ICONS/phantom-document (2).svg": {
+        "store": "blob",
+        "id": "b737ba8bd6d6d0477459aad93d94a4ad",
+        "sha256": "137b26eb28faa3de61772710165eb8e4a0f21143bbbb280a5dab10f0884d8ba5",
+        "bytes": 1761,
+        "type": "image/svg+xml",
+        "name": "phantom-document (2).svg",
+        "addedAt": "2026-09-20T19:27:32.990Z",
+        "via": "page"
+      },
+      "assets/PHANTOM ICONS/phantom-document.svg": {
+        "store": "blob",
+        "id": "b737ba8bd6d6d0477459aad93d94a4ad",
+        "sha256": "137b26eb28faa3de61772710165eb8e4a0f21143bbbb280a5dab10f0884d8ba5",
+        "bytes": 1761,
+        "type": "image/svg+xml",
+        "name": "phantom-document.svg",
+        "addedAt": "2026-09-20T19:27:44.524Z",
+        "via": "page"
+      },
+      "assets/PHANTOM ICONS/phantom-download (2).svg": {
+        "store": "blob",
+        "id": "48534f947408509a50a1f46a510f6a38",
+        "sha256": "4e0280540519ae5dfa33b70e408d035159782fc186c45edcdb493f309eb25bcd",
+        "bytes": 1757,
+        "type": "image/svg+xml",
+        "name": "phantom-download (2).svg",
+        "addedAt": "2026-09-20T19:27:33.209Z",
+        "via": "page"
+      },
+      "assets/PHANTOM ICONS/phantom-download.svg": {
+        "store": "blob",
+        "id": "48534f947408509a50a1f46a510f6a38",
+        "sha256": "4e0280540519ae5dfa33b70e408d035159782fc186c45edcdb493f309eb25bcd",
+        "bytes": 1757,
+        "type": "image/svg+xml",
+        "name": "phantom-download.svg",
+        "addedAt": "2026-09-20T19:27:44.711Z",
+        "via": "page"
+      },
+      "assets/PHANTOM ICONS/phantom-drive (2).svg": {
+        "store": "blob",
+        "id": "776372f210e28c13e464c8ac68794b19",
+        "sha256": "e7c8eb6ab3d9152ebfd77585765b27fd3d0e61688b0170ea364c30c68fba8746",
+        "bytes": 1743,
+        "type": "image/svg+xml",
+        "name": "phantom-drive (2).svg",
+        "addedAt": "2026-09-20T19:27:33.444Z",
+        "via": "page"
+      },
+      "assets/PHANTOM ICONS/phantom-drive.svg": {
+        "store": "blob",
+        "id": "776372f210e28c13e464c8ac68794b19",
+        "sha256": "e7c8eb6ab3d9152ebfd77585765b27fd3d0e61688b0170ea364c30c68fba8746",
+        "bytes": 1743,
+        "type": "image/svg+xml",
+        "name": "phantom-drive.svg",
+        "addedAt": "2026-09-20T19:27:44.909Z",
+        "via": "page"
+      },
+      "assets/PHANTOM ICONS/phantom-expand (2).svg": {
+        "store": "blob",
+        "id": "212e9824e03e0d1a2710c1d755470a0a",
+        "sha256": "dc5e3c1b54506ca03890fa7ab5858716d60928f2da85527b4fcfb0f5973f16ef",
+        "bytes": 1742,
+        "type": "image/svg+xml",
+        "name": "phantom-expand (2).svg",
+        "addedAt": "2026-09-20T19:27:33.659Z",
+        "via": "page"
+      },
+      "assets/PHANTOM ICONS/phantom-expand.svg": {
+        "store": "blob",
+        "id": "212e9824e03e0d1a2710c1d755470a0a",
+        "sha256": "dc5e3c1b54506ca03890fa7ab5858716d60928f2da85527b4fcfb0f5973f16ef",
+        "bytes": 1742,
+        "type": "image/svg+xml",
+        "name": "phantom-expand.svg",
+        "addedAt": "2026-09-20T19:27:45.108Z",
+        "via": "page"
+      },
+      "assets/PHANTOM ICONS/phantom-folder (2).svg": {
+        "store": "blob",
+        "id": "5120d42e2c85f2afb4243b34fd177e86",
+        "sha256": "8204b4f4b10d7d4906212771137ea8b65ca532ffa7eda9c1c94c83ba11998981",
+        "bytes": 1726,
+        "type": "image/svg+xml",
+        "name": "phantom-folder (2).svg",
+        "addedAt": "2026-09-20T19:27:33.878Z",
+        "via": "page"
+      },
+      "assets/PHANTOM ICONS/phantom-folder.svg": {
+        "store": "blob",
+        "id": "5120d42e2c85f2afb4243b34fd177e86",
+        "sha256": "8204b4f4b10d7d4906212771137ea8b65ca532ffa7eda9c1c94c83ba11998981",
+        "bytes": 1726,
+        "type": "image/svg+xml",
+        "name": "phantom-folder.svg",
+        "addedAt": "2026-09-20T19:27:45.311Z",
+        "via": "page"
+      },
+      "assets/PHANTOM ICONS/phantom-hood (2).svg": {
+        "store": "blob",
+        "id": "2f144d288b4b00e40093d9940008573e",
+        "sha256": "03e181f155f414f3182e5d7cd87ac89d86ff2ec848d333e726488fcfcd69f6ef",
+        "bytes": 1756,
+        "type": "image/svg+xml",
+        "name": "phantom-hood (2).svg",
+        "addedAt": "2026-09-20T19:27:34.109Z",
+        "via": "page"
+      },
+      "assets/PHANTOM ICONS/phantom-hood.svg": {
+        "store": "blob",
+        "id": "2f144d288b4b00e40093d9940008573e",
+        "sha256": "03e181f155f414f3182e5d7cd87ac89d86ff2ec848d333e726488fcfcd69f6ef",
+        "bytes": 1756,
+        "type": "image/svg+xml",
+        "name": "phantom-hood.svg",
+        "addedAt": "2026-09-20T19:27:45.522Z",
+        "via": "page"
+      },
+      "assets/PHANTOM ICONS/phantom-info (2).svg": {
+        "store": "blob",
+        "id": "89f7692fca63f15599d27a2c76093f6e",
+        "sha256": "f07a02970a827d653273a250124bd464d352e7ca135d7447c8f142bb46466cac",
+        "bytes": 1746,
+        "type": "image/svg+xml",
+        "name": "phantom-info (2).svg",
+        "addedAt": "2026-09-20T19:27:34.307Z",
+        "via": "page"
+      },
+      "assets/PHANTOM ICONS/phantom-info.svg": {
+        "store": "blob",
+        "id": "89f7692fca63f15599d27a2c76093f6e",
+        "sha256": "f07a02970a827d653273a250124bd464d352e7ca135d7447c8f142bb46466cac",
+        "bytes": 1746,
+        "type": "image/svg+xml",
+        "name": "phantom-info.svg",
+        "addedAt": "2026-09-20T19:27:45.738Z",
+        "via": "page"
+      },
+      "assets/PHANTOM ICONS/phantom-library (2).svg": {
+        "store": "blob",
+        "id": "a898bb634b80cc67a97babe6e0852ac2",
+        "sha256": "86e74f060f944910ae7185abea82338d8e47988cb2209116a5c0b740519930db",
+        "bytes": 1783,
+        "type": "image/svg+xml",
+        "name": "phantom-library (2).svg",
+        "addedAt": "2026-09-20T19:27:34.503Z",
+        "via": "page"
+      },
+      "assets/PHANTOM ICONS/phantom-library.svg": {
+        "store": "blob",
+        "id": "a898bb634b80cc67a97babe6e0852ac2",
+        "sha256": "86e74f060f944910ae7185abea82338d8e47988cb2209116a5c0b740519930db",
+        "bytes": 1783,
+        "type": "image/svg+xml",
+        "name": "phantom-library.svg",
+        "addedAt": "2026-09-20T19:27:45.927Z",
+        "via": "page"
+      },
+      "assets/PHANTOM ICONS/phantom-link (2).svg": {
+        "store": "blob",
+        "id": "cb821793d73edfeb908b1c8eb93c62cc",
+        "sha256": "2b23d45036540450f8beaa3b79a9ce4e59ba3b995b764bdfbaa24d232b8a00ee",
+        "bytes": 1756,
+        "type": "image/svg+xml",
+        "name": "phantom-link (2).svg",
+        "addedAt": "2026-09-20T19:27:34.715Z",
+        "via": "page"
+      },
+      "assets/PHANTOM ICONS/phantom-link.svg": {
+        "store": "blob",
+        "id": "cb821793d73edfeb908b1c8eb93c62cc",
+        "sha256": "2b23d45036540450f8beaa3b79a9ce4e59ba3b995b764bdfbaa24d232b8a00ee",
+        "bytes": 1756,
+        "type": "image/svg+xml",
+        "name": "phantom-link.svg",
+        "addedAt": "2026-09-20T19:27:46.128Z",
+        "via": "page"
+      },
+      "assets/PHANTOM ICONS/phantom-lock (2).svg": {
+        "store": "blob",
+        "id": "e5629f40aa4b0cf8ff88f6dafae561d9",
+        "sha256": "b2acdba03e354c81a52594d2f26895c385245df3c3932b5965808b57db9fd6c0",
+        "bytes": 1778,
+        "type": "image/svg+xml",
+        "name": "phantom-lock (2).svg",
+        "addedAt": "2026-09-20T19:27:34.937Z",
+        "via": "page"
+      },
+      "assets/PHANTOM ICONS/phantom-lock.svg": {
+        "store": "blob",
+        "id": "e5629f40aa4b0cf8ff88f6dafae561d9",
+        "sha256": "b2acdba03e354c81a52594d2f26895c385245df3c3932b5965808b57db9fd6c0",
+        "bytes": 1778,
+        "type": "image/svg+xml",
+        "name": "phantom-lock.svg",
+        "addedAt": "2026-09-20T19:27:46.328Z",
+        "via": "page"
+      },
+      "assets/PHANTOM ICONS/phantom-menu (2).svg": {
+        "store": "blob",
+        "id": "4fbcd1e6b96bcde797977d70f2a97d62",
+        "sha256": "6f0cce1a693267e9a2a536b3e8c27b6a746852fe75fa9bc5c8f35445a95ba559",
+        "bytes": 1714,
+        "type": "image/svg+xml",
+        "name": "phantom-menu (2).svg",
+        "addedAt": "2026-09-20T19:27:35.114Z",
+        "via": "page"
+      },
+      "assets/PHANTOM ICONS/phantom-menu.svg": {
+        "store": "blob",
+        "id": "4fbcd1e6b96bcde797977d70f2a97d62",
+        "sha256": "6f0cce1a693267e9a2a536b3e8c27b6a746852fe75fa9bc5c8f35445a95ba559",
+        "bytes": 1714,
+        "type": "image/svg+xml",
+        "name": "phantom-menu.svg",
+        "addedAt": "2026-09-20T19:27:46.534Z",
+        "via": "page"
+      },
+      "assets/PHANTOM ICONS/phantom-network (2).svg": {
+        "store": "blob",
+        "id": "892f259743234d84227afd77f7507868",
+        "sha256": "dde02a238276d01405f35fef40ec80f3f47b9e19164a8d198564736dd3ca6cd4",
+        "bytes": 1771,
+        "type": "image/svg+xml",
+        "name": "phantom-network (2).svg",
+        "addedAt": "2026-09-20T19:27:35.333Z",
+        "via": "page"
+      },
+      "assets/PHANTOM ICONS/phantom-network.svg": {
+        "store": "blob",
+        "id": "892f259743234d84227afd77f7507868",
+        "sha256": "dde02a238276d01405f35fef40ec80f3f47b9e19164a8d198564736dd3ca6cd4",
+        "bytes": 1771,
+        "type": "image/svg+xml",
+        "name": "phantom-network.svg",
+        "addedAt": "2026-09-20T19:27:46.751Z",
+        "via": "page"
+      },
+      "assets/PHANTOM ICONS/phantom-neural (2).svg": {
+        "store": "blob",
+        "id": "a33af91d85012c1736bae44a097d7bd8",
+        "sha256": "c0d18755979b9ea31c2b238186930fef43ce37ea4747b6bcd28ae9c55eb97f2e",
+        "bytes": 1813,
+        "type": "image/svg+xml",
+        "name": "phantom-neural (2).svg",
+        "addedAt": "2026-09-20T19:27:35.544Z",
+        "via": "page"
+      },
+      "assets/PHANTOM ICONS/phantom-neural.svg": {
+        "store": "blob",
+        "id": "a33af91d85012c1736bae44a097d7bd8",
+        "sha256": "c0d18755979b9ea31c2b238186930fef43ce37ea4747b6bcd28ae9c55eb97f2e",
+        "bytes": 1813,
+        "type": "image/svg+xml",
+        "name": "phantom-neural.svg",
+        "addedAt": "2026-09-20T19:27:46.967Z",
+        "via": "page"
+      },
+      "assets/PHANTOM ICONS/phantom-offline (2).svg": {
+        "store": "blob",
+        "id": "e7b505b84751433df275ac20eff202dc",
+        "sha256": "804c5e18e1d4894bd8e4446255dd76d8c3ee9c75308334adae9f7970430a9e5e",
+        "bytes": 1825,
+        "type": "image/svg+xml",
+        "name": "phantom-offline (2).svg",
+        "addedAt": "2026-09-20T19:27:35.767Z",
+        "via": "page"
+      },
+      "assets/PHANTOM ICONS/phantom-offline.svg": {
+        "store": "blob",
+        "id": "e7b505b84751433df275ac20eff202dc",
+        "sha256": "804c5e18e1d4894bd8e4446255dd76d8c3ee9c75308334adae9f7970430a9e5e",
+        "bytes": 1825,
+        "type": "image/svg+xml",
+        "name": "phantom-offline.svg",
+        "addedAt": "2026-09-20T19:27:47.159Z",
+        "via": "page"
+      },
+      "assets/PHANTOM ICONS/phantom-phantom (2).svg": {
+        "store": "blob",
+        "id": "a5c22a9e0fbd77419516c08837dfa865",
+        "sha256": "f048505584af4693f4b0cca25a42bbe15a623085f211661e6fed878d0d43aa61",
+        "bytes": 1815,
+        "type": "image/svg+xml",
+        "name": "phantom-phantom (2).svg",
+        "addedAt": "2026-09-20T19:27:35.964Z",
+        "via": "page"
+      },
+      "assets/PHANTOM ICONS/phantom-phantom-mask (2).svg": {
+        "store": "blob",
+        "id": "3176c0c7a1172a7e1cd1d1d82534e4ab",
+        "sha256": "0b8900217d8a6d22d47e061accc48a716b45e46829cf5fcae88ededf40ff0d29",
+        "bytes": 1826,
+        "type": "image/svg+xml",
+        "name": "phantom-phantom-mask (2).svg",
+        "addedAt": "2026-09-20T19:27:36.176Z",
+        "via": "page"
+      },
+      "assets/PHANTOM ICONS/phantom-phantom-mask.svg": {
+        "store": "blob",
+        "id": "3176c0c7a1172a7e1cd1d1d82534e4ab",
+        "sha256": "0b8900217d8a6d22d47e061accc48a716b45e46829cf5fcae88ededf40ff0d29",
+        "bytes": 1826,
+        "type": "image/svg+xml",
+        "name": "phantom-phantom-mask.svg",
+        "addedAt": "2026-09-20T19:27:47.677Z",
+        "via": "page"
+      },
+      "assets/PHANTOM ICONS/phantom-phantom.svg": {
+        "store": "blob",
+        "id": "a5c22a9e0fbd77419516c08837dfa865",
+        "sha256": "f048505584af4693f4b0cca25a42bbe15a623085f211661e6fed878d0d43aa61",
+        "bytes": 1815,
+        "type": "image/svg+xml",
+        "name": "phantom-phantom.svg",
+        "addedAt": "2026-09-20T19:27:47.458Z",
+        "via": "page"
+      },
+      "assets/PHANTOM ICONS/phantom-portal (2).svg": {
+        "store": "blob",
+        "id": "3149c5d7d18a3795384e62195a8c0cd4",
+        "sha256": "6622f13988ca4defa07c51860f389014aac62333cead395fdfc0a1f451d9fadd",
+        "bytes": 1756,
+        "type": "image/svg+xml",
+        "name": "phantom-portal (2).svg",
+        "addedAt": "2026-09-20T19:27:36.386Z",
+        "via": "page"
+      },
+      "assets/PHANTOM ICONS/phantom-portal.svg": {
+        "store": "blob",
+        "id": "3149c5d7d18a3795384e62195a8c0cd4",
+        "sha256": "6622f13988ca4defa07c51860f389014aac62333cead395fdfc0a1f451d9fadd",
+        "bytes": 1756,
+        "type": "image/svg+xml",
+        "name": "phantom-portal.svg",
+        "addedAt": "2026-09-20T19:27:47.892Z",
+        "via": "page"
+      },
+      "assets/PHANTOM ICONS/phantom-power (2).svg": {
+        "store": "blob",
+        "id": "2244ba0155de7c624f702bdd9f123d55",
+        "sha256": "7ad134eae9833e00f787dd97a68432e9cf064a8bfef73fc6498d2681f1697f29",
+        "bytes": 1726,
+        "type": "image/svg+xml",
+        "name": "phantom-power (2).svg",
+        "addedAt": "2026-09-20T19:27:36.565Z",
+        "via": "page"
+      },
+      "assets/PHANTOM ICONS/phantom-power.svg": {
+        "store": "blob",
+        "id": "2244ba0155de7c624f702bdd9f123d55",
+        "sha256": "7ad134eae9833e00f787dd97a68432e9cf064a8bfef73fc6498d2681f1697f29",
+        "bytes": 1726,
+        "type": "image/svg+xml",
+        "name": "phantom-power.svg",
+        "addedAt": "2026-09-20T19:27:48.098Z",
+        "via": "page"
+      },
+      "assets/PHANTOM ICONS/phantom-processor (2).svg": {
+        "store": "blob",
+        "id": "45b6d541004148ed8e8c4ed891c878ce",
+        "sha256": "1f2dba9a1781553cf5c668da3d78677ffc435e00cdd0d56d7d1a21351e25f334",
+        "bytes": 1807,
+        "type": "image/svg+xml",
+        "name": "phantom-processor (2).svg",
+        "addedAt": "2026-09-20T19:27:36.816Z",
+        "via": "page"
+      },
+      "assets/PHANTOM ICONS/phantom-processor.svg": {
+        "store": "blob",
+        "id": "45b6d541004148ed8e8c4ed891c878ce",
+        "sha256": "1f2dba9a1781553cf5c668da3d78677ffc435e00cdd0d56d7d1a21351e25f334",
+        "bytes": 1807,
+        "type": "image/svg+xml",
+        "name": "phantom-processor.svg",
+        "addedAt": "2026-09-20T19:27:48.278Z",
+        "via": "page"
+      },
+      "assets/PHANTOM ICONS/phantom-recovery (2).svg": {
+        "store": "blob",
+        "id": "0e54d191a35d7f2f4b1a7f4b53285b38",
+        "sha256": "924b3154c40fab7c5104eda202e015547a3d0c1a4d9b27c8e20befca36b88af0",
+        "bytes": 1759,
+        "type": "image/svg+xml",
+        "name": "phantom-recovery (2).svg",
+        "addedAt": "2026-09-20T19:27:37.053Z",
+        "via": "page"
+      },
+      "assets/PHANTOM ICONS/phantom-recovery.svg": {
+        "store": "blob",
+        "id": "0e54d191a35d7f2f4b1a7f4b53285b38",
+        "sha256": "924b3154c40fab7c5104eda202e015547a3d0c1a4d9b27c8e20befca36b88af0",
+        "bytes": 1759,
+        "type": "image/svg+xml",
+        "name": "phantom-recovery.svg",
+        "addedAt": "2026-09-20T19:27:48.465Z",
+        "via": "page"
+      },
+      "assets/PHANTOM ICONS/phantom-ring-spire (2).svg": {
+        "store": "blob",
+        "id": "44d5e8c6cb4f9cfb9c353763e63e24bd",
+        "sha256": "20cb6f4541d817a909339a40b2edfae08def447655fa93bffc0e3b500e181455",
+        "bytes": 1785,
+        "type": "image/svg+xml",
+        "name": "phantom-ring-spire (2).svg",
+        "addedAt": "2026-09-20T19:27:37.245Z",
+        "via": "page"
+      },
+      "assets/PHANTOM ICONS/phantom-ring-spire.svg": {
+        "store": "blob",
+        "id": "44d5e8c6cb4f9cfb9c353763e63e24bd",
+        "sha256": "20cb6f4541d817a909339a40b2edfae08def447655fa93bffc0e3b500e181455",
+        "bytes": 1785,
+        "type": "image/svg+xml",
+        "name": "phantom-ring-spire.svg",
+        "addedAt": "2026-09-20T19:27:48.657Z",
+        "via": "page"
+      },
+      "assets/PHANTOM ICONS/phantom-search (2).svg": {
+        "store": "blob",
+        "id": "2d9cb1dc2d2857893127abbdb6aa4a63",
+        "sha256": "72a321e45734dfe3b8b491b80caf6fba02a57bd966dd99b16570c4f33261d7e5",
+        "bytes": 1756,
+        "type": "image/svg+xml",
+        "name": "phantom-search (2).svg",
+        "addedAt": "2026-09-20T19:27:37.431Z",
+        "via": "page"
+      },
+      "assets/PHANTOM ICONS/phantom-search.svg": {
+        "store": "blob",
+        "id": "2d9cb1dc2d2857893127abbdb6aa4a63",
+        "sha256": "72a321e45734dfe3b8b491b80caf6fba02a57bd966dd99b16570c4f33261d7e5",
+        "bytes": 1756,
+        "type": "image/svg+xml",
+        "name": "phantom-search.svg",
+        "addedAt": "2026-09-20T19:27:48.865Z",
+        "via": "page"
+      },
+      "assets/PHANTOM ICONS/phantom-sentinel (2).svg": {
+        "store": "blob",
+        "id": "176230decf9901ae28eaae4dab96f9e4",
+        "sha256": "b51cb0e5646c8069986b498ccfd201e02c50e7ac6e547d25fe4b77acc2c5c57f",
+        "bytes": 1786,
+        "type": "image/svg+xml",
+        "name": "phantom-sentinel (2).svg",
+        "addedAt": "2026-09-20T19:27:37.626Z",
+        "via": "page"
+      },
+      "assets/PHANTOM ICONS/phantom-sentinel.svg": {
+        "store": "blob",
+        "id": "176230decf9901ae28eaae4dab96f9e4",
+        "sha256": "b51cb0e5646c8069986b498ccfd201e02c50e7ac6e547d25fe4b77acc2c5c57f",
+        "bytes": 1786,
+        "type": "image/svg+xml",
+        "name": "phantom-sentinel.svg",
+        "addedAt": "2026-09-20T19:27:49.065Z",
+        "via": "page"
+      },
+      "assets/PHANTOM ICONS/phantom-settings (2).svg": {
+        "store": "blob",
+        "id": "90deaf47a9b78c474f11b5fac32e60d3",
+        "sha256": "9f4f5b51fdd53f3b2b855f2ff159d792352709661b5f0526970aa7fd70f50ccc",
+        "bytes": 1766,
+        "type": "image/svg+xml",
+        "name": "phantom-settings (2).svg",
+        "addedAt": "2026-09-20T19:27:37.833Z",
+        "via": "page"
+      },
+      "assets/PHANTOM ICONS/phantom-settings.svg": {
+        "store": "blob",
+        "id": "90deaf47a9b78c474f11b5fac32e60d3",
+        "sha256": "9f4f5b51fdd53f3b2b855f2ff159d792352709661b5f0526970aa7fd70f50ccc",
+        "bytes": 1766,
+        "type": "image/svg+xml",
+        "name": "phantom-settings.svg",
+        "addedAt": "2026-09-20T19:27:49.264Z",
+        "via": "page"
+      },
+      "assets/PHANTOM ICONS/phantom-shield (2).svg": {
+        "store": "blob",
+        "id": "7f1570a45f3d41f1653f389b18821cad",
+        "sha256": "c5c00ba82ce91f702a486c1dabb7de97aa562164fc241179372d66cb6c498d45",
+        "bytes": 1776,
+        "type": "image/svg+xml",
+        "name": "phantom-shield (2).svg",
+        "addedAt": "2026-09-20T19:27:38.006Z",
+        "via": "page"
+      },
+      "assets/PHANTOM ICONS/phantom-shield.svg": {
+        "store": "blob",
+        "id": "7f1570a45f3d41f1653f389b18821cad",
+        "sha256": "c5c00ba82ce91f702a486c1dabb7de97aa562164fc241179372d66cb6c498d45",
+        "bytes": 1776,
+        "type": "image/svg+xml",
+        "name": "phantom-shield.svg",
+        "addedAt": "2026-09-20T19:27:49.447Z",
+        "via": "page"
+      },
+      "assets/PHANTOM ICONS/phantom-sigil (2).svg": {
+        "store": "blob",
+        "id": "48188a0070436948dc2da7b45fd29796",
+        "sha256": "df627237b279ca2e775e1b02b4c771e78b6caaf160ee9b82f3ad9f1af9db8565",
+        "bytes": 1762,
+        "type": "image/svg+xml",
+        "name": "phantom-sigil (2).svg",
+        "addedAt": "2026-09-20T19:27:38.203Z",
+        "via": "page"
+      },
+      "assets/PHANTOM ICONS/phantom-sigil.svg": {
+        "store": "blob",
+        "id": "48188a0070436948dc2da7b45fd29796",
+        "sha256": "df627237b279ca2e775e1b02b4c771e78b6caaf160ee9b82f3ad9f1af9db8565",
+        "bytes": 1762,
+        "type": "image/svg+xml",
+        "name": "phantom-sigil.svg",
+        "addedAt": "2026-09-20T19:27:49.630Z",
+        "via": "page"
+      },
+      "assets/PHANTOM ICONS/phantom-sprite (2).svg": {
+        "store": "blob",
+        "id": "4394ee70f430c9e4ce861097ea9f8de6",
+        "sha256": "1cfeae3e05f5a6baa11414c8d3193daa63910fbfb9a0262640d8f38ce760e80a",
+        "bytes": 10232,
+        "type": "image/svg+xml",
+        "name": "phantom-sprite (2).svg",
+        "addedAt": "2026-09-20T19:27:38.417Z",
+        "via": "page"
+      },
+      "assets/PHANTOM ICONS/phantom-sprite.svg": {
+        "store": "blob",
+        "id": "4394ee70f430c9e4ce861097ea9f8de6",
+        "sha256": "1cfeae3e05f5a6baa11414c8d3193daa63910fbfb9a0262640d8f38ce760e80a",
+        "bytes": 10232,
+        "type": "image/svg+xml",
+        "name": "phantom-sprite.svg",
+        "addedAt": "2026-09-20T19:27:49.821Z",
+        "via": "page"
+      },
+      "assets/PHANTOM ICONS/phantom-terminal (2).svg": {
+        "store": "blob",
+        "id": "d96d1c408a225dfbe47778ba52496664",
+        "sha256": "55441a8534e8ca047c4ac344f416b06b2f332626138a282d02ff2b3164ca7c5d",
+        "bytes": 1796,
+        "type": "image/svg+xml",
+        "name": "phantom-terminal (2).svg",
+        "addedAt": "2026-09-20T19:27:38.659Z",
+        "via": "page"
+      },
+      "assets/PHANTOM ICONS/phantom-terminal.svg": {
+        "store": "blob",
+        "id": "d96d1c408a225dfbe47778ba52496664",
+        "sha256": "55441a8534e8ca047c4ac344f416b06b2f332626138a282d02ff2b3164ca7c5d",
+        "bytes": 1796,
+        "type": "image/svg+xml",
+        "name": "phantom-terminal.svg",
+        "addedAt": "2026-09-20T19:27:50.013Z",
+        "via": "page"
+      },
+      "assets/PHANTOM ICONS/phantom-toolkit (2).svg": {
+        "store": "blob",
+        "id": "5fc105e166395ca67bebd5fa05c7a82b",
+        "sha256": "93da68f7c7d0c8aea41a74270b6d61060a3d6492078d117ad99d8dacb69e5d7f",
+        "bytes": 1758,
+        "type": "image/svg+xml",
+        "name": "phantom-toolkit (2).svg",
+        "addedAt": "2026-09-20T19:27:38.834Z",
+        "via": "page"
+      },
+      "assets/PHANTOM ICONS/phantom-toolkit.svg": {
+        "store": "blob",
+        "id": "5fc105e166395ca67bebd5fa05c7a82b",
+        "sha256": "93da68f7c7d0c8aea41a74270b6d61060a3d6492078d117ad99d8dacb69e5d7f",
+        "bytes": 1758,
+        "type": "image/svg+xml",
+        "name": "phantom-toolkit.svg",
+        "addedAt": "2026-09-20T19:27:50.220Z",
+        "via": "page"
+      },
+      "assets/PHANTOM ICONS/phantom-usb (2).svg": {
+        "store": "blob",
+        "id": "9ede27c02fefe6087f6f2c4d90e1e201",
+        "sha256": "e207c09b628c1219111d16124b8b8bb9f4c8b751e1a44e95815c64546781ef14",
+        "bytes": 1835,
+        "type": "image/svg+xml",
+        "name": "phantom-usb (2).svg",
+        "addedAt": "2026-09-20T19:27:39.026Z",
+        "via": "page"
+      },
+      "assets/PHANTOM ICONS/phantom-usb.svg": {
+        "store": "blob",
+        "id": "9ede27c02fefe6087f6f2c4d90e1e201",
+        "sha256": "e207c09b628c1219111d16124b8b8bb9f4c8b751e1a44e95815c64546781ef14",
+        "bytes": 1835,
+        "type": "image/svg+xml",
+        "name": "phantom-usb.svg",
+        "addedAt": "2026-09-20T19:27:50.427Z",
+        "via": "page"
+      },
+      "assets/PHANTOM ICONS/phantom-warning (2).svg": {
+        "store": "blob",
+        "id": "625fc6a1e514474d4b837bd4b4931abf",
+        "sha256": "395a7744f9a4151dde2cc4aa87d7e660c954d6065094a7b44a3083a0b79cbf35",
+        "bytes": 1742,
+        "type": "image/svg+xml",
+        "name": "phantom-warning (2).svg",
+        "addedAt": "2026-09-20T19:27:39.228Z",
+        "via": "page"
+      },
+      "assets/PHANTOM ICONS/phantom-warning.svg": {
+        "store": "blob",
+        "id": "625fc6a1e514474d4b837bd4b4931abf",
+        "sha256": "395a7744f9a4151dde2cc4aa87d7e660c954d6065094a7b44a3083a0b79cbf35",
+        "bytes": 1742,
+        "type": "image/svg+xml",
+        "name": "phantom-warning.svg",
+        "addedAt": "2026-09-20T19:27:41.057Z",
+        "via": "page"
+      },
+      "assets/PHANTOM ICONS/phantom-workstation (2).svg": {
+        "store": "blob",
+        "id": "c65b5527ea1b0076d74399a6aaa7eaa3",
+        "sha256": "db3c458884832e888d98e787788187098998aa84b9cda105d4692c17a0cd1814",
+        "bytes": 1824,
+        "type": "image/svg+xml",
+        "name": "phantom-workstation (2).svg",
+        "addedAt": "2026-09-20T19:27:39.438Z",
+        "via": "page"
+      },
+      "assets/PHANTOM ICONS/phantom-workstation.svg": {
+        "store": "blob",
+        "id": "c65b5527ea1b0076d74399a6aaa7eaa3",
+        "sha256": "db3c458884832e888d98e787788187098998aa84b9cda105d4692c17a0cd1814",
+        "bytes": 1824,
+        "type": "image/svg+xml",
+        "name": "phantom-workstation.svg",
+        "addedAt": "2026-09-20T19:27:41.262Z",
+        "via": "page"
+      },
+      "assets/Theme Final/ChatGPT Image Sep 19, 2026, 10_00_53 PM.png": {
+        "store": "blob",
+        "id": "9c6b9af87120fa65c89ac934cb851da3",
+        "sha256": "56f792162b0e4bbf977e03cec21ff8bc4c3131d8487cf4d161ad869cbf9c646f",
+        "bytes": 1807901,
+        "type": "image/png"
+      },
+      "assets/Theme Final/ChatGPT Image Sep 19, 2026, 10_01_13 PM.png": {
+        "store": "blob",
+        "id": "ab8aa1f674005f3031aa8a91c40be5f6",
+        "sha256": "53e3a10c6e782ae67d664a21d628002ebfd2d2ba767e3b3485e2f12487f5f249",
+        "bytes": 2227462,
+        "type": "image/png"
+      },
+      "fonts/cinzel-variable (2).ttf": {
+        "store": "blob",
+        "id": "e90bb10560c9bdff261f497091c1ac66",
+        "sha256": "f4d83d34d1f6c741193e4acf4b3dff9531e5a67b6aa65228d00a7db72a4e0f34",
+        "bytes": 125468,
+        "type": "font/ttf",
+        "name": "cinzel-variable.ttf",
+        "addedAt": "2026-09-20T19:26:07.999Z",
+        "via": "page"
+      },
+      "fonts/cinzel-variable (3).ttf": {
+        "store": "blob",
+        "id": "e90bb10560c9bdff261f497091c1ac66",
+        "sha256": "f4d83d34d1f6c741193e4acf4b3dff9531e5a67b6aa65228d00a7db72a4e0f34",
+        "bytes": 125468,
+        "type": "font/ttf",
+        "name": "cinzel-variable.ttf",
+        "addedAt": "2026-09-20T19:30:06.420Z",
+        "via": "page"
+      },
+      "fonts/cinzel-variable.ttf": {
+        "store": "blob",
+        "id": "e90bb10560c9bdff261f497091c1ac66",
+        "sha256": "f4d83d34d1f6c741193e4acf4b3dff9531e5a67b6aa65228d00a7db72a4e0f34",
+        "bytes": 125468,
+        "type": "font/ttf",
+        "name": "cinzel-variable.ttf",
+        "addedAt": "2026-09-20T19:22:36.962Z",
+        "via": "page"
+      },
+      "fonts/ibm-plex-mono-regular (2).ttf": {
+        "store": "blob",
+        "id": "05a04362dd6e3d97dcef98420e0fd4a8",
+        "sha256": "6a3412f058c7d8dfd9170c41e85ade48e5156ecb89356110ca57a0a27734af46",
+        "bytes": 135580,
+        "type": "font/ttf",
+        "name": "ibm-plex-mono-regular.ttf",
+        "addedAt": "2026-09-20T19:22:37.860Z",
+        "via": "page"
+      },
+      "fonts/ibm-plex-mono-regular (3).ttf": {
+        "store": "blob",
+        "id": "05a04362dd6e3d97dcef98420e0fd4a8",
+        "sha256": "6a3412f058c7d8dfd9170c41e85ade48e5156ecb89356110ca57a0a27734af46",
+        "bytes": 135580,
+        "type": "font/ttf",
+        "name": "ibm-plex-mono-regular.ttf",
+        "addedAt": "2026-09-20T19:26:08.480Z",
+        "via": "page"
+      },
+      "fonts/ibm-plex-mono-regular (4).ttf": {
+        "store": "blob",
+        "id": "05a04362dd6e3d97dcef98420e0fd4a8",
+        "sha256": "6a3412f058c7d8dfd9170c41e85ade48e5156ecb89356110ca57a0a27734af46",
+        "bytes": 135580,
+        "type": "font/ttf",
+        "name": "ibm-plex-mono-regular.ttf",
+        "addedAt": "2026-09-20T19:30:06.819Z",
+        "via": "page"
+      },
+      "fonts/space-grotesk-variable (2).ttf": {
+        "store": "blob",
+        "id": "b56b359da643afc10f58711d90478add",
+        "sha256": "acad6de1fc93436f5c0f1f4137751ef04f1aea3063e7036535970ffcfbd79f72",
+        "bytes": 136676,
+        "type": "font/ttf",
+        "name": "space-grotesk-variable.ttf",
+        "addedAt": "2026-09-20T19:22:38.736Z",
+        "via": "page"
+      },
+      "fonts/space-grotesk-variable (3).ttf": {
+        "store": "blob",
+        "id": "b56b359da643afc10f58711d90478add",
+        "sha256": "acad6de1fc93436f5c0f1f4137751ef04f1aea3063e7036535970ffcfbd79f72",
+        "bytes": 136676,
+        "type": "font/ttf",
+        "name": "space-grotesk-variable.ttf",
+        "addedAt": "2026-09-20T19:26:08.961Z",
+        "via": "page"
+      },
+      "fonts/space-grotesk-variable (4).ttf": {
+        "store": "blob",
+        "id": "b56b359da643afc10f58711d90478add",
+        "sha256": "acad6de1fc93436f5c0f1f4137751ef04f1aea3063e7036535970ffcfbd79f72",
+        "bytes": 136676,
+        "type": "font/ttf",
+        "name": "space-grotesk-variable.ttf",
+        "addedAt": "2026-09-20T19:30:07.227Z",
+        "via": "page"
+      }
+    },
+    "blobBytesUsed": 8331612
+  }
+}

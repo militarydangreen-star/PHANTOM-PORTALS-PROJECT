@@ -1,0 +1,33 @@
+{
+  "id": "PP-VEC-019",
+  "file": "coordinate-ruler.svg",
+  "title": "Coordinate ruler",
+  "status": "CURRENT",
+  "canon_version": "1.0.0",
+  "kind": "vector",
+  "format": "svg",
+  "dimensions": "640x44",
+  "bytes": 8895,
+  "sha256": "967f29e3728415ddd33ba1781f6ffb4b7f4a53cac50052e583ca6c552c3e21f6",
+  "usage": "Hero artwork, page-header edges, empty states, section dividers and transitions.",
+  "rules": [
+    "At most three vectors per composition, one of them crimson.",
+    "Pair every Trash Polka mark with a precision mark (brush cut + iso grid, splatter + reticle).",
+    "Never behind controls, tables, search results, terminal output or body text."
+  ],
+  "tags": [
+    "hud",
+    "precision",
+    "divider",
+    "ink-protocol"
+  ],
+  "license": "Project-original artwork for Phantom Portals. Owner-controlled; all rights reserved by the project owner.",
+  "source": {
+    "system": "Phantom Portals design system (White / Crimson / Black)",
+    "artifact": "https://claude.ai/artifact/HG2ihDf5JsALbo4fxCXcmV",
+    "version": "1793296345-e7e7",
+    "path": "assets/Vectors/coordinate-ruler.svg",
+    "asset_id": "ac30a2eb5a11a9d55f72a503dd38472f",
+    "fetched": "2026-10-29"
+  }
+}

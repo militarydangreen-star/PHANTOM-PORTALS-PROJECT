@@ -1,0 +1,30 @@
+{
+  "id": "PP-FONT-003",
+  "file": "inter-latin-600-normal.woff2",
+  "title": "Inter 600 (Latin subset, WOFF2)",
+  "status": "CURRENT",
+  "canon_version": "1.0.0",
+  "kind": "font",
+  "format": "woff2",
+  "dimensions": null,
+  "bytes": 24304,
+  "sha256": "62553d159189834af73c9a6264704be5b2bee9a08da66a14768d8e5c6ffd2cdb",
+  "usage": "Body, navigation, interface controls.",
+  "rules": [
+    "Ship locally; never require a font CDN.",
+    "Keep OFL.txt beside the files when redistributing."
+  ],
+  "tags": [
+    "font",
+    "inter"
+  ],
+  "license": "SIL Open Font License 1.1 (see OFL.txt in this folder)",
+  "source": {
+    "system": "Phantom Portals design system (White / Crimson / Black)",
+    "artifact": "https://claude.ai/artifact/HG2ihDf5JsALbo4fxCXcmV",
+    "version": "1793296345-e7e7",
+    "path": "fonts/inter-latin-600-normal.woff2",
+    "asset_id": null,
+    "fetched": "2026-10-29"
+  }
+}

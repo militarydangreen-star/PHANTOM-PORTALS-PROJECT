@@ -1,0 +1,28 @@
+{
+  "id": "PP-MOCK-002",
+  "file": "ink-drips-ink.svg",
+  "title": "ink-drips (v1) recoloured to ink",
+  "status": "UNCLEAR",
+  "canon_version": "1.0.0",
+  "kind": "vector",
+  "format": "svg",
+  "dimensions": "600x260",
+  "bytes": 1748,
+  "sha256": "5e8733f0023a43277c881f56960e6edfc1466ba06b4745707f58d275b546f002",
+  "usage": "Used only by the poster and boot mockups; derived from the superseded v1 vectors.",
+  "rules": [
+    "Rebuild from the current Ink Protocol vector before any production use."
+  ],
+  "tags": [
+    "mockup",
+    "derivative",
+    "v1"
+  ],
+  "license": "Project-original artwork for Phantom Portals. Owner-controlled; all rights reserved by the project owner.",
+  "source": {
+    "system": "Claude Design canvas \"Phantom Portals\"",
+    "artifact": "https://claude.ai/artifact/6jk64Yyaaq6JU2Uy41jXv6",
+    "fetched": "2026-10-29"
+  },
+  "notes": "Recolour made in the 2026-10-29 Claude Design canvas session."
+}

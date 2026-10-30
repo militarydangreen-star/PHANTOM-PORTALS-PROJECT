@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Phantom Portals · Deck template</title>
+<!--
+  Phantom Portals deck template (canon 1.0.0). Plain HTML + CSS, no framework, works offline from disk.
+  Slides are 1920×1080 <section class="slide"> elements, scaled to the window.
+  Keys: → / Space / PageDown next · ← / PageUp previous · Home / End · F fullscreen. The URL hash is the slide number.
+  PDF: print from Chromium (Ctrl+P → Save as PDF, margins None, background graphics on) — one slide per page.
+  Rules: one crimson focal point per slide, ≤ 3 art marks, one Phantom per deck section at most, art never behind body text.
+-->
+<link rel="icon" href="../../30_ASSETS/brand/logo/phantom-monogram.svg">
+<link rel="stylesheet" href="../../10_DESIGN_SYSTEM/tokens/build/index.css">
+<style>
+  :root { --slide-w: 1920px; --slide-h: 1080px; --pad: 128px; }
+  html, body { margin: 0; height: 100%; background: var(--surface-inverse); overflow: hidden; }
+  .deck { position: fixed; inset: 0; display: grid; place-items: center; }
+  .slide { position: absolute; width: var(--slide-w); height: var(--slide-h); box-sizing: border-box; padding: var(--pad);
+           background: var(--surface-canvas); color: var(--ink-primary); font-family: var(--font-sans); overflow: hidden;
+           display: none; transform-origin: center; }
+  .slide.is-current { display: grid; }
+  .slide--inverse { background: var(--surface-inverse); color: var(--ink-on-inverse); }
+
+  .eyebrow { font: 500 24px/1 var(--font-mono); letter-spacing: .14em; text-transform: uppercase; color: var(--accent-crimson); }
+  .slide--inverse .eyebrow { color: var(--ink-on-inverse-secondary); }
+  h1, h2 { margin: 0; font-family: var(--font-heading); letter-spacing: -.02em; }
+  h1 { font-weight: 700; font-size: 128px; line-height: 1.02; }
+  h2 { font-weight: 600; font-size: 72px; line-height: 1.1; }
+  h1 em, h2 em { font-style: normal; color: var(--accent-crimson); }
+  p, li { font-size: 36px; line-height: 1.5; color: var(--ink-secondary); margin: 0; }
+  .slide--inverse p { color: var(--ink-on-inverse-secondary); }
+  ul { margin: 0; padding: 0; list-style: none; display: grid; gap: 28px; align-content: start; }
+  li { padding-left: 48px; position: relative; color: var(--ink-primary); }
+  li::before { content: ""; position: absolute; left: 0; top: .62em; width: 24px; height: 4px; background: var(--ink-primary); }
+  .rule { width: 160px; height: 12px; background: var(--accent-crimson); }
+  .mono { font: 500 26px/1.4 var(--font-mono); letter-spacing: .06em; text-transform: uppercase; color: var(--ink-secondary); }
+  .art { position: absolute; pointer-events: none; }
+  .footer { position: absolute; left: var(--pad); right: var(--pad); bottom: 56px; display: flex; justify-content: space-between; align-items: center; }
+  .footer img { height: 44px; }
+  .slide--inverse .footer .mono { color: var(--ink-on-inverse-secondary); }
+
+  /* Layouts */
+  .l-title { align-content: center; gap: 40px; grid-template-columns: minmax(0, 900px); } /* copy column clear of the art on the right */
+  .l-section { align-content: center; gap: 32px; }
+  .l-section .spine { position: absolute; left: 0; top: 0; bottom: 0; width: 24px; background: var(--accent-crimson); }
+  .l-section .num { font: 700 240px/1 var(--font-heading); color: var(--surface-inverse-raised); position: absolute; right: var(--pad); bottom: 96px; }
+  .l-content { grid-template-columns: 1.3fr 1fr; grid-template-rows: auto 1fr; gap: 64px 96px; align-content: start; }
+  .l-content h2 { grid-column: 1 / -1; }
+  .l-content aside { background: var(--surface-primary); border-left: 8px solid var(--ink-primary); padding: 48px; align-self: start; display: grid; gap: 24px; }
+  .l-stats { grid-template-rows: auto 1fr; gap: 72px; align-content: start; }
+  .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 48px; }
+  .stat { background: var(--surface-primary); padding: 48px; display: grid; gap: 16px; box-shadow: var(--depth-1); }
+  .stat b { font: 700 120px/1 var(--font-heading); letter-spacing: -.02em; }
+  .stat--focus { box-shadow: var(--crimson-edge); }
+  .stat--focus b { color: var(--accent-crimson); }
+  .l-image { grid-template-columns: 1fr 1fr; gap: 96px; align-items: center; }
+  .l-image figure { margin: 0; display: grid; gap: 20px; }
+  .l-image figure img { width: 100%; max-height: 720px; object-fit: contain; }
+  .l-close { align-content: center; justify-items: center; text-align: center; gap: 40px; }
+
+  .progress { position: fixed; left: 0; bottom: 0; height: 4px; background: var(--accent-crimson); transition: width .2s; }
+  @media (prefers-reduced-motion: reduce) { .progress { transition: none; } }
+
+  @media print {
+    @page { size: 1920px 1080px; margin: 0; }
+    html, body { overflow: visible; height: auto; background: none; }
+    .deck { position: static; display: block; }
+    .slide { display: grid !important; position: relative; transform: none !important; break-after: page; }
+    .progress { display: none; }
+  }
+</style>
+</head>
+<body>
+<main class="deck" aria-live="polite">
+
+  <!-- 1 · Title -->
+  <section class="slide l-title" aria-label="Slide 1: title">
+    <img class="art" src="../../30_ASSETS/hud-geometry/callouts/hud-ring.svg" alt="" style="right: 120px; top: 150px; width: 720px; opacity: .9">
+    <img class="art" src="../../30_ASSETS/textures/brush-strokes/brush-slash.svg" alt="" style="right: 40px; top: 170px; width: 900px">
+    <div class="eyebrow">Offline-first IT command center</div>
+    <h1>Deck title on<br><em>two lines</em></h1>
+    <div class="rule"></div>
+    <p>Subtitle — who this is for and what they will leave with.</p>
+    <div class="footer"><img src="../../30_ASSETS/brand/wordmark/phantom-wordmark.svg" alt="Phantom Portals"><span class="mono">YYYY-MM-DD · Presenter</span></div>
+  </section>
+
+  <!-- 2 · Section divider (inverse) -->
+  <section class="slide slide--inverse l-section" aria-label="Slide 2: section">
+    <div class="spine"></div>
+    <div class="eyebrow">Section 01</div>
+    <h2>Section title</h2>
+    <p>One sentence on what this section proves.</p>
+    <div class="num" aria-hidden="true">01</div>
+  </section>
+
+  <!-- 3 · Content -->
+  <section class="slide l-content" aria-label="Slide 3: content">
+    <h2>One idea per slide, stated as a <em>claim</em></h2>
+    <ul>
+      <li>First supporting point, short enough for one line</li>
+      <li>Second point — evidence, not adjectives</li>
+      <li>Third point, then stop</li>
+    </ul>
+    <aside><span class="mono">Note</span><p>A side note, a source, or the one number that matters. Keep body text off the art.</p></aside>
+    <div class="footer"><span class="mono">Phantom Portals</span><span class="mono" data-pageno></span></div>
+  </section>
+
+  <!-- 4 · Stats -->
+  <section class="slide l-stats" aria-label="Slide 4: numbers">
+    <div style="display:grid;gap:24px"><div class="eyebrow">Sample numbers — replace with real, sourced values</div><h2>Three numbers, one <em>focus</em></h2></div>
+    <div class="stats">
+      <div class="stat"><span class="mono">Metric A</span><b>00</b><p>What it measures and the source.</p></div>
+      <div class="stat stat--focus"><span class="mono">Metric B · focus</span><b>00%</b><p>The one number the slide is about.</p></div>
+      <div class="stat"><span class="mono">Metric C</span><b>0.0</b><p>What it measures and the source.</p></div>
+    </div>
+    <div class="footer"><span class="mono">Phantom Portals</span><span class="mono" data-pageno></span></div>
+  </section>
+
+  <!-- 5 · Image + caption -->
+  <section class="slide l-image" aria-label="Slide 5: image">
+    <figure><img src="../../30_ASSETS/brand/phantom-hero/phantom-emblem-2048.png" alt="The Phantom emblem: a hooded figure holding a crimson orb inside a graduated ring"><figcaption class="mono">Fig. 1 — Caption with source</figcaption></figure>
+    <div style="display:grid;gap:32px"><h2>Image slide</h2><p>Use a real screenshot from 40_MOCKUPS/screenshots or an approved asset. Mockups must be labelled as mockups.</p></div>
+    <div class="footer"><span class="mono">Phantom Portals</span><span class="mono" data-pageno></span></div>
+  </section>
+
+  <!-- 6 · Close -->
+  <section class="slide l-close" aria-label="Slide 6: close">
+    <img src="../../30_ASSETS/brand/logo/phantom-lockup.svg" alt="Phantom Portals" style="height:160px">
+    <h2>Closing line</h2>
+    <p class="mono">contact · link · date</p>
+  </section>
+
+</main>
+<div class="progress" aria-hidden="true"></div>
+<script>
+(function () {
+  var slides = Array.prototype.slice.call(document.querySelectorAll('.slide'));
+  var bar = document.querySelector('.progress');
+  slides.forEach(function (s, i) { var n = s.querySelector('[data-pageno]'); if (n) n.textContent = (i + 1) + ' / ' + slides.length; });
+  function fit() {
+    var k = Math.min(innerWidth / 1920, innerHeight / 1080);
+    slides.forEach(function (s) { s.style.transform = 'scale(' + k + ')'; });
+  }
+  function go(i) {
+    i = Math.max(0, Math.min(slides.length - 1, i));
+    slides.forEach(function (s, j) { s.classList.toggle('is-current', j === i); s.setAttribute('aria-hidden', j === i ? 'false' : 'true'); });
+    bar.style.width = ((i + 1) / slides.length * 100) + '%';
+    if (location.hash !== '#' + (i + 1)) history.replaceState(null, '', '#' + (i + 1));
+    current = i;
+  }
+  var current = Math.max(0, (parseInt(location.hash.slice(1), 10) || 1) - 1);
+  addEventListener('keydown', function (e) {
+    if (['ArrowRight', ' ', 'PageDown'].indexOf(e.key) > -1) { e.preventDefault(); go(current + 1); }
+    else if (['ArrowLeft', 'PageUp'].indexOf(e.key) > -1) { e.preventDefault(); go(current - 1); }
+    else if (e.key === 'Home') go(0);
+    else if (e.key === 'End') go(slides.length - 1);
+    else if (e.key === 'f' || e.key === 'F') { if (document.fullscreenElement) document.exitFullscreen(); else document.documentElement.requestFullscreen(); }
+  });
+  addEventListener('click', function (e) { go(current + (e.clientX > innerWidth / 3 ? 1 : -1)); });
+  addEventListener('resize', fit);
+  fit(); go(current);
+})();
+</script>
+</body>
+</html>

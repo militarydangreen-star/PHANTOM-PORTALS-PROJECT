@@ -1,0 +1,15 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>shadcn theme proof</title><link rel="stylesheet" href="out.css"></head>
+<body class="p-8">
+  <h1 id="h1" class="text-3xl font-bold mb-4">Phantom Portals <span class="text-primary">shadcn</span></h1>
+  <p id="muted" class="text-muted-foreground mb-4">Muted text on the page.</p>
+  <div id="card" class="bg-card text-card-foreground border rounded-lg p-6 mb-4 max-w-md">
+    <button id="btn-primary" data-slot="button" class="bg-primary text-primary-foreground px-4 py-2 rounded-md">Run diagnostics</button>
+    <button id="btn-secondary" data-slot="button" class="bg-secondary text-secondary-foreground px-4 py-2 rounded-md">Secondary</button>
+    <input id="input" data-slot="input" class="border border-input rounded-md px-3 py-2 mt-4 block" placeholder="Search">
+    <span id="badge-ok" class="text-success">Ready</span> <span id="badge-warn" class="text-warning">Sample</span> <span id="destr" class="text-destructive">Error</span>
+    <code id="mono" class="font-mono">sfc /scannow</code>
+  </div>
+  <aside id="rail" class="bg-sidebar text-sidebar-foreground p-4 max-w-md">Utility rail <span id="rail-active" class="bg-sidebar-primary text-sidebar-primary-foreground px-2">Active</span></aside>
+  <section id="inverse" class="dark bg-background text-foreground p-6 mt-4 max-w-md">Boot stage <span id="inv-destr" class="text-destructive">Error</span>
+    <input id="inv-input" data-slot="input" class="border border-input rounded-md px-3 py-2 mt-2 block bg-card"></section>
+</body></html>

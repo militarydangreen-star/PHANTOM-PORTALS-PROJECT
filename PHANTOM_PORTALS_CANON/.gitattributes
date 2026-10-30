@@ -1,0 +1,5 @@
+# Store every file byte-for-byte. The canon is verified by SHA-256 (sidecars, the sealed
+# 90_ARCHIVE, 99_RELEASES manifests), so git must never convert line endings on commit or
+# checkout. Some files are CRLF by origin (owner-authored and archived text) and must stay so.
+# Text diffs still work: diff detection is separate from the text attribute.
+* -text

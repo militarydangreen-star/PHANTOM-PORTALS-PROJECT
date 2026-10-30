@@ -1,0 +1,354 @@
+[
+  {
+    "name": "phantom",
+    "category": "Brand",
+    "relic": "phantom-phantom.svg",
+    "outline": "outline/phantom-phantom.svg",
+    "relicViewBox": "0 0 96 96",
+    "outlineViewBox": "0 0 24 24"
+  },
+  {
+    "name": "portal",
+    "category": "Platform",
+    "relic": "phantom-portal.svg",
+    "outline": "outline/phantom-portal.svg",
+    "relicViewBox": "0 0 96 96",
+    "outlineViewBox": "0 0 24 24"
+  },
+  {
+    "name": "command",
+    "category": "Platform",
+    "relic": "phantom-command.svg",
+    "outline": "outline/phantom-command.svg",
+    "relicViewBox": "0 0 96 96",
+    "outlineViewBox": "0 0 24 24"
+  },
+  {
+    "name": "terminal",
+    "category": "Platform",
+    "relic": "phantom-terminal.svg",
+    "outline": "outline/phantom-terminal.svg",
+    "relicViewBox": "0 0 96 96",
+    "outlineViewBox": "0 0 24 24"
+  },
+  {
+    "name": "toolkit",
+    "category": "Platform",
+    "relic": "phantom-toolkit.svg",
+    "outline": "outline/phantom-toolkit.svg",
+    "relicViewBox": "0 0 96 96",
+    "outlineViewBox": "0 0 24 24"
+  },
+  {
+    "name": "library",
+    "category": "Platform",
+    "relic": "phantom-library.svg",
+    "outline": "outline/phantom-library.svg",
+    "relicViewBox": "0 0 96 96",
+    "outlineViewBox": "0 0 24 24"
+  },
+  {
+    "name": "neural",
+    "category": "Platform",
+    "relic": "phantom-neural.svg",
+    "outline": "outline/phantom-neural.svg",
+    "relicViewBox": "0 0 96 96",
+    "outlineViewBox": "0 0 24 24"
+  },
+  {
+    "name": "recovery",
+    "category": "Platform",
+    "relic": "phantom-recovery.svg",
+    "outline": "outline/phantom-recovery.svg",
+    "relicViewBox": "0 0 96 96",
+    "outlineViewBox": "0 0 24 24"
+  },
+  {
+    "name": "drive",
+    "category": "Hardware",
+    "relic": "phantom-drive.svg",
+    "outline": "outline/phantom-drive.svg",
+    "relicViewBox": "0 0 96 96",
+    "outlineViewBox": "0 0 24 24"
+  },
+  {
+    "name": "usb",
+    "category": "Hardware",
+    "relic": "phantom-usb.svg",
+    "outline": "outline/phantom-usb.svg",
+    "relicViewBox": "0 0 96 96",
+    "outlineViewBox": "0 0 24 24"
+  },
+  {
+    "name": "network",
+    "category": "Hardware",
+    "relic": "phantom-network.svg",
+    "outline": "outline/phantom-network.svg",
+    "relicViewBox": "0 0 96 96",
+    "outlineViewBox": "0 0 24 24"
+  },
+  {
+    "name": "workstation",
+    "category": "Hardware",
+    "relic": "phantom-workstation.svg",
+    "outline": "outline/phantom-workstation.svg",
+    "relicViewBox": "0 0 96 96",
+    "outlineViewBox": "0 0 24 24"
+  },
+  {
+    "name": "processor",
+    "category": "Hardware",
+    "relic": "phantom-processor.svg",
+    "outline": "outline/phantom-processor.svg",
+    "relicViewBox": "0 0 96 96",
+    "outlineViewBox": "0 0 24 24"
+  },
+  {
+    "name": "folder",
+    "category": "Files",
+    "relic": "phantom-folder.svg",
+    "outline": "outline/phantom-folder.svg",
+    "relicViewBox": "0 0 96 96",
+    "outlineViewBox": "0 0 24 24"
+  },
+  {
+    "name": "document",
+    "category": "Files",
+    "relic": "phantom-document.svg",
+    "outline": "outline/phantom-document.svg",
+    "relicViewBox": "0 0 96 96",
+    "outlineViewBox": "0 0 24 24"
+  },
+  {
+    "name": "archive",
+    "category": "Files",
+    "relic": "phantom-archive.svg",
+    "outline": "outline/phantom-archive.svg",
+    "relicViewBox": "0 0 96 96",
+    "outlineViewBox": "0 0 24 24"
+  },
+  {
+    "name": "search",
+    "category": "Navigation",
+    "relic": "phantom-search.svg",
+    "outline": "outline/phantom-search.svg",
+    "relicViewBox": "0 0 96 96",
+    "outlineViewBox": "0 0 24 24"
+  },
+  {
+    "name": "arrow-right",
+    "category": "Navigation",
+    "relic": "phantom-arrow-right.svg",
+    "outline": "outline/phantom-arrow-right.svg",
+    "relicViewBox": "0 0 96 96",
+    "outlineViewBox": "0 0 24 24"
+  },
+  {
+    "name": "arrow-up-right",
+    "category": "Navigation",
+    "relic": "phantom-arrow-up-right.svg",
+    "outline": "outline/phantom-arrow-up-right.svg",
+    "relicViewBox": "0 0 96 96",
+    "outlineViewBox": "0 0 24 24"
+  },
+  {
+    "name": "chevron-down",
+    "category": "Navigation",
+    "relic": "phantom-chevron-down.svg",
+    "outline": "outline/phantom-chevron-down.svg",
+    "relicViewBox": "0 0 96 96",
+    "outlineViewBox": "0 0 24 24"
+  },
+  {
+    "name": "menu",
+    "category": "Navigation",
+    "relic": "phantom-menu.svg",
+    "outline": "outline/phantom-menu.svg",
+    "relicViewBox": "0 0 96 96",
+    "outlineViewBox": "0 0 24 24"
+  },
+  {
+    "name": "close",
+    "category": "Navigation",
+    "relic": "phantom-close.svg",
+    "outline": "outline/phantom-close.svg",
+    "relicViewBox": "0 0 96 96",
+    "outlineViewBox": "0 0 24 24"
+  },
+  {
+    "name": "download",
+    "category": "Actions",
+    "relic": "phantom-download.svg",
+    "outline": "outline/phantom-download.svg",
+    "relicViewBox": "0 0 96 96",
+    "outlineViewBox": "0 0 24 24"
+  },
+  {
+    "name": "copy",
+    "category": "Actions",
+    "relic": "phantom-copy.svg",
+    "outline": "outline/phantom-copy.svg",
+    "relicViewBox": "0 0 96 96",
+    "outlineViewBox": "0 0 24 24"
+  },
+  {
+    "name": "settings",
+    "category": "Actions",
+    "relic": "phantom-settings.svg",
+    "outline": "outline/phantom-settings.svg",
+    "relicViewBox": "0 0 96 96",
+    "outlineViewBox": "0 0 24 24"
+  },
+  {
+    "name": "link",
+    "category": "Actions",
+    "relic": "phantom-link.svg",
+    "outline": "outline/phantom-link.svg",
+    "relicViewBox": "0 0 96 96",
+    "outlineViewBox": "0 0 24 24"
+  },
+  {
+    "name": "shield",
+    "category": "Security",
+    "relic": "phantom-shield.svg",
+    "outline": "outline/phantom-shield.svg",
+    "relicViewBox": "0 0 96 96",
+    "outlineViewBox": "0 0 24 24"
+  },
+  {
+    "name": "lock",
+    "category": "Security",
+    "relic": "phantom-lock.svg",
+    "outline": "outline/phantom-lock.svg",
+    "relicViewBox": "0 0 96 96",
+    "outlineViewBox": "0 0 24 24"
+  },
+  {
+    "name": "offline",
+    "category": "Security",
+    "relic": "phantom-offline.svg",
+    "outline": "outline/phantom-offline.svg",
+    "relicViewBox": "0 0 96 96",
+    "outlineViewBox": "0 0 24 24"
+  },
+  {
+    "name": "check",
+    "category": "Status",
+    "relic": "phantom-check.svg",
+    "outline": "outline/phantom-check.svg",
+    "relicViewBox": "0 0 96 96",
+    "outlineViewBox": "0 0 24 24"
+  },
+  {
+    "name": "warning",
+    "category": "Status",
+    "relic": "phantom-warning.svg",
+    "outline": "outline/phantom-warning.svg",
+    "relicViewBox": "0 0 96 96",
+    "outlineViewBox": "0 0 24 24"
+  },
+  {
+    "name": "danger",
+    "category": "Status",
+    "relic": "phantom-danger.svg",
+    "outline": "outline/phantom-danger.svg",
+    "relicViewBox": "0 0 96 96",
+    "outlineViewBox": "0 0 24 24"
+  },
+  {
+    "name": "info",
+    "category": "Status",
+    "relic": "phantom-info.svg",
+    "outline": "outline/phantom-info.svg",
+    "relicViewBox": "0 0 96 96",
+    "outlineViewBox": "0 0 24 24"
+  },
+  {
+    "name": "activity",
+    "category": "Status",
+    "relic": "phantom-activity.svg",
+    "outline": "outline/phantom-activity.svg",
+    "relicViewBox": "0 0 96 96",
+    "outlineViewBox": "0 0 24 24"
+  },
+  {
+    "name": "power",
+    "category": "Actions",
+    "relic": "phantom-power.svg",
+    "outline": "outline/phantom-power.svg",
+    "relicViewBox": "0 0 96 96",
+    "outlineViewBox": "0 0 24 24"
+  },
+  {
+    "name": "expand",
+    "category": "Actions",
+    "relic": "phantom-expand.svg",
+    "outline": "outline/phantom-expand.svg",
+    "relicViewBox": "0 0 96 96",
+    "outlineViewBox": "0 0 24 24"
+  },
+  {
+    "name": "ring-spire",
+    "category": "Brand",
+    "relic": "phantom-ring-spire.svg",
+    "outline": "outline/phantom-ring-spire.svg",
+    "relicViewBox": "0 0 96 96",
+    "outlineViewBox": "0 0 24 24"
+  },
+  {
+    "name": "phantom-mask",
+    "category": "Brand",
+    "relic": "phantom-phantom-mask.svg",
+    "outline": "outline/phantom-phantom-mask.svg",
+    "relicViewBox": "0 0 96 96",
+    "outlineViewBox": "0 0 24 24"
+  },
+  {
+    "name": "hood",
+    "category": "Brand",
+    "relic": "phantom-hood.svg",
+    "outline": "outline/phantom-hood.svg",
+    "relicViewBox": "0 0 96 96",
+    "outlineViewBox": "0 0 24 24"
+  },
+  {
+    "name": "sigil",
+    "category": "Brand",
+    "relic": "phantom-sigil.svg",
+    "outline": "outline/phantom-sigil.svg",
+    "relicViewBox": "0 0 96 96",
+    "outlineViewBox": "0 0 24 24"
+  },
+  {
+    "name": "sentinel",
+    "category": "Brand",
+    "relic": "phantom-sentinel.svg",
+    "outline": "outline/phantom-sentinel.svg",
+    "relicViewBox": "0 0 96 96",
+    "outlineViewBox": "0 0 24 24"
+  },
+  {
+    "name": "blade",
+    "category": "Brand",
+    "relic": "phantom-blade.svg",
+    "outline": "outline/phantom-blade.svg",
+    "relicViewBox": "0 0 96 96",
+    "outlineViewBox": "0 0 24 24"
+  },
+  {
+    "name": "citadel",
+    "category": "Brand",
+    "relic": "phantom-citadel.svg",
+    "outline": "outline/phantom-citadel.svg",
+    "relicViewBox": "0 0 96 96",
+    "outlineViewBox": "0 0 24 24"
+  },
+  {
+    "name": "crest",
+    "category": "Brand",
+    "relic": "phantom-crest.svg",
+    "outline": "outline/phantom-crest.svg",
+    "relicViewBox": "0 0 96 96",
+    "outlineViewBox": "0 0 24 24"
+  }
+]

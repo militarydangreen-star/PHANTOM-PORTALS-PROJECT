@@ -1,0 +1,85 @@
+/*
+ * Phantom Portals canon — tailwind.theme.css
+ * GENERATED from 10_DESIGN_SYSTEM/tokens/tokens.json by 80_TOOLS/build-tokens. Do not edit.
+ */
+/* Tailwind CSS v4: @import "./tailwind.theme.css"; */
+@theme {
+  --color-surface-canvas: #f6f5f2;
+  --color-surface-primary: #ffffff;
+  --color-surface-sunken: #eceae6;
+  --color-surface-inverse: #151519;
+  --color-surface-inverse-raised: #2a2a30;
+  --color-surface-crimson-soft: #fce8eb;
+  --color-ink-primary: #151519;
+  --color-ink-secondary: #55525a;
+  --color-ink-on-inverse: #ffffff;
+  --color-ink-on-inverse-secondary: #b4b1b9;
+  --color-accent-crimson: #a0112b;
+  --color-accent-crimson-pressed: #7e0d22;
+  --color-accent-hero: #b8143e;
+  --color-accent-electric: #ee5367;
+  --color-accent-crimson-on-inverse: #ff6b7d;
+  --color-border-default: #d8d5d6;
+  --color-border-control: #86828a;
+  --color-border-inverse: #6e6a73;
+  --color-status-success: #1e6b47;
+  --color-status-warning: #8a5300;
+  --color-status-error: #a0112b;
+  --color-focus-ring: #a0112b;
+  --color-focus-ring-inverse: #ffffff;
+  --color-overlay-glass: rgba(255,255,255,.88);
+  --color-overlay-scrim: rgba(21,21,25,.48);
+  --font-sans: Inter, "Segoe UI", system-ui, sans-serif;
+  --font-heading: "Space Grotesk", Inter, "Segoe UI", sans-serif;
+  --font-mono: "JetBrains Mono", "Cascadia Mono", Consolas, monospace;
+  --text-display: 56px;
+  --text-display--line-height: 60px;
+  --text-h1: 36px;
+  --text-h1--line-height: 44px;
+  --text-h2: 26px;
+  --text-h2--line-height: 34px;
+  --text-h3: 20px;
+  --text-h3--line-height: 28px;
+  --text-stat: 40px;
+  --text-stat--line-height: 44px;
+  --text-eyebrow: 12px;
+  --text-eyebrow--line-height: 16px;
+  --text-body-lg: 16px;
+  --text-body-lg--line-height: 26px;
+  --text-body: 15px;
+  --text-body--line-height: 24px;
+  --text-body-sm: 14px;
+  --text-body-sm--line-height: 22px;
+  --text-label: 14px;
+  --text-label--line-height: 20px;
+  --text-button: 14px;
+  --text-button--line-height: 20px;
+  --text-label-sm: 12px;
+  --text-label-sm--line-height: 16px;
+  --text-caption: 12px;
+  --text-caption--line-height: 16px;
+  --text-mono: 13px;
+  --text-mono--line-height: 20px;
+  --text-mono-sm: 12px;
+  --text-mono-sm--line-height: 18px;
+  --text-mono-label: 11px;
+  --text-mono-label--line-height: 16px;
+  --spacing-4: 4px;
+  --spacing-8: 8px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-48: 48px;
+  --spacing-64: 64px;
+  --radius-0: 0px;
+  --radius-8: 8px;
+  --radius-12: 12px;
+  --radius-full: 999px;
+  --shadow-depth-1: 0px 1px 2px 0px rgba(21,21,25,.08), 0px 1px 1px 0px rgba(21,21,25,.04);
+  --shadow-depth-2: 0px 8px 24px 0px rgba(21,21,25,.10), 0px 2px 6px 0px rgba(21,21,25,.06);
+  --shadow-depth-3: 0px 18px 48px 0px rgba(21,21,25,.16), 0px 4px 12px 0px rgba(21,21,25,.08);
+  --shadow-crimson-edge: 0px 0px 0px 1px #a0112b, 0px 6px 18px 0px rgba(160,17,43,.20);
+  --shadow-laser-glow: 0px 0px 10px 0px rgba(238,83,103,.45);
+  --shadow-inset-well: inset 0px 1px 2px 0px rgba(21,21,25,.08);
+}

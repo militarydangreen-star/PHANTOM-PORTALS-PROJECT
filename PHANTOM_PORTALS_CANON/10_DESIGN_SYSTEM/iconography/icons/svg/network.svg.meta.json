@@ -1,0 +1,32 @@
+{
+  "id": "PP-ICON-013",
+  "file": "network.svg",
+  "title": "Icon — network",
+  "status": "CURRENT",
+  "canon_version": "1.0.0",
+  "kind": "vector",
+  "format": "svg",
+  "dimensions": "24x24",
+  "bytes": 740,
+  "sha256": "b63294f755da1623475e4c001f1ed6c202a745c5e3a82bbe7ef22c43d51d126c",
+  "usage": "24 px keyline grid, 1.5 px square-capped ink strokes, one crimson accent on the part that acts.",
+  "rules": [
+    "Render through <Icon> / .pp-icon as a one-ink mask (currentColor).",
+    "Sizes 16, 20 (default), 24; below 16 px use a text label.",
+    "Icon-only controls need an accessible name and a tooltip.",
+    "Never emoji."
+  ],
+  "tags": [
+    "icon",
+    "ui"
+  ],
+  "license": "Project-original artwork for Phantom Portals. Owner-controlled; all rights reserved by the project owner.",
+  "source": {
+    "system": "Phantom Portals design system (White / Crimson / Black)",
+    "artifact": "https://claude.ai/artifact/HG2ihDf5JsALbo4fxCXcmV",
+    "version": "1793296345-e7e7",
+    "path": "assets/Icons/network.svg",
+    "asset_id": "e774f771b116b67e7372a7b78a15815a",
+    "fetched": "2026-10-29"
+  }
+}

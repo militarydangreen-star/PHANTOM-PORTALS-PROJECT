@@ -1,0 +1,32 @@
+{
+  "id": "PP-BRAND-008",
+  "file": "phantom-emblem-512.png",
+  "title": "Phantom emblem 512 px (transparent)",
+  "status": "CURRENT",
+  "canon_version": "1.0.0",
+  "kind": "raster",
+  "format": "png",
+  "dimensions": "512x512",
+  "bytes": 259914,
+  "sha256": "c013b9e7479015eb617d2712469174f6da10afca85a0bd67cdf06cd2136f9363",
+  "usage": "Screens: hero, splash, about. The PhantomHero component uses this file.",
+  "rules": [
+    "One Phantom per surface.",
+    "Clear space: a quarter of the emblem width on every side.",
+    "Never recolour the figure, add a second character, stretch it, or place it over busy art."
+  ],
+  "tags": [
+    "phantom",
+    "artwork",
+    "ink-protocol"
+  ],
+  "license": "Project-original artwork for Phantom Portals. Owner-controlled; all rights reserved by the project owner.",
+  "source": {
+    "system": "Phantom Portals design system (White / Crimson / Black)",
+    "artifact": "https://claude.ai/artifact/HG2ihDf5JsALbo4fxCXcmV",
+    "version": "1793296345-e7e7",
+    "path": "assets/Artwork/phantom-emblem-512.png",
+    "asset_id": "f29cb6f71666a3072037302bb85a017b",
+    "fetched": "2026-10-29"
+  }
+}

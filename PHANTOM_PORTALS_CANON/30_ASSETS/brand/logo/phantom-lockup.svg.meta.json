@@ -1,0 +1,32 @@
+{
+  "id": "PP-BRAND-005",
+  "file": "phantom-lockup.svg",
+  "title": "Phantom lockup (monogram + wordmark)",
+  "status": "CURRENT",
+  "canon_version": "1.0.0",
+  "kind": "vector",
+  "format": "svg",
+  "dimensions": "968x210",
+  "bytes": 366707,
+  "sha256": "a9767c17ee185a5d0846dcfb647ddfffe5f2cdab5ffe20e70b8267fc82aa8589",
+  "usage": "Headers, documents, installer banners. Minimum height 40 px.",
+  "rules": [
+    "One Phantom per surface.",
+    "Clear space: a quarter of the emblem width on every side.",
+    "Never recolour the figure, add a second character, stretch it, or place it over busy art."
+  ],
+  "tags": [
+    "phantom",
+    "logo",
+    "ink-protocol"
+  ],
+  "license": "Project-original artwork for Phantom Portals. Owner-controlled; all rights reserved by the project owner.",
+  "source": {
+    "system": "Phantom Portals design system (White / Crimson / Black)",
+    "artifact": "https://claude.ai/artifact/HG2ihDf5JsALbo4fxCXcmV",
+    "version": "1793296345-e7e7",
+    "path": "assets/Logos/phantom-lockup.svg",
+    "asset_id": "0a4f5650671c5d42cf2635e4a934831b",
+    "fetched": "2026-10-29"
+  }
+}

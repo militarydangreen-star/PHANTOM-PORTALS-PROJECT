@@ -1,0 +1,17 @@
+<!-- @dsCard group="Technical" height=250 subtitle="Console panel with real input" -->
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><style>html,body{margin:0;background:var(--surface-canvas)}.row{display:flex;flex-wrap:wrap;gap:12px;align-items:center}.stack{display:grid;gap:16px}</style></head>
+<body><div id="root" class="pp" style="padding:24px;background:var(--surface-canvas)"></div>
+<script>
+var P = window.PhantomPortals, h = React.createElement, F = React.Fragment;
+ReactDOM.createRoot(document.getElementById("root")).render(
+h(function Demo(){
+  var s = React.useState([
+    {kind:'cmd', text:'Get-NetAdapter | Select Name, Status, LinkSpeed'},{kind:'dim', text:'Name       Status  LinkSpeed'},
+    {text:'Ethernet0  Up      1 Gbps'},{kind:'err', text:'Wi-Fi      Disconnected 0 bps'},{kind:'cmd', text:'Test-Connection 1.1.1.1 -Count 1', note:'12 ms'}]);
+  return h(P.Terminal, {title:h(F, null, h('b', null, 'PS 7.4'), ' · ADMIN · C:\\PhantomPortals'), lines:s[0], defaultInput:'repair-winsock -WhatIf',
+    onCommand:function(c){ s[1](s[0].concat([{kind:'cmd', text:c},{kind:'dim', text:'(preview: command not executed)'}])) }});
+})
+);
+</script>
+</body></html>

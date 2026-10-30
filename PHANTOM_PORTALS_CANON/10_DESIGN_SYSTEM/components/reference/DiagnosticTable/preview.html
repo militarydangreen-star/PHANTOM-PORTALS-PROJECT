@@ -1,0 +1,20 @@
+<!-- @dsCard group="Technical" height=248 subtitle="Dense diagnostic table" -->
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><style>html,body{margin:0;background:var(--surface-canvas)}.row{display:flex;flex-wrap:wrap;gap:12px;align-items:center}.stack{display:grid;gap:16px}</style></head>
+<body><div id="root" class="pp" style="padding:24px;background:var(--surface-canvas)"></div>
+<script>
+var P = window.PhantomPortals, h = React.createElement, F = React.Fragment;
+ReactDOM.createRoot(document.getElementById("root")).render(
+h(function Demo(){
+  var sel = React.useState('mem');
+  var st = function(r){ return h(P.StatusBadge, {status:r.status}, r.result) };
+  return h(P.DiagnosticTable, {caption:'Diagnostic results', selectedId:sel[0], onSelect:sel[1],
+    columns:[{key:'check',label:'Check'},{key:'device',label:'Device'},{key:'result',label:'Result',render:st},{key:'time',label:'Time',numeric:true}],
+    rows:[{id:'smart',check:'SMART health',device:'Samsung 980 Pro',result:'Passed',status:'ok',time:'0.8 s'},
+          {id:'mem',check:'Memory test',device:'DIMM A1',result:'3 errors',status:'error',time:'41.2 s'},
+          {id:'therm',check:'Thermal',device:'CPU package',result:'88 °C',status:'warn',time:'5.0 s'},
+          {id:'drv',check:'Driver audit',device:'Intel I219-V',result:'Running',status:'run',time:'—'}]});
+})
+);
+</script>
+</body></html>

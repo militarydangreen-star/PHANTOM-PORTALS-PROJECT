@@ -1,0 +1,23 @@
+{
+  "v": 3,
+  "createdOnFiles": {"v": 1, "at": "2026-10-29T17:52:18Z"},
+  "title": "Phantom Portals",
+  "launch": {"view": "canvas"},
+  "pages": [],
+  "boards": {
+    "Main.dc.html": {"x": 0, "y": 0, "w": 1440, "h": 1320, "title": "Command Center · Home", "expand": "fill"},
+    "Diagnostics.dc.html": {"x": 1520, "y": 0, "w": 1440, "h": 1440, "title": "Diagnostics · Full Scan", "expand": "fill"},
+    "Poster.dc.html": {"x": 3040, "y": 0, "w": 1080, "h": 1350, "title": "Trash Polka Poster"},
+    "Boot.dc.html": {"x": 4200, "y": 0, "w": 1440, "h": 900, "title": "Boot Screen", "expand": "fill"},
+    "Phone.dc.html": {"x": 0, "y": 1900, "w": 390, "h": 844, "title": "Command Center · Phone"},
+    "PosterDark.dc.html": {"x": 470, "y": 1900, "w": 1080, "h": 1350, "title": "Trash Polka Poster · Dark"}
+  },
+  "order": ["Main.dc.html", "Diagnostics.dc.html", "Poster.dc.html", "Boot.dc.html", "Phone.dc.html", "PosterDark.dc.html"],
+  "notes": {
+    "title": {"x": 0, "y": -300, "text": "Phantom Portals — white, crimson, black", "kind": "title1", "maxW": 5640},
+    "row2": {"x": 0, "y": 1600, "text": "Phone and dark poster", "kind": "title1", "maxW": 1550}
+  },
+  "designSystems": [
+    {"title": "Trash-Polka Red-White", "namespace": "phantomportals", "artifact": "https://claude.ai/code/artifact/83ab6f34-2f3c-4aeb-baf3-9c6ef5323ec0", "version": "1793295428-b8ae", "copiedAt": "2026-10-29T17:52:18Z"}
+  ]
+}

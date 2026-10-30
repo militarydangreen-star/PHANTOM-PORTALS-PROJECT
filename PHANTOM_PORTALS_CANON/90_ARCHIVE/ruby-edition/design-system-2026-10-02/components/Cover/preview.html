@@ -1,0 +1,49 @@
+<!-- @dsCard height=288 -->
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Space+Grotesk:wght@400&display=swap" rel="stylesheet">
+<style>
+  html, body { margin: 0; background: var(--obsidian); }
+  .cover { position: relative; width: 960px; height: 288px; overflow: hidden; background: var(--obsidian); }
+  svg { position: absolute; inset: 0; }
+  .graphite { fill: var(--graphite); }
+  .ruby { fill: var(--deep-ruby); }
+  .gold { fill: var(--sovereign-gold); }
+  .platinum { fill: var(--platinum); }
+  .line-neutral { stroke: var(--muted); stroke-width: 1; }
+  .line-energy { stroke: var(--ruby-ink); stroke-width: 2; }
+  .node { fill: var(--sovereign-gold); }
+  .text { position: absolute; left: 48px; bottom: 40px; max-width: 440px; }
+  .name { margin: 0; font-family: var(--font-display); font-weight: 600; font-size: 76px; line-height: .95; letter-spacing: .02em; color: var(--platinum); }
+  .tag { margin: 16px 0 0; font-family: var(--font-body); font-size: 13px; line-height: 18px; color: var(--muted); }
+</style>
+</head>
+<body>
+<div class="cover">
+  <svg width="960" height="288" viewBox="0 0 960 288" aria-hidden="true">
+    <!--
+      blocks: graphite 360x208 slab (bleeds top/right), deep-ruby 120x128 (bleeds bottom), sovereign-gold 112x80 (bleeds right/bottom), platinum 48x48 relief
+      arrangement: one tall slab with satellites, all right of x=480, corners cut not rounded
+      pattern: the Phantom Line (neutral run, gold node, ruby-ink segment) x4, the system's own named signature
+      scales: space-8 32 / space-4 16 pitch and insets, radius-0 corners, cut-lg 16 and cut-sm 8 chamfers (32 = 2x cut-lg on the slab)
+    -->
+    <polygon class="graphite" points="600,0 960,0 960,208 632,208 600,176" />
+    <polygon class="ruby" points="520,160 624,160 640,176 640,288 520,288" />
+    <polygon class="gold" points="864,208 960,208 960,288 848,288 848,224" />
+    <polygon class="platinum" points="784,224 824,224 832,232 832,272 784,272" />
+
+    <line class="line-neutral" x1="640" y1="48" x2="760" y2="48" /><circle class="node" cx="768" cy="48" r="4" /><line class="line-energy" x1="776" y1="48" x2="928" y2="48" />
+    <line class="line-neutral" x1="640" y1="80" x2="824" y2="80" /><circle class="node" cx="832" cy="80" r="4" /><line class="line-energy" x1="840" y1="80" x2="928" y2="80" />
+    <line class="line-neutral" x1="640" y1="112" x2="696" y2="112" /><circle class="node" cx="704" cy="112" r="4" /><line class="line-energy" x1="712" y1="112" x2="928" y2="112" />
+    <line class="line-neutral" x1="640" y1="144" x2="880" y2="144" /><circle class="node" cx="888" cy="144" r="4" /><line class="line-energy" x1="896" y1="144" x2="928" y2="144" />
+  </svg>
+  <div class="text">
+    <h1 class="name">Phantom<br>Portals</h1>
+    <p class="tag">Obsidian grounds. Platinum speaks. Gold lights. Ruby costs.</p>
+  </div>
+</div>
+</body>
+</html>

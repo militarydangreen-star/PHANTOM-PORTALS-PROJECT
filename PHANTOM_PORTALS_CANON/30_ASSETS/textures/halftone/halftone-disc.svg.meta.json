@@ -1,0 +1,32 @@
+{
+  "id": "PP-VEC-010",
+  "file": "halftone-disc.svg",
+  "title": "Halftone disc",
+  "status": "CURRENT",
+  "canon_version": "1.0.0",
+  "kind": "vector",
+  "format": "svg",
+  "dimensions": "440x440",
+  "bytes": 69235,
+  "sha256": "087f7a8eaef64f99c5553387b27ad8c372662b891425498922711efca6a2eacb",
+  "usage": "Hero artwork, page-header edges, empty states, section dividers and transitions.",
+  "rules": [
+    "At most three vectors per composition, one of them crimson.",
+    "Pair every Trash Polka mark with a precision mark (brush cut + iso grid, splatter + reticle).",
+    "Never behind controls, tables, search results, terminal output or body text."
+  ],
+  "tags": [
+    "trash-polka",
+    "ink",
+    "ink-protocol"
+  ],
+  "license": "Project-original artwork for Phantom Portals. Owner-controlled; all rights reserved by the project owner.",
+  "source": {
+    "system": "Phantom Portals design system (White / Crimson / Black)",
+    "artifact": "https://claude.ai/artifact/HG2ihDf5JsALbo4fxCXcmV",
+    "version": "1793296345-e7e7",
+    "path": "assets/Vectors/halftone-disc.svg",
+    "asset_id": "afb527685474499534b125777e7cc832",
+    "fetched": "2026-10-29"
+  }
+}

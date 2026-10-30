@@ -1,0 +1,14 @@
+<!-- @dsCard group="Technical" height=270 subtitle="AI answer panel with sources" -->
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><style>html,body{margin:0;background:var(--surface-canvas)}.row{display:flex;flex-wrap:wrap;gap:12px;align-items:center}.stack{display:grid;gap:16px}</style></head>
+<body><div id="root" class="pp" style="padding:24px;background:var(--surface-canvas)"></div>
+<script>
+var P = window.PhantomPortals, h = React.createElement, F = React.Fragment;
+ReactDOM.createRoot(document.getElementById("root")).render(
+h('div', {style:{maxWidth:640}}, h(P.AIResponse, {model:'PHANTOM AI', local:true,
+  sources:[{label:'SOP-047 Memory triage',href:'#'},{label:'run-2026-10-29.log',href:'#'}],
+  actions:h(F, null, h(P.Button, null, 'Rerun Test'), h(P.Button, {variant:'ghost'}, 'Copy'))},
+  h('p', null, 'DIMM A1 failed 3 of 12 passes. Reseat it, then rerun ', h('code', null, 'mdsched /quick'), '. If errors persist, replace the module — the other slot passed cleanly.')))
+);
+</script>
+</body></html>

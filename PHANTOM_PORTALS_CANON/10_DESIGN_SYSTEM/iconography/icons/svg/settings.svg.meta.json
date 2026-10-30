@@ -1,0 +1,32 @@
+{
+  "id": "PP-ICON-017",
+  "file": "settings.svg",
+  "title": "Icon — settings",
+  "status": "CURRENT",
+  "canon_version": "1.0.0",
+  "kind": "vector",
+  "format": "svg",
+  "dimensions": "24x24",
+  "bytes": 740,
+  "sha256": "2177cbca6e713f071f24e20d3490348732d032d4e8c98f11666b0931e40288a6",
+  "usage": "24 px keyline grid, 1.5 px square-capped ink strokes, one crimson accent on the part that acts.",
+  "rules": [
+    "Render through <Icon> / .pp-icon as a one-ink mask (currentColor).",
+    "Sizes 16, 20 (default), 24; below 16 px use a text label.",
+    "Icon-only controls need an accessible name and a tooltip.",
+    "Never emoji."
+  ],
+  "tags": [
+    "icon",
+    "ui"
+  ],
+  "license": "Project-original artwork for Phantom Portals. Owner-controlled; all rights reserved by the project owner.",
+  "source": {
+    "system": "Phantom Portals design system (White / Crimson / Black)",
+    "artifact": "https://claude.ai/artifact/HG2ihDf5JsALbo4fxCXcmV",
+    "version": "1793296345-e7e7",
+    "path": "assets/Icons/settings.svg",
+    "asset_id": "555b54a4a096413d33458ee900a3606b",
+    "fetched": "2026-10-29"
+  }
+}

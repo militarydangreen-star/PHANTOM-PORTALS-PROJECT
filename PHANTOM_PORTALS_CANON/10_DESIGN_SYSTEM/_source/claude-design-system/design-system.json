@@ -1,0 +1,794 @@
+{
+  "v": 3,
+  "assetGroups": {
+    "INSPIRATION": {
+      "files": {
+        "images.jpg": {
+          "blob": "3ec031f3b7bf1b9190bb4552d76c99d8",
+          "name": "images.jpg",
+          "sha256": "327fef9c7a2cf7f4eaa2651f287142b4c6caa503bf4f75a0b03d1b3ee821489a",
+          "size": 55290,
+          "type": "image/jpeg"
+        },
+        "images~20~2810~29.jpg": {
+          "blob": "21caa4f92d926c21762606b1c5f77fcf",
+          "name": "images (10).jpg",
+          "sha256": "4a6ac08b011136833c2f16d217f46923749c7acfcd02c73f1371c4d6c0f974d6",
+          "size": 23501,
+          "type": "image/jpeg"
+        },
+        "images~20~2811~29.jpg": {
+          "blob": "8824cc9df7fa4ee8a83986f80b055ca7",
+          "name": "images (11).jpg",
+          "sha256": "a756a5b4971ac20cea411f264362eb94e255559bdea7a1f4f8c0c97a0654986c",
+          "size": 54578,
+          "type": "image/jpeg"
+        },
+        "images~20~2812~29.jpg": {
+          "blob": "760d1abc163359125537c7dd73ccc1da",
+          "name": "images (12).jpg",
+          "sha256": "7b4d150413aa8a93dcf8d62162bf4c0704e3ea873f1c3c278c23ad97dccc8a95",
+          "size": 37129,
+          "type": "image/jpeg"
+        },
+        "images~20~2813~29.jpg": {
+          "blob": "7d412131bd495be1768a9c33ac2dbb13",
+          "name": "images (13).jpg",
+          "sha256": "de6263ad5915829c9dccb2ba08b764e3455e801224ad7e86856cac6d34034535",
+          "size": 7527,
+          "type": "image/jpeg"
+        },
+        "images~20~2814~29.jpg": {
+          "blob": "e7871d66297a30506d7c7d44be81d7fa",
+          "name": "images (14).jpg",
+          "sha256": "b523562401096afeee4025b953f9e8d5c92e7480d247ed378f3bd9dfeedd5756",
+          "size": 22812,
+          "type": "image/jpeg"
+        },
+        "images~20~2815~29.jpg": {
+          "blob": "a706936b05ee76872543e1ef3bc171e5",
+          "name": "images (15).jpg",
+          "sha256": "435ba3b626b39ee52ce549a39b7a05e674ba25ad47eec53179c0691fe0bea9ee",
+          "size": 29645,
+          "type": "image/jpeg"
+        },
+        "images~20~2816~29.jpg": {
+          "blob": "5d2e8357358b4a4da5df4c4ade7f1d03",
+          "name": "images (16).jpg",
+          "sha256": "79621de2e087afeba3b03c91c7deb2e36114ec406ed50768e0722eec0238d278",
+          "size": 40341,
+          "type": "image/jpeg"
+        },
+        "images~20~2817~29.jpg": {
+          "blob": "eaa3d662fc3d6d5252cafbaeaa32b7d0",
+          "name": "images (17).jpg",
+          "sha256": "1cc4b028dada592082b2fb0d6ea23bbf8080fd2d6e9c1700e1314af3bc436415",
+          "size": 10679,
+          "type": "image/jpeg"
+        },
+        "images~20~2818~29.jpg": {
+          "blob": "e01558d7c288c1c2dcca48ed3616c6b3",
+          "name": "images (18).jpg",
+          "sha256": "fc3d19b63bc3bd7c35a67aaae50af5330eab0ecf80b04a1dcc26fd53e9da7bdd",
+          "size": 34952,
+          "type": "image/jpeg"
+        },
+        "images~20~2819~29.jpg": {
+          "blob": "22841a82b683c7670a5cba095fadec3e",
+          "name": "images (19).jpg",
+          "sha256": "6a45b0be8a2b8379e735bb78fbc0e1d022b878db9c7c28ce3fdde2bdf24eba09",
+          "size": 49479,
+          "type": "image/jpeg"
+        },
+        "images~20~281~29.jpg": {
+          "blob": "60ae8d9bdf2509582175303e2dc48b92",
+          "name": "images (1).jpg",
+          "sha256": "78420ec2ea27901163f17872578695e0456b4ef0870b3eee1a8b94f8a8243a0e",
+          "size": 48525,
+          "type": "image/jpeg"
+        },
+        "images~20~2820~29.jpg": {
+          "blob": "572f3e639e240db9a9cfe6d8a8fb8d64",
+          "name": "images (20).jpg",
+          "sha256": "b701ed78a2c22b124cd8780f799a9abc42369363f1bede38fbe504d3b574dd5d",
+          "size": 10578,
+          "type": "image/jpeg"
+        },
+        "images~20~2821~29.jpg": {
+          "blob": "24f015ef9a56e460790e9aaa20371cc4",
+          "name": "images (21).jpg",
+          "sha256": "29468fbe7e6e33759cce83a1da4d27e252029fa512f96e4f9c3defacd2edd845",
+          "size": 49444,
+          "type": "image/jpeg"
+        },
+        "images~20~2822~29.jpg": {
+          "blob": "970cb331b9a84b5fb06512cb5ca4744a",
+          "name": "images (22).jpg",
+          "sha256": "b795db51a90225589e47c8687ad86e4d5f714a44d09ae74628bd6a0726de41f9",
+          "size": 14850,
+          "type": "image/jpeg"
+        },
+        "images~20~2823~29.jpg": {
+          "blob": "315bbd934adeebe4a973fc6900fbb234",
+          "name": "images (23).jpg",
+          "sha256": "3819346a0c26c057b2ae5df6d054749185428d41ad327a5cbba8338e86fe79d4",
+          "size": 16352,
+          "type": "image/jpeg"
+        },
+        "images~20~2824~29.jpg": {
+          "blob": "8824cc9df7fa4ee8a83986f80b055ca7",
+          "name": "images (24).jpg",
+          "sha256": "a756a5b4971ac20cea411f264362eb94e255559bdea7a1f4f8c0c97a0654986c",
+          "size": 54578,
+          "type": "image/jpeg"
+        },
+        "images~20~2825~29.jpg": {
+          "blob": "37f7448bcb23718397b5bbf8f7d619b7",
+          "name": "images (25).jpg",
+          "sha256": "5376ad61fa5c236d8c456cf14d056b1dc79eb28bb1c9d89274ab6ee84dd79cfe",
+          "size": 47700,
+          "type": "image/jpeg"
+        },
+        "images~20~282~29.jpg": {
+          "blob": "ef2f543997d340cb0b5ec179d907c329",
+          "name": "images (2).jpg",
+          "sha256": "55d2552829bc20e5d37afde42d0cd0244c9073a203d288578c49bdf029c6f454",
+          "size": 25719,
+          "type": "image/jpeg"
+        },
+        "images~20~283~29.jpg": {
+          "blob": "cebead320e5fa493c0c95f56e548a3e9",
+          "name": "images (3).jpg",
+          "sha256": "ab4a54c2d1dca54b354d35cdef1b35a09d4841b8ffd89ccd11bdef42d9e7b28f",
+          "size": 30897,
+          "type": "image/jpeg"
+        },
+        "images~20~284~29.jpg": {
+          "blob": "ceb2b1ebe7cc066b145bfa84ff9cea6d",
+          "name": "images (4).jpg",
+          "sha256": "fc6b4b3a4bb619333d3a04299fe4813ee5be205f50518ec9aa85241364ee3f49",
+          "size": 22989,
+          "type": "image/jpeg"
+        },
+        "images~20~285~29.jpg": {
+          "blob": "2fe9172f2889b9af55556e3e80b1a93a",
+          "name": "images (5).jpg",
+          "sha256": "7f664098203006780a381d6040374ba99bdd32beed18a75ab3331ef08b6535fe",
+          "size": 35702,
+          "type": "image/jpeg"
+        },
+        "images~20~286~29.jpg": {
+          "blob": "9ba4e853bc0281d6900c92f66ce16cbe",
+          "name": "images (6).jpg",
+          "sha256": "475aad669f878117ac37fe24223583b3787545eafe1475eedcc59adcb424d6b7",
+          "size": 39119,
+          "type": "image/jpeg"
+        },
+        "images~20~287~29.jpg": {
+          "blob": "ea41e4a875a954b6136cf01de3247355",
+          "name": "images (7).jpg",
+          "sha256": "2042116285abb35f6c3d134e462a3666c19392c595ad257454c7d03d6b0f2658",
+          "size": 38908,
+          "type": "image/jpeg"
+        },
+        "images~20~288~29.jpg": {
+          "blob": "cc3dbaa9637ff513c754883f332d7107",
+          "name": "images (8).jpg",
+          "sha256": "ac52a4be8394c146b4fb7e609bebdf6527caea2f173a86125dbb8ad9d3aef014",
+          "size": 59201,
+          "type": "image/jpeg"
+        },
+        "images~20~289~29.jpg": {
+          "blob": "6bc7350b7728c5686e481535d9bf8085",
+          "name": "images (9).jpg",
+          "sha256": "a791987c9f7d13405f409d52b034846ce12926397cc435a5b1fbc6c6104095aa",
+          "size": 32207,
+          "type": "image/jpeg"
+        }
+      },
+      "name": "INSPIRATION",
+      "order": []
+    },
+    "Icons": {
+      "name": "Icons",
+      "tile": "s",
+      "order": [
+        "ai-core.svg",
+        "alert.svg",
+        "back.svg",
+        "bookmark.svg",
+        "check.svg",
+        "close.svg",
+        "cloud.svg",
+        "cpu.svg",
+        "diagnostics.svg",
+        "folder.svg",
+        "forward.svg",
+        "home-portal.svg",
+        "network.svg",
+        "power.svg",
+        "reload.svg",
+        "search.svg",
+        "settings.svg",
+        "shield.svg",
+        "terminal.svg",
+        "tools.svg"
+      ],
+      "files": {
+        "ai-core.svg": {
+          "name": "ai-core.svg",
+          "blob": "848abfe5e8aa3d334e73c13348067a1d",
+          "size": 572,
+          "type": "image/svg+xml"
+        },
+        "alert.svg": {
+          "name": "alert.svg",
+          "blob": "85a2d203f62988cf8f734e6b53ba45a1",
+          "size": 499,
+          "type": "image/svg+xml"
+        },
+        "back.svg": {
+          "name": "back.svg",
+          "blob": "4fb22c82656068ee14e71c66ce133f74",
+          "size": 435,
+          "type": "image/svg+xml"
+        },
+        "bookmark.svg": {
+          "name": "bookmark.svg",
+          "blob": "29c28ea172f44369888f93930cd83783",
+          "size": 465,
+          "type": "image/svg+xml"
+        },
+        "check.svg": {
+          "name": "check.svg",
+          "blob": "255a4e5b9e3269d7c267a794a2c0d444",
+          "size": 453,
+          "type": "image/svg+xml"
+        },
+        "close.svg": {
+          "name": "close.svg",
+          "blob": "0805715fd32769cdb3fe7cb7b2207d55",
+          "size": 426,
+          "type": "image/svg+xml"
+        },
+        "cloud.svg": {
+          "name": "cloud.svg",
+          "blob": "12aa134118214164bf1ed7b30130ea80",
+          "size": 530,
+          "type": "image/svg+xml"
+        },
+        "cpu.svg": {
+          "name": "cpu.svg",
+          "blob": "ace56fdfda0963eba085b717cb55c253",
+          "size": 578,
+          "type": "image/svg+xml"
+        },
+        "diagnostics.svg": {
+          "name": "diagnostics.svg",
+          "blob": "719f08eee2b3c1e89362c22b0aeb91fa",
+          "size": 507,
+          "type": "image/svg+xml"
+        },
+        "folder.svg": {
+          "name": "folder.svg",
+          "blob": "ba0d00cfa8e36aabb8daa8a58853e5a4",
+          "size": 590,
+          "type": "image/svg+xml"
+        },
+        "forward.svg": {
+          "name": "forward.svg",
+          "blob": "24e7f0eff926eb7e6b4287f496db225f",
+          "size": 442,
+          "type": "image/svg+xml"
+        },
+        "home-portal.svg": {
+          "name": "home-portal.svg",
+          "blob": "6670f4f3ec848d9ebdf5b916b4fae647",
+          "size": 584,
+          "type": "image/svg+xml"
+        },
+        "network.svg": {
+          "name": "network.svg",
+          "blob": "e774f771b116b67e7372a7b78a15815a",
+          "size": 717,
+          "type": "image/svg+xml"
+        },
+        "power.svg": {
+          "name": "power.svg",
+          "blob": "9665970473c416b7bb013eff39db3d9b",
+          "size": 447,
+          "type": "image/svg+xml"
+        },
+        "reload.svg": {
+          "name": "reload.svg",
+          "blob": "64fd484c36e2107beebe9186d6e4333c",
+          "size": 450,
+          "type": "image/svg+xml"
+        },
+        "search.svg": {
+          "name": "search.svg",
+          "blob": "e6466f267cb10fe11a91c82dce860ed2",
+          "size": 619,
+          "type": "image/svg+xml"
+        },
+        "settings.svg": {
+          "name": "settings.svg",
+          "blob": "555b54a4a096413d33458ee900a3606b",
+          "size": 727,
+          "type": "image/svg+xml"
+        },
+        "shield.svg": {
+          "name": "shield.svg",
+          "blob": "bd3fb9464dcd9896e00459132c342878",
+          "size": 504,
+          "type": "image/svg+xml"
+        },
+        "terminal.svg": {
+          "name": "terminal.svg",
+          "blob": "a136388357e55d503b140b6c7888fee9",
+          "size": 740,
+          "type": "image/svg+xml"
+        },
+        "tools.svg": {
+          "name": "tools.svg",
+          "blob": "4f12dc18195b54415cb0eb37a0a293f1",
+          "size": 816,
+          "type": "image/svg+xml"
+        }
+      }
+    },
+    "Logos": {
+      "name": "Logos",
+      "tile": "l",
+      "order": [
+        "phantom-emblem.svg",
+        "phantom-emblem-inverse.svg",
+        "phantom-lockup.svg",
+        "phantom-wordmark.svg",
+        "phantom-wordmark-inverse.svg",
+        "phantom-monogram.svg",
+        "phantom-app-icon.svg"
+      ],
+      "files": {
+        "phantom-app-icon.svg": {
+          "name": "phantom-app-icon.svg",
+          "blob": "7af1ca158cd5cc94541091025ee810fd",
+          "size": 195113,
+          "type": "image/svg+xml"
+        },
+        "phantom-emblem-inverse.svg": {
+          "name": "phantom-emblem-inverse.svg",
+          "blob": "77d9eda6c8810ea1156f3001dc206532",
+          "size": 1782862,
+          "type": "image/svg+xml"
+        },
+        "phantom-emblem.svg": {
+          "name": "phantom-emblem.svg",
+          "blob": "66e8bb62dbc39cc386c8fec3a4ecc85e",
+          "size": 1781850,
+          "type": "image/svg+xml"
+        },
+        "phantom-lockup.svg": {
+          "name": "phantom-lockup.svg",
+          "blob": "0a4f5650671c5d42cf2635e4a934831b",
+          "size": 366383,
+          "type": "image/svg+xml"
+        },
+        "phantom-monogram.svg": {
+          "name": "phantom-monogram.svg",
+          "blob": "52ddb442b9f60e246eac949585fbf43b",
+          "size": 194123,
+          "type": "image/svg+xml"
+        },
+        "phantom-wordmark-inverse.svg": {
+          "name": "phantom-wordmark-inverse.svg",
+          "blob": "79ba0e19b001ba1118175c6530e211cb",
+          "size": 170723,
+          "type": "image/svg+xml"
+        },
+        "phantom-wordmark.svg": {
+          "name": "phantom-wordmark.svg",
+          "blob": "b935b4163e8c269b51cc2f2b6c0db91c",
+          "size": 170644,
+          "type": "image/svg+xml"
+        }
+      }
+    },
+    "Vectors": {
+      "name": "Vectors",
+      "tile": "m",
+      "order": [
+        "brush-slash.svg",
+        "brush-stroke.svg",
+        "brush-x.svg",
+        "circuit-trace.svg",
+        "coordinate-ruler.svg",
+        "engraved-hatch.svg",
+        "enso-ring.svg",
+        "halftone-disc.svg",
+        "halftone-fade.svg",
+        "hex-cluster.svg",
+        "hud-ring.svg",
+        "ink-drips.svg",
+        "iso-cube.svg",
+        "iso-grid.svg",
+        "laser-lines.svg",
+        "splatter-crimson.svg",
+        "splatter-ink.svg",
+        "target-reticle.svg",
+        "torn-edge.svg"
+      ],
+      "files": {
+        "brush-slash.svg": {
+          "name": "brush-slash.svg",
+          "blob": "82d300a2272e0dc0a0cd277c8424549b",
+          "size": 800681,
+          "type": "image/svg+xml"
+        },
+        "brush-stroke.svg": {
+          "name": "brush-stroke.svg",
+          "blob": "209072f024d1c6606443e88e84aa5077",
+          "size": 560172,
+          "type": "image/svg+xml"
+        },
+        "brush-x.svg": {
+          "name": "brush-x.svg",
+          "blob": "91f61235f9d3927e14e8e3a568f66e4f",
+          "size": 659741,
+          "type": "image/svg+xml"
+        },
+        "circuit-trace.svg": {
+          "name": "circuit-trace.svg",
+          "blob": "ed38f18cadd698ff52a5243d14eb1fb2",
+          "size": 1405,
+          "type": "image/svg+xml"
+        },
+        "coordinate-ruler.svg": {
+          "name": "coordinate-ruler.svg",
+          "blob": "ac30a2eb5a11a9d55f72a503dd38472f",
+          "size": 8083,
+          "type": "image/svg+xml"
+        },
+        "engraved-hatch.svg": {
+          "name": "engraved-hatch.svg",
+          "blob": "1b10cac824a8b26a7f1a3738e67378f7",
+          "size": 79588,
+          "type": "image/svg+xml"
+        },
+        "enso-ring.svg": {
+          "name": "enso-ring.svg",
+          "blob": "90643e11ead38e50effafcdd7e448453",
+          "size": 614775,
+          "type": "image/svg+xml"
+        },
+        "halftone-disc.svg": {
+          "name": "halftone-disc.svg",
+          "blob": "afb527685474499534b125777e7cc832",
+          "size": 69197,
+          "type": "image/svg+xml"
+        },
+        "halftone-fade.svg": {
+          "name": "halftone-fade.svg",
+          "blob": "a300aea66dc08849d634f479c6c7e123",
+          "size": 79362,
+          "type": "image/svg+xml"
+        },
+        "hex-cluster.svg": {
+          "name": "hex-cluster.svg",
+          "blob": "ea0c0d1b7496af66204a786941877920",
+          "size": 1426,
+          "type": "image/svg+xml"
+        },
+        "hud-ring.svg": {
+          "name": "hud-ring.svg",
+          "blob": "b8dae7bb160e4888dd6cd88d886076d2",
+          "size": 10012,
+          "type": "image/svg+xml"
+        },
+        "ink-drips.svg": {
+          "name": "ink-drips.svg",
+          "blob": "810ef4002063028b74bbf42e4845fce4",
+          "size": 305659,
+          "type": "image/svg+xml"
+        },
+        "iso-cube.svg": {
+          "name": "iso-cube.svg",
+          "blob": "380978a62e854d6deed5a779a493bdb0",
+          "size": 45302,
+          "type": "image/svg+xml"
+        },
+        "iso-grid.svg": {
+          "name": "iso-grid.svg",
+          "blob": "eae3e3e31b548a9f162b508bf86cae44",
+          "size": 2419,
+          "type": "image/svg+xml"
+        },
+        "laser-lines.svg": {
+          "name": "laser-lines.svg",
+          "blob": "cb0de2039bdece78bfd5b48c4494defe",
+          "size": 1635,
+          "type": "image/svg+xml"
+        },
+        "splatter-crimson.svg": {
+          "name": "splatter-crimson.svg",
+          "blob": "d2882d96ba2986ebb000a047639d58af",
+          "size": 22891,
+          "type": "image/svg+xml"
+        },
+        "splatter-ink.svg": {
+          "name": "splatter-ink.svg",
+          "blob": "79f81b478a2e8fddce7554ba6c1c6192",
+          "size": 22887,
+          "type": "image/svg+xml"
+        },
+        "target-reticle.svg": {
+          "name": "target-reticle.svg",
+          "blob": "b89254811de84145dfc08da32cc0e779",
+          "size": 2401,
+          "type": "image/svg+xml"
+        },
+        "torn-edge.svg": {
+          "name": "torn-edge.svg",
+          "blob": "f481e447c65d1f04091d81c4cd07306f",
+          "size": 6354,
+          "type": "image/svg+xml"
+        }
+      }
+    },
+    "essential~20assets": {
+      "files": {
+        "file.png": {
+          "blob": "8d6c3f9a994ad3922d466505ae69240e",
+          "name": "file.png",
+          "sha256": "b69473ff0e298dd47b7fa2d2339ef585fd869e7c1bd101fcbd995c4df4957b24",
+          "size": 302113,
+          "type": "image/png"
+        },
+        "file11.png": {
+          "blob": "dc895383c0c2e3d0ab81beed64f752bf",
+          "name": "file11.png",
+          "sha256": "9aeb7e3b458c6605364018f4fbbf4efc9af9ec5049158a7c5e7bfbbec292fca6",
+          "size": 527879,
+          "type": "image/png"
+        }
+      },
+      "name": "essential assets",
+      "order": []
+    },
+    "Artwork": {
+      "name": "Artwork",
+      "tile": "l",
+      "order": [
+        "plate-01-the-operator.png",
+        "phantom-emblem-512.png",
+        "phantom-emblem-inverse-512.png",
+        "phantom-emblem-2048.png",
+        "phantom-emblem-inverse-2048.png"
+      ],
+      "files": {
+        "phantom-emblem-2048.png": {
+          "name": "phantom-emblem-2048.png",
+          "blob": "99faeec9923451a79885510ae4e61b36",
+          "size": 1876168,
+          "type": "image/png"
+        },
+        "phantom-emblem-512.png": {
+          "name": "phantom-emblem-512.png",
+          "blob": "f29cb6f71666a3072037302bb85a017b",
+          "size": 259914,
+          "type": "image/png"
+        },
+        "phantom-emblem-inverse-2048.png": {
+          "name": "phantom-emblem-inverse-2048.png",
+          "blob": "c3b6b560bd4514ee5e6237eb464974b5",
+          "size": 1732398,
+          "type": "image/png"
+        },
+        "phantom-emblem-inverse-512.png": {
+          "name": "phantom-emblem-inverse-512.png",
+          "blob": "5100d4fd809e9e492a87ee463026013c",
+          "size": 233592,
+          "type": "image/png"
+        },
+        "plate-01-the-operator.png": {
+          "name": "plate-01-the-operator.png",
+          "blob": "3801dfd7588428ed28250491f8bd15eb",
+          "size": 8706427,
+          "type": "image/png"
+        }
+      }
+    },
+    "Feature~20Icons": {
+      "name": "Feature Icons",
+      "tile": "m",
+      "order": [
+        "ai-core.svg",
+        "alert.svg",
+        "back.svg",
+        "bookmark.svg",
+        "check.svg",
+        "close.svg",
+        "cloud.svg",
+        "cpu.svg",
+        "diagnostics.svg",
+        "folder.svg",
+        "forward.svg",
+        "home-portal.svg",
+        "network.svg",
+        "power.svg",
+        "reload.svg",
+        "search.svg",
+        "settings.svg",
+        "shield.svg",
+        "terminal.svg",
+        "tools.svg"
+      ],
+      "files": {
+        "ai-core.svg": {
+          "name": "ai-core.svg",
+          "blob": "78ffffd2dc4b529bb9693a6065e3c454",
+          "size": 215068,
+          "type": "image/svg+xml"
+        },
+        "alert.svg": {
+          "name": "alert.svg",
+          "blob": "b62f2569a0854ea4c9d730323020b765",
+          "size": 217269,
+          "type": "image/svg+xml"
+        },
+        "back.svg": {
+          "name": "back.svg",
+          "blob": "292e0f7b8e64a53ba9ad7c6d8c61d579",
+          "size": 210452,
+          "type": "image/svg+xml"
+        },
+        "bookmark.svg": {
+          "name": "bookmark.svg",
+          "blob": "b857c77d85172e26ab5b574b0c77b306",
+          "size": 206889,
+          "type": "image/svg+xml"
+        },
+        "check.svg": {
+          "name": "check.svg",
+          "blob": "ae0b091e017c1e8c8c1e3b089add57aa",
+          "size": 202195,
+          "type": "image/svg+xml"
+        },
+        "close.svg": {
+          "name": "close.svg",
+          "blob": "885337d9d2e4b07f933ef297eae31a71",
+          "size": 206981,
+          "type": "image/svg+xml"
+        },
+        "cloud.svg": {
+          "name": "cloud.svg",
+          "blob": "9fc3b56fa39644c124b5e5b7f04cdc2e",
+          "size": 217566,
+          "type": "image/svg+xml"
+        },
+        "cpu.svg": {
+          "name": "cpu.svg",
+          "blob": "2a2bce013d4001387b7a1e9a6980bdc7",
+          "size": 216682,
+          "type": "image/svg+xml"
+        },
+        "diagnostics.svg": {
+          "name": "diagnostics.svg",
+          "blob": "8a5887ba0ffe1cfdfbe35b2f4e996297",
+          "size": 217400,
+          "type": "image/svg+xml"
+        },
+        "folder.svg": {
+          "name": "folder.svg",
+          "blob": "ce2dbf214710158cc392bb37ee6279cf",
+          "size": 195676,
+          "type": "image/svg+xml"
+        },
+        "forward.svg": {
+          "name": "forward.svg",
+          "blob": "28a3bbf7218de2368bd2827e082260f2",
+          "size": 207588,
+          "type": "image/svg+xml"
+        },
+        "home-portal.svg": {
+          "name": "home-portal.svg",
+          "blob": "2d0e9a4a06bda2360a6da93b50def67c",
+          "size": 207602,
+          "type": "image/svg+xml"
+        },
+        "network.svg": {
+          "name": "network.svg",
+          "blob": "f3a3a64e4672174aee67d350bfee731b",
+          "size": 213294,
+          "type": "image/svg+xml"
+        },
+        "power.svg": {
+          "name": "power.svg",
+          "blob": "4c238722cef9230366bb4f43cc18da70",
+          "size": 210469,
+          "type": "image/svg+xml"
+        },
+        "reload.svg": {
+          "name": "reload.svg",
+          "blob": "c7dad948b950e9bcd98b0fc64948cbc5",
+          "size": 212231,
+          "type": "image/svg+xml"
+        },
+        "search.svg": {
+          "name": "search.svg",
+          "blob": "8106cb7ec2d0120b5be7f6196f6d00c9",
+          "size": 218591,
+          "type": "image/svg+xml"
+        },
+        "settings.svg": {
+          "name": "settings.svg",
+          "blob": "fc8a6daee36ff9941a3551c564859a59",
+          "size": 221925,
+          "type": "image/svg+xml"
+        },
+        "shield.svg": {
+          "name": "shield.svg",
+          "blob": "3ce61daebc67d9abbc74426ad83d2d71",
+          "size": 216800,
+          "type": "image/svg+xml"
+        },
+        "terminal.svg": {
+          "name": "terminal.svg",
+          "blob": "a8eee444eb3dc2745b55e31ba766526d",
+          "size": 216828,
+          "type": "image/svg+xml"
+        },
+        "tools.svg": {
+          "name": "tools.svg",
+          "blob": "4822460633fddcde31a92104581745e2",
+          "size": 208172,
+          "type": "image/svg+xml"
+        }
+      }
+    }
+  },
+  "blobs": {},
+  "createdOnFiles": {
+    "at": "2026-10-29T16:43:48.990Z",
+    "v": 1
+  },
+  "docs": {
+    "readme": "project/README.md",
+    "sections": [
+      "project/layout.md"
+    ]
+  },
+  "groups": [
+    "Logos",
+    "Artwork",
+    "Icons",
+    "Feature~20Icons",
+    "Vectors",
+    "INSPIRATION",
+    "essential~20assets"
+  ],
+  "lastChange": {
+    "by": "XerXes",
+    "at": "2026-10-29T17:52:01Z",
+    "via": "Claude (cloud session)",
+    "note": "Ink Protocol assets: new Phantom emblem (reaper), monogram, wordmarks, 20 icons, 20 feature icons, 19 dry-brush vectors, Plate 01 artwork"
+  },
+  "layout": "files",
+  "libraries": [
+    {
+      "file": "components/lib/react.production.min.js",
+      "global": "React",
+      "name": "react",
+      "version": "18.3.1"
+    },
+    {
+      "file": "components/lib/react-dom.production.min.js",
+      "global": "ReactDOM",
+      "name": "react-dom",
+      "version": "18.3.1"
+    }
+  ],
+  "namespace": "PhantomPortals",
+  "sections": {},
+  "title": "Phantom Portals"
+}

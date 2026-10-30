@@ -1,0 +1,32 @@
+{
+  "id": "PP-BRAND-010",
+  "file": "phantom-emblem-inverse-512.png",
+  "title": "Phantom emblem inverse 512 px (matte black)",
+  "status": "CURRENT",
+  "canon_version": "1.0.0",
+  "kind": "raster",
+  "format": "png",
+  "dimensions": "512x512",
+  "bytes": 233592,
+  "sha256": "4db63dbbc5843f458dbe8553309edc335175c56cbaa137152b433bf9be4e21c3",
+  "usage": "Dark surfaces, boot and splash screens.",
+  "rules": [
+    "One Phantom per surface.",
+    "Clear space: a quarter of the emblem width on every side.",
+    "Never recolour the figure, add a second character, stretch it, or place it over busy art."
+  ],
+  "tags": [
+    "phantom",
+    "artwork",
+    "ink-protocol"
+  ],
+  "license": "Project-original artwork for Phantom Portals. Owner-controlled; all rights reserved by the project owner.",
+  "source": {
+    "system": "Phantom Portals design system (White / Crimson / Black)",
+    "artifact": "https://claude.ai/artifact/HG2ihDf5JsALbo4fxCXcmV",
+    "version": "1793296345-e7e7",
+    "path": "assets/Artwork/phantom-emblem-inverse-512.png",
+    "asset_id": "5100d4fd809e9e492a87ee463026013c",
+    "fetched": "2026-10-29"
+  }
+}

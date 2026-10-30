@@ -1,0 +1,11 @@
+<!-- @dsCard group="Feedback" height=136 subtitle="Black tooltip with shortcut" -->
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><style>html,body{margin:0;background:var(--surface-canvas)}.row{display:flex;flex-wrap:wrap;gap:12px;align-items:center}.stack{display:grid;gap:16px}</style></head>
+<body><div id="root" class="pp" style="padding:24px;background:var(--surface-canvas)"></div>
+<script>
+var P = window.PhantomPortals, h = React.createElement, F = React.Fragment;
+ReactDOM.createRoot(document.getElementById("root")).render(
+h('div', {style:{padding:'44px 0 0 120px'}}, h(P.Tooltip, {content:'Reload tab', shortcut:'CTRL R', defaultOpen:true}, h(P.IconButton, {icon:'reload', label:'Reload'})))
+);
+</script>
+</body></html>

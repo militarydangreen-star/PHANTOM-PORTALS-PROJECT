@@ -1,0 +1,13 @@
+<!-- @dsCard group="Command Center" height=190 subtitle="System status and telemetry" -->
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><style>html,body{margin:0;background:var(--surface-canvas)}.row{display:flex;flex-wrap:wrap;gap:12px;align-items:center}.stack{display:grid;gap:16px}</style></head>
+<body><div id="root" class="pp" style="padding:24px;background:var(--surface-canvas)"></div>
+<script>
+var P = window.PhantomPortals, h = React.createElement, F = React.Fragment;
+ReactDOM.createRoot(document.getElementById("root")).render(
+h(P.StatusPanel, {title:'TELEMETRY · LAB-PC-07', metrics:[
+  {label:'CPU', value:'42%', percent:42},{label:'MEMORY / 16 GB', value:'6.1 GB', percent:38},
+  {label:'DISK C: — HIGH', value:'91%', percent:91, hot:true},{label:'GATEWAY LATENCY', value:'1.2 ms', percent:12}]})
+);
+</script>
+</body></html>

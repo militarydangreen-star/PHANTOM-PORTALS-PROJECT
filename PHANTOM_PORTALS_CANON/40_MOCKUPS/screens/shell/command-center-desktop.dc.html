@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Phantom Portals · Command Center</title>
+<script src="./support.js"></script>
+<link rel="stylesheet" href="ds/phantomportals/tokens.css">
+<link rel="stylesheet" href="ds/phantomportals/components/bundle.css">
+<script src="ds/phantomportals/components/bundle.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<style>
+body{margin:0;background:#f6f5f2}
+a{color:#a0112b}a:hover{color:#7e0d22}
+</style>
+</helmet>
+<x-import component-from-global-scope="PhantomPortals.PortalRoot">
+<div style="min-height: 100vh; display: flex; flex-direction: column; background: var(--surface-canvas, #f6f5f2); color: var(--ink-primary, #151519); font-family: var(--font-sans, Inter, sans-serif);">
+  <x-import component-from-global-scope="PhantomPortals.TabStrip" tabs="{{tabs}}" active-id="home"></x-import>
+  <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px; padding: 6px 12px; background: var(--surface-primary, #ffffff); border-bottom: 1px solid var(--border-default, #d8d5d6);">
+    <div style="display: flex; align-items: center; gap: 4px;">
+      <x-import component-from-global-scope="PhantomPortals.IconButton" icon="back" label="Back" size="sm"></x-import>
+      <x-import component-from-global-scope="PhantomPortals.IconButton" icon="forward" label="Forward" size="sm"></x-import>
+      <x-import component-from-global-scope="PhantomPortals.IconButton" icon="reload" label="Reload" size="sm"></x-import>
+    </div>
+    <x-import component-from-global-scope="PhantomPortals.Omnibox" label="Address and search" icon="home-portal" default-value="portal://command-center" style="flex: 1 1 320px; min-width: 0;"></x-import>
+    <x-import component-from-global-scope="PhantomPortals.IconButton" icon="bookmark" label="Bookmark this page" size="sm"></x-import>
+  </div>
+  <x-import component-from-global-scope="PhantomPortals.BookmarksBar" items="{{bookmarks}}"></x-import>
+  <div style="flex: 1 1 auto; display: flex; flex-wrap: wrap; align-items: stretch;">
+    <x-import component-from-global-scope="PhantomPortals.UtilityRail" items="{{rail}}" active-id="home" label="Workspaces" style="flex: 0 0 56px;"></x-import>
+    <main style="flex: 999 1 560px; min-width: 0; box-sizing: border-box; max-width: 1384px; padding: 32px 40px 48px; display: flex; flex-direction: column; gap: 32px;">
+      <x-import component-from-global-scope="PhantomPortals.PhantomHero" eyebrow="OFFLINE-FIRST IT COMMAND CENTER" title="Enter the" accent="Portal" description="Diagnose, repair and recover machines from one portable toolkit. No connection required."></x-import>
+
+      <section aria-label="Command" style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px;">
+        <x-import component-from-global-scope="PhantomPortals.Omnibox" label="Ask Phantom or run a command" icon="ai-core" shortcut="Ctrl K" placeholder="Ask Phantom, or type &gt; to run a command" style="flex: 1 1 420px; min-width: 0;"></x-import>
+        <x-import component-from-global-scope="PhantomPortals.Button" variant="primary" size="lg" icon="diagnostics">Run Diagnostics</x-import>
+        <x-import component-from-global-scope="PhantomPortals.Button" variant="secondary" size="lg" icon="terminal">Open Terminal</x-import>
+      </section>
+
+      <div style="display: flex; flex-wrap: wrap; align-items: flex-start; gap: 32px;">
+        <div style="flex: 2 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 24px;">
+          <div style="display: flex; flex-direction: column; gap: 4px;">
+            <span style="font: var(--text-eyebrow, 600 12px/16px 'Space Grotesk', sans-serif); letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent-crimson, #a0112b);">Quick launch</span>
+            <h2 style="margin: 0; font: var(--text-h2, 600 26px/34px 'Space Grotesk', sans-serif);">Tools</h2>
+          </div>
+          <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 16px;">
+            <x-import component-from-global-scope="PhantomPortals.ToolTile" icon="diagnostics" title="Run Diagnostics" description="Hardware, drivers and OS health in one pass." meta="MOD-01" current="{{yes}}"></x-import>
+            <x-import component-from-global-scope="PhantomPortals.ToolTile" icon="terminal" title="Terminal" description="Elevated shell with saved command sets." meta="MOD-02"></x-import>
+            <x-import component-from-global-scope="PhantomPortals.ToolTile" icon="folder" title="File Recovery" description="Browse and copy data off drives that won't boot." meta="MOD-03"></x-import>
+            <x-import component-from-global-scope="PhantomPortals.ToolTile" icon="network" title="Network Repair" description="Reset adapters, DNS and the TCP/IP stack." meta="MOD-04"></x-import>
+            <x-import component-from-global-scope="PhantomPortals.ToolTile" icon="shield" title="Security Sweep" description="Offline malware and startup-item scan." meta="MOD-05"></x-import>
+            <x-import component-from-global-scope="PhantomPortals.ToolTile" icon="ai-core" title="AI Core" description="Ask about an error code. Runs on this machine." meta="MOD-06"></x-import>
+          </div>
+          <x-import component-from-global-scope="PhantomPortals.CommandModule" module-id="CMD-07" title="Saved Commands" default-open="{{yes}}">
+            <div style="display: flex; flex-direction: column;">
+              <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; padding: 12px 0; border-bottom: 1px solid var(--border-default, #d8d5d6);">
+                <code style="flex: 1 1 260px; min-width: 0; font: var(--text-mono, 400 13px/20px 'JetBrains Mono', monospace); color: var(--ink-primary, #151519);">sfc /scannow</code>
+                <span style="flex: 1 1 220px; font: var(--text-body-sm, 400 14px/22px Inter, sans-serif); color: var(--ink-secondary, #55525a);">Repair protected system files</span>
+                <x-import component-from-global-scope="PhantomPortals.Button" variant="ghost" icon="terminal" aria-label="Run sfc /scannow">Run</x-import>
+              </div>
+              <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; padding: 12px 0; border-bottom: 1px solid var(--border-default, #d8d5d6);">
+                <code style="flex: 1 1 260px; min-width: 0; font: var(--text-mono, 400 13px/20px 'JetBrains Mono', monospace); color: var(--ink-primary, #151519);">DISM /Online /Cleanup-Image /RestoreHealth</code>
+                <span style="flex: 1 1 220px; font: var(--text-body-sm, 400 14px/22px Inter, sans-serif); color: var(--ink-secondary, #55525a);">Repair the Windows component store</span>
+                <x-import component-from-global-scope="PhantomPortals.Button" variant="ghost" icon="terminal" aria-label="Run DISM restore health">Run</x-import>
+              </div>
+              <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; padding: 12px 0; border-bottom: 1px solid var(--border-default, #d8d5d6);">
+                <code style="flex: 1 1 260px; min-width: 0; font: var(--text-mono, 400 13px/20px 'JetBrains Mono', monospace); color: var(--ink-primary, #151519);">chkdsk C: /scan</code>
+                <span style="flex: 1 1 220px; font: var(--text-body-sm, 400 14px/22px Inter, sans-serif); color: var(--ink-secondary, #55525a);">Check the file system online</span>
+                <x-import component-from-global-scope="PhantomPortals.Button" variant="ghost" icon="terminal" aria-label="Run chkdsk C: /scan">Run</x-import>
+              </div>
+              <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; padding: 12px 0;">
+                <code style="flex: 1 1 260px; min-width: 0; font: var(--text-mono, 400 13px/20px 'JetBrains Mono', monospace); color: var(--ink-primary, #151519);">ipconfig /flushdns</code>
+                <span style="flex: 1 1 220px; font: var(--text-body-sm, 400 14px/22px Inter, sans-serif); color: var(--ink-secondary, #55525a);">Clear the DNS resolver cache</span>
+                <x-import component-from-global-scope="PhantomPortals.Button" variant="ghost" icon="terminal" aria-label="Run ipconfig /flushdns">Run</x-import>
+              </div>
+            </div>
+          </x-import>
+        </div>
+
+        <aside aria-label="System status" style="flex: 1 1 300px; min-width: 0; display: flex; flex-direction: column; gap: 24px;">
+          <div style="background: var(--surface-primary, #ffffff); border: 1px solid var(--border-default, #d8d5d6); border-radius: 8px; box-shadow: var(--depth-1); padding: 24px; display: flex; flex-direction: column; align-items: center; gap: 16px;">
+            <span style="align-self: flex-start; font: var(--text-mono-label, 500 11px/16px 'JetBrains Mono', monospace); letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-secondary, #55525a);">Processor · last reading</span>
+            <x-import component-from-global-scope="PhantomPortals.HudRing" value="23%" label="CPU load" live="{{no}}"></x-import>
+            <x-import component-from-global-scope="PhantomPortals.StatusBadge" status="warn">Disk C: needs attention</x-import>
+          </div>
+          <x-import component-from-global-scope="PhantomPortals.StatusPanel" title="This Machine" metrics="{{metrics}}"></x-import>
+        </aside>
+      </div>
+    </main>
+  </div>
+</div>
+</x-import>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":1320}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      yes: true,
+      no: false,
+      tabs: [
+        { id: 'home', title: 'Command Center', icon: 'home-portal' },
+        { id: 'diag', title: 'Diagnostics', icon: 'diagnostics' },
+        { id: 'net', title: 'Network Repair', icon: 'network' }
+      ],
+      bookmarks: [
+        { label: 'Device Manager', href: '#', icon: 'cpu' },
+        { label: 'Disk Management', href: '#', icon: 'folder' },
+        { label: 'Event Log', href: '#', icon: 'diagnostics' },
+        { label: 'Startup Items', href: '#', icon: 'power' },
+        { label: 'Recovery Options', href: '#', icon: 'shield' }
+      ],
+      rail: [
+        { id: 'home', label: 'Command Center', icon: 'home-portal' },
+        { id: 'diag', label: 'Diagnostics', icon: 'diagnostics' },
+        { id: 'term', label: 'Terminal', icon: 'terminal' },
+        { id: 'files', label: 'Files', icon: 'folder' },
+        { id: 'net', label: 'Network', icon: 'network' },
+        { id: 'sec', label: 'Security', icon: 'shield' },
+        { id: 'ai', label: 'AI Core', icon: 'ai-core' },
+        { id: 'settings', label: 'Settings', icon: 'settings' }
+      ],
+      metrics: [
+        { label: 'CPU', value: '23%', percent: 23 },
+        { label: 'Memory', value: '11.2 / 16 GB', percent: 70 },
+        { label: 'Disk C: · over threshold', value: '91% full', percent: 91, hot: true },
+        { label: 'Network', value: 'Offline' }
+      ]
+    };
+  }
+}
+</script>
+</body>
+</html>

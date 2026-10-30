@@ -1,0 +1,28 @@
+{
+  "id": "PP-MOCK-001",
+  "file": "enso-ring-hero-crimson.svg",
+  "title": "enso-ring (v1) recoloured to accent-hero",
+  "status": "UNCLEAR",
+  "canon_version": "1.0.0",
+  "kind": "vector",
+  "format": "svg",
+  "dimensions": "400x400",
+  "bytes": 2858,
+  "sha256": "33c25443c0292f971cd9413b1a1b5c537548474310b806acfc3a092ff951e5ed",
+  "usage": "Used only by the poster and boot mockups; derived from the superseded v1 vectors.",
+  "rules": [
+    "Rebuild from the current Ink Protocol vector before any production use."
+  ],
+  "tags": [
+    "mockup",
+    "derivative",
+    "v1"
+  ],
+  "license": "Project-original artwork for Phantom Portals. Owner-controlled; all rights reserved by the project owner.",
+  "source": {
+    "system": "Claude Design canvas \"Phantom Portals\"",
+    "artifact": "https://claude.ai/artifact/6jk64Yyaaq6JU2Uy41jXv6",
+    "fetched": "2026-10-29"
+  },
+  "notes": "Recolour made in the 2026-10-29 Claude Design canvas session."
+}

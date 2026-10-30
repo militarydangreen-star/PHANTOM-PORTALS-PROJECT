@@ -1,0 +1,33 @@
+{
+  "v": 3,
+  "assetGroups": {
+    "TOKENS": {
+      "files": {
+        "palette_reference.png": {
+          "blob": "bc934f10c55fbb1ff59850c058a5a6cf",
+          "name": "palette_reference.png",
+          "sha256": "c222aa473fc5e1ef88f1d80d2cdfddc6864776f90002ef3b24a804fb28558814",
+          "size": 10143,
+          "type": "image/png"
+        }
+      },
+      "name": "TOKENS",
+      "order": []
+    }
+  },
+  "blobs": {},
+  "createdOnFiles": {
+    "at": "2026-09-19T01:49:07.739Z",
+    "v": 1
+  },
+  "docs": {
+    "sections": []
+  },
+  "groups": [
+    "TOKENS"
+  ],
+  "layout": "files",
+  "libraries": [],
+  "sections": {},
+  "title": "Design System"
+}

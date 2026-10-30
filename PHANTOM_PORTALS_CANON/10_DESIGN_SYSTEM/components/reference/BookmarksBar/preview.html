@@ -1,0 +1,13 @@
+<!-- @dsCard group="Browser Shell" height=60 subtitle="Favorites bar" -->
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><style>html,body{margin:0;background:var(--surface-canvas)}.row{display:flex;flex-wrap:wrap;gap:12px;align-items:center}.stack{display:grid;gap:16px}</style></head>
+<body><div id="root" class="pp" style="padding:0;background:var(--surface-canvas)"></div>
+<script>
+var P = window.PhantomPortals, h = React.createElement, F = React.Fragment;
+ReactDOM.createRoot(document.getElementById("root")).render(
+h(P.BookmarksBar, {items:[
+  {label:'PowerShell Toolkit',href:'#',icon:'terminal'},{label:'Network Map',href:'#',icon:'network'},{label:'Defender Scan',href:'#',icon:'shield'},'separator',
+  {label:'SOP Library',href:'#',icon:'folder'},{label:'Drive Sync',href:'#',icon:'cloud'}]})
+);
+</script>
+</body></html>

@@ -1,0 +1,13 @@
+{
+  "name": "phantom-shadcn-theme-test",
+  "private": true,
+  "description": "Compiles 10_DESIGN_SYSTEM/adapters/shadcn/globals.css with Tailwind v4 and checks rendered colours, radii and fonts against the canon.",
+  "scripts": {
+    "test": "bash run.sh"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "4.3.3",
+    "tailwindcss": "4.3.3",
+    "tw-animate-css": "1.4.0"
+  }
+}

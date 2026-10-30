@@ -1,0 +1,31 @@
+{
+  "id": "PP-FICON-003",
+  "file": "back.svg",
+  "title": "Feature icon — back",
+  "status": "CURRENT",
+  "canon_version": "1.0.0",
+  "kind": "vector",
+  "format": "svg",
+  "dimensions": "160x160",
+  "bytes": 210574,
+  "sha256": "e468e471acca4a98a9cb5d87d2b2d2675051e07422c683d275eb712cb61c865b",
+  "usage": "Trash Polka badge on a 160 px artboard: dry-brush ensō, crimson dab, halftone quarter, tick arc, glyph at 3×.",
+  "rules": [
+    "Use at 56–160 px: tool tiles, launchers, onboarding, empty states, docs.",
+    "Never in toolbars, tables or dense UI — use the UI icon there."
+  ],
+  "tags": [
+    "icon",
+    "feature",
+    "trash-polka"
+  ],
+  "license": "Project-original artwork for Phantom Portals. Owner-controlled; all rights reserved by the project owner.",
+  "source": {
+    "system": "Phantom Portals design system (White / Crimson / Black)",
+    "artifact": "https://claude.ai/artifact/HG2ihDf5JsALbo4fxCXcmV",
+    "version": "1793296345-e7e7",
+    "path": "assets/Feature Icons/back.svg",
+    "asset_id": "292e0f7b8e64a53ba9ad7c6d8c61d579",
+    "fetched": "2026-10-29"
+  }
+}

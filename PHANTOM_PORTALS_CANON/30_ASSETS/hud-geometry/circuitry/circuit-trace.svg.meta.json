@@ -1,0 +1,32 @@
+{
+  "id": "PP-VEC-015",
+  "file": "circuit-trace.svg",
+  "title": "Circuit trace",
+  "status": "CURRENT",
+  "canon_version": "1.0.0",
+  "kind": "vector",
+  "format": "svg",
+  "dimensions": "640x230",
+  "bytes": 1515,
+  "sha256": "bb74d371ba8d831a76a731640f696d1fc5e9ec32ca08c0ecaf1b4e1531da4620",
+  "usage": "Hero artwork, page-header edges, empty states, section dividers and transitions.",
+  "rules": [
+    "At most three vectors per composition, one of them crimson.",
+    "Pair every Trash Polka mark with a precision mark (brush cut + iso grid, splatter + reticle).",
+    "Never behind controls, tables, search results, terminal output or body text."
+  ],
+  "tags": [
+    "hud",
+    "precision",
+    "ink-protocol"
+  ],
+  "license": "Project-original artwork for Phantom Portals. Owner-controlled; all rights reserved by the project owner.",
+  "source": {
+    "system": "Phantom Portals design system (White / Crimson / Black)",
+    "artifact": "https://claude.ai/artifact/HG2ihDf5JsALbo4fxCXcmV",
+    "version": "1793296345-e7e7",
+    "path": "assets/Vectors/circuit-trace.svg",
+    "asset_id": "ed38f18cadd698ff52a5243d14eb1fb2",
+    "fetched": "2026-10-29"
+  }
+}

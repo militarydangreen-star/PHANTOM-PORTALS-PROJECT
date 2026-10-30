@@ -1,0 +1,1493 @@
+{
+  "v": 3,
+  "assetGroups": {
+    "ART": {
+      "files": {
+        "phantom-ruby-hero.png": {
+          "blob": "890a318630fd4552525ec5427ca9c4fe",
+          "name": "phantom-ruby-hero.png",
+          "sha256": "94da4916f71eaf526d6bf2d0767bb79ef0bfe34146b6e9e3f572e7fb17a9e421",
+          "size": 2013840,
+          "type": "image/png"
+        },
+        "phantom-ruby-hero~20~282~29.png": {
+          "blob": "890a318630fd4552525ec5427ca9c4fe",
+          "name": "phantom-ruby-hero (2).png",
+          "sha256": "94da4916f71eaf526d6bf2d0767bb79ef0bfe34146b6e9e3f572e7fb17a9e421",
+          "size": 2013840,
+          "type": "image/png"
+        }
+      },
+      "name": "ART",
+      "order": []
+    },
+    "ARTWORK": {
+      "files": {
+        "phantom-ruby-hero.png": {
+          "blob": "890a318630fd4552525ec5427ca9c4fe",
+          "name": "phantom-ruby-hero.png",
+          "sha256": "94da4916f71eaf526d6bf2d0767bb79ef0bfe34146b6e9e3f572e7fb17a9e421",
+          "size": 2013840,
+          "type": "image/png"
+        }
+      },
+      "name": "ARTWORK",
+      "order": []
+    },
+    "BRAND": {
+      "files": {
+        "phantom-corner-frame.svg": {
+          "blob": "b3f626a46739c85612dcd300b5b84fa1",
+          "name": "phantom-corner-frame.svg",
+          "sha256": "df7b508a28269d1afcd0c5b92abbff3e9810a20894f7edc41eea1e494d8eb0f7",
+          "size": 464,
+          "type": "image/svg+xml"
+        },
+        "phantom-divider.svg": {
+          "blob": "3eef5315be700d8148e80bbd0f8a8e13",
+          "name": "phantom-divider.svg",
+          "sha256": "687ca761e003caec0f6f8d0f8eb66aab6c877112ed3aed40517d98a9d5879ac3",
+          "size": 373,
+          "type": "image/svg+xml"
+        },
+        "phantom-gateway.svg": {
+          "blob": "000031cc23f152e904bb052b8b9f5b97",
+          "name": "phantom-gateway.svg",
+          "sha256": "7cf6123e6446e74f1278ddccb3d666440706cef2ccfc98970342159a5362ee6f",
+          "size": 8360,
+          "type": "image/svg+xml"
+        },
+        "phantom-hood-black.svg": {
+          "blob": "63a75e4ed8f0ce54ee3b719ecb302e6b",
+          "name": "phantom-hood-black.svg",
+          "sha256": "e526a4d8b85f45e2b3dc8eed9db6c0fc2aaae2770ede0b30ee161847d061b023",
+          "size": 342,
+          "type": "image/svg+xml"
+        },
+        "phantom-hood-gold.svg": {
+          "blob": "afd1a305864b186d3ed090e3ad04ff98",
+          "name": "phantom-hood-gold.svg",
+          "sha256": "7c61bc50c5a73a72b191948ee7ada2320fb43f78d37eeeddb235781d8f4d6a09",
+          "size": 342,
+          "type": "image/svg+xml"
+        },
+        "phantom-hood-platinum.svg": {
+          "blob": "336e88f13c58eb82e2604d6c42760a97",
+          "name": "phantom-hood-platinum.svg",
+          "sha256": "cb996ecbba0d97c90dcf3e44c6f1296f121150a3ab80e3132239521d4ce7f835",
+          "size": 342,
+          "type": "image/svg+xml"
+        },
+        "phantom-hood-ruby.svg": {
+          "blob": "d917210c9aa9b51ee22aecf8fcb73628",
+          "name": "phantom-hood-ruby.svg",
+          "sha256": "e530491afc1f5b14f16e73ef2d013f1f1ba8ad335d018b1c6ec0e3b094f7c475",
+          "size": 342,
+          "type": "image/svg+xml"
+        },
+        "phantom-mark-black.svg": {
+          "blob": "5636d517b441ef058ee5367490f9ab4c",
+          "name": "phantom-mark-black.svg",
+          "sha256": "efefc6baf48014e4ee9fbd26829fa144f5ea4f9089285042a09fe5919ea56840",
+          "size": 247,
+          "type": "image/svg+xml"
+        },
+        "phantom-mark-gold.svg": {
+          "blob": "d5fa5a1090a2c522db959370af5c9517",
+          "name": "phantom-mark-gold.svg",
+          "sha256": "f39382f6f1a7fb83d9717359e872f845c92930cf0e2c3caba52cf207c02a2cdf",
+          "size": 247,
+          "type": "image/svg+xml"
+        },
+        "phantom-mark-platinum.svg": {
+          "blob": "a41b273f6a3e2122ce902bbf0d69732e",
+          "name": "phantom-mark-platinum.svg",
+          "sha256": "0cfae44ba93ad8738b5944e1720df85e87c7a5fc9c0626e0046fc2ff128e7133",
+          "size": 247,
+          "type": "image/svg+xml"
+        },
+        "phantom-mark-ruby.svg": {
+          "blob": "efaea6dac1efe35f425a15655edc4ca8",
+          "name": "phantom-mark-ruby.svg",
+          "sha256": "cdca466b6f00287ccb096207c84097476b2909fcc04268af9f44bf1a5b6d2983",
+          "size": 247,
+          "type": "image/svg+xml"
+        },
+        "phantom-sovereign-crest.svg": {
+          "blob": "020f24144df9e17584359e2300d51b9b",
+          "name": "phantom-sovereign-crest.svg",
+          "sha256": "99720252c8e693ad6280614d7693cd1be68cd30640049776ea922c87adc50150",
+          "size": 2083,
+          "type": "image/svg+xml"
+        },
+        "phantom-standard.svg": {
+          "blob": "a120d62cb68ceb4c4b17d76f153960fb",
+          "name": "phantom-standard.svg",
+          "sha256": "809cc2e9e9479d455f38a1043ba825b834283debd861ab95bcc87f533bfe0245",
+          "size": 568,
+          "type": "image/svg+xml"
+        }
+      },
+      "name": "BRAND",
+      "order": []
+    },
+    "BRAND2": {
+      "files": {
+        "phantom-corner-frame.svg": {
+          "blob": "b3f626a46739c85612dcd300b5b84fa1",
+          "name": "phantom-corner-frame.svg",
+          "sha256": "df7b508a28269d1afcd0c5b92abbff3e9810a20894f7edc41eea1e494d8eb0f7",
+          "size": 464,
+          "type": "image/svg+xml"
+        },
+        "phantom-corner-frame~20~282~29.svg": {
+          "blob": "b3f626a46739c85612dcd300b5b84fa1",
+          "name": "phantom-corner-frame (2).svg",
+          "sha256": "df7b508a28269d1afcd0c5b92abbff3e9810a20894f7edc41eea1e494d8eb0f7",
+          "size": 464,
+          "type": "image/svg+xml"
+        },
+        "phantom-divider.svg": {
+          "blob": "3eef5315be700d8148e80bbd0f8a8e13",
+          "name": "phantom-divider.svg",
+          "sha256": "687ca761e003caec0f6f8d0f8eb66aab6c877112ed3aed40517d98a9d5879ac3",
+          "size": 373,
+          "type": "image/svg+xml"
+        },
+        "phantom-divider~20~282~29.svg": {
+          "blob": "3eef5315be700d8148e80bbd0f8a8e13",
+          "name": "phantom-divider (2).svg",
+          "sha256": "687ca761e003caec0f6f8d0f8eb66aab6c877112ed3aed40517d98a9d5879ac3",
+          "size": 373,
+          "type": "image/svg+xml"
+        },
+        "phantom-gateway.svg": {
+          "blob": "000031cc23f152e904bb052b8b9f5b97",
+          "name": "phantom-gateway.svg",
+          "sha256": "7cf6123e6446e74f1278ddccb3d666440706cef2ccfc98970342159a5362ee6f",
+          "size": 8360,
+          "type": "image/svg+xml"
+        },
+        "phantom-gateway~20~282~29.svg": {
+          "blob": "000031cc23f152e904bb052b8b9f5b97",
+          "name": "phantom-gateway (2).svg",
+          "sha256": "7cf6123e6446e74f1278ddccb3d666440706cef2ccfc98970342159a5362ee6f",
+          "size": 8360,
+          "type": "image/svg+xml"
+        },
+        "phantom-hood-black.svg": {
+          "blob": "63a75e4ed8f0ce54ee3b719ecb302e6b",
+          "name": "phantom-hood-black.svg",
+          "sha256": "e526a4d8b85f45e2b3dc8eed9db6c0fc2aaae2770ede0b30ee161847d061b023",
+          "size": 342,
+          "type": "image/svg+xml"
+        },
+        "phantom-hood-black~20~282~29.svg": {
+          "blob": "63a75e4ed8f0ce54ee3b719ecb302e6b",
+          "name": "phantom-hood-black (2).svg",
+          "sha256": "e526a4d8b85f45e2b3dc8eed9db6c0fc2aaae2770ede0b30ee161847d061b023",
+          "size": 342,
+          "type": "image/svg+xml"
+        },
+        "phantom-hood-gold.svg": {
+          "blob": "afd1a305864b186d3ed090e3ad04ff98",
+          "name": "phantom-hood-gold.svg",
+          "sha256": "7c61bc50c5a73a72b191948ee7ada2320fb43f78d37eeeddb235781d8f4d6a09",
+          "size": 342,
+          "type": "image/svg+xml"
+        },
+        "phantom-hood-gold~20~282~29.svg": {
+          "blob": "afd1a305864b186d3ed090e3ad04ff98",
+          "name": "phantom-hood-gold (2).svg",
+          "sha256": "7c61bc50c5a73a72b191948ee7ada2320fb43f78d37eeeddb235781d8f4d6a09",
+          "size": 342,
+          "type": "image/svg+xml"
+        },
+        "phantom-hood-platinum.svg": {
+          "blob": "336e88f13c58eb82e2604d6c42760a97",
+          "name": "phantom-hood-platinum.svg",
+          "sha256": "cb996ecbba0d97c90dcf3e44c6f1296f121150a3ab80e3132239521d4ce7f835",
+          "size": 342,
+          "type": "image/svg+xml"
+        },
+        "phantom-hood-platinum~20~282~29.svg": {
+          "blob": "336e88f13c58eb82e2604d6c42760a97",
+          "name": "phantom-hood-platinum (2).svg",
+          "sha256": "cb996ecbba0d97c90dcf3e44c6f1296f121150a3ab80e3132239521d4ce7f835",
+          "size": 342,
+          "type": "image/svg+xml"
+        },
+        "phantom-hood-ruby.svg": {
+          "blob": "d917210c9aa9b51ee22aecf8fcb73628",
+          "name": "phantom-hood-ruby.svg",
+          "sha256": "e530491afc1f5b14f16e73ef2d013f1f1ba8ad335d018b1c6ec0e3b094f7c475",
+          "size": 342,
+          "type": "image/svg+xml"
+        },
+        "phantom-hood-ruby~20~282~29.svg": {
+          "blob": "d917210c9aa9b51ee22aecf8fcb73628",
+          "name": "phantom-hood-ruby (2).svg",
+          "sha256": "e530491afc1f5b14f16e73ef2d013f1f1ba8ad335d018b1c6ec0e3b094f7c475",
+          "size": 342,
+          "type": "image/svg+xml"
+        },
+        "phantom-mark-black.svg": {
+          "blob": "5636d517b441ef058ee5367490f9ab4c",
+          "name": "phantom-mark-black.svg",
+          "sha256": "efefc6baf48014e4ee9fbd26829fa144f5ea4f9089285042a09fe5919ea56840",
+          "size": 247,
+          "type": "image/svg+xml"
+        },
+        "phantom-mark-black~20~282~29.svg": {
+          "blob": "5636d517b441ef058ee5367490f9ab4c",
+          "name": "phantom-mark-black (2).svg",
+          "sha256": "efefc6baf48014e4ee9fbd26829fa144f5ea4f9089285042a09fe5919ea56840",
+          "size": 247,
+          "type": "image/svg+xml"
+        },
+        "phantom-mark-gold.svg": {
+          "blob": "d5fa5a1090a2c522db959370af5c9517",
+          "name": "phantom-mark-gold.svg",
+          "sha256": "f39382f6f1a7fb83d9717359e872f845c92930cf0e2c3caba52cf207c02a2cdf",
+          "size": 247,
+          "type": "image/svg+xml"
+        },
+        "phantom-mark-gold~20~282~29.svg": {
+          "blob": "d5fa5a1090a2c522db959370af5c9517",
+          "name": "phantom-mark-gold (2).svg",
+          "sha256": "f39382f6f1a7fb83d9717359e872f845c92930cf0e2c3caba52cf207c02a2cdf",
+          "size": 247,
+          "type": "image/svg+xml"
+        },
+        "phantom-mark-platinum.svg": {
+          "blob": "a41b273f6a3e2122ce902bbf0d69732e",
+          "name": "phantom-mark-platinum.svg",
+          "sha256": "0cfae44ba93ad8738b5944e1720df85e87c7a5fc9c0626e0046fc2ff128e7133",
+          "size": 247,
+          "type": "image/svg+xml"
+        },
+        "phantom-mark-platinum~20~282~29.svg": {
+          "blob": "a41b273f6a3e2122ce902bbf0d69732e",
+          "name": "phantom-mark-platinum (2).svg",
+          "sha256": "0cfae44ba93ad8738b5944e1720df85e87c7a5fc9c0626e0046fc2ff128e7133",
+          "size": 247,
+          "type": "image/svg+xml"
+        },
+        "phantom-mark-ruby.svg": {
+          "blob": "efaea6dac1efe35f425a15655edc4ca8",
+          "name": "phantom-mark-ruby.svg",
+          "sha256": "cdca466b6f00287ccb096207c84097476b2909fcc04268af9f44bf1a5b6d2983",
+          "size": 247,
+          "type": "image/svg+xml"
+        },
+        "phantom-mark-ruby~20~282~29.svg": {
+          "blob": "efaea6dac1efe35f425a15655edc4ca8",
+          "name": "phantom-mark-ruby (2).svg",
+          "sha256": "cdca466b6f00287ccb096207c84097476b2909fcc04268af9f44bf1a5b6d2983",
+          "size": 247,
+          "type": "image/svg+xml"
+        },
+        "phantom-sovereign-crest.svg": {
+          "blob": "020f24144df9e17584359e2300d51b9b",
+          "name": "phantom-sovereign-crest.svg",
+          "sha256": "99720252c8e693ad6280614d7693cd1be68cd30640049776ea922c87adc50150",
+          "size": 2083,
+          "type": "image/svg+xml"
+        },
+        "phantom-sovereign-crest~20~282~29.svg": {
+          "blob": "020f24144df9e17584359e2300d51b9b",
+          "name": "phantom-sovereign-crest (2).svg",
+          "sha256": "99720252c8e693ad6280614d7693cd1be68cd30640049776ea922c87adc50150",
+          "size": 2083,
+          "type": "image/svg+xml"
+        },
+        "phantom-standard.svg": {
+          "blob": "a120d62cb68ceb4c4b17d76f153960fb",
+          "name": "phantom-standard.svg",
+          "sha256": "809cc2e9e9479d455f38a1043ba825b834283debd861ab95bcc87f533bfe0245",
+          "size": 568,
+          "type": "image/svg+xml"
+        },
+        "phantom-standard~20~282~29.svg": {
+          "blob": "a120d62cb68ceb4c4b17d76f153960fb",
+          "name": "phantom-standard (2).svg",
+          "sha256": "809cc2e9e9479d455f38a1043ba825b834283debd861ab95bcc87f533bfe0245",
+          "size": 568,
+          "type": "image/svg+xml"
+        }
+      },
+      "name": "BRAND2",
+      "order": []
+    },
+    "FONTS": {
+      "files": {},
+      "name": "FONTS",
+      "order": []
+    },
+    "ICONS": {
+      "files": {
+        "phantom-activity.svg": {
+          "blob": "9094f570740e072892517d58e38ad719",
+          "name": "phantom-activity.svg",
+          "sha256": "0460c6defd500a59808ca667dd53aa9b5e283b54c2737a480137b9319be29a22",
+          "size": 1745,
+          "type": "image/svg+xml"
+        },
+        "phantom-archive.svg": {
+          "blob": "edb9a203011db3329fc2e194f76e9856",
+          "name": "phantom-archive.svg",
+          "sha256": "8509f670e9e3f90ab12cc650fdcd36a22b3e49e3c1f55d8f24e32ae7c1679efb",
+          "size": 1747,
+          "type": "image/svg+xml"
+        },
+        "phantom-arrow-right.svg": {
+          "blob": "c54d0f73db4c195f3a9217fb5b6803b3",
+          "name": "phantom-arrow-right.svg",
+          "sha256": "94463538a18327c4c92ab102b4f7c95e74723b312f64904f0519c056c3624912",
+          "size": 1768,
+          "type": "image/svg+xml"
+        },
+        "phantom-arrow-up-right.svg": {
+          "blob": "fcc210df307975e0ad252bacfc517b08",
+          "name": "phantom-arrow-up-right.svg",
+          "sha256": "654c3808b956d10cf55daa04842f0bec735e2d444eed50bee2def4c6b3326e5d",
+          "size": 1791,
+          "type": "image/svg+xml"
+        },
+        "phantom-blade.svg": {
+          "blob": "fcc5f0a67e98010bbb38c1534adede19",
+          "name": "phantom-blade.svg",
+          "sha256": "ee0a4740b86853b766c8a1bdfb34e6ce53442333e01204aba45b26517085cecd",
+          "size": 1750,
+          "type": "image/svg+xml"
+        },
+        "phantom-check.svg": {
+          "blob": "60c53c46a74af846419f46348dc693ed",
+          "name": "phantom-check.svg",
+          "sha256": "a7f5168cd81bad1bcd684e027cce2d2ddf226c5e475cca421f9ffa3ed8573b35",
+          "size": 1713,
+          "type": "image/svg+xml"
+        },
+        "phantom-chevron-down.svg": {
+          "blob": "78085540fecc0f1f7066853f94263d05",
+          "name": "phantom-chevron-down.svg",
+          "sha256": "c1e8ebcb4e15792d70730b30ee11fac32cf982eeacb8c303d8abb9090bccee4e",
+          "size": 1767,
+          "type": "image/svg+xml"
+        },
+        "phantom-citadel.svg": {
+          "blob": "c6e0bf28ef0887bbb36697eca78747c4",
+          "name": "phantom-citadel.svg",
+          "sha256": "2cfd1020d68d3551eb34443e42cbe322547b7c9c2523b0330d3829a3f1004445",
+          "size": 1787,
+          "type": "image/svg+xml"
+        },
+        "phantom-close.svg": {
+          "blob": "a026590a40cd5d0e906ad94398792064",
+          "name": "phantom-close.svg",
+          "sha256": "e72174a38ce4cd7c7ecfc4e32c51ead573739d3698e3efeb242de042bf724746",
+          "size": 1719,
+          "type": "image/svg+xml"
+        },
+        "phantom-command.svg": {
+          "blob": "0513503837e9c4bb013e98f71bb57e7a",
+          "name": "phantom-command.svg",
+          "sha256": "9ea4aacf3e13a8515b34885d480456f00ae7d31d40e2529e2e00ef914bf76ca1",
+          "size": 1906,
+          "type": "image/svg+xml"
+        },
+        "phantom-copy.svg": {
+          "blob": "e2be4078e8be2ee3e9f821352ad61b29",
+          "name": "phantom-copy.svg",
+          "sha256": "6af4e9997fe5dd50c76e1d003503aff4ea6c1fde523f6710b4e0c5d5677634fb",
+          "size": 1718,
+          "type": "image/svg+xml"
+        },
+        "phantom-crest.svg": {
+          "blob": "21aa8eee2c6c2c8c52c7e70fea977fa5",
+          "name": "phantom-crest.svg",
+          "sha256": "1bef03ca39500f22469cc3739b471e3d0fec87a1708ea932e2f2c73ecbbed7ee",
+          "size": 1751,
+          "type": "image/svg+xml"
+        },
+        "phantom-danger.svg": {
+          "blob": "192a3a14209335bb00dc561c6e105532",
+          "name": "phantom-danger.svg",
+          "sha256": "e93b854520083ee228e55914b625efce5aabd3b270e09aad48e13ab51bdd2d5d",
+          "size": 1752,
+          "type": "image/svg+xml"
+        },
+        "phantom-document.svg": {
+          "blob": "b737ba8bd6d6d0477459aad93d94a4ad",
+          "name": "phantom-document.svg",
+          "sha256": "137b26eb28faa3de61772710165eb8e4a0f21143bbbb280a5dab10f0884d8ba5",
+          "size": 1761,
+          "type": "image/svg+xml"
+        },
+        "phantom-download.svg": {
+          "blob": "48534f947408509a50a1f46a510f6a38",
+          "name": "phantom-download.svg",
+          "sha256": "4e0280540519ae5dfa33b70e408d035159782fc186c45edcdb493f309eb25bcd",
+          "size": 1757,
+          "type": "image/svg+xml"
+        },
+        "phantom-drive.svg": {
+          "blob": "776372f210e28c13e464c8ac68794b19",
+          "name": "phantom-drive.svg",
+          "sha256": "e7c8eb6ab3d9152ebfd77585765b27fd3d0e61688b0170ea364c30c68fba8746",
+          "size": 1743,
+          "type": "image/svg+xml"
+        },
+        "phantom-expand.svg": {
+          "blob": "212e9824e03e0d1a2710c1d755470a0a",
+          "name": "phantom-expand.svg",
+          "sha256": "dc5e3c1b54506ca03890fa7ab5858716d60928f2da85527b4fcfb0f5973f16ef",
+          "size": 1742,
+          "type": "image/svg+xml"
+        },
+        "phantom-folder.svg": {
+          "blob": "5120d42e2c85f2afb4243b34fd177e86",
+          "name": "phantom-folder.svg",
+          "sha256": "8204b4f4b10d7d4906212771137ea8b65ca532ffa7eda9c1c94c83ba11998981",
+          "size": 1726,
+          "type": "image/svg+xml"
+        },
+        "phantom-hood.svg": {
+          "blob": "2f144d288b4b00e40093d9940008573e",
+          "name": "phantom-hood.svg",
+          "sha256": "03e181f155f414f3182e5d7cd87ac89d86ff2ec848d333e726488fcfcd69f6ef",
+          "size": 1756,
+          "type": "image/svg+xml"
+        },
+        "phantom-info.svg": {
+          "blob": "89f7692fca63f15599d27a2c76093f6e",
+          "name": "phantom-info.svg",
+          "sha256": "f07a02970a827d653273a250124bd464d352e7ca135d7447c8f142bb46466cac",
+          "size": 1746,
+          "type": "image/svg+xml"
+        },
+        "phantom-library.svg": {
+          "blob": "a898bb634b80cc67a97babe6e0852ac2",
+          "name": "phantom-library.svg",
+          "sha256": "86e74f060f944910ae7185abea82338d8e47988cb2209116a5c0b740519930db",
+          "size": 1783,
+          "type": "image/svg+xml"
+        },
+        "phantom-link.svg": {
+          "blob": "cb821793d73edfeb908b1c8eb93c62cc",
+          "name": "phantom-link.svg",
+          "sha256": "2b23d45036540450f8beaa3b79a9ce4e59ba3b995b764bdfbaa24d232b8a00ee",
+          "size": 1756,
+          "type": "image/svg+xml"
+        },
+        "phantom-lock.svg": {
+          "blob": "e5629f40aa4b0cf8ff88f6dafae561d9",
+          "name": "phantom-lock.svg",
+          "sha256": "b2acdba03e354c81a52594d2f26895c385245df3c3932b5965808b57db9fd6c0",
+          "size": 1778,
+          "type": "image/svg+xml"
+        },
+        "phantom-menu.svg": {
+          "blob": "4fbcd1e6b96bcde797977d70f2a97d62",
+          "name": "phantom-menu.svg",
+          "sha256": "6f0cce1a693267e9a2a536b3e8c27b6a746852fe75fa9bc5c8f35445a95ba559",
+          "size": 1714,
+          "type": "image/svg+xml"
+        },
+        "phantom-network.svg": {
+          "blob": "892f259743234d84227afd77f7507868",
+          "name": "phantom-network.svg",
+          "sha256": "dde02a238276d01405f35fef40ec80f3f47b9e19164a8d198564736dd3ca6cd4",
+          "size": 1771,
+          "type": "image/svg+xml"
+        },
+        "phantom-neural.svg": {
+          "blob": "a33af91d85012c1736bae44a097d7bd8",
+          "name": "phantom-neural.svg",
+          "sha256": "c0d18755979b9ea31c2b238186930fef43ce37ea4747b6bcd28ae9c55eb97f2e",
+          "size": 1813,
+          "type": "image/svg+xml"
+        },
+        "phantom-offline.svg": {
+          "blob": "e7b505b84751433df275ac20eff202dc",
+          "name": "phantom-offline.svg",
+          "sha256": "804c5e18e1d4894bd8e4446255dd76d8c3ee9c75308334adae9f7970430a9e5e",
+          "size": 1825,
+          "type": "image/svg+xml"
+        },
+        "phantom-phantom-mask.svg": {
+          "blob": "3176c0c7a1172a7e1cd1d1d82534e4ab",
+          "name": "phantom-phantom-mask.svg",
+          "sha256": "0b8900217d8a6d22d47e061accc48a716b45e46829cf5fcae88ededf40ff0d29",
+          "size": 1826,
+          "type": "image/svg+xml"
+        },
+        "phantom-phantom.svg": {
+          "blob": "a5c22a9e0fbd77419516c08837dfa865",
+          "name": "phantom-phantom.svg",
+          "sha256": "f048505584af4693f4b0cca25a42bbe15a623085f211661e6fed878d0d43aa61",
+          "size": 1815,
+          "type": "image/svg+xml"
+        },
+        "phantom-portal.svg": {
+          "blob": "3149c5d7d18a3795384e62195a8c0cd4",
+          "name": "phantom-portal.svg",
+          "sha256": "6622f13988ca4defa07c51860f389014aac62333cead395fdfc0a1f451d9fadd",
+          "size": 1756,
+          "type": "image/svg+xml"
+        },
+        "phantom-power.svg": {
+          "blob": "2244ba0155de7c624f702bdd9f123d55",
+          "name": "phantom-power.svg",
+          "sha256": "7ad134eae9833e00f787dd97a68432e9cf064a8bfef73fc6498d2681f1697f29",
+          "size": 1726,
+          "type": "image/svg+xml"
+        },
+        "phantom-processor.svg": {
+          "blob": "45b6d541004148ed8e8c4ed891c878ce",
+          "name": "phantom-processor.svg",
+          "sha256": "1f2dba9a1781553cf5c668da3d78677ffc435e00cdd0d56d7d1a21351e25f334",
+          "size": 1807,
+          "type": "image/svg+xml"
+        },
+        "phantom-recovery.svg": {
+          "blob": "0e54d191a35d7f2f4b1a7f4b53285b38",
+          "name": "phantom-recovery.svg",
+          "sha256": "924b3154c40fab7c5104eda202e015547a3d0c1a4d9b27c8e20befca36b88af0",
+          "size": 1759,
+          "type": "image/svg+xml"
+        },
+        "phantom-ring-spire.svg": {
+          "blob": "44d5e8c6cb4f9cfb9c353763e63e24bd",
+          "name": "phantom-ring-spire.svg",
+          "sha256": "20cb6f4541d817a909339a40b2edfae08def447655fa93bffc0e3b500e181455",
+          "size": 1785,
+          "type": "image/svg+xml"
+        },
+        "phantom-search.svg": {
+          "blob": "2d9cb1dc2d2857893127abbdb6aa4a63",
+          "name": "phantom-search.svg",
+          "sha256": "72a321e45734dfe3b8b491b80caf6fba02a57bd966dd99b16570c4f33261d7e5",
+          "size": 1756,
+          "type": "image/svg+xml"
+        },
+        "phantom-sentinel.svg": {
+          "blob": "176230decf9901ae28eaae4dab96f9e4",
+          "name": "phantom-sentinel.svg",
+          "sha256": "b51cb0e5646c8069986b498ccfd201e02c50e7ac6e547d25fe4b77acc2c5c57f",
+          "size": 1786,
+          "type": "image/svg+xml"
+        },
+        "phantom-settings.svg": {
+          "blob": "90deaf47a9b78c474f11b5fac32e60d3",
+          "name": "phantom-settings.svg",
+          "sha256": "9f4f5b51fdd53f3b2b855f2ff159d792352709661b5f0526970aa7fd70f50ccc",
+          "size": 1766,
+          "type": "image/svg+xml"
+        },
+        "phantom-shield.svg": {
+          "blob": "7f1570a45f3d41f1653f389b18821cad",
+          "name": "phantom-shield.svg",
+          "sha256": "c5c00ba82ce91f702a486c1dabb7de97aa562164fc241179372d66cb6c498d45",
+          "size": 1776,
+          "type": "image/svg+xml"
+        },
+        "phantom-sigil.svg": {
+          "blob": "48188a0070436948dc2da7b45fd29796",
+          "name": "phantom-sigil.svg",
+          "sha256": "df627237b279ca2e775e1b02b4c771e78b6caaf160ee9b82f3ad9f1af9db8565",
+          "size": 1762,
+          "type": "image/svg+xml"
+        },
+        "phantom-sprite.svg": {
+          "blob": "4394ee70f430c9e4ce861097ea9f8de6",
+          "name": "phantom-sprite.svg",
+          "sha256": "1cfeae3e05f5a6baa11414c8d3193daa63910fbfb9a0262640d8f38ce760e80a",
+          "size": 10232,
+          "type": "image/svg+xml"
+        },
+        "phantom-terminal.svg": {
+          "blob": "d96d1c408a225dfbe47778ba52496664",
+          "name": "phantom-terminal.svg",
+          "sha256": "55441a8534e8ca047c4ac344f416b06b2f332626138a282d02ff2b3164ca7c5d",
+          "size": 1796,
+          "type": "image/svg+xml"
+        },
+        "phantom-toolkit.svg": {
+          "blob": "5fc105e166395ca67bebd5fa05c7a82b",
+          "name": "phantom-toolkit.svg",
+          "sha256": "93da68f7c7d0c8aea41a74270b6d61060a3d6492078d117ad99d8dacb69e5d7f",
+          "size": 1758,
+          "type": "image/svg+xml"
+        },
+        "phantom-usb.svg": {
+          "blob": "9ede27c02fefe6087f6f2c4d90e1e201",
+          "name": "phantom-usb.svg",
+          "sha256": "e207c09b628c1219111d16124b8b8bb9f4c8b751e1a44e95815c64546781ef14",
+          "size": 1835,
+          "type": "image/svg+xml"
+        },
+        "phantom-warning.svg": {
+          "blob": "625fc6a1e514474d4b837bd4b4931abf",
+          "name": "phantom-warning.svg",
+          "sha256": "395a7744f9a4151dde2cc4aa87d7e660c954d6065094a7b44a3083a0b79cbf35",
+          "size": 1742,
+          "type": "image/svg+xml"
+        },
+        "phantom-workstation.svg": {
+          "blob": "c65b5527ea1b0076d74399a6aaa7eaa3",
+          "name": "phantom-workstation.svg",
+          "sha256": "db3c458884832e888d98e787788187098998aa84b9cda105d4692c17a0cd1814",
+          "size": 1824,
+          "type": "image/svg+xml"
+        }
+      },
+      "name": "ICONS",
+      "order": []
+    },
+    "LICENSE": {
+      "files": {},
+      "name": "LICENSE",
+      "order": []
+    },
+    "Logos": {
+      "files": {
+        "ChatGPT~20Image~20Sep~2019~2c~202026~2c~2010_00_53~20PM.png": {
+          "blob": "9c6b9af87120fa65c89ac934cb851da3",
+          "name": "ChatGPT Image Sep 19, 2026, 10_00_53 PM.png",
+          "sha256": "56f792162b0e4bbf977e03cec21ff8bc4c3131d8487cf4d161ad869cbf9c646f",
+          "size": 1807901,
+          "type": "image/png"
+        },
+        "ChatGPT~20Image~20Sep~2019~2c~202026~2c~2010_00_53~20PM~20~282~29.png": {
+          "blob": "9c6b9af87120fa65c89ac934cb851da3",
+          "name": "ChatGPT Image Sep 19, 2026, 10_00_53 PM (2).png",
+          "sha256": "56f792162b0e4bbf977e03cec21ff8bc4c3131d8487cf4d161ad869cbf9c646f",
+          "size": 1807901,
+          "type": "image/png"
+        },
+        "ChatGPT~20Image~20Sep~2019~2c~202026~2c~2010_01_13~20PM.png": {
+          "blob": "ab8aa1f674005f3031aa8a91c40be5f6",
+          "name": "ChatGPT Image Sep 19, 2026, 10_01_13 PM.png",
+          "sha256": "53e3a10c6e782ae67d664a21d628002ebfd2d2ba767e3b3485e2f12487f5f249",
+          "size": 2227462,
+          "type": "image/png"
+        },
+        "ChatGPT~20Image~20Sep~2019~2c~202026~2c~2010_01_13~20PM~20~282~29.png": {
+          "blob": "ab8aa1f674005f3031aa8a91c40be5f6",
+          "name": "ChatGPT Image Sep 19, 2026, 10_01_13 PM (2).png",
+          "sha256": "53e3a10c6e782ae67d664a21d628002ebfd2d2ba767e3b3485e2f12487f5f249",
+          "size": 2227462,
+          "type": "image/png"
+        },
+        "ChatGPT~20Image~20Sep~2019~2c~202026~2c~2010_36_39~20PM.png": {
+          "blob": "890a318630fd4552525ec5427ca9c4fe",
+          "name": "ChatGPT Image Sep 19, 2026, 10_36_39 PM.png",
+          "sha256": "94da4916f71eaf526d6bf2d0767bb79ef0bfe34146b6e9e3f572e7fb17a9e421",
+          "size": 2013840,
+          "type": "image/png"
+        },
+        "ChatGPT~20Image~20Sep~2020~2c~202026~2c~2002_47_57~20PM.png": {
+          "blob": "890a318630fd4552525ec5427ca9c4fe",
+          "name": "ChatGPT Image Sep 20, 2026, 02_47_57 PM.png",
+          "sha256": "94da4916f71eaf526d6bf2d0767bb79ef0bfe34146b6e9e3f572e7fb17a9e421",
+          "size": 2013840,
+          "type": "image/png"
+        },
+        "ChatGPT~20Image~20Sep~2020~2c~202026~2c~2002_49_50~20PM.png": {
+          "blob": "2a3e960b26cae29c2a5f5b4042c96637",
+          "name": "ChatGPT Image Sep 20, 2026, 02_49_50 PM.png",
+          "sha256": "40aa8802398bf0aaa8a632dfc27a8122ee1f86d3795f4d1817ed1346d3ee3698",
+          "size": 1424056,
+          "type": "image/png"
+        },
+        "ChatGPT~20Image~20Sep~2020~2c~202026~2c~2003_08_42~20PM.png": {
+          "blob": "b62da1d9f85012c4b67ec92371bbec60",
+          "name": "ChatGPT Image Sep 20, 2026, 03_08_42 PM.png",
+          "sha256": "0f017bbdbd90d6244a08c78181262a861262509a153c1262c9a67d6eee8fc6f5",
+          "size": 358333,
+          "type": "image/png"
+        }
+      },
+      "name": "Logos",
+      "order": []
+    },
+    "PHANTOM~20ICONS": {
+      "files": {
+        "phantom-activity.svg": {
+          "blob": "9094f570740e072892517d58e38ad719",
+          "name": "phantom-activity.svg",
+          "sha256": "0460c6defd500a59808ca667dd53aa9b5e283b54c2737a480137b9319be29a22",
+          "size": 1745,
+          "type": "image/svg+xml"
+        },
+        "phantom-activity~20~282~29.svg": {
+          "blob": "9094f570740e072892517d58e38ad719",
+          "name": "phantom-activity (2).svg",
+          "sha256": "0460c6defd500a59808ca667dd53aa9b5e283b54c2737a480137b9319be29a22",
+          "size": 1745,
+          "type": "image/svg+xml"
+        },
+        "phantom-archive.svg": {
+          "blob": "edb9a203011db3329fc2e194f76e9856",
+          "name": "phantom-archive.svg",
+          "sha256": "8509f670e9e3f90ab12cc650fdcd36a22b3e49e3c1f55d8f24e32ae7c1679efb",
+          "size": 1747,
+          "type": "image/svg+xml"
+        },
+        "phantom-archive~20~282~29.svg": {
+          "blob": "edb9a203011db3329fc2e194f76e9856",
+          "name": "phantom-archive (2).svg",
+          "sha256": "8509f670e9e3f90ab12cc650fdcd36a22b3e49e3c1f55d8f24e32ae7c1679efb",
+          "size": 1747,
+          "type": "image/svg+xml"
+        },
+        "phantom-arrow-right.svg": {
+          "blob": "c54d0f73db4c195f3a9217fb5b6803b3",
+          "name": "phantom-arrow-right.svg",
+          "sha256": "94463538a18327c4c92ab102b4f7c95e74723b312f64904f0519c056c3624912",
+          "size": 1768,
+          "type": "image/svg+xml"
+        },
+        "phantom-arrow-right~20~282~29.svg": {
+          "blob": "c54d0f73db4c195f3a9217fb5b6803b3",
+          "name": "phantom-arrow-right (2).svg",
+          "sha256": "94463538a18327c4c92ab102b4f7c95e74723b312f64904f0519c056c3624912",
+          "size": 1768,
+          "type": "image/svg+xml"
+        },
+        "phantom-arrow-up-right.svg": {
+          "blob": "fcc210df307975e0ad252bacfc517b08",
+          "name": "phantom-arrow-up-right.svg",
+          "sha256": "654c3808b956d10cf55daa04842f0bec735e2d444eed50bee2def4c6b3326e5d",
+          "size": 1791,
+          "type": "image/svg+xml"
+        },
+        "phantom-arrow-up-right~20~282~29.svg": {
+          "blob": "fcc210df307975e0ad252bacfc517b08",
+          "name": "phantom-arrow-up-right (2).svg",
+          "sha256": "654c3808b956d10cf55daa04842f0bec735e2d444eed50bee2def4c6b3326e5d",
+          "size": 1791,
+          "type": "image/svg+xml"
+        },
+        "phantom-blade.svg": {
+          "blob": "fcc5f0a67e98010bbb38c1534adede19",
+          "name": "phantom-blade.svg",
+          "sha256": "ee0a4740b86853b766c8a1bdfb34e6ce53442333e01204aba45b26517085cecd",
+          "size": 1750,
+          "type": "image/svg+xml"
+        },
+        "phantom-blade~20~282~29.svg": {
+          "blob": "fcc5f0a67e98010bbb38c1534adede19",
+          "name": "phantom-blade (2).svg",
+          "sha256": "ee0a4740b86853b766c8a1bdfb34e6ce53442333e01204aba45b26517085cecd",
+          "size": 1750,
+          "type": "image/svg+xml"
+        },
+        "phantom-check.svg": {
+          "blob": "60c53c46a74af846419f46348dc693ed",
+          "name": "phantom-check.svg",
+          "sha256": "a7f5168cd81bad1bcd684e027cce2d2ddf226c5e475cca421f9ffa3ed8573b35",
+          "size": 1713,
+          "type": "image/svg+xml"
+        },
+        "phantom-check~20~282~29.svg": {
+          "blob": "60c53c46a74af846419f46348dc693ed",
+          "name": "phantom-check (2).svg",
+          "sha256": "a7f5168cd81bad1bcd684e027cce2d2ddf226c5e475cca421f9ffa3ed8573b35",
+          "size": 1713,
+          "type": "image/svg+xml"
+        },
+        "phantom-chevron-down.svg": {
+          "blob": "78085540fecc0f1f7066853f94263d05",
+          "name": "phantom-chevron-down.svg",
+          "sha256": "c1e8ebcb4e15792d70730b30ee11fac32cf982eeacb8c303d8abb9090bccee4e",
+          "size": 1767,
+          "type": "image/svg+xml"
+        },
+        "phantom-chevron-down~20~282~29.svg": {
+          "blob": "78085540fecc0f1f7066853f94263d05",
+          "name": "phantom-chevron-down (2).svg",
+          "sha256": "c1e8ebcb4e15792d70730b30ee11fac32cf982eeacb8c303d8abb9090bccee4e",
+          "size": 1767,
+          "type": "image/svg+xml"
+        },
+        "phantom-citadel.svg": {
+          "blob": "c6e0bf28ef0887bbb36697eca78747c4",
+          "name": "phantom-citadel.svg",
+          "sha256": "2cfd1020d68d3551eb34443e42cbe322547b7c9c2523b0330d3829a3f1004445",
+          "size": 1787,
+          "type": "image/svg+xml"
+        },
+        "phantom-citadel~20~282~29.svg": {
+          "blob": "c6e0bf28ef0887bbb36697eca78747c4",
+          "name": "phantom-citadel (2).svg",
+          "sha256": "2cfd1020d68d3551eb34443e42cbe322547b7c9c2523b0330d3829a3f1004445",
+          "size": 1787,
+          "type": "image/svg+xml"
+        },
+        "phantom-close.svg": {
+          "blob": "a026590a40cd5d0e906ad94398792064",
+          "name": "phantom-close.svg",
+          "sha256": "e72174a38ce4cd7c7ecfc4e32c51ead573739d3698e3efeb242de042bf724746",
+          "size": 1719,
+          "type": "image/svg+xml"
+        },
+        "phantom-close~20~282~29.svg": {
+          "blob": "a026590a40cd5d0e906ad94398792064",
+          "name": "phantom-close (2).svg",
+          "sha256": "e72174a38ce4cd7c7ecfc4e32c51ead573739d3698e3efeb242de042bf724746",
+          "size": 1719,
+          "type": "image/svg+xml"
+        },
+        "phantom-command.svg": {
+          "blob": "0513503837e9c4bb013e98f71bb57e7a",
+          "name": "phantom-command.svg",
+          "sha256": "9ea4aacf3e13a8515b34885d480456f00ae7d31d40e2529e2e00ef914bf76ca1",
+          "size": 1906,
+          "type": "image/svg+xml"
+        },
+        "phantom-command~20~282~29.svg": {
+          "blob": "0513503837e9c4bb013e98f71bb57e7a",
+          "name": "phantom-command (2).svg",
+          "sha256": "9ea4aacf3e13a8515b34885d480456f00ae7d31d40e2529e2e00ef914bf76ca1",
+          "size": 1906,
+          "type": "image/svg+xml"
+        },
+        "phantom-copy.svg": {
+          "blob": "e2be4078e8be2ee3e9f821352ad61b29",
+          "name": "phantom-copy.svg",
+          "sha256": "6af4e9997fe5dd50c76e1d003503aff4ea6c1fde523f6710b4e0c5d5677634fb",
+          "size": 1718,
+          "type": "image/svg+xml"
+        },
+        "phantom-copy~20~282~29.svg": {
+          "blob": "e2be4078e8be2ee3e9f821352ad61b29",
+          "name": "phantom-copy (2).svg",
+          "sha256": "6af4e9997fe5dd50c76e1d003503aff4ea6c1fde523f6710b4e0c5d5677634fb",
+          "size": 1718,
+          "type": "image/svg+xml"
+        },
+        "phantom-crest.svg": {
+          "blob": "21aa8eee2c6c2c8c52c7e70fea977fa5",
+          "name": "phantom-crest.svg",
+          "sha256": "1bef03ca39500f22469cc3739b471e3d0fec87a1708ea932e2f2c73ecbbed7ee",
+          "size": 1751,
+          "type": "image/svg+xml"
+        },
+        "phantom-crest~20~282~29.svg": {
+          "blob": "21aa8eee2c6c2c8c52c7e70fea977fa5",
+          "name": "phantom-crest (2).svg",
+          "sha256": "1bef03ca39500f22469cc3739b471e3d0fec87a1708ea932e2f2c73ecbbed7ee",
+          "size": 1751,
+          "type": "image/svg+xml"
+        },
+        "phantom-danger.svg": {
+          "blob": "192a3a14209335bb00dc561c6e105532",
+          "name": "phantom-danger.svg",
+          "sha256": "e93b854520083ee228e55914b625efce5aabd3b270e09aad48e13ab51bdd2d5d",
+          "size": 1752,
+          "type": "image/svg+xml"
+        },
+        "phantom-danger~20~282~29.svg": {
+          "blob": "192a3a14209335bb00dc561c6e105532",
+          "name": "phantom-danger (2).svg",
+          "sha256": "e93b854520083ee228e55914b625efce5aabd3b270e09aad48e13ab51bdd2d5d",
+          "size": 1752,
+          "type": "image/svg+xml"
+        },
+        "phantom-document.svg": {
+          "blob": "b737ba8bd6d6d0477459aad93d94a4ad",
+          "name": "phantom-document.svg",
+          "sha256": "137b26eb28faa3de61772710165eb8e4a0f21143bbbb280a5dab10f0884d8ba5",
+          "size": 1761,
+          "type": "image/svg+xml"
+        },
+        "phantom-document~20~282~29.svg": {
+          "blob": "b737ba8bd6d6d0477459aad93d94a4ad",
+          "name": "phantom-document (2).svg",
+          "sha256": "137b26eb28faa3de61772710165eb8e4a0f21143bbbb280a5dab10f0884d8ba5",
+          "size": 1761,
+          "type": "image/svg+xml"
+        },
+        "phantom-download.svg": {
+          "blob": "48534f947408509a50a1f46a510f6a38",
+          "name": "phantom-download.svg",
+          "sha256": "4e0280540519ae5dfa33b70e408d035159782fc186c45edcdb493f309eb25bcd",
+          "size": 1757,
+          "type": "image/svg+xml"
+        },
+        "phantom-download~20~282~29.svg": {
+          "blob": "48534f947408509a50a1f46a510f6a38",
+          "name": "phantom-download (2).svg",
+          "sha256": "4e0280540519ae5dfa33b70e408d035159782fc186c45edcdb493f309eb25bcd",
+          "size": 1757,
+          "type": "image/svg+xml"
+        },
+        "phantom-drive.svg": {
+          "blob": "776372f210e28c13e464c8ac68794b19",
+          "name": "phantom-drive.svg",
+          "sha256": "e7c8eb6ab3d9152ebfd77585765b27fd3d0e61688b0170ea364c30c68fba8746",
+          "size": 1743,
+          "type": "image/svg+xml"
+        },
+        "phantom-drive~20~282~29.svg": {
+          "blob": "776372f210e28c13e464c8ac68794b19",
+          "name": "phantom-drive (2).svg",
+          "sha256": "e7c8eb6ab3d9152ebfd77585765b27fd3d0e61688b0170ea364c30c68fba8746",
+          "size": 1743,
+          "type": "image/svg+xml"
+        },
+        "phantom-expand.svg": {
+          "blob": "212e9824e03e0d1a2710c1d755470a0a",
+          "name": "phantom-expand.svg",
+          "sha256": "dc5e3c1b54506ca03890fa7ab5858716d60928f2da85527b4fcfb0f5973f16ef",
+          "size": 1742,
+          "type": "image/svg+xml"
+        },
+        "phantom-expand~20~282~29.svg": {
+          "blob": "212e9824e03e0d1a2710c1d755470a0a",
+          "name": "phantom-expand (2).svg",
+          "sha256": "dc5e3c1b54506ca03890fa7ab5858716d60928f2da85527b4fcfb0f5973f16ef",
+          "size": 1742,
+          "type": "image/svg+xml"
+        },
+        "phantom-folder.svg": {
+          "blob": "5120d42e2c85f2afb4243b34fd177e86",
+          "name": "phantom-folder.svg",
+          "sha256": "8204b4f4b10d7d4906212771137ea8b65ca532ffa7eda9c1c94c83ba11998981",
+          "size": 1726,
+          "type": "image/svg+xml"
+        },
+        "phantom-folder~20~282~29.svg": {
+          "blob": "5120d42e2c85f2afb4243b34fd177e86",
+          "name": "phantom-folder (2).svg",
+          "sha256": "8204b4f4b10d7d4906212771137ea8b65ca532ffa7eda9c1c94c83ba11998981",
+          "size": 1726,
+          "type": "image/svg+xml"
+        },
+        "phantom-hood.svg": {
+          "blob": "2f144d288b4b00e40093d9940008573e",
+          "name": "phantom-hood.svg",
+          "sha256": "03e181f155f414f3182e5d7cd87ac89d86ff2ec848d333e726488fcfcd69f6ef",
+          "size": 1756,
+          "type": "image/svg+xml"
+        },
+        "phantom-hood~20~282~29.svg": {
+          "blob": "2f144d288b4b00e40093d9940008573e",
+          "name": "phantom-hood (2).svg",
+          "sha256": "03e181f155f414f3182e5d7cd87ac89d86ff2ec848d333e726488fcfcd69f6ef",
+          "size": 1756,
+          "type": "image/svg+xml"
+        },
+        "phantom-info.svg": {
+          "blob": "89f7692fca63f15599d27a2c76093f6e",
+          "name": "phantom-info.svg",
+          "sha256": "f07a02970a827d653273a250124bd464d352e7ca135d7447c8f142bb46466cac",
+          "size": 1746,
+          "type": "image/svg+xml"
+        },
+        "phantom-info~20~282~29.svg": {
+          "blob": "89f7692fca63f15599d27a2c76093f6e",
+          "name": "phantom-info (2).svg",
+          "sha256": "f07a02970a827d653273a250124bd464d352e7ca135d7447c8f142bb46466cac",
+          "size": 1746,
+          "type": "image/svg+xml"
+        },
+        "phantom-library.svg": {
+          "blob": "a898bb634b80cc67a97babe6e0852ac2",
+          "name": "phantom-library.svg",
+          "sha256": "86e74f060f944910ae7185abea82338d8e47988cb2209116a5c0b740519930db",
+          "size": 1783,
+          "type": "image/svg+xml"
+        },
+        "phantom-library~20~282~29.svg": {
+          "blob": "a898bb634b80cc67a97babe6e0852ac2",
+          "name": "phantom-library (2).svg",
+          "sha256": "86e74f060f944910ae7185abea82338d8e47988cb2209116a5c0b740519930db",
+          "size": 1783,
+          "type": "image/svg+xml"
+        },
+        "phantom-link.svg": {
+          "blob": "cb821793d73edfeb908b1c8eb93c62cc",
+          "name": "phantom-link.svg",
+          "sha256": "2b23d45036540450f8beaa3b79a9ce4e59ba3b995b764bdfbaa24d232b8a00ee",
+          "size": 1756,
+          "type": "image/svg+xml"
+        },
+        "phantom-link~20~282~29.svg": {
+          "blob": "cb821793d73edfeb908b1c8eb93c62cc",
+          "name": "phantom-link (2).svg",
+          "sha256": "2b23d45036540450f8beaa3b79a9ce4e59ba3b995b764bdfbaa24d232b8a00ee",
+          "size": 1756,
+          "type": "image/svg+xml"
+        },
+        "phantom-lock.svg": {
+          "blob": "e5629f40aa4b0cf8ff88f6dafae561d9",
+          "name": "phantom-lock.svg",
+          "sha256": "b2acdba03e354c81a52594d2f26895c385245df3c3932b5965808b57db9fd6c0",
+          "size": 1778,
+          "type": "image/svg+xml"
+        },
+        "phantom-lock~20~282~29.svg": {
+          "blob": "e5629f40aa4b0cf8ff88f6dafae561d9",
+          "name": "phantom-lock (2).svg",
+          "sha256": "b2acdba03e354c81a52594d2f26895c385245df3c3932b5965808b57db9fd6c0",
+          "size": 1778,
+          "type": "image/svg+xml"
+        },
+        "phantom-menu.svg": {
+          "blob": "4fbcd1e6b96bcde797977d70f2a97d62",
+          "name": "phantom-menu.svg",
+          "sha256": "6f0cce1a693267e9a2a536b3e8c27b6a746852fe75fa9bc5c8f35445a95ba559",
+          "size": 1714,
+          "type": "image/svg+xml"
+        },
+        "phantom-menu~20~282~29.svg": {
+          "blob": "4fbcd1e6b96bcde797977d70f2a97d62",
+          "name": "phantom-menu (2).svg",
+          "sha256": "6f0cce1a693267e9a2a536b3e8c27b6a746852fe75fa9bc5c8f35445a95ba559",
+          "size": 1714,
+          "type": "image/svg+xml"
+        },
+        "phantom-network.svg": {
+          "blob": "892f259743234d84227afd77f7507868",
+          "name": "phantom-network.svg",
+          "sha256": "dde02a238276d01405f35fef40ec80f3f47b9e19164a8d198564736dd3ca6cd4",
+          "size": 1771,
+          "type": "image/svg+xml"
+        },
+        "phantom-network~20~282~29.svg": {
+          "blob": "892f259743234d84227afd77f7507868",
+          "name": "phantom-network (2).svg",
+          "sha256": "dde02a238276d01405f35fef40ec80f3f47b9e19164a8d198564736dd3ca6cd4",
+          "size": 1771,
+          "type": "image/svg+xml"
+        },
+        "phantom-neural.svg": {
+          "blob": "a33af91d85012c1736bae44a097d7bd8",
+          "name": "phantom-neural.svg",
+          "sha256": "c0d18755979b9ea31c2b238186930fef43ce37ea4747b6bcd28ae9c55eb97f2e",
+          "size": 1813,
+          "type": "image/svg+xml"
+        },
+        "phantom-neural~20~282~29.svg": {
+          "blob": "a33af91d85012c1736bae44a097d7bd8",
+          "name": "phantom-neural (2).svg",
+          "sha256": "c0d18755979b9ea31c2b238186930fef43ce37ea4747b6bcd28ae9c55eb97f2e",
+          "size": 1813,
+          "type": "image/svg+xml"
+        },
+        "phantom-offline.svg": {
+          "blob": "e7b505b84751433df275ac20eff202dc",
+          "name": "phantom-offline.svg",
+          "sha256": "804c5e18e1d4894bd8e4446255dd76d8c3ee9c75308334adae9f7970430a9e5e",
+          "size": 1825,
+          "type": "image/svg+xml"
+        },
+        "phantom-offline~20~282~29.svg": {
+          "blob": "e7b505b84751433df275ac20eff202dc",
+          "name": "phantom-offline (2).svg",
+          "sha256": "804c5e18e1d4894bd8e4446255dd76d8c3ee9c75308334adae9f7970430a9e5e",
+          "size": 1825,
+          "type": "image/svg+xml"
+        },
+        "phantom-phantom-mask.svg": {
+          "blob": "3176c0c7a1172a7e1cd1d1d82534e4ab",
+          "name": "phantom-phantom-mask.svg",
+          "sha256": "0b8900217d8a6d22d47e061accc48a716b45e46829cf5fcae88ededf40ff0d29",
+          "size": 1826,
+          "type": "image/svg+xml"
+        },
+        "phantom-phantom-mask~20~282~29.svg": {
+          "blob": "3176c0c7a1172a7e1cd1d1d82534e4ab",
+          "name": "phantom-phantom-mask (2).svg",
+          "sha256": "0b8900217d8a6d22d47e061accc48a716b45e46829cf5fcae88ededf40ff0d29",
+          "size": 1826,
+          "type": "image/svg+xml"
+        },
+        "phantom-phantom.svg": {
+          "blob": "a5c22a9e0fbd77419516c08837dfa865",
+          "name": "phantom-phantom.svg",
+          "sha256": "f048505584af4693f4b0cca25a42bbe15a623085f211661e6fed878d0d43aa61",
+          "size": 1815,
+          "type": "image/svg+xml"
+        },
+        "phantom-phantom~20~282~29.svg": {
+          "blob": "a5c22a9e0fbd77419516c08837dfa865",
+          "name": "phantom-phantom (2).svg",
+          "sha256": "f048505584af4693f4b0cca25a42bbe15a623085f211661e6fed878d0d43aa61",
+          "size": 1815,
+          "type": "image/svg+xml"
+        },
+        "phantom-portal.svg": {
+          "blob": "3149c5d7d18a3795384e62195a8c0cd4",
+          "name": "phantom-portal.svg",
+          "sha256": "6622f13988ca4defa07c51860f389014aac62333cead395fdfc0a1f451d9fadd",
+          "size": 1756,
+          "type": "image/svg+xml"
+        },
+        "phantom-portal~20~282~29.svg": {
+          "blob": "3149c5d7d18a3795384e62195a8c0cd4",
+          "name": "phantom-portal (2).svg",
+          "sha256": "6622f13988ca4defa07c51860f389014aac62333cead395fdfc0a1f451d9fadd",
+          "size": 1756,
+          "type": "image/svg+xml"
+        },
+        "phantom-power.svg": {
+          "blob": "2244ba0155de7c624f702bdd9f123d55",
+          "name": "phantom-power.svg",
+          "sha256": "7ad134eae9833e00f787dd97a68432e9cf064a8bfef73fc6498d2681f1697f29",
+          "size": 1726,
+          "type": "image/svg+xml"
+        },
+        "phantom-power~20~282~29.svg": {
+          "blob": "2244ba0155de7c624f702bdd9f123d55",
+          "name": "phantom-power (2).svg",
+          "sha256": "7ad134eae9833e00f787dd97a68432e9cf064a8bfef73fc6498d2681f1697f29",
+          "size": 1726,
+          "type": "image/svg+xml"
+        },
+        "phantom-processor.svg": {
+          "blob": "45b6d541004148ed8e8c4ed891c878ce",
+          "name": "phantom-processor.svg",
+          "sha256": "1f2dba9a1781553cf5c668da3d78677ffc435e00cdd0d56d7d1a21351e25f334",
+          "size": 1807,
+          "type": "image/svg+xml"
+        },
+        "phantom-processor~20~282~29.svg": {
+          "blob": "45b6d541004148ed8e8c4ed891c878ce",
+          "name": "phantom-processor (2).svg",
+          "sha256": "1f2dba9a1781553cf5c668da3d78677ffc435e00cdd0d56d7d1a21351e25f334",
+          "size": 1807,
+          "type": "image/svg+xml"
+        },
+        "phantom-recovery.svg": {
+          "blob": "0e54d191a35d7f2f4b1a7f4b53285b38",
+          "name": "phantom-recovery.svg",
+          "sha256": "924b3154c40fab7c5104eda202e015547a3d0c1a4d9b27c8e20befca36b88af0",
+          "size": 1759,
+          "type": "image/svg+xml"
+        },
+        "phantom-recovery~20~282~29.svg": {
+          "blob": "0e54d191a35d7f2f4b1a7f4b53285b38",
+          "name": "phantom-recovery (2).svg",
+          "sha256": "924b3154c40fab7c5104eda202e015547a3d0c1a4d9b27c8e20befca36b88af0",
+          "size": 1759,
+          "type": "image/svg+xml"
+        },
+        "phantom-ring-spire.svg": {
+          "blob": "44d5e8c6cb4f9cfb9c353763e63e24bd",
+          "name": "phantom-ring-spire.svg",
+          "sha256": "20cb6f4541d817a909339a40b2edfae08def447655fa93bffc0e3b500e181455",
+          "size": 1785,
+          "type": "image/svg+xml"
+        },
+        "phantom-ring-spire~20~282~29.svg": {
+          "blob": "44d5e8c6cb4f9cfb9c353763e63e24bd",
+          "name": "phantom-ring-spire (2).svg",
+          "sha256": "20cb6f4541d817a909339a40b2edfae08def447655fa93bffc0e3b500e181455",
+          "size": 1785,
+          "type": "image/svg+xml"
+        },
+        "phantom-search.svg": {
+          "blob": "2d9cb1dc2d2857893127abbdb6aa4a63",
+          "name": "phantom-search.svg",
+          "sha256": "72a321e45734dfe3b8b491b80caf6fba02a57bd966dd99b16570c4f33261d7e5",
+          "size": 1756,
+          "type": "image/svg+xml"
+        },
+        "phantom-search~20~282~29.svg": {
+          "blob": "2d9cb1dc2d2857893127abbdb6aa4a63",
+          "name": "phantom-search (2).svg",
+          "sha256": "72a321e45734dfe3b8b491b80caf6fba02a57bd966dd99b16570c4f33261d7e5",
+          "size": 1756,
+          "type": "image/svg+xml"
+        },
+        "phantom-sentinel.svg": {
+          "blob": "176230decf9901ae28eaae4dab96f9e4",
+          "name": "phantom-sentinel.svg",
+          "sha256": "b51cb0e5646c8069986b498ccfd201e02c50e7ac6e547d25fe4b77acc2c5c57f",
+          "size": 1786,
+          "type": "image/svg+xml"
+        },
+        "phantom-sentinel~20~282~29.svg": {
+          "blob": "176230decf9901ae28eaae4dab96f9e4",
+          "name": "phantom-sentinel (2).svg",
+          "sha256": "b51cb0e5646c8069986b498ccfd201e02c50e7ac6e547d25fe4b77acc2c5c57f",
+          "size": 1786,
+          "type": "image/svg+xml"
+        },
+        "phantom-settings.svg": {
+          "blob": "90deaf47a9b78c474f11b5fac32e60d3",
+          "name": "phantom-settings.svg",
+          "sha256": "9f4f5b51fdd53f3b2b855f2ff159d792352709661b5f0526970aa7fd70f50ccc",
+          "size": 1766,
+          "type": "image/svg+xml"
+        },
+        "phantom-settings~20~282~29.svg": {
+          "blob": "90deaf47a9b78c474f11b5fac32e60d3",
+          "name": "phantom-settings (2).svg",
+          "sha256": "9f4f5b51fdd53f3b2b855f2ff159d792352709661b5f0526970aa7fd70f50ccc",
+          "size": 1766,
+          "type": "image/svg+xml"
+        },
+        "phantom-shield.svg": {
+          "blob": "7f1570a45f3d41f1653f389b18821cad",
+          "name": "phantom-shield.svg",
+          "sha256": "c5c00ba82ce91f702a486c1dabb7de97aa562164fc241179372d66cb6c498d45",
+          "size": 1776,
+          "type": "image/svg+xml"
+        },
+        "phantom-shield~20~282~29.svg": {
+          "blob": "7f1570a45f3d41f1653f389b18821cad",
+          "name": "phantom-shield (2).svg",
+          "sha256": "c5c00ba82ce91f702a486c1dabb7de97aa562164fc241179372d66cb6c498d45",
+          "size": 1776,
+          "type": "image/svg+xml"
+        },
+        "phantom-sigil.svg": {
+          "blob": "48188a0070436948dc2da7b45fd29796",
+          "name": "phantom-sigil.svg",
+          "sha256": "df627237b279ca2e775e1b02b4c771e78b6caaf160ee9b82f3ad9f1af9db8565",
+          "size": 1762,
+          "type": "image/svg+xml"
+        },
+        "phantom-sigil~20~282~29.svg": {
+          "blob": "48188a0070436948dc2da7b45fd29796",
+          "name": "phantom-sigil (2).svg",
+          "sha256": "df627237b279ca2e775e1b02b4c771e78b6caaf160ee9b82f3ad9f1af9db8565",
+          "size": 1762,
+          "type": "image/svg+xml"
+        },
+        "phantom-sprite.svg": {
+          "blob": "4394ee70f430c9e4ce861097ea9f8de6",
+          "name": "phantom-sprite.svg",
+          "sha256": "1cfeae3e05f5a6baa11414c8d3193daa63910fbfb9a0262640d8f38ce760e80a",
+          "size": 10232,
+          "type": "image/svg+xml"
+        },
+        "phantom-sprite~20~282~29.svg": {
+          "blob": "4394ee70f430c9e4ce861097ea9f8de6",
+          "name": "phantom-sprite (2).svg",
+          "sha256": "1cfeae3e05f5a6baa11414c8d3193daa63910fbfb9a0262640d8f38ce760e80a",
+          "size": 10232,
+          "type": "image/svg+xml"
+        },
+        "phantom-terminal.svg": {
+          "blob": "d96d1c408a225dfbe47778ba52496664",
+          "name": "phantom-terminal.svg",
+          "sha256": "55441a8534e8ca047c4ac344f416b06b2f332626138a282d02ff2b3164ca7c5d",
+          "size": 1796,
+          "type": "image/svg+xml"
+        },
+        "phantom-terminal~20~282~29.svg": {
+          "blob": "d96d1c408a225dfbe47778ba52496664",
+          "name": "phantom-terminal (2).svg",
+          "sha256": "55441a8534e8ca047c4ac344f416b06b2f332626138a282d02ff2b3164ca7c5d",
+          "size": 1796,
+          "type": "image/svg+xml"
+        },
+        "phantom-toolkit.svg": {
+          "blob": "5fc105e166395ca67bebd5fa05c7a82b",
+          "name": "phantom-toolkit.svg",
+          "sha256": "93da68f7c7d0c8aea41a74270b6d61060a3d6492078d117ad99d8dacb69e5d7f",
+          "size": 1758,
+          "type": "image/svg+xml"
+        },
+        "phantom-toolkit~20~282~29.svg": {
+          "blob": "5fc105e166395ca67bebd5fa05c7a82b",
+          "name": "phantom-toolkit (2).svg",
+          "sha256": "93da68f7c7d0c8aea41a74270b6d61060a3d6492078d117ad99d8dacb69e5d7f",
+          "size": 1758,
+          "type": "image/svg+xml"
+        },
+        "phantom-usb.svg": {
+          "blob": "9ede27c02fefe6087f6f2c4d90e1e201",
+          "name": "phantom-usb.svg",
+          "sha256": "e207c09b628c1219111d16124b8b8bb9f4c8b751e1a44e95815c64546781ef14",
+          "size": 1835,
+          "type": "image/svg+xml"
+        },
+        "phantom-usb~20~282~29.svg": {
+          "blob": "9ede27c02fefe6087f6f2c4d90e1e201",
+          "name": "phantom-usb (2).svg",
+          "sha256": "e207c09b628c1219111d16124b8b8bb9f4c8b751e1a44e95815c64546781ef14",
+          "size": 1835,
+          "type": "image/svg+xml"
+        },
+        "phantom-warning.svg": {
+          "blob": "625fc6a1e514474d4b837bd4b4931abf",
+          "name": "phantom-warning.svg",
+          "sha256": "395a7744f9a4151dde2cc4aa87d7e660c954d6065094a7b44a3083a0b79cbf35",
+          "size": 1742,
+          "type": "image/svg+xml"
+        },
+        "phantom-warning~20~282~29.svg": {
+          "blob": "625fc6a1e514474d4b837bd4b4931abf",
+          "name": "phantom-warning (2).svg",
+          "sha256": "395a7744f9a4151dde2cc4aa87d7e660c954d6065094a7b44a3083a0b79cbf35",
+          "size": 1742,
+          "type": "image/svg+xml"
+        },
+        "phantom-workstation.svg": {
+          "blob": "c65b5527ea1b0076d74399a6aaa7eaa3",
+          "name": "phantom-workstation.svg",
+          "sha256": "db3c458884832e888d98e787788187098998aa84b9cda105d4692c17a0cd1814",
+          "size": 1824,
+          "type": "image/svg+xml"
+        },
+        "phantom-workstation~20~282~29.svg": {
+          "blob": "c65b5527ea1b0076d74399a6aaa7eaa3",
+          "name": "phantom-workstation (2).svg",
+          "sha256": "db3c458884832e888d98e787788187098998aa84b9cda105d4692c17a0cd1814",
+          "size": 1824,
+          "type": "image/svg+xml"
+        }
+      },
+      "name": "PHANTOM ICONS",
+      "order": []
+    },
+    "PROMPTS": {
+      "files": {},
+      "name": "PROMPTS",
+      "order": []
+    },
+    "STYLES": {
+      "files": {},
+      "name": "STYLES",
+      "order": []
+    },
+    "STYLES-2": {
+      "files": {},
+      "name": "STYLES-2",
+      "order": []
+    },
+    "Theme~20Final": {
+      "files": {
+        "ChatGPT~20Image~20Sep~2019~2c~202026~2c~2010_00_53~20PM.png": {
+          "blob": "9c6b9af87120fa65c89ac934cb851da3",
+          "name": "ChatGPT Image Sep 19, 2026, 10_00_53 PM.png",
+          "sha256": "56f792162b0e4bbf977e03cec21ff8bc4c3131d8487cf4d161ad869cbf9c646f",
+          "size": 1807901,
+          "type": "image/png"
+        },
+        "ChatGPT~20Image~20Sep~2019~2c~202026~2c~2010_01_13~20PM.png": {
+          "blob": "ab8aa1f674005f3031aa8a91c40be5f6",
+          "name": "ChatGPT Image Sep 19, 2026, 10_01_13 PM.png",
+          "sha256": "53e3a10c6e782ae67d664a21d628002ebfd2d2ba767e3b3485e2f12487f5f249",
+          "size": 2227462,
+          "type": "image/png"
+        }
+      },
+      "name": "Theme Final",
+      "order": []
+    }
+  },
+  "blobs": {
+    "fonts/cinzel-variable.ttf": {
+      "blob": "e90bb10560c9bdff261f497091c1ac66",
+      "name": "fonts/cinzel-variable.ttf",
+      "sha256": "f4d83d34d1f6c741193e4acf4b3dff9531e5a67b6aa65228d00a7db72a4e0f34",
+      "size": 125468,
+      "type": "font/ttf"
+    },
+    "fonts/cinzel-variable~20~282~29.ttf": {
+      "blob": "e90bb10560c9bdff261f497091c1ac66",
+      "name": "fonts/cinzel-variable (2).ttf",
+      "sha256": "f4d83d34d1f6c741193e4acf4b3dff9531e5a67b6aa65228d00a7db72a4e0f34",
+      "size": 125468,
+      "type": "font/ttf"
+    },
+    "fonts/cinzel-variable~20~283~29.ttf": {
+      "blob": "e90bb10560c9bdff261f497091c1ac66",
+      "name": "fonts/cinzel-variable (3).ttf",
+      "sha256": "f4d83d34d1f6c741193e4acf4b3dff9531e5a67b6aa65228d00a7db72a4e0f34",
+      "size": 125468,
+      "type": "font/ttf"
+    },
+    "fonts/ibm-plex-mono-regular~20~282~29.ttf": {
+      "blob": "05a04362dd6e3d97dcef98420e0fd4a8",
+      "name": "fonts/ibm-plex-mono-regular (2).ttf",
+      "sha256": "6a3412f058c7d8dfd9170c41e85ade48e5156ecb89356110ca57a0a27734af46",
+      "size": 135580,
+      "type": "font/ttf"
+    },
+    "fonts/ibm-plex-mono-regular~20~283~29.ttf": {
+      "blob": "05a04362dd6e3d97dcef98420e0fd4a8",
+      "name": "fonts/ibm-plex-mono-regular (3).ttf",
+      "sha256": "6a3412f058c7d8dfd9170c41e85ade48e5156ecb89356110ca57a0a27734af46",
+      "size": 135580,
+      "type": "font/ttf"
+    },
+    "fonts/ibm-plex-mono-regular~20~284~29.ttf": {
+      "blob": "05a04362dd6e3d97dcef98420e0fd4a8",
+      "name": "fonts/ibm-plex-mono-regular (4).ttf",
+      "sha256": "6a3412f058c7d8dfd9170c41e85ade48e5156ecb89356110ca57a0a27734af46",
+      "size": 135580,
+      "type": "font/ttf"
+    },
+    "fonts/space-grotesk-variable~20~282~29.ttf": {
+      "blob": "b56b359da643afc10f58711d90478add",
+      "name": "fonts/space-grotesk-variable (2).ttf",
+      "sha256": "acad6de1fc93436f5c0f1f4137751ef04f1aea3063e7036535970ffcfbd79f72",
+      "size": 136676,
+      "type": "font/ttf"
+    },
+    "fonts/space-grotesk-variable~20~283~29.ttf": {
+      "blob": "b56b359da643afc10f58711d90478add",
+      "name": "fonts/space-grotesk-variable (3).ttf",
+      "sha256": "acad6de1fc93436f5c0f1f4137751ef04f1aea3063e7036535970ffcfbd79f72",
+      "size": 136676,
+      "type": "font/ttf"
+    },
+    "fonts/space-grotesk-variable~20~284~29.ttf": {
+      "blob": "b56b359da643afc10f58711d90478add",
+      "name": "fonts/space-grotesk-variable (4).ttf",
+      "sha256": "acad6de1fc93436f5c0f1f4137751ef04f1aea3063e7036535970ffcfbd79f72",
+      "size": 136676,
+      "type": "font/ttf"
+    }
+  },
+  "createdOnFiles": {
+    "at": "2026-09-20T00:56:22.271Z",
+    "v": 1
+  },
+  "docs": {
+    "readme": "project/README.md",
+    "sections": [
+      "project/guidelines/10-materials.md",
+      "project/guidelines/20-architecture.md",
+      "project/guidelines/30-motion.md",
+      "project/guidelines/40-accessibility.md",
+      "project/guidelines/50-offline-and-field.md",
+      "project/guidelines/60-what-this-is-not.md"
+    ]
+  },
+  "groups": [
+    "Logos",
+    "Theme~20Final",
+    "FONTS",
+    "BRAND",
+    "ARTWORK",
+    "ICONS",
+    "STYLES",
+    "PROMPTS",
+    "STYLES-2",
+    "LICENSE",
+    "BRAND2",
+    "ART",
+    "PHANTOM~20ICONS"
+  ],
+  "lastChange": {
+    "at": "2026-09-20T01:57:24Z",
+    "by": "XerXes",
+    "note": "Rebuilt to the Master Visual Design System: eight materials, gold and crimson signatures, seven operator energies, Phantom Cut and Phantom Line",
+    "via": "Cowork"
+  },
+  "layout": "files",
+  "libraries": [],
+  "namespace": "PhantomPortals",
+  "sections": {},
+  "title": "Phantom Portals"
+}

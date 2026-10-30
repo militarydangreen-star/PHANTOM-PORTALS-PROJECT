@@ -1,0 +1,13 @@
+{
+  "name": "phantom-portals-canon-tools",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Build tooling for the Phantom Portals canon. Run from 80_TOOLS.",
+  "type": "module",
+  "scripts": {
+    "build:tokens": "node build-tokens.mjs"
+  },
+  "devDependencies": {
+    "style-dictionary": "5.6.1"
+  }
+}

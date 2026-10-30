@@ -1,0 +1,16 @@
+<!-- @dsCard group="Browser Shell" height=348 subtitle="Left vertical utility rail" -->
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><style>html,body{margin:0;background:var(--surface-canvas)}.row{display:flex;flex-wrap:wrap;gap:12px;align-items:center}.stack{display:grid;gap:16px}</style></head>
+<body><div id="root" class="pp" style="padding:24px;background:var(--surface-canvas)"></div>
+<script>
+var P = window.PhantomPortals, h = React.createElement, F = React.Fragment;
+ReactDOM.createRoot(document.getElementById("root")).render(
+h(function Demo(){
+  var a = React.useState('cc');
+  return h('div', {style:{height:300, display:'flex'}}, h(P.UtilityRail, {activeId:a[0], onSelect:a[1], items:[
+    {id:'cc',label:'Command Center',icon:'home-portal'},{id:'dx',label:'Diagnostics',icon:'diagnostics'},{id:'term',label:'Terminal',icon:'terminal'},
+    {id:'ai',label:'AI Core',icon:'ai-core'},{id:'files',label:'Files',icon:'folder'},'separator',{id:'sec',label:'Security',icon:'shield'},{id:'set',label:'Settings',icon:'settings'}]}));
+})
+);
+</script>
+</body></html>

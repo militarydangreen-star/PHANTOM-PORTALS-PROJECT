@@ -1,0 +1,30 @@
+{
+  "id": "PP-FONT-001",
+  "file": "inter-latin-400-normal.woff2",
+  "title": "Inter 400 (Latin subset, WOFF2)",
+  "status": "CURRENT",
+  "canon_version": "1.0.0",
+  "kind": "font",
+  "format": "woff2",
+  "dimensions": null,
+  "bytes": 23692,
+  "sha256": "dd05e326cf8eac3b55acecf29c842ed73e6e6dd06491cf47f7e8800680ab3e33",
+  "usage": "Body, navigation, interface controls.",
+  "rules": [
+    "Ship locally; never require a font CDN.",
+    "Keep OFL.txt beside the files when redistributing."
+  ],
+  "tags": [
+    "font",
+    "inter"
+  ],
+  "license": "SIL Open Font License 1.1 (see OFL.txt in this folder)",
+  "source": {
+    "system": "Phantom Portals design system (White / Crimson / Black)",
+    "artifact": "https://claude.ai/artifact/HG2ihDf5JsALbo4fxCXcmV",
+    "version": "1793296345-e7e7",
+    "path": "fonts/inter-latin-400-normal.woff2",
+    "asset_id": null,
+    "fetched": "2026-10-29"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "PP-REF-SRC-003",
+  "file": "imgres.htm",
+  "title": "Google Images result page \u2192 www.pinterest.com",
+  "status": "REFERENCE",
+  "canon_version": "1.0.0",
+  "kind": "reference",
+  "format": "htm",
+  "dimensions": null,
+  "bytes": 235875,
+  "sha256": "9873d3804abb79726269b8ef24f47e757dd5dfdcafab5d744c9b67b93220d657",
+  "usage": "Provenance only: records where a moodboard image was found. Open SOURCES.md instead of this file.",
+  "rules": [
+    "THIRD-PARTY: the linked image belongs to its creator / stock agency. Never ship or trace it."
+  ],
+  "tags": [
+    "reference",
+    "third-party",
+    "provenance"
+  ],
+  "license": "Third-party page saved for provenance; no rights granted.",
+  "source": {
+    "site": "www.pinterest.com",
+    "image_url": "https://i.pinimg.com/474x/48/fe/50/48fe50216f2fb2a93204b51cfb8c299f.jpg",
+    "original_name": "imgres.htm",
+    "system": "Phantom Portals design system (White / Crimson / Black)",
+    "artifact": "https://claude.ai/artifact/HG2ihDf5JsALbo4fxCXcmV",
+    "path": "assets/INSPIRATION/imgres.htm",
+    "fetched": "2026-10-29"
+  }
+}

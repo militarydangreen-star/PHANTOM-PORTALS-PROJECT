@@ -1,0 +1,31 @@
+{
+  "id": "PP-UNC-002",
+  "file": "phantom-esports-mascot.png",
+  "title": "Hooded \"PHANTOM\" esports-style mascot",
+  "status": "UNCLEAR",
+  "canon_version": "1.0.0",
+  "kind": "reference",
+  "format": "png",
+  "dimensions": "2000x1489",
+  "bytes": 527879,
+  "sha256": "9aeb7e3b458c6605364018f4fbbf4efc9af9ec5049158a7c5e7bfbbec292fca6",
+  "usage": "Do not use until the owner confirms origin and intent.",
+  "rules": [
+    "Not canon. Not for shipping."
+  ],
+  "tags": [
+    "unclear",
+    "logo"
+  ],
+  "license": "Unknown — treat as third-party until confirmed.",
+  "source": {
+    "system": "Phantom Portals design system (White / Crimson / Black)",
+    "artifact": "https://claude.ai/artifact/HG2ihDf5JsALbo4fxCXcmV",
+    "version": "1793296345-e7e7",
+    "path": "assets/essential assets/file11.png",
+    "asset_id": "dc895383c0c2e3d0ab81beed64f752bf",
+    "fetched": "2026-10-29",
+    "original_name": "file11.png"
+  },
+  "notes": "Gaming/esports mascot style, orange-red palette — conflicts with the canon (\"not a gaming interface\"). Origin unknown."
+}

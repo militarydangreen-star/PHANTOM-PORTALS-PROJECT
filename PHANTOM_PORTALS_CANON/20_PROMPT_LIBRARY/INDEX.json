@@ -1,0 +1,949 @@
+{
+  "generated_by": "80_TOOLS/index-prompts.py",
+  "canon_version": "1.1.0",
+  "count": 27,
+  "by_category": {
+    "design-audit": 4,
+    "image-gen": 14,
+    "negative": 4,
+    "ui-build": 5
+  },
+  "by_status": {
+    "CURRENT": 27
+  },
+  "prompts": [
+    {
+      "id": "PP-AUD-ACCESS-001",
+      "title": "Accessibility audit (WCAG 2.2 AA)",
+      "category": "design-audit",
+      "subcategory": "accessibility",
+      "status": "CURRENT",
+      "version": "1.0.0",
+      "targets": [
+        "claude",
+        "codex",
+        "any-llm"
+      ],
+      "output": "Findings mapped to WCAG 2.2 success criteria with evidence and fixes, plus the list of checks that need a human (screen reader, cognitive)",
+      "variables": [
+        "TARGET"
+      ],
+      "canon_refs": [
+        "10_DESIGN_SYSTEM/accessibility/wcag-2.2-aa-checklist.md",
+        "10_DESIGN_SYSTEM/accessibility/contrast-matrix.md",
+        "10_DESIGN_SYSTEM/accessibility/focus-states.md",
+        "10_DESIGN_SYSTEM/motion-vfx/reduced-motion.md"
+      ],
+      "negative_refs": [
+        "20_PROMPT_LIBRARY/negative/ui-negative.md"
+      ],
+      "tags": [
+        "audit",
+        "accessibility",
+        "wcag"
+      ],
+      "updated": "2026-10-29",
+      "path": "20_PROMPT_LIBRARY/design-audit/PP-AUD-ACCESS-001-accessibility.md",
+      "words": 333
+    },
+    {
+      "id": "PP-AUD-BALANCE-001",
+      "title": "Trash Polka balance review (art direction)",
+      "category": "design-audit",
+      "subcategory": "art-direction",
+      "status": "CURRENT",
+      "version": "1.0.0",
+      "targets": [
+        "claude",
+        "any-llm"
+      ],
+      "output": "Measured colour weights, a vector count, a layering check, and specific cuts or additions — for screens, posters, thumbnails and covers",
+      "variables": [
+        "TARGET"
+      ],
+      "canon_refs": [
+        "10_DESIGN_SYSTEM/visual-language/composition-ratios.md",
+        "10_DESIGN_SYSTEM/visual-language/trash-polka-rules.md",
+        "10_DESIGN_SYSTEM/visual-language/isometric-hud-rules.md",
+        "10_DESIGN_SYSTEM/visual-language/the-phantom.md"
+      ],
+      "negative_refs": [
+        "20_PROMPT_LIBRARY/negative/global-avoid.md"
+      ],
+      "tags": [
+        "audit",
+        "art-direction",
+        "composition"
+      ],
+      "updated": "2026-10-29",
+      "path": "20_PROMPT_LIBRARY/design-audit/PP-AUD-BALANCE-001-trash-polka-balance.md",
+      "words": 325
+    },
+    {
+      "id": "PP-AUD-CANON-001",
+      "title": "Canon compliance review (screens, components, pages)",
+      "category": "design-audit",
+      "subcategory": "canon",
+      "status": "CURRENT",
+      "version": "1.0.0",
+      "targets": [
+        "claude",
+        "codex",
+        "any-llm"
+      ],
+      "output": "A findings table (severity, rule, evidence, fix) and a pass/fail verdict; no edits unless asked",
+      "variables": [
+        "TARGET"
+      ],
+      "canon_refs": [
+        "00_START_HERE/CANON_REGISTER.md",
+        "10_DESIGN_SYSTEM/README.md",
+        "10_DESIGN_SYSTEM/visual-language/composition-ratios.md",
+        "10_DESIGN_SYSTEM/visual-language/do-dont.md",
+        "10_DESIGN_SYSTEM/accessibility/contrast-matrix.md"
+      ],
+      "negative_refs": [
+        "20_PROMPT_LIBRARY/negative/ui-negative.md",
+        "20_PROMPT_LIBRARY/negative/retired-canon-negative.md"
+      ],
+      "tags": [
+        "audit",
+        "compliance",
+        "review"
+      ],
+      "updated": "2026-10-29",
+      "path": "20_PROMPT_LIBRARY/design-audit/PP-AUD-CANON-001-canon-compliance.md",
+      "words": 408
+    },
+    {
+      "id": "PP-AUD-IMAGE-001",
+      "title": "Generated image review (gate into 30_ASSETS)",
+      "category": "design-audit",
+      "subcategory": "image-review",
+      "status": "CURRENT",
+      "version": "1.0.0",
+      "targets": [
+        "claude",
+        "any-llm"
+      ],
+      "output": "ACCEPT / REWORK / REJECT with reasons, the checks that failed, and the sidecar fields to record",
+      "variables": [
+        "IMAGE",
+        "PROMPT_ID"
+      ],
+      "canon_refs": [
+        "10_DESIGN_SYSTEM/visual-language/the-phantom.md",
+        "10_DESIGN_SYSTEM/visual-language/trash-polka-rules.md",
+        "00_START_HERE/decisions/ADR-0007-third-party-references.md"
+      ],
+      "negative_refs": [
+        "20_PROMPT_LIBRARY/negative/global-avoid.md",
+        "20_PROMPT_LIBRARY/negative/image-gen-negative.md",
+        "20_PROMPT_LIBRARY/negative/retired-canon-negative.md"
+      ],
+      "tags": [
+        "audit",
+        "image",
+        "gate"
+      ],
+      "updated": "2026-10-29",
+      "path": "20_PROMPT_LIBRARY/design-audit/PP-AUD-IMAGE-001-generated-image-review.md",
+      "words": 416
+    },
+    {
+      "id": "PP-IMG-ALBUM-001",
+      "title": "Album / single cover (square)",
+      "category": "image-gen",
+      "subcategory": "album-art",
+      "status": "CURRENT",
+      "version": "1.0.0",
+      "targets": [
+        "midjourney",
+        "openai-image",
+        "adobe-firefly",
+        "stable-diffusion",
+        "flux"
+      ],
+      "output": "PNG 3000×3000 (1:1), title set in the album template, not generated",
+      "aspect": "1:1",
+      "variables": [
+        "CENTREPIECE",
+        "GROUND"
+      ],
+      "canon_refs": [
+        "30_ASSETS/audio-visual/README.md",
+        "10_DESIGN_SYSTEM/visual-language/trash-polka-rules.md"
+      ],
+      "negative_refs": [
+        "20_PROMPT_LIBRARY/negative/global-avoid.md",
+        "20_PROMPT_LIBRARY/negative/image-gen-negative.md",
+        "20_PROMPT_LIBRARY/negative/retired-canon-negative.md"
+      ],
+      "tags": [
+        "album",
+        "music",
+        "cover"
+      ],
+      "updated": "2026-10-29",
+      "path": "20_PROMPT_LIBRARY/image-gen/album-art/PP-IMG-ALBUM-001-cover.md",
+      "words": 214
+    },
+    {
+      "id": "PP-IMG-ALBUM-002",
+      "title": "Music channel banner art",
+      "category": "image-gen",
+      "subcategory": "album-art",
+      "status": "CURRENT",
+      "version": "1.0.0",
+      "targets": [
+        "midjourney",
+        "openai-image",
+        "adobe-firefly",
+        "stable-diffusion",
+        "flux"
+      ],
+      "output": "PNG 2560×1440, all important art inside the central 1546×423 safe area",
+      "aspect": "16:9",
+      "variables": [
+        "ARRANGEMENT"
+      ],
+      "canon_refs": [
+        "30_ASSETS/audio-visual/README.md"
+      ],
+      "negative_refs": [
+        "20_PROMPT_LIBRARY/negative/global-avoid.md",
+        "20_PROMPT_LIBRARY/negative/image-gen-negative.md"
+      ],
+      "tags": [
+        "channel",
+        "banner",
+        "youtube"
+      ],
+      "updated": "2026-10-29",
+      "path": "20_PROMPT_LIBRARY/image-gen/album-art/PP-IMG-ALBUM-002-channel-banner.md",
+      "words": 178
+    },
+    {
+      "id": "PP-IMG-BG-001",
+      "title": "Paper ground with faint isometric grid",
+      "category": "image-gen",
+      "subcategory": "backgrounds",
+      "status": "CURRENT",
+      "version": "1.0.0",
+      "targets": [
+        "midjourney",
+        "openai-image",
+        "adobe-firefly",
+        "stable-diffusion",
+        "flux"
+      ],
+      "output": "Seamless PNG 2048×2048, #F6F5F2 paper, grid ≤ 6 % contrast",
+      "aspect": "1:1",
+      "variables": [
+        "GRID_DENSITY"
+      ],
+      "canon_refs": [
+        "10_DESIGN_SYSTEM/visual-language/isometric-hud-rules.md",
+        "10_DESIGN_SYSTEM/foundations/color.md"
+      ],
+      "negative_refs": [
+        "20_PROMPT_LIBRARY/negative/global-avoid.md",
+        "20_PROMPT_LIBRARY/negative/image-gen-negative.md"
+      ],
+      "tags": [
+        "background",
+        "paper",
+        "isometric"
+      ],
+      "updated": "2026-10-29",
+      "path": "20_PROMPT_LIBRARY/image-gen/backgrounds/PP-IMG-BG-001-paper-ground.md",
+      "words": 219
+    },
+    {
+      "id": "PP-IMG-BG-002",
+      "title": "Section divider band (torn edge + ruler)",
+      "category": "image-gen",
+      "subcategory": "backgrounds",
+      "status": "CURRENT",
+      "version": "1.0.0",
+      "targets": [
+        "midjourney",
+        "openai-image",
+        "adobe-firefly",
+        "stable-diffusion",
+        "flux"
+      ],
+      "output": "PNG 3200×400 (8:1) on transparent or #F6F5F2",
+      "aspect": "8:1",
+      "variables": [
+        "CRIMSON_AMOUNT"
+      ],
+      "canon_refs": [
+        "10_DESIGN_SYSTEM/visual-language/trash-polka-rules.md",
+        "30_ASSETS/textures/torn-paper/torn-edge.svg",
+        "30_ASSETS/hud-geometry/callouts/coordinate-ruler.svg"
+      ],
+      "negative_refs": [
+        "20_PROMPT_LIBRARY/negative/global-avoid.md",
+        "20_PROMPT_LIBRARY/negative/image-gen-negative.md"
+      ],
+      "tags": [
+        "divider",
+        "torn-paper",
+        "transition"
+      ],
+      "updated": "2026-10-29",
+      "path": "20_PROMPT_LIBRARY/image-gen/backgrounds/PP-IMG-BG-002-divider-band.md",
+      "words": 211
+    },
+    {
+      "id": "PP-IMG-HERO-001",
+      "title": "The Phantom — Ink Protocol specimen plate",
+      "category": "image-gen",
+      "subcategory": "hero-phantom",
+      "status": "CURRENT",
+      "version": "1.0.0",
+      "targets": [
+        "midjourney",
+        "openai-image",
+        "adobe-firefly",
+        "stable-diffusion",
+        "flux"
+      ],
+      "output": "PNG 2400×3000 (4:5), warm off-white paper, no text (labels added in layout)",
+      "aspect": "4:5",
+      "variables": [
+        "POSE",
+        "ORB_STATE",
+        "PLATE_NUMBER"
+      ],
+      "canon_refs": [
+        "10_DESIGN_SYSTEM/visual-language/the-phantom.md",
+        "10_DESIGN_SYSTEM/visual-language/ink-protocol.md",
+        "30_ASSETS/brand/phantom-hero/plate-01-the-operator.png"
+      ],
+      "negative_refs": [
+        "20_PROMPT_LIBRARY/negative/global-avoid.md",
+        "20_PROMPT_LIBRARY/negative/image-gen-negative.md",
+        "20_PROMPT_LIBRARY/negative/retired-canon-negative.md"
+      ],
+      "tags": [
+        "phantom",
+        "plate",
+        "key-visual"
+      ],
+      "updated": "2026-10-29",
+      "path": "20_PROMPT_LIBRARY/image-gen/hero-phantom/PP-IMG-HERO-001-specimen-plate.md",
+      "words": 553
+    },
+    {
+      "id": "PP-IMG-HERO-002",
+      "title": "The Phantom — wide hero with left negative space",
+      "category": "image-gen",
+      "subcategory": "hero-phantom",
+      "status": "CURRENT",
+      "version": "1.0.0",
+      "targets": [
+        "midjourney",
+        "openai-image",
+        "adobe-firefly",
+        "stable-diffusion",
+        "flux"
+      ],
+      "output": "PNG 2560×1080 (21:9) or 1920×1080 (16:9), warm off-white paper, left 50 % empty for live copy",
+      "aspect": "21:9",
+      "variables": [
+        "SIDE",
+        "ORB_STATE"
+      ],
+      "canon_refs": [
+        "10_DESIGN_SYSTEM/visual-language/the-phantom.md",
+        "10_DESIGN_SYSTEM/components/signature.md",
+        "10_DESIGN_SYSTEM/foundations/breakpoints.md"
+      ],
+      "negative_refs": [
+        "20_PROMPT_LIBRARY/negative/global-avoid.md",
+        "20_PROMPT_LIBRARY/negative/image-gen-negative.md",
+        "20_PROMPT_LIBRARY/negative/retired-canon-negative.md"
+      ],
+      "tags": [
+        "phantom",
+        "hero",
+        "web"
+      ],
+      "updated": "2026-10-29",
+      "path": "20_PROMPT_LIBRARY/image-gen/hero-phantom/PP-IMG-HERO-002-wide-hero.md",
+      "words": 421
+    },
+    {
+      "id": "PP-IMG-HERO-003",
+      "title": "The Phantom — inverse boot / splash",
+      "category": "image-gen",
+      "subcategory": "hero-phantom",
+      "status": "CURRENT",
+      "version": "1.0.0",
+      "targets": [
+        "midjourney",
+        "openai-image",
+        "adobe-firefly",
+        "stable-diffusion",
+        "flux"
+      ],
+      "output": "PNG 1920×1080 (16:9), matte black ground #151519, centred figure, lower third empty",
+      "aspect": "16:9",
+      "variables": [
+        "LIGHT"
+      ],
+      "canon_refs": [
+        "10_DESIGN_SYSTEM/visual-language/the-phantom.md",
+        "30_ASSETS/brand/phantom-hero/phantom-emblem-inverse-2048.png"
+      ],
+      "negative_refs": [
+        "20_PROMPT_LIBRARY/negative/global-avoid.md",
+        "20_PROMPT_LIBRARY/negative/image-gen-negative.md",
+        "20_PROMPT_LIBRARY/negative/retired-canon-negative.md"
+      ],
+      "tags": [
+        "phantom",
+        "inverse",
+        "boot",
+        "splash"
+      ],
+      "updated": "2026-10-29",
+      "path": "20_PROMPT_LIBRARY/image-gen/hero-phantom/PP-IMG-HERO-003-inverse-boot-splash.md",
+      "words": 331
+    },
+    {
+      "id": "PP-IMG-HUD-001",
+      "title": "Graduated ring and target lock overlay",
+      "category": "image-gen",
+      "subcategory": "hud-overlays",
+      "status": "CURRENT",
+      "version": "1.0.0",
+      "targets": [
+        "midjourney",
+        "openai-image",
+        "adobe-firefly",
+        "stable-diffusion",
+        "flux"
+      ],
+      "output": "PNG 4096×4096, black hairlines on white (for vectorising) or on #151519 inverted",
+      "aspect": "1:1",
+      "variables": [
+        "ACCENT"
+      ],
+      "canon_refs": [
+        "10_DESIGN_SYSTEM/visual-language/isometric-hud-rules.md",
+        "30_ASSETS/hud-geometry/callouts/hud-ring.svg"
+      ],
+      "negative_refs": [
+        "20_PROMPT_LIBRARY/negative/global-avoid.md",
+        "20_PROMPT_LIBRARY/negative/image-gen-negative.md"
+      ],
+      "tags": [
+        "hud",
+        "ring",
+        "precision"
+      ],
+      "updated": "2026-10-29",
+      "path": "20_PROMPT_LIBRARY/image-gen/hud-overlays/PP-IMG-HUD-001-graduated-ring.md",
+      "words": 199
+    },
+    {
+      "id": "PP-IMG-HUD-002",
+      "title": "Isometric wireframe set",
+      "category": "image-gen",
+      "subcategory": "hud-overlays",
+      "status": "CURRENT",
+      "version": "1.0.0",
+      "targets": [
+        "midjourney",
+        "openai-image",
+        "adobe-firefly",
+        "stable-diffusion",
+        "flux"
+      ],
+      "output": "PNG 4096×4096, black hairlines on white",
+      "aspect": "1:1",
+      "variables": [
+        "OBJECTS"
+      ],
+      "canon_refs": [
+        "10_DESIGN_SYSTEM/visual-language/isometric-hud-rules.md",
+        "30_ASSETS/hud-geometry/isometric-grids/iso-cube.svg"
+      ],
+      "negative_refs": [
+        "20_PROMPT_LIBRARY/negative/global-avoid.md",
+        "20_PROMPT_LIBRARY/negative/image-gen-negative.md"
+      ],
+      "tags": [
+        "isometric",
+        "wireframe",
+        "module-art"
+      ],
+      "updated": "2026-10-29",
+      "path": "20_PROMPT_LIBRARY/image-gen/hud-overlays/PP-IMG-HUD-002-isometric-wireframes.md",
+      "words": 184
+    },
+    {
+      "id": "PP-IMG-TEX-001",
+      "title": "Dry-brush stroke source sheet",
+      "category": "image-gen",
+      "subcategory": "textures",
+      "status": "CURRENT",
+      "version": "1.0.0",
+      "targets": [
+        "midjourney",
+        "openai-image",
+        "adobe-firefly",
+        "stable-diffusion",
+        "flux"
+      ],
+      "output": "PNG 4096×4096 on pure white, strokes separated for cutting out and vectorising",
+      "aspect": "1:1",
+      "variables": [
+        "INK",
+        "STROKE_SET"
+      ],
+      "canon_refs": [
+        "10_DESIGN_SYSTEM/visual-language/trash-polka-rules.md",
+        "10_DESIGN_SYSTEM/visual-language/ink-protocol.md"
+      ],
+      "negative_refs": [
+        "20_PROMPT_LIBRARY/negative/global-avoid.md",
+        "20_PROMPT_LIBRARY/negative/image-gen-negative.md"
+      ],
+      "tags": [
+        "texture",
+        "brush",
+        "source"
+      ],
+      "updated": "2026-10-29",
+      "path": "20_PROMPT_LIBRARY/image-gen/textures/PP-IMG-TEX-001-dry-brush-sheet.md",
+      "words": 247
+    },
+    {
+      "id": "PP-IMG-TEX-002",
+      "title": "Ink splatter source set",
+      "category": "image-gen",
+      "subcategory": "textures",
+      "status": "CURRENT",
+      "version": "1.0.0",
+      "targets": [
+        "midjourney",
+        "openai-image",
+        "adobe-firefly",
+        "stable-diffusion",
+        "flux"
+      ],
+      "output": "PNG 4096×4096 on pure white, splatters separated",
+      "aspect": "1:1",
+      "variables": [
+        "INK"
+      ],
+      "canon_refs": [
+        "10_DESIGN_SYSTEM/visual-language/trash-polka-rules.md"
+      ],
+      "negative_refs": [
+        "20_PROMPT_LIBRARY/negative/global-avoid.md",
+        "20_PROMPT_LIBRARY/negative/image-gen-negative.md"
+      ],
+      "tags": [
+        "texture",
+        "splatter",
+        "source"
+      ],
+      "updated": "2026-10-29",
+      "path": "20_PROMPT_LIBRARY/image-gen/textures/PP-IMG-TEX-002-splatter-set.md",
+      "words": 160
+    },
+    {
+      "id": "PP-IMG-TEX-003",
+      "title": "Halftone fields and torn-paper edges",
+      "category": "image-gen",
+      "subcategory": "textures",
+      "status": "CURRENT",
+      "version": "1.0.0",
+      "targets": [
+        "midjourney",
+        "openai-image",
+        "adobe-firefly",
+        "stable-diffusion",
+        "flux"
+      ],
+      "output": "PNG 4096×4096 on pure white",
+      "aspect": "1:1",
+      "variables": [
+        "FOCUS"
+      ],
+      "canon_refs": [
+        "10_DESIGN_SYSTEM/visual-language/trash-polka-rules.md"
+      ],
+      "negative_refs": [
+        "20_PROMPT_LIBRARY/negative/global-avoid.md",
+        "20_PROMPT_LIBRARY/negative/image-gen-negative.md"
+      ],
+      "tags": [
+        "texture",
+        "halftone",
+        "torn-paper",
+        "source"
+      ],
+      "updated": "2026-10-29",
+      "path": "20_PROMPT_LIBRARY/image-gen/textures/PP-IMG-TEX-003-halftone-torn-paper.md",
+      "words": 191
+    },
+    {
+      "id": "PP-IMG-THUMB-001",
+      "title": "YouTube thumbnail — tutorial / how-to",
+      "category": "image-gen",
+      "subcategory": "thumbnails",
+      "status": "CURRENT",
+      "version": "1.0.0",
+      "targets": [
+        "midjourney",
+        "openai-image",
+        "adobe-firefly",
+        "stable-diffusion",
+        "flux"
+      ],
+      "output": "Background art 1280×720 (16:9), left 55 % clear for the title set in the template",
+      "aspect": "16:9",
+      "variables": [
+        "TOPIC_OBJECT"
+      ],
+      "canon_refs": [
+        "30_ASSETS/video/yt-thumbnail-templates/README.md",
+        "10_DESIGN_SYSTEM/visual-language/composition-ratios.md"
+      ],
+      "negative_refs": [
+        "20_PROMPT_LIBRARY/negative/global-avoid.md",
+        "20_PROMPT_LIBRARY/negative/image-gen-negative.md",
+        "20_PROMPT_LIBRARY/negative/retired-canon-negative.md"
+      ],
+      "tags": [
+        "youtube",
+        "thumbnail"
+      ],
+      "updated": "2026-10-29",
+      "path": "20_PROMPT_LIBRARY/image-gen/thumbnails/PP-IMG-THUMB-001-tutorial-thumbnail.md",
+      "words": 230
+    },
+    {
+      "id": "PP-IMG-THUMB-002",
+      "title": "YouTube thumbnail — Phantom feature / announcement",
+      "category": "image-gen",
+      "subcategory": "thumbnails",
+      "status": "CURRENT",
+      "version": "1.0.0",
+      "targets": [
+        "midjourney",
+        "openai-image",
+        "adobe-firefly",
+        "stable-diffusion",
+        "flux"
+      ],
+      "output": "Background art 1280×720 (16:9), figure right, left clear for the title",
+      "aspect": "16:9",
+      "variables": [
+        "MOOD"
+      ],
+      "canon_refs": [
+        "10_DESIGN_SYSTEM/visual-language/the-phantom.md",
+        "30_ASSETS/video/yt-thumbnail-templates/README.md"
+      ],
+      "negative_refs": [
+        "20_PROMPT_LIBRARY/negative/global-avoid.md",
+        "20_PROMPT_LIBRARY/negative/image-gen-negative.md",
+        "20_PROMPT_LIBRARY/negative/retired-canon-negative.md"
+      ],
+      "tags": [
+        "youtube",
+        "thumbnail",
+        "phantom"
+      ],
+      "updated": "2026-10-29",
+      "path": "20_PROMPT_LIBRARY/image-gen/thumbnails/PP-IMG-THUMB-002-phantom-feature-thumbnail.md",
+      "words": 176
+    },
+    {
+      "id": "PP-NEG-GLOBAL-001",
+      "title": "Global avoid-list (every prompt)",
+      "category": "negative",
+      "status": "CURRENT",
+      "version": "1.0.0",
+      "targets": [
+        "any-image",
+        "any-llm"
+      ],
+      "output": "Text appended to every prompt",
+      "canon_refs": [
+        "10_DESIGN_SYSTEM/visual-language/do-dont.md"
+      ],
+      "tags": [
+        "negative",
+        "shared"
+      ],
+      "updated": "2026-10-29",
+      "path": "20_PROMPT_LIBRARY/negative/global-avoid.md",
+      "words": 126
+    },
+    {
+      "id": "PP-NEG-IMAGE-001",
+      "title": "Image-generation avoid-list",
+      "category": "negative",
+      "status": "CURRENT",
+      "version": "1.0.0",
+      "targets": [
+        "midjourney",
+        "openai-image",
+        "adobe-firefly",
+        "stable-diffusion",
+        "flux",
+        "ideogram"
+      ],
+      "output": "Text appended to every image prompt (after the global list)",
+      "canon_refs": [
+        "10_DESIGN_SYSTEM/visual-language/ink-protocol.md",
+        "10_DESIGN_SYSTEM/visual-language/trash-polka-rules.md"
+      ],
+      "tags": [
+        "negative",
+        "image"
+      ],
+      "updated": "2026-10-29",
+      "path": "20_PROMPT_LIBRARY/negative/image-gen-negative.md",
+      "words": 159
+    },
+    {
+      "id": "PP-NEG-RETIRED-001",
+      "title": "Retired-canon avoid-list",
+      "category": "negative",
+      "status": "CURRENT",
+      "version": "1.1.0",
+      "targets": [
+        "any-image",
+        "any-llm"
+      ],
+      "output": "Text appended when a prompt risks pulling in old Phantom Portals directions",
+      "canon_refs": [
+        "00_START_HERE/CANON_REGISTER.md",
+        "90_ARCHIVE/README.md"
+      ],
+      "tags": [
+        "negative",
+        "retired"
+      ],
+      "updated": "2026-10-30",
+      "path": "20_PROMPT_LIBRARY/negative/retired-canon-negative.md",
+      "words": 193
+    },
+    {
+      "id": "PP-NEG-UI-001",
+      "title": "UI-build avoid-list (coding agents)",
+      "category": "negative",
+      "status": "CURRENT",
+      "version": "1.0.0",
+      "targets": [
+        "claude",
+        "codex",
+        "cursor",
+        "any-llm"
+      ],
+      "output": "A \"Do not\" section pasted into every UI build prompt",
+      "canon_refs": [
+        "10_DESIGN_SYSTEM/components/README.md",
+        "10_DESIGN_SYSTEM/accessibility/wcag-2.2-aa-checklist.md"
+      ],
+      "tags": [
+        "negative",
+        "ui"
+      ],
+      "updated": "2026-10-29",
+      "path": "20_PROMPT_LIBRARY/negative/ui-negative.md",
+      "words": 198
+    },
+    {
+      "id": "PP-UI-BUILD-001",
+      "title": "Build a module screen inside the browser shell",
+      "category": "ui-build",
+      "subcategory": "screens",
+      "status": "CURRENT",
+      "version": "1.0.0",
+      "targets": [
+        "claude",
+        "codex",
+        "cursor",
+        "any-llm"
+      ],
+      "output": "One offline HTML (or React) screen using the component library and tokens, plus a short report of what was verified",
+      "variables": [
+        "MODULE",
+        "PURPOSE",
+        "DATA_SOURCE",
+        "TARGET_PATH"
+      ],
+      "canon_refs": [
+        "50_AGENTS/project-instructions.md",
+        "10_DESIGN_SYSTEM/components/README.md",
+        "10_DESIGN_SYSTEM/components/browser-shell.md",
+        "10_DESIGN_SYSTEM/foundations/breakpoints.md",
+        "10_DESIGN_SYSTEM/visual-language/composition-ratios.md",
+        "60_TEMPLATES/html-css-starter/index.html"
+      ],
+      "negative_refs": [
+        "20_PROMPT_LIBRARY/negative/ui-negative.md"
+      ],
+      "tags": [
+        "build",
+        "screen",
+        "shell"
+      ],
+      "updated": "2026-10-29",
+      "path": "20_PROMPT_LIBRARY/ui-build/PP-UI-BUILD-001-module-screen.md",
+      "words": 498
+    },
+    {
+      "id": "PP-UI-COMPONENT-001",
+      "title": "Build a backlog component to library standard",
+      "category": "ui-build",
+      "subcategory": "components",
+      "status": "CURRENT",
+      "version": "1.0.0",
+      "targets": [
+        "claude",
+        "codex",
+        "cursor",
+        "any-llm"
+      ],
+      "output": "Component source + CSS using tokens, all states, keyboard support, a reference card, a gallery demo, and a test note",
+      "variables": [
+        "COMPONENT"
+      ],
+      "canon_refs": [
+        "10_DESIGN_SYSTEM/components/BACKLOG.md",
+        "10_DESIGN_SYSTEM/components/README.md",
+        "10_DESIGN_SYSTEM/components/library/README.md",
+        "10_DESIGN_SYSTEM/accessibility/focus-states.md",
+        "10_DESIGN_SYSTEM/motion-vfx/reduced-motion.md",
+        "10_DESIGN_SYSTEM/gallery/index.html"
+      ],
+      "negative_refs": [
+        "20_PROMPT_LIBRARY/negative/ui-negative.md"
+      ],
+      "tags": [
+        "component",
+        "library"
+      ],
+      "updated": "2026-10-29",
+      "path": "20_PROMPT_LIBRARY/ui-build/PP-UI-COMPONENT-001-new-component.md",
+      "words": 294
+    },
+    {
+      "id": "PP-UI-OFFLINE-001",
+      "title": "Wire a page for fully offline use (file://, WinPE, air-gapped)",
+      "category": "ui-build",
+      "subcategory": "offline",
+      "status": "CURRENT",
+      "version": "1.0.0",
+      "targets": [
+        "claude",
+        "codex",
+        "cursor",
+        "any-llm"
+      ],
+      "output": "A page that renders identically from disk with the network off — zero external requests, fonts and icons loading",
+      "variables": [
+        "PAGE"
+      ],
+      "canon_refs": [
+        "00_START_HERE/decisions/ADR-0005-offline-first-assets.md",
+        "10_DESIGN_SYSTEM/components/library/README.md",
+        "10_DESIGN_SYSTEM/iconography/icon-rules.md",
+        "60_TEMPLATES/html-css-starter/index.html"
+      ],
+      "negative_refs": [
+        "20_PROMPT_LIBRARY/negative/ui-negative.md"
+      ],
+      "tags": [
+        "offline",
+        "winpe",
+        "assets"
+      ],
+      "updated": "2026-10-29",
+      "path": "20_PROMPT_LIBRARY/ui-build/PP-UI-OFFLINE-001-offline-wiring.md",
+      "words": 243
+    },
+    {
+      "id": "PP-UI-RESPONSIVE-001",
+      "title": "Responsive and small-screen pass",
+      "category": "ui-build",
+      "subcategory": "responsive",
+      "status": "CURRENT",
+      "version": "1.0.0",
+      "targets": [
+        "claude",
+        "codex",
+        "cursor",
+        "any-llm"
+      ],
+      "output": "Breakpoint CSS for a screen (or a library patch), screenshots at every validation width, and an overflow report",
+      "variables": [
+        "TARGET"
+      ],
+      "canon_refs": [
+        "10_DESIGN_SYSTEM/foundations/breakpoints.md",
+        "10_DESIGN_SYSTEM/components/BACKLOG.md",
+        "10_DESIGN_SYSTEM/components/browser-shell.md"
+      ],
+      "negative_refs": [
+        "20_PROMPT_LIBRARY/negative/ui-negative.md"
+      ],
+      "tags": [
+        "responsive",
+        "mobile",
+        "layout"
+      ],
+      "updated": "2026-10-29",
+      "path": "20_PROMPT_LIBRARY/ui-build/PP-UI-RESPONSIVE-001-responsive-pass.md",
+      "words": 307
+    },
+    {
+      "id": "PP-UI-RETROFIT-001",
+      "title": "Retrofit an existing screen to the White-Forward canon",
+      "category": "ui-build",
+      "subcategory": "retrofit",
+      "status": "CURRENT",
+      "version": "1.0.0",
+      "targets": [
+        "claude",
+        "codex",
+        "cursor",
+        "any-llm"
+      ],
+      "output": "The same screen and behaviour, restyled with canon tokens and components; a diff summary and a list of what was replaced",
+      "variables": [
+        "FILE",
+        "KEEP"
+      ],
+      "canon_refs": [
+        "50_AGENTS/project-instructions.md",
+        "00_START_HERE/CANON_REGISTER.md",
+        "00_START_HERE/decisions/ADR-0001-white-forward-canon.md",
+        "00_START_HERE/decisions/ADR-0002-font-stack.md",
+        "10_DESIGN_SYSTEM/components/README.md"
+      ],
+      "negative_refs": [
+        "20_PROMPT_LIBRARY/negative/ui-negative.md",
+        "20_PROMPT_LIBRARY/negative/retired-canon-negative.md"
+      ],
+      "tags": [
+        "retrofit",
+        "migration"
+      ],
+      "updated": "2026-10-29",
+      "path": "20_PROMPT_LIBRARY/ui-build/PP-UI-RETROFIT-001-retrofit-to-canon.md",
+      "words": 308
+    }
+  ]
+}

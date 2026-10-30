@@ -1,0 +1,31 @@
+{
+  "id": "PP-FICON-018",
+  "file": "shield.svg",
+  "title": "Feature icon — shield",
+  "status": "CURRENT",
+  "canon_version": "1.0.0",
+  "kind": "vector",
+  "format": "svg",
+  "dimensions": "160x160",
+  "bytes": 216922,
+  "sha256": "e1e06a77fa473cd182b99ca77ef15db813468708f6e625405de38f8f2fc5c707",
+  "usage": "Trash Polka badge on a 160 px artboard: dry-brush ensō, crimson dab, halftone quarter, tick arc, glyph at 3×.",
+  "rules": [
+    "Use at 56–160 px: tool tiles, launchers, onboarding, empty states, docs.",
+    "Never in toolbars, tables or dense UI — use the UI icon there."
+  ],
+  "tags": [
+    "icon",
+    "feature",
+    "trash-polka"
+  ],
+  "license": "Project-original artwork for Phantom Portals. Owner-controlled; all rights reserved by the project owner.",
+  "source": {
+    "system": "Phantom Portals design system (White / Crimson / Black)",
+    "artifact": "https://claude.ai/artifact/HG2ihDf5JsALbo4fxCXcmV",
+    "version": "1793296345-e7e7",
+    "path": "assets/Feature Icons/shield.svg",
+    "asset_id": "3ce61daebc67d9abbc74426ad83d2d71",
+    "fetched": "2026-10-29"
+  }
+}

@@ -1,0 +1,999 @@
+{
+  "manifestVersion": 3,
+  "name": "Phantom Portals",
+  "namespace": "PhantomPortals",
+  "files": [
+    "assets/INSPIRATION/imgres (1).htm",
+    "assets/INSPIRATION/imgres (2).htm",
+    "assets/INSPIRATION/imgres.htm",
+    "assets/Icons/README.md",
+    "assets/Logos/README.md",
+    "assets/Vectors/README.md",
+    "assets/essential assets/COPY_PASTE_INTO_CODEX.txt",
+    "assets/essential assets/MANIFEST_SHA256.txt",
+    "assets/essential assets/START_HERE.md",
+    "assets/essential assets/Trashy Mr.Polka BOT.agent.md",
+    "components/AIResponse/README.md",
+    "components/BookmarksBar/README.md",
+    "components/Button/README.md",
+    "components/CommandModule/README.md",
+    "components/DiagnosticTable/README.md",
+    "components/HudRing/README.md",
+    "components/Icon/README.md",
+    "components/Notification/README.md",
+    "components/Omnibox/README.md",
+    "components/PhantomHero/README.md",
+    "components/Progress/README.md",
+    "components/Select/README.md",
+    "components/Slider/README.md",
+    "components/StatusBadge/README.md",
+    "components/StatusPanel/README.md",
+    "components/TabStrip/README.md",
+    "components/Tabs/README.md",
+    "components/Terminal/README.md",
+    "components/Toggle/README.md",
+    "components/ToolTile/README.md",
+    "components/Tooltip/README.md",
+    "components/UtilityRail/README.md",
+    "components/bundle.css",
+    "components/bundle.js",
+    "components/index.d.ts",
+    "components/lib/react-dom.production.min.js",
+    "components/lib/react.production.min.js",
+    "fonts/inter-latin-400-normal.woff2",
+    "fonts/inter-latin-500-normal.woff2",
+    "fonts/inter-latin-600-normal.woff2",
+    "fonts/jetbrains-mono-latin-400-normal.woff2",
+    "fonts/jetbrains-mono-latin-500-normal.woff2",
+    "fonts/space-grotesk-latin-500-normal.woff2",
+    "fonts/space-grotesk-latin-600-normal.woff2",
+    "fonts/space-grotesk-latin-700-normal.woff2",
+    "layout.md",
+    "tokens.css"
+  ],
+  "libraries": [
+    {
+      "name": "react",
+      "version": "18.3.1",
+      "global": "React",
+      "file": "components/lib/react.production.min.js"
+    },
+    {
+      "name": "react-dom",
+      "version": "18.3.1",
+      "global": "ReactDOM",
+      "file": "components/lib/react-dom.production.min.js"
+    }
+  ],
+  "components": [
+    {
+      "name": "Button",
+      "group": "Actions",
+      "summary": "Buttons carry the action hierarchy: one crimson primary per context, matte-black secondary for strong but non-critical actions, and ghost for everything else."
+    },
+    {
+      "name": "IconButton"
+    },
+    {
+      "name": "Omnibox",
+      "group": "Inputs",
+      "summary": "The omnibox is the single entry point for search and commands — the browser-shell address bar and the Command Center's central AI/search field share it."
+    },
+    {
+      "name": "Tabs",
+      "group": "Inputs",
+      "summary": "Section tabs inside a workspace; the selected tab gets a 2px accent-crimson underline and full ink-primary text."
+    },
+    {
+      "name": "Toggle",
+      "group": "Inputs",
+      "summary": "A native checkbox with role=\"switch\"."
+    },
+    {
+      "name": "Slider",
+      "group": "Inputs",
+      "summary": "A native range input."
+    },
+    {
+      "name": "Select",
+      "group": "Inputs",
+      "summary": "A native with a crimson caret."
+    },
+    {
+      "name": "TabStrip",
+      "group": "Browser Shell",
+      "summary": "The browser tab strip sits on surface-inverse (black architecture)."
+    },
+    {
+      "name": "BookmarksBar",
+      "group": "Browser Shell",
+      "summary": "32px favorites bar on surface-primary under the omnibox."
+    },
+    {
+      "name": "UtilityRail",
+      "group": "Browser Shell",
+      "summary": "56px black rail (rail-width) for workspace switching."
+    },
+    {
+      "name": "ToolTile",
+      "group": "Command Center",
+      "summary": "Quick-launch tiles: white card, radius-8, depth-1, a chamfered black icon plate and a mono module ID."
+    },
+    {
+      "name": "CommandModule",
+      "group": "Command Center",
+      "summary": "A native / module with a mono crimson ID, a Space Grotesk title and a chevron that turns on open."
+    },
+    {
+      "name": "StatusPanel",
+      "group": "Command Center",
+      "summary": "A black HUD panel (surface-inverse, chamfer-16) for live telemetry: Space Grotesk tabular numbers, mono labels, 4px meters."
+    },
+    {
+      "name": "Terminal",
+      "group": "Technical",
+      "summary": "A working console: surface-inverse, JetBrains Mono 13/20, selectable output, a real input line."
+    },
+    {
+      "name": "DiagnosticTable",
+      "group": "Technical",
+      "summary": "Diagnostic results: surface-sunken header, border-default row rules, numbers right-aligned in mono with tabular figures."
+    },
+    {
+      "name": "AIResponse",
+      "group": "Technical",
+      "summary": "AI answers sit on a calm white card (radius-12): a mono header naming the model and whether it ran locally, the answer in body type, inline code, linked source…"
+    },
+    {
+      "name": "StatusBadge",
+      "group": "Feedback",
+      "summary": "Each status has its own shape as well as its own colour: success = circle (status-success), warning = triangle (status-warning), error = diamond (status-error)…"
+    },
+    {
+      "name": "Notification",
+      "group": "Feedback",
+      "summary": "Toasts: white card, radius-8, depth-2, a 4px tone edge, an icon in the tone colour, a bold title and a secondary line."
+    },
+    {
+      "name": "Progress",
+      "group": "Feedback",
+      "summary": "A 6px track with a crimson fill."
+    },
+    {
+      "name": "Tooltip",
+      "group": "Feedback",
+      "summary": "Matte-black tooltip (surface-inverse), 12px text, an optional mono shortcut."
+    },
+    {
+      "name": "PhantomHero",
+      "group": "Signature",
+      "summary": "The one place Trash Polka runs at full strength."
+    },
+    {
+      "name": "HudRing",
+      "group": "Signature",
+      "summary": "A HUD ring for one headline reading: an ink outer ring, a dotted border-control scale, a rotating crimson arc that signals live activity, and the value in Spac…"
+    },
+    {
+      "name": "Icon",
+      "group": "Actions",
+      "summary": "Renders one of the 20 system icons as a single-ink mask so it takes currentColor — black on light surfaces, white or crimson-on-inverse on black."
+    }
+  ],
+  "assetGroups": [
+    {
+      "name": "Logos",
+      "tile": "l",
+      "order": [
+        "phantom-emblem.svg",
+        "phantom-emblem-inverse.svg",
+        "phantom-lockup.svg",
+        "phantom-wordmark.svg",
+        "phantom-monogram.svg",
+        "phantom-app-icon.svg"
+      ],
+      "files": [
+        {
+          "path": "assets/Logos/phantom-emblem.svg",
+          "id": "73d213134062ecc586ab94dc61d107a9"
+        },
+        {
+          "path": "assets/Logos/phantom-emblem-inverse.svg",
+          "id": "ab575b0e6e4e0fdc552484f8976ead58"
+        },
+        {
+          "path": "assets/Logos/phantom-lockup.svg",
+          "id": "bbc2db0500bd0ce4fe184940ea260bec"
+        },
+        {
+          "path": "assets/Logos/phantom-wordmark.svg",
+          "id": "e32e0c9ee688baa23dde546e8d3dfb2b"
+        },
+        {
+          "path": "assets/Logos/phantom-monogram.svg",
+          "id": "1b8b442648798d0648614bce9ff50d5e"
+        },
+        {
+          "path": "assets/Logos/phantom-app-icon.svg",
+          "id": "8036e52041b03c5c8d564e72c2e3fc5c"
+        }
+      ]
+    },
+    {
+      "name": "Icons",
+      "tile": "s",
+      "order": [
+        "ai-core.svg",
+        "alert.svg",
+        "back.svg",
+        "bookmark.svg",
+        "check.svg",
+        "close.svg",
+        "cloud.svg",
+        "cpu.svg",
+        "diagnostics.svg",
+        "folder.svg",
+        "forward.svg",
+        "home-portal.svg",
+        "network.svg",
+        "power.svg",
+        "reload.svg",
+        "search.svg",
+        "settings.svg",
+        "shield.svg",
+        "terminal.svg",
+        "tools.svg"
+      ],
+      "files": [
+        {
+          "path": "assets/Icons/ai-core.svg",
+          "id": "b3b5abf601c78776a33064501d0180a0"
+        },
+        {
+          "path": "assets/Icons/alert.svg",
+          "id": "cea11001584fa92968f108499b82f6ff"
+        },
+        {
+          "path": "assets/Icons/back.svg",
+          "id": "d8569fd28395c225aa14e0f069b59100"
+        },
+        {
+          "path": "assets/Icons/bookmark.svg",
+          "id": "45465696e3471efd9760d78c3f69691c"
+        },
+        {
+          "path": "assets/Icons/check.svg",
+          "id": "4882bbad014ef9982c98f6135f66f434"
+        },
+        {
+          "path": "assets/Icons/close.svg",
+          "id": "d8d4250cdc81e69301bfcba6904403b1"
+        },
+        {
+          "path": "assets/Icons/cloud.svg",
+          "id": "1b0a6568c98eedeb15c4ad6db2f2fb0e"
+        },
+        {
+          "path": "assets/Icons/cpu.svg",
+          "id": "628472998c216115be34fe49b49d4601"
+        },
+        {
+          "path": "assets/Icons/diagnostics.svg",
+          "id": "f61cabd7de2b85de606e84483b47d7cc"
+        },
+        {
+          "path": "assets/Icons/folder.svg",
+          "id": "1f409b7dee0512263d348fab17909f88"
+        },
+        {
+          "path": "assets/Icons/forward.svg",
+          "id": "69679bc8f94d64e8243bba2dcdc73501"
+        },
+        {
+          "path": "assets/Icons/home-portal.svg",
+          "id": "48b6753c498b38840966ae1f6d4ab660"
+        },
+        {
+          "path": "assets/Icons/network.svg",
+          "id": "5ad7cded48290384f1f9be96fe1bbb73"
+        },
+        {
+          "path": "assets/Icons/power.svg",
+          "id": "e1cc587f9766e9917878bf6535de7d70"
+        },
+        {
+          "path": "assets/Icons/reload.svg",
+          "id": "ec17f7e5e30380d8e17b229d88c37fd4"
+        },
+        {
+          "path": "assets/Icons/search.svg",
+          "id": "30d57e02196502b9336ff54c8b787864"
+        },
+        {
+          "path": "assets/Icons/settings.svg",
+          "id": "472143929e9fd525b6cbc13680974464"
+        },
+        {
+          "path": "assets/Icons/shield.svg",
+          "id": "814604eb070ac4f5c3e98e7ef96f4036"
+        },
+        {
+          "path": "assets/Icons/terminal.svg",
+          "id": "9e2e862975169c3e07e5959eb5bf7391"
+        },
+        {
+          "path": "assets/Icons/tools.svg",
+          "id": "acd91c5ec91da4ddbb43b1c176c2b3a2"
+        }
+      ]
+    },
+    {
+      "name": "Vectors",
+      "order": [
+        "brush-slash.svg",
+        "brush-stroke.svg",
+        "circuit-trace.svg",
+        "coordinate-ruler.svg",
+        "enso-ring.svg",
+        "halftone-fade.svg",
+        "hex-cluster.svg",
+        "hud-ring.svg",
+        "ink-drips.svg",
+        "iso-cube.svg",
+        "iso-grid.svg",
+        "laser-lines.svg",
+        "splatter-crimson.svg",
+        "splatter-ink.svg",
+        "target-reticle.svg",
+        "torn-edge.svg"
+      ],
+      "files": [
+        {
+          "path": "assets/Vectors/brush-slash.svg",
+          "id": "0bf4c7178940d2d831b7085d465c611a"
+        },
+        {
+          "path": "assets/Vectors/brush-stroke.svg",
+          "id": "aa315aac025ffcc82aa36ab031143fef"
+        },
+        {
+          "path": "assets/Vectors/circuit-trace.svg",
+          "id": "08a862dd9e1d35ba253f247a2c5bb0af"
+        },
+        {
+          "path": "assets/Vectors/coordinate-ruler.svg",
+          "id": "4b516a680233aadc983aa7f1544a48a7"
+        },
+        {
+          "path": "assets/Vectors/enso-ring.svg",
+          "id": "554f29d536e779b874c23bac4a7fc7fb"
+        },
+        {
+          "path": "assets/Vectors/halftone-fade.svg",
+          "id": "c8d52f3c1c2b81cad6d680083f2eedcf"
+        },
+        {
+          "path": "assets/Vectors/hex-cluster.svg",
+          "id": "184f4748a86720853d1029b1a44f1d9c"
+        },
+        {
+          "path": "assets/Vectors/hud-ring.svg",
+          "id": "84bf0fb04d39f9964ee33ca5d372ff83"
+        },
+        {
+          "path": "assets/Vectors/ink-drips.svg",
+          "id": "7a911cf1ecbcb218ed00a2727a0edb97"
+        },
+        {
+          "path": "assets/Vectors/iso-cube.svg",
+          "id": "32db56b54181dcdb6ef8157dbe36ef06"
+        },
+        {
+          "path": "assets/Vectors/iso-grid.svg",
+          "id": "b40ad53f89ec465753a26af0b688a255"
+        },
+        {
+          "path": "assets/Vectors/laser-lines.svg",
+          "id": "dbf9d84fcc89b554d1d9807af349b98b"
+        },
+        {
+          "path": "assets/Vectors/splatter-crimson.svg",
+          "id": "fa4ea93b311c856e46042bf44d18cfbc"
+        },
+        {
+          "path": "assets/Vectors/splatter-ink.svg",
+          "id": "3a250516638e98d0add36ae5b934076b"
+        },
+        {
+          "path": "assets/Vectors/target-reticle.svg",
+          "id": "31339ca39bd42c63240463eba98daa37"
+        },
+        {
+          "path": "assets/Vectors/torn-edge.svg",
+          "id": "082cba7357e9cafacb40fa83a1748436"
+        }
+      ]
+    },
+    {
+      "name": "INSPIRATION",
+      "files": [
+        {
+          "path": "assets/INSPIRATION/images (1).jpg",
+          "id": "60ae8d9bdf2509582175303e2dc48b92"
+        },
+        {
+          "path": "assets/INSPIRATION/images (10).jpg",
+          "id": "21caa4f92d926c21762606b1c5f77fcf"
+        },
+        {
+          "path": "assets/INSPIRATION/images (11).jpg",
+          "id": "8824cc9df7fa4ee8a83986f80b055ca7"
+        },
+        {
+          "path": "assets/INSPIRATION/images (12).jpg",
+          "id": "760d1abc163359125537c7dd73ccc1da"
+        },
+        {
+          "path": "assets/INSPIRATION/images (13).jpg",
+          "id": "7d412131bd495be1768a9c33ac2dbb13"
+        },
+        {
+          "path": "assets/INSPIRATION/images (14).jpg",
+          "id": "e7871d66297a30506d7c7d44be81d7fa"
+        },
+        {
+          "path": "assets/INSPIRATION/images (15).jpg",
+          "id": "a706936b05ee76872543e1ef3bc171e5"
+        },
+        {
+          "path": "assets/INSPIRATION/images (16).jpg",
+          "id": "5d2e8357358b4a4da5df4c4ade7f1d03"
+        },
+        {
+          "path": "assets/INSPIRATION/images (17).jpg",
+          "id": "eaa3d662fc3d6d5252cafbaeaa32b7d0"
+        },
+        {
+          "path": "assets/INSPIRATION/images (18).jpg",
+          "id": "e01558d7c288c1c2dcca48ed3616c6b3"
+        },
+        {
+          "path": "assets/INSPIRATION/images (19).jpg",
+          "id": "22841a82b683c7670a5cba095fadec3e"
+        },
+        {
+          "path": "assets/INSPIRATION/images (2).jpg",
+          "id": "ef2f543997d340cb0b5ec179d907c329"
+        },
+        {
+          "path": "assets/INSPIRATION/images (20).jpg",
+          "id": "572f3e639e240db9a9cfe6d8a8fb8d64"
+        },
+        {
+          "path": "assets/INSPIRATION/images (21).jpg",
+          "id": "24f015ef9a56e460790e9aaa20371cc4"
+        },
+        {
+          "path": "assets/INSPIRATION/images (22).jpg",
+          "id": "970cb331b9a84b5fb06512cb5ca4744a"
+        },
+        {
+          "path": "assets/INSPIRATION/images (23).jpg",
+          "id": "315bbd934adeebe4a973fc6900fbb234"
+        },
+        {
+          "path": "assets/INSPIRATION/images (24).jpg",
+          "id": "8824cc9df7fa4ee8a83986f80b055ca7"
+        },
+        {
+          "path": "assets/INSPIRATION/images (25).jpg",
+          "id": "37f7448bcb23718397b5bbf8f7d619b7"
+        },
+        {
+          "path": "assets/INSPIRATION/images (3).jpg",
+          "id": "cebead320e5fa493c0c95f56e548a3e9"
+        },
+        {
+          "path": "assets/INSPIRATION/images (4).jpg",
+          "id": "ceb2b1ebe7cc066b145bfa84ff9cea6d"
+        },
+        {
+          "path": "assets/INSPIRATION/images (5).jpg",
+          "id": "2fe9172f2889b9af55556e3e80b1a93a"
+        },
+        {
+          "path": "assets/INSPIRATION/images (6).jpg",
+          "id": "9ba4e853bc0281d6900c92f66ce16cbe"
+        },
+        {
+          "path": "assets/INSPIRATION/images (7).jpg",
+          "id": "ea41e4a875a954b6136cf01de3247355"
+        },
+        {
+          "path": "assets/INSPIRATION/images (8).jpg",
+          "id": "cc3dbaa9637ff513c754883f332d7107"
+        },
+        {
+          "path": "assets/INSPIRATION/images (9).jpg",
+          "id": "6bc7350b7728c5686e481535d9bf8085"
+        },
+        {
+          "path": "assets/INSPIRATION/images.jpg",
+          "id": "3ec031f3b7bf1b9190bb4552d76c99d8"
+        }
+      ]
+    },
+    {
+      "name": "essential assets",
+      "files": [
+        {
+          "path": "assets/essential assets/file.png",
+          "id": "8d6c3f9a994ad3922d466505ae69240e"
+        },
+        {
+          "path": "assets/essential assets/file11.png",
+          "id": "dc895383c0c2e3d0ab81beed64f752bf"
+        }
+      ]
+    }
+  ],
+  "storage": {
+    "files": {
+      "assets/INSPIRATION/images (1).jpg": {
+        "store": "blob",
+        "id": "60ae8d9bdf2509582175303e2dc48b92",
+        "sha256": "78420ec2ea27901163f17872578695e0456b4ef0870b3eee1a8b94f8a8243a0e",
+        "bytes": 48525,
+        "type": "image/jpeg"
+      },
+      "assets/INSPIRATION/images (10).jpg": {
+        "store": "blob",
+        "id": "21caa4f92d926c21762606b1c5f77fcf",
+        "sha256": "4a6ac08b011136833c2f16d217f46923749c7acfcd02c73f1371c4d6c0f974d6",
+        "bytes": 23501,
+        "type": "image/jpeg"
+      },
+      "assets/INSPIRATION/images (11).jpg": {
+        "store": "blob",
+        "id": "8824cc9df7fa4ee8a83986f80b055ca7",
+        "sha256": "a756a5b4971ac20cea411f264362eb94e255559bdea7a1f4f8c0c97a0654986c",
+        "bytes": 54578,
+        "type": "image/jpeg"
+      },
+      "assets/INSPIRATION/images (12).jpg": {
+        "store": "blob",
+        "id": "760d1abc163359125537c7dd73ccc1da",
+        "sha256": "7b4d150413aa8a93dcf8d62162bf4c0704e3ea873f1c3c278c23ad97dccc8a95",
+        "bytes": 37129,
+        "type": "image/jpeg"
+      },
+      "assets/INSPIRATION/images (13).jpg": {
+        "store": "blob",
+        "id": "7d412131bd495be1768a9c33ac2dbb13",
+        "sha256": "de6263ad5915829c9dccb2ba08b764e3455e801224ad7e86856cac6d34034535",
+        "bytes": 7527,
+        "type": "image/jpeg"
+      },
+      "assets/INSPIRATION/images (14).jpg": {
+        "store": "blob",
+        "id": "e7871d66297a30506d7c7d44be81d7fa",
+        "sha256": "b523562401096afeee4025b953f9e8d5c92e7480d247ed378f3bd9dfeedd5756",
+        "bytes": 22812,
+        "type": "image/jpeg"
+      },
+      "assets/INSPIRATION/images (15).jpg": {
+        "store": "blob",
+        "id": "a706936b05ee76872543e1ef3bc171e5",
+        "sha256": "435ba3b626b39ee52ce549a39b7a05e674ba25ad47eec53179c0691fe0bea9ee",
+        "bytes": 29645,
+        "type": "image/jpeg"
+      },
+      "assets/INSPIRATION/images (16).jpg": {
+        "store": "blob",
+        "id": "5d2e8357358b4a4da5df4c4ade7f1d03",
+        "sha256": "79621de2e087afeba3b03c91c7deb2e36114ec406ed50768e0722eec0238d278",
+        "bytes": 40341,
+        "type": "image/jpeg"
+      },
+      "assets/INSPIRATION/images (17).jpg": {
+        "store": "blob",
+        "id": "eaa3d662fc3d6d5252cafbaeaa32b7d0",
+        "sha256": "1cc4b028dada592082b2fb0d6ea23bbf8080fd2d6e9c1700e1314af3bc436415",
+        "bytes": 10679,
+        "type": "image/jpeg"
+      },
+      "assets/INSPIRATION/images (18).jpg": {
+        "store": "blob",
+        "id": "e01558d7c288c1c2dcca48ed3616c6b3",
+        "sha256": "fc3d19b63bc3bd7c35a67aaae50af5330eab0ecf80b04a1dcc26fd53e9da7bdd",
+        "bytes": 34952,
+        "type": "image/jpeg"
+      },
+      "assets/INSPIRATION/images (19).jpg": {
+        "store": "blob",
+        "id": "22841a82b683c7670a5cba095fadec3e",
+        "sha256": "6a45b0be8a2b8379e735bb78fbc0e1d022b878db9c7c28ce3fdde2bdf24eba09",
+        "bytes": 49479,
+        "type": "image/jpeg"
+      },
+      "assets/INSPIRATION/images (2).jpg": {
+        "store": "blob",
+        "id": "ef2f543997d340cb0b5ec179d907c329",
+        "sha256": "55d2552829bc20e5d37afde42d0cd0244c9073a203d288578c49bdf029c6f454",
+        "bytes": 25719,
+        "type": "image/jpeg"
+      },
+      "assets/INSPIRATION/images (20).jpg": {
+        "store": "blob",
+        "id": "572f3e639e240db9a9cfe6d8a8fb8d64",
+        "sha256": "b701ed78a2c22b124cd8780f799a9abc42369363f1bede38fbe504d3b574dd5d",
+        "bytes": 10578,
+        "type": "image/jpeg"
+      },
+      "assets/INSPIRATION/images (21).jpg": {
+        "store": "blob",
+        "id": "24f015ef9a56e460790e9aaa20371cc4",
+        "sha256": "29468fbe7e6e33759cce83a1da4d27e252029fa512f96e4f9c3defacd2edd845",
+        "bytes": 49444,
+        "type": "image/jpeg"
+      },
+      "assets/INSPIRATION/images (22).jpg": {
+        "store": "blob",
+        "id": "970cb331b9a84b5fb06512cb5ca4744a",
+        "sha256": "b795db51a90225589e47c8687ad86e4d5f714a44d09ae74628bd6a0726de41f9",
+        "bytes": 14850,
+        "type": "image/jpeg"
+      },
+      "assets/INSPIRATION/images (23).jpg": {
+        "store": "blob",
+        "id": "315bbd934adeebe4a973fc6900fbb234",
+        "sha256": "3819346a0c26c057b2ae5df6d054749185428d41ad327a5cbba8338e86fe79d4",
+        "bytes": 16352,
+        "type": "image/jpeg"
+      },
+      "assets/INSPIRATION/images (24).jpg": {
+        "store": "blob",
+        "id": "8824cc9df7fa4ee8a83986f80b055ca7",
+        "sha256": "a756a5b4971ac20cea411f264362eb94e255559bdea7a1f4f8c0c97a0654986c",
+        "bytes": 54578,
+        "type": "image/jpeg"
+      },
+      "assets/INSPIRATION/images (25).jpg": {
+        "store": "blob",
+        "id": "37f7448bcb23718397b5bbf8f7d619b7",
+        "sha256": "5376ad61fa5c236d8c456cf14d056b1dc79eb28bb1c9d89274ab6ee84dd79cfe",
+        "bytes": 47700,
+        "type": "image/jpeg"
+      },
+      "assets/INSPIRATION/images (3).jpg": {
+        "store": "blob",
+        "id": "cebead320e5fa493c0c95f56e548a3e9",
+        "sha256": "ab4a54c2d1dca54b354d35cdef1b35a09d4841b8ffd89ccd11bdef42d9e7b28f",
+        "bytes": 30897,
+        "type": "image/jpeg"
+      },
+      "assets/INSPIRATION/images (4).jpg": {
+        "store": "blob",
+        "id": "ceb2b1ebe7cc066b145bfa84ff9cea6d",
+        "sha256": "fc6b4b3a4bb619333d3a04299fe4813ee5be205f50518ec9aa85241364ee3f49",
+        "bytes": 22989,
+        "type": "image/jpeg"
+      },
+      "assets/INSPIRATION/images (5).jpg": {
+        "store": "blob",
+        "id": "2fe9172f2889b9af55556e3e80b1a93a",
+        "sha256": "7f664098203006780a381d6040374ba99bdd32beed18a75ab3331ef08b6535fe",
+        "bytes": 35702,
+        "type": "image/jpeg"
+      },
+      "assets/INSPIRATION/images (6).jpg": {
+        "store": "blob",
+        "id": "9ba4e853bc0281d6900c92f66ce16cbe",
+        "sha256": "475aad669f878117ac37fe24223583b3787545eafe1475eedcc59adcb424d6b7",
+        "bytes": 39119,
+        "type": "image/jpeg"
+      },
+      "assets/INSPIRATION/images (7).jpg": {
+        "store": "blob",
+        "id": "ea41e4a875a954b6136cf01de3247355",
+        "sha256": "2042116285abb35f6c3d134e462a3666c19392c595ad257454c7d03d6b0f2658",
+        "bytes": 38908,
+        "type": "image/jpeg"
+      },
+      "assets/INSPIRATION/images (8).jpg": {
+        "store": "blob",
+        "id": "cc3dbaa9637ff513c754883f332d7107",
+        "sha256": "ac52a4be8394c146b4fb7e609bebdf6527caea2f173a86125dbb8ad9d3aef014",
+        "bytes": 59201,
+        "type": "image/jpeg"
+      },
+      "assets/INSPIRATION/images (9).jpg": {
+        "store": "blob",
+        "id": "6bc7350b7728c5686e481535d9bf8085",
+        "sha256": "a791987c9f7d13405f409d52b034846ce12926397cc435a5b1fbc6c6104095aa",
+        "bytes": 32207,
+        "type": "image/jpeg"
+      },
+      "assets/INSPIRATION/images.jpg": {
+        "store": "blob",
+        "id": "3ec031f3b7bf1b9190bb4552d76c99d8",
+        "sha256": "327fef9c7a2cf7f4eaa2651f287142b4c6caa503bf4f75a0b03d1b3ee821489a",
+        "bytes": 55290,
+        "type": "image/jpeg"
+      },
+      "assets/Icons/ai-core.svg": {
+        "store": "blob",
+        "id": "b3b5abf601c78776a33064501d0180a0",
+        "bytes": 517,
+        "type": "image/svg+xml"
+      },
+      "assets/Icons/alert.svg": {
+        "store": "blob",
+        "id": "cea11001584fa92968f108499b82f6ff",
+        "bytes": 455,
+        "type": "image/svg+xml"
+      },
+      "assets/Icons/back.svg": {
+        "store": "blob",
+        "id": "d8569fd28395c225aa14e0f069b59100",
+        "bytes": 383,
+        "type": "image/svg+xml"
+      },
+      "assets/Icons/bookmark.svg": {
+        "store": "blob",
+        "id": "45465696e3471efd9760d78c3f69691c",
+        "bytes": 415,
+        "type": "image/svg+xml"
+      },
+      "assets/Icons/check.svg": {
+        "store": "blob",
+        "id": "4882bbad014ef9982c98f6135f66f434",
+        "bytes": 409,
+        "type": "image/svg+xml"
+      },
+      "assets/Icons/close.svg": {
+        "store": "blob",
+        "id": "d8d4250cdc81e69301bfcba6904403b1",
+        "bytes": 374,
+        "type": "image/svg+xml"
+      },
+      "assets/Icons/cloud.svg": {
+        "store": "blob",
+        "id": "1b0a6568c98eedeb15c4ad6db2f2fb0e",
+        "bytes": 488,
+        "type": "image/svg+xml"
+      },
+      "assets/Icons/cpu.svg": {
+        "store": "blob",
+        "id": "628472998c216115be34fe49b49d4601",
+        "bytes": 534,
+        "type": "image/svg+xml"
+      },
+      "assets/Icons/diagnostics.svg": {
+        "store": "blob",
+        "id": "f61cabd7de2b85de606e84483b47d7cc",
+        "bytes": 457,
+        "type": "image/svg+xml"
+      },
+      "assets/Icons/folder.svg": {
+        "store": "blob",
+        "id": "1f409b7dee0512263d348fab17909f88",
+        "bytes": 399,
+        "type": "image/svg+xml"
+      },
+      "assets/Icons/forward.svg": {
+        "store": "blob",
+        "id": "69679bc8f94d64e8243bba2dcdc73501",
+        "bytes": 390,
+        "type": "image/svg+xml"
+      },
+      "assets/Icons/home-portal.svg": {
+        "store": "blob",
+        "id": "48b6753c498b38840966ae1f6d4ab660",
+        "bytes": 465,
+        "type": "image/svg+xml"
+      },
+      "assets/Icons/network.svg": {
+        "store": "blob",
+        "id": "5ad7cded48290384f1f9be96fe1bbb73",
+        "bytes": 648,
+        "type": "image/svg+xml"
+      },
+      "assets/Icons/power.svg": {
+        "store": "blob",
+        "id": "e1cc587f9766e9917878bf6535de7d70",
+        "bytes": 397,
+        "type": "image/svg+xml"
+      },
+      "assets/Icons/reload.svg": {
+        "store": "blob",
+        "id": "ec17f7e5e30380d8e17b229d88c37fd4",
+        "bytes": 405,
+        "type": "image/svg+xml"
+      },
+      "assets/Icons/search.svg": {
+        "store": "blob",
+        "id": "30d57e02196502b9336ff54c8b787864",
+        "bytes": 406,
+        "type": "image/svg+xml"
+      },
+      "assets/Icons/settings.svg": {
+        "store": "blob",
+        "id": "472143929e9fd525b6cbc13680974464",
+        "bytes": 677,
+        "type": "image/svg+xml"
+      },
+      "assets/Icons/shield.svg": {
+        "store": "blob",
+        "id": "814604eb070ac4f5c3e98e7ef96f4036",
+        "bytes": 460,
+        "type": "image/svg+xml"
+      },
+      "assets/Icons/terminal.svg": {
+        "store": "blob",
+        "id": "9e2e862975169c3e07e5959eb5bf7391",
+        "bytes": 538,
+        "type": "image/svg+xml"
+      },
+      "assets/Icons/tools.svg": {
+        "store": "blob",
+        "id": "acd91c5ec91da4ddbb43b1c176c2b3a2",
+        "bytes": 623,
+        "type": "image/svg+xml"
+      },
+      "assets/Logos/phantom-app-icon.svg": {
+        "store": "blob",
+        "id": "8036e52041b03c5c8d564e72c2e3fc5c",
+        "bytes": 686,
+        "type": "image/svg+xml"
+      },
+      "assets/Logos/phantom-emblem-inverse.svg": {
+        "store": "blob",
+        "id": "ab575b0e6e4e0fdc552484f8976ead58",
+        "bytes": 21377,
+        "type": "image/svg+xml"
+      },
+      "assets/Logos/phantom-emblem.svg": {
+        "store": "blob",
+        "id": "73d213134062ecc586ab94dc61d107a9",
+        "bytes": 21116,
+        "type": "image/svg+xml"
+      },
+      "assets/Logos/phantom-lockup.svg": {
+        "store": "blob",
+        "id": "bbc2db0500bd0ce4fe184940ea260bec",
+        "bytes": 42981,
+        "type": "image/svg+xml"
+      },
+      "assets/Logos/phantom-monogram.svg": {
+        "store": "blob",
+        "id": "1b8b442648798d0648614bce9ff50d5e",
+        "bytes": 641,
+        "type": "image/svg+xml"
+      },
+      "assets/Logos/phantom-wordmark.svg": {
+        "store": "blob",
+        "id": "e32e0c9ee688baa23dde546e8d3dfb2b",
+        "bytes": 21383,
+        "type": "image/svg+xml"
+      },
+      "assets/Vectors/brush-slash.svg": {
+        "store": "blob",
+        "id": "0bf4c7178940d2d831b7085d465c611a",
+        "bytes": 1937,
+        "type": "image/svg+xml"
+      },
+      "assets/Vectors/brush-stroke.svg": {
+        "store": "blob",
+        "id": "aa315aac025ffcc82aa36ab031143fef",
+        "bytes": 1947,
+        "type": "image/svg+xml"
+      },
+      "assets/Vectors/circuit-trace.svg": {
+        "store": "blob",
+        "id": "08a862dd9e1d35ba253f247a2c5bb0af",
+        "bytes": 937,
+        "type": "image/svg+xml"
+      },
+      "assets/Vectors/coordinate-ruler.svg": {
+        "store": "blob",
+        "id": "4b516a680233aadc983aa7f1544a48a7",
+        "bytes": 3681,
+        "type": "image/svg+xml"
+      },
+      "assets/Vectors/enso-ring.svg": {
+        "store": "blob",
+        "id": "554f29d536e779b874c23bac4a7fc7fb",
+        "bytes": 2853,
+        "type": "image/svg+xml"
+      },
+      "assets/Vectors/halftone-fade.svg": {
+        "store": "blob",
+        "id": "c8d52f3c1c2b81cad6d680083f2eedcf",
+        "bytes": 25609,
+        "type": "image/svg+xml"
+      },
+      "assets/Vectors/hex-cluster.svg": {
+        "store": "blob",
+        "id": "184f4748a86720853d1029b1a44f1d9c",
+        "bytes": 1057,
+        "type": "image/svg+xml"
+      },
+      "assets/Vectors/hud-ring.svg": {
+        "store": "blob",
+        "id": "84bf0fb04d39f9964ee33ca5d372ff83",
+        "bytes": 5559,
+        "type": "image/svg+xml"
+      },
+      "assets/Vectors/ink-drips.svg": {
+        "store": "blob",
+        "id": "7a911cf1ecbcb218ed00a2727a0edb97",
+        "bytes": 1743,
+        "type": "image/svg+xml"
+      },
+      "assets/Vectors/iso-cube.svg": {
+        "store": "blob",
+        "id": "32db56b54181dcdb6ef8157dbe36ef06",
+        "bytes": 1597,
+        "type": "image/svg+xml"
+      },
+      "assets/Vectors/iso-grid.svg": {
+        "store": "blob",
+        "id": "b40ad53f89ec465753a26af0b688a255",
+        "bytes": 1544,
+        "type": "image/svg+xml"
+      },
+      "assets/Vectors/laser-lines.svg": {
+        "store": "blob",
+        "id": "dbf9d84fcc89b554d1d9807af349b98b",
+        "bytes": 1017,
+        "type": "image/svg+xml"
+      },
+      "assets/Vectors/splatter-crimson.svg": {
+        "store": "blob",
+        "id": "fa4ea93b311c856e46042bf44d18cfbc",
+        "bytes": 4290,
+        "type": "image/svg+xml"
+      },
+      "assets/Vectors/splatter-ink.svg": {
+        "store": "blob",
+        "id": "3a250516638e98d0add36ae5b934076b",
+        "bytes": 4303,
+        "type": "image/svg+xml"
+      },
+      "assets/Vectors/target-reticle.svg": {
+        "store": "blob",
+        "id": "31339ca39bd42c63240463eba98daa37",
+        "bytes": 512,
+        "type": "image/svg+xml"
+      },
+      "assets/Vectors/torn-edge.svg": {
+        "store": "blob",
+        "id": "082cba7357e9cafacb40fa83a1748436",
+        "bytes": 1017,
+        "type": "image/svg+xml"
+      },
+      "assets/essential assets/file.png": {
+        "store": "blob",
+        "id": "8d6c3f9a994ad3922d466505ae69240e",
+        "sha256": "b69473ff0e298dd47b7fa2d2339ef585fd869e7c1bd101fcbd995c4df4957b24",
+        "bytes": 302113,
+        "type": "image/png",
+        "name": "file.png",
+        "addedAt": "2026-10-29T17:37:05.949Z",
+        "via": "page"
+      },
+      "assets/essential assets/file11.png": {
+        "store": "blob",
+        "id": "dc895383c0c2e3d0ab81beed64f752bf",
+        "sha256": "9aeb7e3b458c6605364018f4fbbf4efc9af9ec5049158a7c5e7bfbbec292fca6",
+        "bytes": 527879,
+        "type": "image/png",
+        "name": "file11.png",
+        "addedAt": "2026-10-29T17:37:04.963Z",
+        "via": "page"
+      }
+    },
+    "blobBytesUsed": 1845343
+  }
+}

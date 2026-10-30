@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <title>Phantom Portals — lower third 1920×1080 (PP-TPL-002)</title>
+  <desc>Transparent background for video editors. Black plate with a dry-brush crimson spine that breaks out above the plate; name in white (18.2:1), role in on-inverse-secondary (8.61:1). Crimson stays on the spine only — crimson text on black is forbidden (2.26:1). Edit the TEXT layer; GUIDES (hidden) shows title-safe. Motion: see 30_ASSETS/video/lower-thirds/README.md.</desc>
+  <style>
+    @font-face { font-family: "Inter"; font-weight: 400; src: url("../../fonts/inter/inter-latin-400-normal.woff2") format("woff2"); }
+    @font-face { font-family: "Inter"; font-weight: 600; src: url("../../fonts/inter/inter-latin-600-normal.woff2") format("woff2"); }
+    @font-face { font-family: "Space Grotesk"; font-weight: 600; src: url("../../fonts/space-grotesk/space-grotesk-latin-600-normal.woff2") format("woff2"); }
+    @font-face { font-family: "Space Grotesk"; font-weight: 700; src: url("../../fonts/space-grotesk/space-grotesk-latin-700-normal.woff2") format("woff2"); }
+    @font-face { font-family: "JetBrains Mono"; font-weight: 500; src: url("../../fonts/jetbrains-mono/jetbrains-mono-latin-500-normal.woff2") format("woff2"); }
+    .display { font-family: "Space Grotesk", "Inter", sans-serif; font-weight: 700; letter-spacing: -0.02em; }
+    .heading { font-family: "Space Grotesk", "Inter", sans-serif; font-weight: 600; }
+    .body { font-family: "Inter", sans-serif; font-weight: 400; }
+    .mono { font-family: "JetBrains Mono", monospace; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; }
+  </style>
+  <defs>
+    <filter id="ink" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.06" numOctaves="2" seed="4" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g id="guides" inkscape:groupmode="layer" inkscape:label="GUIDES" style="display:none">
+    <rect x="96" y="54" width="1728" height="972" fill="none" stroke="#2F80ED" stroke-dasharray="8 6" stroke-width="2"/><text x="104" y="84" font-size="18" fill="#2F80ED" font-family="monospace">title-safe (5 %)</text><rect width="1920" height="1080" fill="#9AA0A6" opacity="0.35"/>
+  </g>
+  <g id="plate" inkscape:groupmode="layer" inkscape:label="PLATE">
+    <path d="M96 820H900L916 836V970H96Z" fill="#151519"/><g filter="url(#ink)"><polygon points="109.5,970.2 109.5,961.0 110.0,951.8 109.6,942.6 110.0,933.5 109.9,924.3 109.6,915.1 109.9,906.0 109.6,896.8 109.7,887.6 109.5,878.5 109.4,869.3 109.5,860.1 109.5,850.9 109.1,841.8 109.0,832.6 109.0,823.4 108.9,814.3 108.6,805.1 108.3,795.9 108.3,786.7 107.8,777.6 107.8,768.4 107.4,759.2 107.1,750.0 102.9,750.0 102.3,759.1 101.6,768.3 101.2,777.4 100.5,786.6 99.9,795.8 99.5,804.9 98.9,814.1 98.6,823.2 98.1,832.4 97.6,841.6 96.9,850.7 96.5,859.9 96.2,869.0 95.6,878.2 95.2,887.4 94.9,896.5 94.2,905.7 93.9,914.9 93.9,924.0 93.3,933.2 93.1,942.3 92.6,951.5 92.4,960.7 92.5,969.8" fill="#A0112B"/><line x1="96.1" y1="794.9" x2="99.5" y2="741.9" stroke="#A0112B" stroke-width="1.5" stroke-linecap="round"/><line x1="99.1" y1="807.3" x2="101.6" y2="751.6" stroke="#A0112B" stroke-width="1.5" stroke-linecap="round"/><line x1="101.6" y1="846.8" x2="103.8" y2="751.4" stroke="#A0112B" stroke-width="1.5" stroke-linecap="round"/><line x1="105.4" y1="817.5" x2="106.6" y2="723.6" stroke="#A0112B" stroke-width="1.5" stroke-linecap="round"/><line x1="108.8" y1="810.8" x2="108.9" y2="723.7" stroke="#A0112B" stroke-width="1.5" stroke-linecap="round"/><line x1="111.8" y1="824.1" x2="111.1" y2="723.7" stroke="#A0112B" stroke-width="1.5" stroke-linecap="round"/></g><g stroke="#6E6A73" stroke-width="1.5"><line x1="136" y1="948" x2="496" y2="948"/><line x1="136.0" y1="948" x2="136.0" y2="966"/><line x1="146.0" y1="948" x2="146.0" y2="956"/><line x1="156.0" y1="948" x2="156.0" y2="956"/><line x1="166.0" y1="948" x2="166.0" y2="956"/><line x1="176.0" y1="948" x2="176.0" y2="956"/><line x1="186.0" y1="948" x2="186.0" y2="966"/><line x1="196.0" y1="948" x2="196.0" y2="956"/><line x1="206.0" y1="948" x2="206.0" y2="956"/><line x1="216.0" y1="948" x2="216.0" y2="956"/><line x1="226.0" y1="948" x2="226.0" y2="956"/><line x1="236.0" y1="948" x2="236.0" y2="966"/><line x1="246.0" y1="948" x2="246.0" y2="956"/><line x1="256.0" y1="948" x2="256.0" y2="956"/><line x1="266.0" y1="948" x2="266.0" y2="956"/><line x1="276.0" y1="948" x2="276.0" y2="956"/><line x1="286.0" y1="948" x2="286.0" y2="966"/><line x1="296.0" y1="948" x2="296.0" y2="956"/><line x1="306.0" y1="948" x2="306.0" y2="956"/><line x1="316.0" y1="948" x2="316.0" y2="956"/><line x1="326.0" y1="948" x2="326.0" y2="956"/><line x1="336.0" y1="948" x2="336.0" y2="966"/><line x1="346.0" y1="948" x2="346.0" y2="956"/><line x1="356.0" y1="948" x2="356.0" y2="956"/><line x1="366.0" y1="948" x2="366.0" y2="956"/><line x1="376.0" y1="948" x2="376.0" y2="956"/><line x1="386.0" y1="948" x2="386.0" y2="966"/><line x1="396.0" y1="948" x2="396.0" y2="956"/><line x1="406.0" y1="948" x2="406.0" y2="956"/><line x1="416.0" y1="948" x2="416.0" y2="956"/><line x1="426.0" y1="948" x2="426.0" y2="956"/><line x1="436.0" y1="948" x2="436.0" y2="966"/><line x1="446.0" y1="948" x2="446.0" y2="956"/><line x1="456.0" y1="948" x2="456.0" y2="956"/><line x1="466.0" y1="948" x2="466.0" y2="956"/><line x1="476.0" y1="948" x2="476.0" y2="956"/><line x1="486.0" y1="948" x2="486.0" y2="966"/><line x1="496.0" y1="948" x2="496.0" y2="956"/></g>
+  </g>
+  <g id="text" inkscape:groupmode="layer" inkscape:label="TEXT">
+    <text class="heading" x="136" y="882" font-size="48" fill="#FFFFFF">Speaker Name</text><text class="mono" x="136" y="924" font-size="24" fill="#B4B1B9">ROLE // TOPIC</text>
+  </g>
+
+</svg>

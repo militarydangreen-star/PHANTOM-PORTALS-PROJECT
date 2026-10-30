@@ -1,0 +1,28 @@
+{
+  "id": "PP-MOCK-004",
+  "file": "hud-ring-inverse.svg",
+  "title": "hud-ring (v1) recoloured for black grounds",
+  "status": "UNCLEAR",
+  "canon_version": "1.0.0",
+  "kind": "vector",
+  "format": "svg",
+  "dimensions": "400x400",
+  "bytes": 6020,
+  "sha256": "0bfc0851638d4a99314aa0b0eba2335db2d8e52bc2acbee691cedde233001b86",
+  "usage": "Used only by the poster and boot mockups; derived from the superseded v1 vectors.",
+  "rules": [
+    "Rebuild from the current Ink Protocol vector before any production use."
+  ],
+  "tags": [
+    "mockup",
+    "derivative",
+    "v1"
+  ],
+  "license": "Project-original artwork for Phantom Portals. Owner-controlled; all rights reserved by the project owner.",
+  "source": {
+    "system": "Claude Design canvas \"Phantom Portals\"",
+    "artifact": "https://claude.ai/artifact/6jk64Yyaaq6JU2Uy41jXv6",
+    "fetched": "2026-10-29"
+  },
+  "notes": "Recolour made in the 2026-10-29 Claude Design canvas session."
+}

@@ -1,0 +1,32 @@
+{
+  "id": "PP-BRAND-007",
+  "file": "phantom-wordmark-inverse.svg",
+  "title": "Wordmark, inverse",
+  "status": "CURRENT",
+  "canon_version": "1.0.0",
+  "kind": "vector",
+  "format": "svg",
+  "dimensions": "855x168",
+  "bytes": 170970,
+  "sha256": "a775989b78becfac706845bf4ffc75c95b566edaaea4780ee570ad5f6127849b",
+  "usage": "The wordmark for black grounds.",
+  "rules": [
+    "One Phantom per surface.",
+    "Clear space: a quarter of the emblem width on every side.",
+    "Never recolour the figure, add a second character, stretch it, or place it over busy art."
+  ],
+  "tags": [
+    "phantom",
+    "logo",
+    "ink-protocol"
+  ],
+  "license": "Project-original artwork for Phantom Portals. Owner-controlled; all rights reserved by the project owner.",
+  "source": {
+    "system": "Phantom Portals design system (White / Crimson / Black)",
+    "artifact": "https://claude.ai/artifact/HG2ihDf5JsALbo4fxCXcmV",
+    "version": "1793296345-e7e7",
+    "path": "assets/Logos/phantom-wordmark-inverse.svg",
+    "asset_id": "79ba0e19b001ba1118175c6530e211cb",
+    "fetched": "2026-10-29"
+  }
+}

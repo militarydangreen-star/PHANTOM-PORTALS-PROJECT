@@ -1,0 +1,32 @@
+{
+  "id": "PP-ICON-003",
+  "file": "back.svg",
+  "title": "Icon — back",
+  "status": "CURRENT",
+  "canon_version": "1.0.0",
+  "kind": "vector",
+  "format": "svg",
+  "dimensions": "24x24",
+  "bytes": 446,
+  "sha256": "ebee85d5401e29aecfd7e4ad5715deb29fc217193ee640fd00c85965996d472c",
+  "usage": "24 px keyline grid, 1.5 px square-capped ink strokes, one crimson accent on the part that acts.",
+  "rules": [
+    "Render through <Icon> / .pp-icon as a one-ink mask (currentColor).",
+    "Sizes 16, 20 (default), 24; below 16 px use a text label.",
+    "Icon-only controls need an accessible name and a tooltip.",
+    "Never emoji."
+  ],
+  "tags": [
+    "icon",
+    "ui"
+  ],
+  "license": "Project-original artwork for Phantom Portals. Owner-controlled; all rights reserved by the project owner.",
+  "source": {
+    "system": "Phantom Portals design system (White / Crimson / Black)",
+    "artifact": "https://claude.ai/artifact/HG2ihDf5JsALbo4fxCXcmV",
+    "version": "1793296345-e7e7",
+    "path": "assets/Icons/back.svg",
+    "asset_id": "4fb22c82656068ee14e71c66ce133f74",
+    "fetched": "2026-10-29"
+  }
+}

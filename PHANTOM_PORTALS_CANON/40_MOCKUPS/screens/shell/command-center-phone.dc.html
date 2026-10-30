@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Phantom Portals · Command Center (phone)</title>
+<script src="./support.js"></script>
+<link rel="stylesheet" href="ds/phantomportals/tokens.css">
+<link rel="stylesheet" href="ds/phantomportals/components/bundle.css">
+<script src="ds/phantomportals/components/bundle.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<style>
+body{margin:0;background:#f6f5f2}
+a{color:#a0112b}a:hover{color:#7e0d22}
+</style>
+</helmet>
+<x-import component-from-global-scope="PhantomPortals.PortalRoot">
+<div style="width: 390px; height: 844px; display: flex; flex-direction: column; overflow: hidden; background: var(--surface-canvas, #f6f5f2); color: var(--ink-primary, #151519); font-family: var(--font-sans, Inter, 'Segoe UI', sans-serif);">
+
+  <header style="flex: 0 0 auto; height: 56px; box-sizing: border-box; padding: 0 6px 0 16px; display: flex; align-items: center; gap: 12px; background: var(--surface-inverse, #151519); color: #ffffff;">
+    <img src="/_blob/f37dae86e35e5a08ea4dc0e5e9194dad" alt="" aria-hidden="true" style="width: 32px; height: 32px;">
+    <span style="flex: 1 1 auto; min-width: 0; font: 600 16px/20px 'Space Grotesk', Inter, sans-serif; color: #ffffff;">Command Center</span>
+    <button type="button" aria-label="3 open tabs" style="width: 44px; height: 44px; padding: 0; border: 0; background: transparent; display: flex; align-items: center; justify-content: center; cursor: pointer;">
+      <span style="width: 24px; height: 24px; box-sizing: border-box; border: 2px solid #ffffff; display: flex; align-items: center; justify-content: center; font: 500 12px/1 'JetBrains Mono', monospace; color: #ffffff;">3</span>
+    </button>
+  </header>
+
+  <div style="flex: 0 0 auto; padding: 12px 16px; background: var(--surface-primary, #ffffff); border-bottom: 1px solid var(--border-default, #d8d5d6);">
+    <x-import component-from-global-scope="PhantomPortals.Omnibox" label="Search or ask Phantom" icon="ai-core" placeholder="Search, ask, or type &gt; for a command" style="display: block; width: 100%;"></x-import>
+  </div>
+
+  <main style="flex: 1 1 auto; min-height: 0; overflow-y: auto; box-sizing: border-box; padding: 16px 16px 24px; display: flex; flex-direction: column; gap: 24px;">
+    <x-import component-from-global-scope="PhantomPortals.PhantomHero" eyebrow="OFFLINE-FIRST IT COMMAND CENTER" title="Enter the" accent="Portal" description="Diagnose, repair and recover machines from one portable toolkit."></x-import>
+
+    <div style="display: grid; grid-template-columns: repeat(1, minmax(0, 1fr)); gap: 12px;">
+      <x-import component-from-global-scope="PhantomPortals.Button" variant="primary" size="lg" icon="diagnostics" style="width: 100%;">Run Diagnostics</x-import>
+    </div>
+
+    <section aria-label="Tools" style="display: flex; flex-direction: column; gap: 16px;">
+      <div style="display: flex; flex-direction: column; gap: 4px;">
+        <span style="font: var(--text-eyebrow, 600 12px/16px 'Space Grotesk', sans-serif); letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent-crimson, #a0112b);">Quick launch</span>
+        <h2 style="margin: 0; font: var(--text-h2, 600 26px/34px 'Space Grotesk', sans-serif);">Tools</h2>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(1, minmax(0, 1fr)); gap: 12px;">
+        <x-import component-from-global-scope="PhantomPortals.ToolTile" icon="diagnostics" title="Run Diagnostics" description="Hardware, drivers and OS health in one pass." meta="MOD-01" current="{{yes}}"></x-import>
+        <x-import component-from-global-scope="PhantomPortals.ToolTile" icon="terminal" title="Terminal" description="Elevated shell with saved command sets." meta="MOD-02"></x-import>
+        <x-import component-from-global-scope="PhantomPortals.ToolTile" icon="folder" title="File Recovery" description="Browse and copy data off drives that won't boot." meta="MOD-03"></x-import>
+        <x-import component-from-global-scope="PhantomPortals.ToolTile" icon="network" title="Network Repair" description="Reset adapters, DNS and the TCP/IP stack." meta="MOD-04"></x-import>
+        <x-import component-from-global-scope="PhantomPortals.ToolTile" icon="shield" title="Security Sweep" description="Offline malware and startup-item scan." meta="MOD-05"></x-import>
+        <x-import component-from-global-scope="PhantomPortals.ToolTile" icon="ai-core" title="AI Core" description="Ask about an error code. Runs on this machine." meta="MOD-06"></x-import>
+      </div>
+    </section>
+
+    <x-import component-from-global-scope="PhantomPortals.StatusPanel" title="This Machine" metrics="{{metrics}}"></x-import>
+  </main>
+
+  <nav aria-label="Workspaces" style="flex: 0 0 auto; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); padding: 0 4px 20px; background: var(--surface-inverse, #151519);">
+    <a href="#" aria-current="page" style="min-height: 60px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; border-top: 2px solid #ff6b7d; color: #ff6b7d; text-decoration: none; font: 500 11px/14px Inter, 'Segoe UI', sans-serif;">
+      <x-import component-from-global-scope="PhantomPortals.Icon" name="home-portal"></x-import>
+      <span>Home</span>
+    </a>
+    <a href="#" style="min-height: 60px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; border-top: 2px solid transparent; color: #b4b1b9; text-decoration: none; font: 500 11px/14px Inter, 'Segoe UI', sans-serif;">
+      <x-import component-from-global-scope="PhantomPortals.Icon" name="diagnostics"></x-import>
+      <span>Diagnostics</span>
+    </a>
+    <a href="#" style="min-height: 60px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; border-top: 2px solid transparent; color: #b4b1b9; text-decoration: none; font: 500 11px/14px Inter, 'Segoe UI', sans-serif;">
+      <x-import component-from-global-scope="PhantomPortals.Icon" name="terminal"></x-import>
+      <span>Terminal</span>
+    </a>
+    <a href="#" style="min-height: 60px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; border-top: 2px solid transparent; color: #b4b1b9; text-decoration: none; font: 500 11px/14px Inter, 'Segoe UI', sans-serif;">
+      <x-import component-from-global-scope="PhantomPortals.Icon" name="ai-core"></x-import>
+      <span>AI Core</span>
+    </a>
+    <a href="#" style="min-height: 60px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; border-top: 2px solid transparent; color: #b4b1b9; text-decoration: none; font: 500 11px/14px Inter, 'Segoe UI', sans-serif;">
+      <x-import component-from-global-scope="PhantomPortals.Icon" name="settings"></x-import>
+      <span>More</span>
+    </a>
+  </nav>
+</div>
+</x-import>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      yes: true,
+      metrics: [
+        { label: 'CPU', value: '23%', percent: 23 },
+        { label: 'Memory', value: '11.2 / 16 GB', percent: 70 },
+        { label: 'Disk C: · over threshold', value: '91% full', percent: 91, hot: true },
+        { label: 'Network', value: 'Offline' }
+      ]
+    };
+  }
+}
+</script>
+</body>
+</html>

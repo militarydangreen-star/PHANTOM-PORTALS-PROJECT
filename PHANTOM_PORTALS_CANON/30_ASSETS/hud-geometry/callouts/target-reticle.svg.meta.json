@@ -1,0 +1,32 @@
+{
+  "id": "PP-VEC-018",
+  "file": "target-reticle.svg",
+  "title": "Target reticle",
+  "status": "CURRENT",
+  "canon_version": "1.0.0",
+  "kind": "vector",
+  "format": "svg",
+  "dimensions": "220x220",
+  "bytes": 2475,
+  "sha256": "a73244f2b6abd21393bde52032753b8a41aca87adc3762db23af92cbe652237f",
+  "usage": "Hero artwork, page-header edges, empty states, section dividers and transitions.",
+  "rules": [
+    "At most three vectors per composition, one of them crimson.",
+    "Pair every Trash Polka mark with a precision mark (brush cut + iso grid, splatter + reticle).",
+    "Never behind controls, tables, search results, terminal output or body text."
+  ],
+  "tags": [
+    "hud",
+    "precision",
+    "ink-protocol"
+  ],
+  "license": "Project-original artwork for Phantom Portals. Owner-controlled; all rights reserved by the project owner.",
+  "source": {
+    "system": "Phantom Portals design system (White / Crimson / Black)",
+    "artifact": "https://claude.ai/artifact/HG2ihDf5JsALbo4fxCXcmV",
+    "version": "1793296345-e7e7",
+    "path": "assets/Vectors/target-reticle.svg",
+    "asset_id": "b89254811de84145dfc08da32cc0e779",
+    "fetched": "2026-10-29"
+  }
+}

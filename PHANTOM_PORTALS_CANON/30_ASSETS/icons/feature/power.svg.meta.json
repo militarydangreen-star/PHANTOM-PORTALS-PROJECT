@@ -1,0 +1,31 @@
+{
+  "id": "PP-FICON-014",
+  "file": "power.svg",
+  "title": "Feature icon — power",
+  "status": "CURRENT",
+  "canon_version": "1.0.0",
+  "kind": "vector",
+  "format": "svg",
+  "dimensions": "160x160",
+  "bytes": 210591,
+  "sha256": "ca6f0fa5386c9c4cdccd111ee0cc09878818b8c6e25401b82e0d428654d83700",
+  "usage": "Trash Polka badge on a 160 px artboard: dry-brush ensō, crimson dab, halftone quarter, tick arc, glyph at 3×.",
+  "rules": [
+    "Use at 56–160 px: tool tiles, launchers, onboarding, empty states, docs.",
+    "Never in toolbars, tables or dense UI — use the UI icon there."
+  ],
+  "tags": [
+    "icon",
+    "feature",
+    "trash-polka"
+  ],
+  "license": "Project-original artwork for Phantom Portals. Owner-controlled; all rights reserved by the project owner.",
+  "source": {
+    "system": "Phantom Portals design system (White / Crimson / Black)",
+    "artifact": "https://claude.ai/artifact/HG2ihDf5JsALbo4fxCXcmV",
+    "version": "1793296345-e7e7",
+    "path": "assets/Feature Icons/power.svg",
+    "asset_id": "4c238722cef9230366bb4f43cc18da70",
+    "fetched": "2026-10-29"
+  }
+}

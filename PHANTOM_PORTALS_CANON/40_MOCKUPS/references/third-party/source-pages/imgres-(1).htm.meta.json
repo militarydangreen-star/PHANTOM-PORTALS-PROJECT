@@ -1,0 +1,31 @@
+{
+  "id": "PP-REF-SRC-001",
+  "file": "imgres-(1).htm",
+  "title": "Google Images result page \u2192 www.magnific.com",
+  "status": "REFERENCE",
+  "canon_version": "1.0.0",
+  "kind": "reference",
+  "format": "htm",
+  "dimensions": null,
+  "bytes": 224647,
+  "sha256": "998666eff1caa524c9c14c6d1755cca2488e7c9937c6fa736f306dfc23837e05",
+  "usage": "Provenance only: records where a moodboard image was found. Open SOURCES.md instead of this file.",
+  "rules": [
+    "THIRD-PARTY: the linked image belongs to its creator / stock agency. Never ship or trace it."
+  ],
+  "tags": [
+    "reference",
+    "third-party",
+    "provenance"
+  ],
+  "license": "Third-party page saved for provenance; no rights granted.",
+  "source": {
+    "site": "www.magnific.com",
+    "image_url": "https://img.magnific.com/free-vector/ink-brush-stroke-grunge-banner-collection_1409-1495.jpg?semt=ais_hybrid&w=740&q=80",
+    "original_name": "imgres (1).htm",
+    "system": "Phantom Portals design system (White / Crimson / Black)",
+    "artifact": "https://claude.ai/artifact/HG2ihDf5JsALbo4fxCXcmV",
+    "path": "assets/INSPIRATION/imgres (1).htm",
+    "fetched": "2026-10-29"
+  }
+}

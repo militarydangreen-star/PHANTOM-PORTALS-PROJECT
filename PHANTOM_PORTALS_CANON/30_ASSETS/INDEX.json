@@ -1,0 +1,1403 @@
+{
+  "generated_by": "80_TOOLS/index-assets.py",
+  "canon_version": "1.1.0",
+  "count": 83,
+  "by_status": {
+    "CURRENT": 83
+  },
+  "by_kind": {
+    "font": 8,
+    "raster": 5,
+    "template": 4,
+    "vector": 66
+  },
+  "total_bytes": 25345656,
+  "assets": [
+    {
+      "id": "PP-TPL-003",
+      "path": "30_ASSETS/audio-visual/album-cover-3000.svg",
+      "title": "Album / single cover template 3000×3000",
+      "status": "CURRENT",
+      "kind": "template",
+      "format": "svg",
+      "dimensions": "3000x3000",
+      "bytes": 43529,
+      "sha256": "9d5ad913d88919a565e432997e337aa63a446a0f2e4e5cb04546e973e4bf02f1",
+      "tags": [
+        "album",
+        "cover",
+        "music",
+        "template"
+      ],
+      "license": "Project-original artwork for Phantom Portals. Owner-controlled; all rights reserved by the project owner."
+    },
+    {
+      "id": "PP-TPL-004",
+      "path": "30_ASSETS/audio-visual/channel-banner-2560x1440.svg",
+      "title": "Channel banner template 2560×1440",
+      "status": "CURRENT",
+      "kind": "template",
+      "format": "svg",
+      "dimensions": "2560x1440",
+      "bytes": 83718,
+      "sha256": "12ce092dace2e8979dec6878597511951b24b36d877f3478f8f4c56c190f3182",
+      "tags": [
+        "youtube",
+        "banner",
+        "channel",
+        "template"
+      ],
+      "license": "Project-original artwork for Phantom Portals. Owner-controlled; all rights reserved by the project owner."
+    },
+    {
+      "id": "PP-BRAND-004",
+      "path": "30_ASSETS/brand/logo/phantom-app-icon.svg",
+      "title": "Phantom app icon",
+      "status": "CURRENT",
+      "kind": "vector",
+      "format": "svg",
+      "dimensions": "128x128",
+      "bytes": 195240,
+      "sha256": "3deb3b3f25cdb67bb5e98232d5663f95b119f868e9df046851c570247cd32444",
+      "tags": [
+        "phantom",
+        "logo",
+        "ink-protocol"
+      ],
+      "license": "Project-original artwork for Phantom Portals. Owner-controlled; all rights reserved by the project owner."
+    },
+    {
+      "id": "PP-BRAND-002",
+      "path": "30_ASSETS/brand/logo/phantom-emblem-inverse.svg",
+      "title": "Phantom emblem, inverse (on matte black)",
+      "status": "CURRENT",
+      "kind": "vector",
+      "format": "svg",
+      "dimensions": "1024x1024",
+      "bytes": 1783788,
+      "sha256": "8daab5de3b9e0ba98c400133e8e2e75bf74981e4f0542c0f4da151f797c116aa",
+      "tags": [
+        "phantom",
+        "logo",
+        "ink-protocol"
+      ],
+      "license": "Project-original artwork for Phantom Portals. Owner-controlled; all rights reserved by the project owner."
+    },
+    {
+      "id": "PP-BRAND-001",
+      "path": "30_ASSETS/brand/logo/phantom-emblem.svg",
+      "title": "Phantom emblem (Ink Protocol master)",
+      "status": "CURRENT",
+      "kind": "vector",
+      "format": "svg",
+      "dimensions": "1024x1024",
+      "bytes": 1782764,
+      "sha256": "4d358d88fbe57f2accbf6269c76601a6188f87e8b434a0e89bef081e475d01f4",
+      "tags": [
+        "phantom",
+        "logo",
+        "ink-protocol"
+      ],
+      "license": "Project-original artwork for Phantom Portals. Owner-controlled; all rights reserved by the project owner."
+    },
+    {
+      "id": "PP-BRAND-005",
+      "path": "30_ASSETS/brand/logo/phantom-lockup.svg",
+      "title": "Phantom lockup (monogram + wordmark)",
+      "status": "CURRENT",
+      "kind": "vector",
+      "format": "svg",
+      "dimensions": "968x210",
+      "bytes": 366707,
+      "sha256": "a9767c17ee185a5d0846dcfb647ddfffe5f2cdab5ffe20e70b8267fc82aa8589",
+      "tags": [
+        "phantom",
+        "logo",
+        "ink-protocol"
+      ],
+      "license": "Project-original artwork for Phantom Portals. Owner-controlled; all rights reserved by the project owner."
+    },
+    {
+      "id": "PP-BRAND-003",
+      "path": "30_ASSETS/brand/logo/phantom-monogram.svg",
+      "title": "Phantom monogram",
+      "status": "CURRENT",
+      "kind": "vector",
+      "format": "svg",
+      "dimensions": "128x128",
+      "bytes": 194238,
+      "sha256": "5de9b51e03032894f2a9c4736d813077a9e819551cb6ffac6faf373e18427501",
+      "tags": [
+        "phantom",
+        "logo",
+        "ink-protocol"
+      ],
+      "license": "Project-original artwork for Phantom Portals. Owner-controlled; all rights reserved by the project owner."
+    },
+    {
+      "id": "PP-BRAND-009",
+      "path": "30_ASSETS/brand/phantom-hero/phantom-emblem-2048.png",
+      "title": "Phantom emblem 2048 px (transparent)",
+      "status": "CURRENT",
+      "kind": "raster",
+      "format": "png",
+      "dimensions": "2048x2048",
+      "bytes": 1876168,
+      "sha256": "dcd35d1c3846cb6af89ec5e29b5f77144e4a2a1c29f3d60629e4986bc6f42584",
+      "tags": [
+        "phantom",
+        "artwork",
+        "ink-protocol"
+      ],
+      "license": "Project-original artwork for Phantom Portals. Owner-controlled; all rights reserved by the project owner."
+    },
+    {
+      "id": "PP-BRAND-008",
+      "path": "30_ASSETS/brand/phantom-hero/phantom-emblem-512.png",
+      "title": "Phantom emblem 512 px (transparent)",
+      "status": "CURRENT",
+      "kind": "raster",
+      "format": "png",
+      "dimensions": "512x512",
+      "bytes": 259914,
+      "sha256": "c013b9e7479015eb617d2712469174f6da10afca85a0bd67cdf06cd2136f9363",
+      "tags": [
+        "phantom",
+        "artwork",
+        "ink-protocol"
+      ],
+      "license": "Project-original artwork for Phantom Portals. Owner-controlled; all rights reserved by the project owner."
+    },
+    {
+      "id": "PP-BRAND-011",
+      "path": "30_ASSETS/brand/phantom-hero/phantom-emblem-inverse-2048.png",
+      "title": "Phantom emblem inverse 2048 px (matte black)",
+      "status": "CURRENT",
+      "kind": "raster",
+      "format": "png",
+      "dimensions": "2048x2048",
+      "bytes": 1732398,
+      "sha256": "048feb86dd07e8f72d170856cd55df0dfbd871873091efd15134433f2996c71b",
+      "tags": [
+        "phantom",
+        "artwork",
+        "ink-protocol"
+      ],
+      "license": "Project-original artwork for Phantom Portals. Owner-controlled; all rights reserved by the project owner."
+    },
+    {
+      "id": "PP-BRAND-010",
+      "path": "30_ASSETS/brand/phantom-hero/phantom-emblem-inverse-512.png",
+      "title": "Phantom emblem inverse 512 px (matte black)",
+      "status": "CURRENT",
+      "kind": "raster",
+      "format": "png",
+      "dimensions": "512x512",
+      "bytes": 233592,
+      "sha256": "4db63dbbc5843f458dbe8553309edc335175c56cbaa137152b433bf9be4e21c3",
+      "tags": [
+        "phantom",
+        "artwork",
+        "ink-protocol"
+      ],
+      "license": "Project-original artwork for Phantom Portals. Owner-controlled; all rights reserved by the project owner."
+    },
+    {
+      "id": "PP-BRAND-012",
+      "path": "30_ASSETS/brand/phantom-hero/plate-01-the-operator.png",
+      "title": "Plate 01 — The Operator (2400 × 3000)",
+      "status": "CURRENT",
+      "kind": "raster",
+      "format": "png",
+      "dimensions": "2400x3000",
+      "bytes": 8706427,
+      "sha256": "bc10d4c9d26b05b5247b292134997ee34aa21f547be44658a4ac150f5a49dea7",
+      "tags": [
+        "phantom",
+        "artwork",
+        "ink-protocol"
+      ],
+      "license": "Project-original artwork for Phantom Portals. Owner-controlled; all rights reserved by the project owner."
+    },
+    {
+      "id": "PP-BRAND-007",
+      "path": "30_ASSETS/brand/wordmark/phantom-wordmark-inverse.svg",
+      "title": "Wordmark, inverse",
+      "status": "CURRENT",
+      "kind": "vector",
+      "format": "svg",
+      "dimensions": "855x168",
+      "bytes": 170970,
+      "sha256": "a775989b78becfac706845bf4ffc75c95b566edaaea4780ee570ad5f6127849b",
+      "tags": [
+        "phantom",
+        "logo",
+        "ink-protocol"
+      ],
+      "license": "Project-original artwork for Phantom Portals. Owner-controlled; all rights reserved by the project owner."
+    },
+    {
+      "id": "PP-BRAND-006",
+      "path": "30_ASSETS/brand/wordmark/phantom-wordmark.svg",
+      "title": "Wordmark",
+      "status": "CURRENT",
+      "kind": "vector",
+      "format": "svg",
+      "dimensions": "855x168",
+      "bytes": 170885,
+      "sha256": "e81170257bd8b07993cfe834f3fafc3318463d101508f2af3ffb1afba67eeb50",
+      "tags": [
+        "phantom",
+        "logo",
+        "ink-protocol"
+      ],
+      "license": "Project-original artwork for Phantom Portals. Owner-controlled; all rights reserved by the project owner."
+    },
+    {
+      "id": "PP-FONT-001",
+      "path": "30_ASSETS/fonts/inter/inter-latin-400-normal.woff2",
+      "title": "Inter 400 (Latin subset, WOFF2)",
+      "status": "CURRENT",
+      "kind": "font",
+      "format": "woff2",
+      "dimensions": null,
+      "bytes": 23692,
+      "sha256": "dd05e326cf8eac3b55acecf29c842ed73e6e6dd06491cf47f7e8800680ab3e33",
+      "tags": [
+        "font",
+        "inter"
+      ],
+      "license": "SIL Open Font License 1.1 (see OFL.txt in this folder)"
+    },
+    {
+      "id": "PP-FONT-002",
+      "path": "30_ASSETS/fonts/inter/inter-latin-500-normal.woff2",
+      "title": "Inter 500 (Latin subset, WOFF2)",
+      "status": "CURRENT",
+      "kind": "font",
+      "format": "woff2",
+      "dimensions": null,
+      "bytes": 24368,
+      "sha256": "b0e7558f4710a1e255b93e3deefe3aebb19f3bb41c150f685a74d3b1a1c79e87",
+      "tags": [
+        "font",
+        "inter"
+      ],
+      "license": "SIL Open Font License 1.1 (see OFL.txt in this folder)"
+    },
+    {
+      "id": "PP-FONT-003",
+      "path": "30_ASSETS/fonts/inter/inter-latin-600-normal.woff2",
+      "title": "Inter 600 (Latin subset, WOFF2)",
+      "status": "CURRENT",
+      "kind": "font",
+      "format": "woff2",
+      "dimensions": null,
+      "bytes": 24304,
+      "sha256": "62553d159189834af73c9a6264704be5b2bee9a08da66a14768d8e5c6ffd2cdb",
+      "tags": [
+        "font",
+        "inter"
+      ],
+      "license": "SIL Open Font License 1.1 (see OFL.txt in this folder)"
+    },
+    {
+      "id": "PP-FONT-004",
+      "path": "30_ASSETS/fonts/jetbrains-mono/jetbrains-mono-latin-400-normal.woff2",
+      "title": "JetBrains Mono 400 (Latin subset, WOFF2)",
+      "status": "CURRENT",
+      "kind": "font",
+      "format": "woff2",
+      "dimensions": null,
+      "bytes": 21088,
+      "sha256": "7c53386f55c866c1b4c9309c4bcf74eda10896aab3a1780b0af5cc4976e27a27",
+      "tags": [
+        "font",
+        "jetbrains-mono"
+      ],
+      "license": "SIL Open Font License 1.1 (see OFL.txt in this folder)"
+    },
+    {
+      "id": "PP-FONT-005",
+      "path": "30_ASSETS/fonts/jetbrains-mono/jetbrains-mono-latin-500-normal.woff2",
+      "title": "JetBrains Mono 500 (Latin subset, WOFF2)",
+      "status": "CURRENT",
+      "kind": "font",
+      "format": "woff2",
+      "dimensions": null,
+      "bytes": 21820,
+      "sha256": "4765dee1c0be507cde85c3de952bb24707b798f0e4002c360b9434d66c8bbc3c",
+      "tags": [
+        "font",
+        "jetbrains-mono"
+      ],
+      "license": "SIL Open Font License 1.1 (see OFL.txt in this folder)"
+    },
+    {
+      "id": "PP-FONT-006",
+      "path": "30_ASSETS/fonts/space-grotesk/space-grotesk-latin-500-normal.woff2",
+      "title": "Space Grotesk 500 (Latin subset, WOFF2)",
+      "status": "CURRENT",
+      "kind": "font",
+      "format": "woff2",
+      "dimensions": null,
+      "bytes": 13320,
+      "sha256": "f674168ce1553b0657a1a6d3719f99448a6160d163628ae780708ec0c0c0e905",
+      "tags": [
+        "font",
+        "space-grotesk"
+      ],
+      "license": "SIL Open Font License 1.1 (see OFL.txt in this folder)"
+    },
+    {
+      "id": "PP-FONT-007",
+      "path": "30_ASSETS/fonts/space-grotesk/space-grotesk-latin-600-normal.woff2",
+      "title": "Space Grotesk 600 (Latin subset, WOFF2)",
+      "status": "CURRENT",
+      "kind": "font",
+      "format": "woff2",
+      "dimensions": null,
+      "bytes": 13212,
+      "sha256": "e7c4b716fad7c6312a0f233b011c8c26eccad64c15d51b4f15590643cf53a8f7",
+      "tags": [
+        "font",
+        "space-grotesk"
+      ],
+      "license": "SIL Open Font License 1.1 (see OFL.txt in this folder)"
+    },
+    {
+      "id": "PP-FONT-008",
+      "path": "30_ASSETS/fonts/space-grotesk/space-grotesk-latin-700-normal.woff2",
+      "title": "Space Grotesk 700 (Latin subset, WOFF2)",
+      "status": "CURRENT",
+      "kind": "font",
+      "format": "woff2",
+      "dimensions": null,
+      "bytes": 12784,
+      "sha256": "2731c236f3a1eda15fe8e5f9216e6d01a569cfe25bc32e0a83040cff62d0bdd5",
+      "tags": [
+        "font",
+        "space-grotesk"
+      ],
+      "license": "SIL Open Font License 1.1 (see OFL.txt in this folder)"
+    },
+    {
+      "id": "PP-VEC-019",
+      "path": "30_ASSETS/hud-geometry/callouts/coordinate-ruler.svg",
+      "title": "Coordinate ruler",
+      "status": "CURRENT",
+      "kind": "vector",
+      "format": "svg",
+      "dimensions": "640x44",
+      "bytes": 8895,
+      "sha256": "967f29e3728415ddd33ba1781f6ffb4b7f4a53cac50052e583ca6c552c3e21f6",
+      "tags": [
+        "hud",
+        "precision",
+        "divider",
+        "ink-protocol"
+      ],
+      "license": "Project-original artwork for Phantom Portals. Owner-controlled; all rights reserved by the project owner."
+    },
+    {
+      "id": "PP-VEC-017",
+      "path": "30_ASSETS/hud-geometry/callouts/hud-ring.svg",
+      "title": "HUD ring (graduated)",
+      "status": "CURRENT",
+      "kind": "vector",
+      "format": "svg",
+      "dimensions": "520x520",
+      "bytes": 10100,
+      "sha256": "a64976d54494748dbd7d341e0450d6cb3b2b25c01fff556149584393d66991cb",
+      "tags": [
+        "hud",
+        "precision",
+        "ink-protocol"
+      ],
+      "license": "Project-original artwork for Phantom Portals. Owner-controlled; all rights reserved by the project owner."
+    },
+    {
+      "id": "PP-VEC-018",
+      "path": "30_ASSETS/hud-geometry/callouts/target-reticle.svg",
+      "title": "Target reticle",
+      "status": "CURRENT",
+      "kind": "vector",
+      "format": "svg",
+      "dimensions": "220x220",
+      "bytes": 2475,
+      "sha256": "a73244f2b6abd21393bde52032753b8a41aca87adc3762db23af92cbe652237f",
+      "tags": [
+        "hud",
+        "precision",
+        "ink-protocol"
+      ],
+      "license": "Project-original artwork for Phantom Portals. Owner-controlled; all rights reserved by the project owner."
+    },
+    {
+      "id": "PP-VEC-015",
+      "path": "30_ASSETS/hud-geometry/circuitry/circuit-trace.svg",
+      "title": "Circuit trace",
+      "status": "CURRENT",
+      "kind": "vector",
+      "format": "svg",
+      "dimensions": "640x230",
+      "bytes": 1515,
+      "sha256": "bb74d371ba8d831a76a731640f696d1fc5e9ec32ca08c0ecaf1b4e1531da4620",
+      "tags": [
+        "hud",
+        "precision",
+        "ink-protocol"
+      ],
+      "license": "Project-original artwork for Phantom Portals. Owner-controlled; all rights reserved by the project owner."
+    },
+    {
+      "id": "PP-VEC-016",
+      "path": "30_ASSETS/hud-geometry/circuitry/laser-lines.svg",
+      "title": "Laser lines (accent-electric, decorative only)",
+      "status": "CURRENT",
+      "kind": "vector",
+      "format": "svg",
+      "dimensions": "640x320",
+      "bytes": 1763,
+      "sha256": "3a61c614ff3bba2a90fcea96ae65f8d5e21c3adfb8d88237f9d53fb6fb7d0c4b",
+      "tags": [
+        "hud",
+        "electric",
+        "ink-protocol"
+      ],
+      "license": "Project-original artwork for Phantom Portals. Owner-controlled; all rights reserved by the project owner."
+    },
+    {
+      "id": "PP-VEC-014",
+      "path": "30_ASSETS/hud-geometry/isometric-grids/hex-cluster.svg",
+      "title": "Hex cluster",
+      "status": "CURRENT",
+      "kind": "vector",
+      "format": "svg",
+      "dimensions": "320x260",
+      "bytes": 1539,
+      "sha256": "b1440c90999542cc74e732f7e736e688099442ce9aaccdf5a45bb33b7640cf5d",
+      "tags": [
+        "isometric",
+        "precision",
+        "ink-protocol"
+      ],
+      "license": "Project-original artwork for Phantom Portals. Owner-controlled; all rights reserved by the project owner."
+    },
+    {
+      "id": "PP-VEC-013",
+      "path": "30_ASSETS/hud-geometry/isometric-grids/iso-cube.svg",
+      "title": "Isometric cube (hatched and solid faces)",
+      "status": "CURRENT",
+      "kind": "vector",
+      "format": "svg",
+      "dimensions": "420x420",
+      "bytes": 45433,
+      "sha256": "2549856be48637cc8a66c327c21121152f83959dd3b8450474858ac6fb9f24f0",
+      "tags": [
+        "isometric",
+        "precision",
+        "ink-protocol"
+      ],
+      "license": "Project-original artwork for Phantom Portals. Owner-controlled; all rights reserved by the project owner."
+    },
+    {
+      "id": "PP-VEC-012",
+      "path": "30_ASSETS/hud-geometry/isometric-grids/iso-grid.svg",
+      "title": "Isometric grid",
+      "status": "CURRENT",
+      "kind": "vector",
+      "format": "svg",
+      "dimensions": "640x380",
+      "bytes": 2505,
+      "sha256": "1e07f99824b22be04e369708abc43245e7ef94afb52ff89e04a3dd4ad6e64482",
+      "tags": [
+        "isometric",
+        "precision",
+        "ink-protocol"
+      ],
+      "license": "Project-original artwork for Phantom Portals. Owner-controlled; all rights reserved by the project owner."
+    },
+    {
+      "id": "PP-FICON-001",
+      "path": "30_ASSETS/icons/feature/ai-core.svg",
+      "title": "Feature icon — ai-core",
+      "status": "CURRENT",
+      "kind": "vector",
+      "format": "svg",
+      "dimensions": "160x160",
+      "bytes": 215199,
+      "sha256": "4cc32040c218d744c5e5f74c58ae81c756ac060627625edd560b1b341733cb23",
+      "tags": [
+        "icon",
+        "feature",
+        "trash-polka"
+      ],
+      "license": "Project-original artwork for Phantom Portals. Owner-controlled; all rights reserved by the project owner."
+    },
+    {
+      "id": "PP-FICON-002",
+      "path": "30_ASSETS/icons/feature/alert.svg",
+      "title": "Feature icon — alert",
+      "status": "CURRENT",
+      "kind": "vector",
+      "format": "svg",
+      "dimensions": "160x160",
+      "bytes": 217397,
+      "sha256": "0c964b52399290dd94cdad3a5317c58876658643534fe9035e19709c53d96a16",
+      "tags": [
+        "icon",
+        "feature",
+        "trash-polka"
+      ],
+      "license": "Project-original artwork for Phantom Portals. Owner-controlled; all rights reserved by the project owner."
+    },
+    {
+      "id": "PP-FICON-003",
+      "path": "30_ASSETS/icons/feature/back.svg",
+      "title": "Feature icon — back",
+      "status": "CURRENT",
+      "kind": "vector",
+      "format": "svg",
+      "dimensions": "160x160",
+      "bytes": 210574,
+      "sha256": "e468e471acca4a98a9cb5d87d2b2d2675051e07422c683d275eb712cb61c865b",
+      "tags": [
+        "icon",
+        "feature",
+        "trash-polka"
+      ],
+      "license": "Project-original artwork for Phantom Portals. Owner-controlled; all rights reserved by the project owner."
+    },
+    {
+      "id": "PP-FICON-004",
+      "path": "30_ASSETS/icons/feature/bookmark.svg",
+      "title": "Feature icon — bookmark",
+      "status": "CURRENT",
+      "kind": "vector",
+      "format": "svg",
+      "dimensions": "160x160",
+      "bytes": 207011,
+      "sha256": "edfd287235327799af6385a49613e78940b99d6cf432155fddfa6af4da7456ff",
+      "tags": [
+        "icon",
+        "feature",
+        "trash-polka"
+      ],
+      "license": "Project-original artwork for Phantom Portals. Owner-controlled; all rights reserved by the project owner."
+    },
+    {
+      "id": "PP-FICON-005",
+      "path": "30_ASSETS/icons/feature/check.svg",
+      "title": "Feature icon — check",
+      "status": "CURRENT",
+      "kind": "vector",
+      "format": "svg",
+      "dimensions": "160x160",
+      "bytes": 202319,
+      "sha256": "f30fe0b36ffa263958b9211f322349c2493ef0d11d2754676b79ce907bd5d17a",
+      "tags": [
+        "icon",
+        "feature",
+        "trash-polka"
+      ],
+      "license": "Project-original artwork for Phantom Portals. Owner-controlled; all rights reserved by the project owner."
+    },
+    {
+      "id": "PP-FICON-006",
+      "path": "30_ASSETS/icons/feature/close.svg",
+      "title": "Feature icon — close",
+      "status": "CURRENT",
+      "kind": "vector",
+      "format": "svg",
+      "dimensions": "160x160",
+      "bytes": 207103,
+      "sha256": "57b0b768bbf0969958777247afa736f34bccf2cea54754559b9662cd44d4485c",
+      "tags": [
+        "icon",
+        "feature",
+        "trash-polka"
+      ],
+      "license": "Project-original artwork for Phantom Portals. Owner-controlled; all rights reserved by the project owner."
+    },
+    {
+      "id": "PP-FICON-007",
+      "path": "30_ASSETS/icons/feature/cloud.svg",
+      "title": "Feature icon — cloud",
+      "status": "CURRENT",
+      "kind": "vector",
+      "format": "svg",
+      "dimensions": "160x160",
+      "bytes": 217688,
+      "sha256": "6eda39ed1ff70b60c135d463b047774aff1b6e267a64330467f212117ee3dc40",
+      "tags": [
+        "icon",
+        "feature",
+        "trash-polka"
+      ],
+      "license": "Project-original artwork for Phantom Portals. Owner-controlled; all rights reserved by the project owner."
+    },
+    {
+      "id": "PP-FICON-008",
+      "path": "30_ASSETS/icons/feature/cpu.svg",
+      "title": "Feature icon — cpu",
+      "status": "CURRENT",
+      "kind": "vector",
+      "format": "svg",
+      "dimensions": "160x160",
+      "bytes": 216810,
+      "sha256": "b2fdd24b434c7d211f04f1723679547950c14b0564d736bdb350dcc782109e94",
+      "tags": [
+        "icon",
+        "feature",
+        "trash-polka"
+      ],
+      "license": "Project-original artwork for Phantom Portals. Owner-controlled; all rights reserved by the project owner."
+    },
+    {
+      "id": "PP-FICON-009",
+      "path": "30_ASSETS/icons/feature/diagnostics.svg",
+      "title": "Feature icon — diagnostics",
+      "status": "CURRENT",
+      "kind": "vector",
+      "format": "svg",
+      "dimensions": "160x160",
+      "bytes": 217522,
+      "sha256": "bd898819db0ef4e2cb3d001fd8123f5c5f8827439359ca40d8ab30620e0ec7cd",
+      "tags": [
+        "icon",
+        "feature",
+        "trash-polka"
+      ],
+      "license": "Project-original artwork for Phantom Portals. Owner-controlled; all rights reserved by the project owner."
+    },
+    {
+      "id": "PP-FICON-010",
+      "path": "30_ASSETS/icons/feature/folder.svg",
+      "title": "Feature icon — folder",
+      "status": "CURRENT",
+      "kind": "vector",
+      "format": "svg",
+      "dimensions": "160x160",
+      "bytes": 195804,
+      "sha256": "da39a6dffc1bd41ab8af30da6c2c193e3709d72f9822f6d965068271f0f2d829",
+      "tags": [
+        "icon",
+        "feature",
+        "trash-polka"
+      ],
+      "license": "Project-original artwork for Phantom Portals. Owner-controlled; all rights reserved by the project owner."
+    },
+    {
+      "id": "PP-FICON-011",
+      "path": "30_ASSETS/icons/feature/forward.svg",
+      "title": "Feature icon — forward",
+      "status": "CURRENT",
+      "kind": "vector",
+      "format": "svg",
+      "dimensions": "160x160",
+      "bytes": 207710,
+      "sha256": "3b5951a4dcfac172bab85ce06c5046cd71618341fa74fc28f908de5ef1af4cac",
+      "tags": [
+        "icon",
+        "feature",
+        "trash-polka"
+      ],
+      "license": "Project-original artwork for Phantom Portals. Owner-controlled; all rights reserved by the project owner."
+    },
+    {
+      "id": "PP-FICON-012",
+      "path": "30_ASSETS/icons/feature/home-portal.svg",
+      "title": "Feature icon — home-portal",
+      "status": "CURRENT",
+      "kind": "vector",
+      "format": "svg",
+      "dimensions": "160x160",
+      "bytes": 207733,
+      "sha256": "24e6170201596886f53c4ec6b3d45f85d68c5840fa7b129afe37cd1223aa2f5a",
+      "tags": [
+        "icon",
+        "feature",
+        "trash-polka"
+      ],
+      "license": "Project-original artwork for Phantom Portals. Owner-controlled; all rights reserved by the project owner."
+    },
+    {
+      "id": "PP-FICON-013",
+      "path": "30_ASSETS/icons/feature/network.svg",
+      "title": "Feature icon — network",
+      "status": "CURRENT",
+      "kind": "vector",
+      "format": "svg",
+      "dimensions": "160x160",
+      "bytes": 213428,
+      "sha256": "7304166e89f264c32ce34e4632d786235a94e4e5bfceede08fed590452d32250",
+      "tags": [
+        "icon",
+        "feature",
+        "trash-polka"
+      ],
+      "license": "Project-original artwork for Phantom Portals. Owner-controlled; all rights reserved by the project owner."
+    },
+    {
+      "id": "PP-FICON-014",
+      "path": "30_ASSETS/icons/feature/power.svg",
+      "title": "Feature icon — power",
+      "status": "CURRENT",
+      "kind": "vector",
+      "format": "svg",
+      "dimensions": "160x160",
+      "bytes": 210591,
+      "sha256": "ca6f0fa5386c9c4cdccd111ee0cc09878818b8c6e25401b82e0d428654d83700",
+      "tags": [
+        "icon",
+        "feature",
+        "trash-polka"
+      ],
+      "license": "Project-original artwork for Phantom Portals. Owner-controlled; all rights reserved by the project owner."
+    },
+    {
+      "id": "PP-FICON-015",
+      "path": "30_ASSETS/icons/feature/reload.svg",
+      "title": "Feature icon — reload",
+      "status": "CURRENT",
+      "kind": "vector",
+      "format": "svg",
+      "dimensions": "160x160",
+      "bytes": 212353,
+      "sha256": "7db446170b5c13aca8f2a57b27b82e3b6b6622cfa446135782ea1da1cf0074ba",
+      "tags": [
+        "icon",
+        "feature",
+        "trash-polka"
+      ],
+      "license": "Project-original artwork for Phantom Portals. Owner-controlled; all rights reserved by the project owner."
+    },
+    {
+      "id": "PP-FICON-016",
+      "path": "30_ASSETS/icons/feature/search.svg",
+      "title": "Feature icon — search",
+      "status": "CURRENT",
+      "kind": "vector",
+      "format": "svg",
+      "dimensions": "160x160",
+      "bytes": 218721,
+      "sha256": "6bb449a7d78720294e7c84e14e88651657c8de8c3d75cb954ac416d21a8ee5d5",
+      "tags": [
+        "icon",
+        "feature",
+        "trash-polka"
+      ],
+      "license": "Project-original artwork for Phantom Portals. Owner-controlled; all rights reserved by the project owner."
+    },
+    {
+      "id": "PP-FICON-017",
+      "path": "30_ASSETS/icons/feature/settings.svg",
+      "title": "Feature icon — settings",
+      "status": "CURRENT",
+      "kind": "vector",
+      "format": "svg",
+      "dimensions": "160x160",
+      "bytes": 222049,
+      "sha256": "dde82826fa0fe98cb17fb2a5452d79e13a29efed3008376d8fafeb4dc0d604f4",
+      "tags": [
+        "icon",
+        "feature",
+        "trash-polka"
+      ],
+      "license": "Project-original artwork for Phantom Portals. Owner-controlled; all rights reserved by the project owner."
+    },
+    {
+      "id": "PP-FICON-018",
+      "path": "30_ASSETS/icons/feature/shield.svg",
+      "title": "Feature icon — shield",
+      "status": "CURRENT",
+      "kind": "vector",
+      "format": "svg",
+      "dimensions": "160x160",
+      "bytes": 216922,
+      "sha256": "e1e06a77fa473cd182b99ca77ef15db813468708f6e625405de38f8f2fc5c707",
+      "tags": [
+        "icon",
+        "feature",
+        "trash-polka"
+      ],
+      "license": "Project-original artwork for Phantom Portals. Owner-controlled; all rights reserved by the project owner."
+    },
+    {
+      "id": "PP-FICON-019",
+      "path": "30_ASSETS/icons/feature/terminal.svg",
+      "title": "Feature icon — terminal",
+      "status": "CURRENT",
+      "kind": "vector",
+      "format": "svg",
+      "dimensions": "160x160",
+      "bytes": 216962,
+      "sha256": "61ee70264b4bc35e857dc9df051f514f6987c152216729a1de4f895788da616e",
+      "tags": [
+        "icon",
+        "feature",
+        "trash-polka"
+      ],
+      "license": "Project-original artwork for Phantom Portals. Owner-controlled; all rights reserved by the project owner."
+    },
+    {
+      "id": "PP-FICON-020",
+      "path": "30_ASSETS/icons/feature/tools.svg",
+      "title": "Feature icon — tools",
+      "status": "CURRENT",
+      "kind": "vector",
+      "format": "svg",
+      "dimensions": "160x160",
+      "bytes": 208306,
+      "sha256": "e6fd0e1621b5c40c160000e33d1bb3437b73849943d9476734ded2a7f84fbbf9",
+      "tags": [
+        "icon",
+        "feature",
+        "trash-polka"
+      ],
+      "license": "Project-original artwork for Phantom Portals. Owner-controlled; all rights reserved by the project owner."
+    },
+    {
+      "id": "PP-ICON-001",
+      "path": "30_ASSETS/icons/ui/ai-core.svg",
+      "title": "Icon — ai-core",
+      "status": "CURRENT",
+      "kind": "vector",
+      "format": "svg",
+      "dimensions": "24x24",
+      "bytes": 592,
+      "sha256": "802ae758fc6996618f4a744f0f1088fc6814f55fdb23d16c97c65e135dd5309d",
+      "tags": [
+        "icon",
+        "ui"
+      ],
+      "license": "Project-original artwork for Phantom Portals. Owner-controlled; all rights reserved by the project owner."
+    },
+    {
+      "id": "PP-ICON-002",
+      "path": "30_ASSETS/icons/ui/alert.svg",
+      "title": "Icon — alert",
+      "status": "CURRENT",
+      "kind": "vector",
+      "format": "svg",
+      "dimensions": "24x24",
+      "bytes": 516,
+      "sha256": "4ab96a671be8799dfae90655209e7fd228cf0713495a6994520e41c9159017fa",
+      "tags": [
+        "icon",
+        "ui"
+      ],
+      "license": "Project-original artwork for Phantom Portals. Owner-controlled; all rights reserved by the project owner."
+    },
+    {
+      "id": "PP-ICON-003",
+      "path": "30_ASSETS/icons/ui/back.svg",
+      "title": "Icon — back",
+      "status": "CURRENT",
+      "kind": "vector",
+      "format": "svg",
+      "dimensions": "24x24",
+      "bytes": 446,
+      "sha256": "ebee85d5401e29aecfd7e4ad5715deb29fc217193ee640fd00c85965996d472c",
+      "tags": [
+        "icon",
+        "ui"
+      ],
+      "license": "Project-original artwork for Phantom Portals. Owner-controlled; all rights reserved by the project owner."
+    },
+    {
+      "id": "PP-ICON-004",
+      "path": "30_ASSETS/icons/ui/bookmark.svg",
+      "title": "Icon — bookmark",
+      "status": "CURRENT",
+      "kind": "vector",
+      "format": "svg",
+      "dimensions": "24x24",
+      "bytes": 476,
+      "sha256": "ce071b44f0c68873ef7f2c41985a70a5f5f31314faf2022938e775cc3e32c690",
+      "tags": [
+        "icon",
+        "ui"
+      ],
+      "license": "Project-original artwork for Phantom Portals. Owner-controlled; all rights reserved by the project owner."
+    },
+    {
+      "id": "PP-ICON-005",
+      "path": "30_ASSETS/icons/ui/check.svg",
+      "title": "Icon — check",
+      "status": "CURRENT",
+      "kind": "vector",
+      "format": "svg",
+      "dimensions": "24x24",
+      "bytes": 466,
+      "sha256": "05a64f18690dfcc52da330af3e6f798f75e69e8b484d9930969e5445e0e4ddbe",
+      "tags": [
+        "icon",
+        "ui"
+      ],
+      "license": "Project-original artwork for Phantom Portals. Owner-controlled; all rights reserved by the project owner."
+    },
+    {
+      "id": "PP-ICON-006",
+      "path": "30_ASSETS/icons/ui/close.svg",
+      "title": "Icon — close",
+      "status": "CURRENT",
+      "kind": "vector",
+      "format": "svg",
+      "dimensions": "24x24",
+      "bytes": 437,
+      "sha256": "e6a40c610aad6c6e0cd6057e67a8f6ee05a522ce262fc1ab44a29da2bd85de45",
+      "tags": [
+        "icon",
+        "ui"
+      ],
+      "license": "Project-original artwork for Phantom Portals. Owner-controlled; all rights reserved by the project owner."
+    },
+    {
+      "id": "PP-ICON-007",
+      "path": "30_ASSETS/icons/ui/cloud.svg",
+      "title": "Icon — cloud",
+      "status": "CURRENT",
+      "kind": "vector",
+      "format": "svg",
+      "dimensions": "24x24",
+      "bytes": 541,
+      "sha256": "46e48b31a9afda3a5ecc3ba637175e74a9cc881c7c50f384ad014a8410410505",
+      "tags": [
+        "icon",
+        "ui"
+      ],
+      "license": "Project-original artwork for Phantom Portals. Owner-controlled; all rights reserved by the project owner."
+    },
+    {
+      "id": "PP-ICON-008",
+      "path": "30_ASSETS/icons/ui/cpu.svg",
+      "title": "Icon — cpu",
+      "status": "CURRENT",
+      "kind": "vector",
+      "format": "svg",
+      "dimensions": "24x24",
+      "bytes": 595,
+      "sha256": "41ec5decfda5a8f99c77bdcdc4f1dd8d0d3f3bdc74c4f6058072f1fde2b03d79",
+      "tags": [
+        "icon",
+        "ui"
+      ],
+      "license": "Project-original artwork for Phantom Portals. Owner-controlled; all rights reserved by the project owner."
+    },
+    {
+      "id": "PP-ICON-009",
+      "path": "30_ASSETS/icons/ui/diagnostics.svg",
+      "title": "Icon — diagnostics",
+      "status": "CURRENT",
+      "kind": "vector",
+      "format": "svg",
+      "dimensions": "24x24",
+      "bytes": 518,
+      "sha256": "7b6a5f5edf071083799b4e5c99369f84467a10f3e5f6959f6ae651e9f78b84b5",
+      "tags": [
+        "icon",
+        "ui"
+      ],
+      "license": "Project-original artwork for Phantom Portals. Owner-controlled; all rights reserved by the project owner."
+    },
+    {
+      "id": "PP-ICON-010",
+      "path": "30_ASSETS/icons/ui/folder.svg",
+      "title": "Icon — folder",
+      "status": "CURRENT",
+      "kind": "vector",
+      "format": "svg",
+      "dimensions": "24x24",
+      "bytes": 607,
+      "sha256": "ea5688006c0f515fe1078f3150590e650baf6fcf49a2ff0f63b5981580cf3bb7",
+      "tags": [
+        "icon",
+        "ui"
+      ],
+      "license": "Project-original artwork for Phantom Portals. Owner-controlled; all rights reserved by the project owner."
+    },
+    {
+      "id": "PP-ICON-011",
+      "path": "30_ASSETS/icons/ui/forward.svg",
+      "title": "Icon — forward",
+      "status": "CURRENT",
+      "kind": "vector",
+      "format": "svg",
+      "dimensions": "24x24",
+      "bytes": 453,
+      "sha256": "273ed84e5b7552b114bee3f9d9f53d124bdf14755752fb1c585629bd3cf27feb",
+      "tags": [
+        "icon",
+        "ui"
+      ],
+      "license": "Project-original artwork for Phantom Portals. Owner-controlled; all rights reserved by the project owner."
+    },
+    {
+      "id": "PP-ICON-012",
+      "path": "30_ASSETS/icons/ui/home-portal.svg",
+      "title": "Icon — home-portal",
+      "status": "CURRENT",
+      "kind": "vector",
+      "format": "svg",
+      "dimensions": "24x24",
+      "bytes": 604,
+      "sha256": "8335131f9dc3644c09b2976f400d5632039470b9c195682bdd4ebe35672643af",
+      "tags": [
+        "icon",
+        "ui"
+      ],
+      "license": "Project-original artwork for Phantom Portals. Owner-controlled; all rights reserved by the project owner."
+    },
+    {
+      "id": "PP-ICON-013",
+      "path": "30_ASSETS/icons/ui/network.svg",
+      "title": "Icon — network",
+      "status": "CURRENT",
+      "kind": "vector",
+      "format": "svg",
+      "dimensions": "24x24",
+      "bytes": 740,
+      "sha256": "b63294f755da1623475e4c001f1ed6c202a745c5e3a82bbe7ef22c43d51d126c",
+      "tags": [
+        "icon",
+        "ui"
+      ],
+      "license": "Project-original artwork for Phantom Portals. Owner-controlled; all rights reserved by the project owner."
+    },
+    {
+      "id": "PP-ICON-014",
+      "path": "30_ASSETS/icons/ui/power.svg",
+      "title": "Icon — power",
+      "status": "CURRENT",
+      "kind": "vector",
+      "format": "svg",
+      "dimensions": "24x24",
+      "bytes": 458,
+      "sha256": "8b4bfda725ce19ac55d8f894fb8cab9c5cd0464adfd29ca7a9c709eff144de92",
+      "tags": [
+        "icon",
+        "ui"
+      ],
+      "license": "Project-original artwork for Phantom Portals. Owner-controlled; all rights reserved by the project owner."
+    },
+    {
+      "id": "PP-ICON-015",
+      "path": "30_ASSETS/icons/ui/reload.svg",
+      "title": "Icon — reload",
+      "status": "CURRENT",
+      "kind": "vector",
+      "format": "svg",
+      "dimensions": "24x24",
+      "bytes": 461,
+      "sha256": "7e3b4e826eddbf5c15663361edf9741e629ad8d91507dace384493d8a922e58e",
+      "tags": [
+        "icon",
+        "ui"
+      ],
+      "license": "Project-original artwork for Phantom Portals. Owner-controlled; all rights reserved by the project owner."
+    },
+    {
+      "id": "PP-ICON-016",
+      "path": "30_ASSETS/icons/ui/search.svg",
+      "title": "Icon — search",
+      "status": "CURRENT",
+      "kind": "vector",
+      "format": "svg",
+      "dimensions": "24x24",
+      "bytes": 638,
+      "sha256": "97014391b488d0571e850ec2dd5d2f80a85a58d458d49640b8b0f69844303b78",
+      "tags": [
+        "icon",
+        "ui"
+      ],
+      "license": "Project-original artwork for Phantom Portals. Owner-controlled; all rights reserved by the project owner."
+    },
+    {
+      "id": "PP-ICON-017",
+      "path": "30_ASSETS/icons/ui/settings.svg",
+      "title": "Icon — settings",
+      "status": "CURRENT",
+      "kind": "vector",
+      "format": "svg",
+      "dimensions": "24x24",
+      "bytes": 740,
+      "sha256": "2177cbca6e713f071f24e20d3490348732d032d4e8c98f11666b0931e40288a6",
+      "tags": [
+        "icon",
+        "ui"
+      ],
+      "license": "Project-original artwork for Phantom Portals. Owner-controlled; all rights reserved by the project owner."
+    },
+    {
+      "id": "PP-ICON-018",
+      "path": "30_ASSETS/icons/ui/shield.svg",
+      "title": "Icon — shield",
+      "status": "CURRENT",
+      "kind": "vector",
+      "format": "svg",
+      "dimensions": "24x24",
+      "bytes": 515,
+      "sha256": "a289518ebd22681c065bf7b09c11e0c938594f7d68c552e984fa4aff9c39aa74",
+      "tags": [
+        "icon",
+        "ui"
+      ],
+      "license": "Project-original artwork for Phantom Portals. Owner-controlled; all rights reserved by the project owner."
+    },
+    {
+      "id": "PP-ICON-019",
+      "path": "30_ASSETS/icons/ui/terminal.svg",
+      "title": "Icon — terminal",
+      "status": "CURRENT",
+      "kind": "vector",
+      "format": "svg",
+      "dimensions": "24x24",
+      "bytes": 763,
+      "sha256": "a067d996164aebfa8a1f51bcbee3ade41d6207a9dca7416171aab754628d00a9",
+      "tags": [
+        "icon",
+        "ui"
+      ],
+      "license": "Project-original artwork for Phantom Portals. Owner-controlled; all rights reserved by the project owner."
+    },
+    {
+      "id": "PP-ICON-020",
+      "path": "30_ASSETS/icons/ui/tools.svg",
+      "title": "Icon — tools",
+      "status": "CURRENT",
+      "kind": "vector",
+      "format": "svg",
+      "dimensions": "24x24",
+      "bytes": 839,
+      "sha256": "19e36d292830ea8fe4d79c3181962d078de3d71bff2cd9a5453d4c1804a12a7e",
+      "tags": [
+        "icon",
+        "ui"
+      ],
+      "license": "Project-original artwork for Phantom Portals. Owner-controlled; all rights reserved by the project owner."
+    },
+    {
+      "id": "PP-VEC-001",
+      "path": "30_ASSETS/textures/brush-strokes/brush-slash.svg",
+      "title": "Brush slash (crimson dry-brush cut)",
+      "status": "CURRENT",
+      "kind": "vector",
+      "format": "svg",
+      "dimensions": "820x540",
+      "bytes": 800772,
+      "sha256": "bf27cc0f4f59de513bd3bc1e3ac1d56bda6f62283653611fac63d33edecf96e8",
+      "tags": [
+        "trash-polka",
+        "crimson",
+        "ink-protocol"
+      ],
+      "license": "Project-original artwork for Phantom Portals. Owner-controlled; all rights reserved by the project owner."
+    },
+    {
+      "id": "PP-VEC-002",
+      "path": "30_ASSETS/textures/brush-strokes/brush-stroke.svg",
+      "title": "Brush stroke (ink swash)",
+      "status": "CURRENT",
+      "kind": "vector",
+      "format": "svg",
+      "dimensions": "900x220",
+      "bytes": 560233,
+      "sha256": "389b6c2525350d9c78530752adeb119677d5e00adca1e6a4edc7c57aa690fdb2",
+      "tags": [
+        "trash-polka",
+        "ink",
+        "ink-protocol"
+      ],
+      "license": "Project-original artwork for Phantom Portals. Owner-controlled; all rights reserved by the project owner."
+    },
+    {
+      "id": "PP-VEC-003",
+      "path": "30_ASSETS/textures/brush-strokes/brush-x.svg",
+      "title": "Brush X (crimson cross)",
+      "status": "CURRENT",
+      "kind": "vector",
+      "format": "svg",
+      "dimensions": "620x620",
+      "bytes": 659832,
+      "sha256": "1ef6b4356ecf98e0c0fa3a6363896996be87965914536a35ebd9d84e5f3149f9",
+      "tags": [
+        "trash-polka",
+        "crimson",
+        "ink-protocol"
+      ],
+      "license": "Project-original artwork for Phantom Portals. Owner-controlled; all rights reserved by the project owner."
+    },
+    {
+      "id": "PP-VEC-005",
+      "path": "30_ASSETS/textures/brush-strokes/engraved-hatch.svg",
+      "title": "Engraved hatch (cross-hatched disc)",
+      "status": "CURRENT",
+      "kind": "vector",
+      "format": "svg",
+      "dimensions": "520x520",
+      "bytes": 79640,
+      "sha256": "7a76a1a7540b994b197dc941a3644d32209e59d2f5f9194eee4bd03f4749d832",
+      "tags": [
+        "trash-polka",
+        "ink",
+        "engraving",
+        "ink-protocol"
+      ],
+      "license": "Project-original artwork for Phantom Portals. Owner-controlled; all rights reserved by the project owner."
+    },
+    {
+      "id": "PP-VEC-004",
+      "path": "30_ASSETS/textures/brush-strokes/enso-ring.svg",
+      "title": "Ensō ring (dry brush)",
+      "status": "CURRENT",
+      "kind": "vector",
+      "format": "svg",
+      "dimensions": "520x520",
+      "bytes": 614836,
+      "sha256": "29360bb597b3d5c39385958485338a1b2702b035dddee26b19214931927e59cd",
+      "tags": [
+        "trash-polka",
+        "ink",
+        "ink-protocol"
+      ],
+      "license": "Project-original artwork for Phantom Portals. Owner-controlled; all rights reserved by the project owner."
+    },
+    {
+      "id": "PP-VEC-010",
+      "path": "30_ASSETS/textures/halftone/halftone-disc.svg",
+      "title": "Halftone disc",
+      "status": "CURRENT",
+      "kind": "vector",
+      "format": "svg",
+      "dimensions": "440x440",
+      "bytes": 69235,
+      "sha256": "087f7a8eaef64f99c5553387b27ad8c372662b891425498922711efca6a2eacb",
+      "tags": [
+        "trash-polka",
+        "ink",
+        "ink-protocol"
+      ],
+      "license": "Project-original artwork for Phantom Portals. Owner-controlled; all rights reserved by the project owner."
+    },
+    {
+      "id": "PP-VEC-009",
+      "path": "30_ASSETS/textures/halftone/halftone-fade.svg",
+      "title": "Halftone fade (45° screen)",
+      "status": "CURRENT",
+      "kind": "vector",
+      "format": "svg",
+      "dimensions": "600x400",
+      "bytes": 79400,
+      "sha256": "8855a1dfe94fb771a5a55c2662103ebc36f7529e4cd2ffd9a30cf8e026dbdd2f",
+      "tags": [
+        "trash-polka",
+        "ink",
+        "ink-protocol"
+      ],
+      "license": "Project-original artwork for Phantom Portals. Owner-controlled; all rights reserved by the project owner."
+    },
+    {
+      "id": "PP-VEC-008",
+      "path": "30_ASSETS/textures/ink-splash/ink-drips.svg",
+      "title": "Ink drips",
+      "status": "CURRENT",
+      "kind": "vector",
+      "format": "svg",
+      "dimensions": "800x330",
+      "bytes": 305726,
+      "sha256": "8e81d3d53ef331d5f232bf01e77ee62a7cb5920532762733d3bf814ac90181c3",
+      "tags": [
+        "trash-polka",
+        "ink-protocol"
+      ],
+      "license": "Project-original artwork for Phantom Portals. Owner-controlled; all rights reserved by the project owner."
+    },
+    {
+      "id": "PP-VEC-007",
+      "path": "30_ASSETS/textures/ink-splash/splatter-crimson.svg",
+      "title": "Crimson splatter",
+      "status": "CURRENT",
+      "kind": "vector",
+      "format": "svg",
+      "dimensions": "520x520",
+      "bytes": 22929,
+      "sha256": "bf3bbe891f6f9e283a23487eb2ae7a5f9122eefa8a820433fbb26404ca23e2c0",
+      "tags": [
+        "trash-polka",
+        "crimson",
+        "ink-protocol"
+      ],
+      "license": "Project-original artwork for Phantom Portals. Owner-controlled; all rights reserved by the project owner."
+    },
+    {
+      "id": "PP-VEC-006",
+      "path": "30_ASSETS/textures/ink-splash/splatter-ink.svg",
+      "title": "Ink splatter",
+      "status": "CURRENT",
+      "kind": "vector",
+      "format": "svg",
+      "dimensions": "520x520",
+      "bytes": 22925,
+      "sha256": "e5a3d1fa76bede28ea2c487fc6d30da75f9c04ca120e05ccb8a212910de85ae9",
+      "tags": [
+        "trash-polka",
+        "ink",
+        "ink-protocol"
+      ],
+      "license": "Project-original artwork for Phantom Portals. Owner-controlled; all rights reserved by the project owner."
+    },
+    {
+      "id": "PP-VEC-011",
+      "path": "30_ASSETS/textures/torn-paper/torn-edge.svg",
+      "title": "Torn edge (ink over crimson)",
+      "status": "CURRENT",
+      "kind": "vector",
+      "format": "svg",
+      "dimensions": "800x200",
+      "bytes": 6404,
+      "sha256": "8b45672fd64a287eddfa973e3d014cf729169d3bc57ea323b153c34a31158bfa",
+      "tags": [
+        "trash-polka",
+        "divider",
+        "ink-protocol"
+      ],
+      "license": "Project-original artwork for Phantom Portals. Owner-controlled; all rights reserved by the project owner."
+    },
+    {
+      "id": "PP-TPL-002",
+      "path": "30_ASSETS/video/lower-thirds/lower-third-1920x1080.svg",
+      "title": "Lower third template 1920×1080 (transparent)",
+      "status": "CURRENT",
+      "kind": "template",
+      "format": "svg",
+      "dimensions": "1920x1080",
+      "bytes": 6006,
+      "sha256": "c2643023349fdd75f0bd5735044339028f92fa797c11f1fd41baa1020e709e79",
+      "tags": [
+        "video",
+        "lower-third",
+        "template"
+      ],
+      "license": "Project-original artwork for Phantom Portals. Owner-controlled; all rights reserved by the project owner."
+    },
+    {
+      "id": "PP-TPL-001",
+      "path": "30_ASSETS/video/yt-thumbnail-templates/youtube-thumbnail-1280x720.svg",
+      "title": "YouTube thumbnail template 1280×720",
+      "status": "CURRENT",
+      "kind": "template",
+      "format": "svg",
+      "dimensions": "1280x720",
+      "bytes": 34960,
+      "sha256": "c94ffe064f750831e508c17f64f759bfae27a862ae3d55320d1d9064c21c633b",
+      "tags": [
+        "youtube",
+        "thumbnail",
+        "template"
+      ],
+      "license": "Project-original artwork for Phantom Portals. Owner-controlled; all rights reserved by the project owner."
+    }
+  ]
+}

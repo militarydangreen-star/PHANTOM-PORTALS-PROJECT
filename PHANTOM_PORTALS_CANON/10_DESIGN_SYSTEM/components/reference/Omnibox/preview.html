@@ -1,0 +1,13 @@
+<!-- @dsCard group="Inputs" height=156 subtitle="Universal search and command field" -->
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><style>html,body{margin:0;background:var(--surface-canvas)}.row{display:flex;flex-wrap:wrap;gap:12px;align-items:center}.stack{display:grid;gap:16px}</style></head>
+<body><div id="root" class="pp" style="padding:24px;background:var(--surface-canvas)"></div>
+<script>
+var P = window.PhantomPortals, h = React.createElement, F = React.Fragment;
+ReactDOM.createRoot(document.getElementById("root")).render(
+h('div', {className:'stack', style:{maxWidth:640}},
+  h(P.Omnibox, {placeholder:'Search tools, docs, machines — or type > for commands', shortcut:'CTRL K'}),
+  h(P.Omnibox, {icon:'terminal', label:'Command', defaultValue:'> repair-winsock --adapter Ethernet0', shortcut:'ENTER'}))
+);
+</script>
+</body></html>

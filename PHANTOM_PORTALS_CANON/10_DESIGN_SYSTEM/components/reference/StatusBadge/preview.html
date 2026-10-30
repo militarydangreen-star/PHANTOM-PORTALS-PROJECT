@@ -1,0 +1,13 @@
+<!-- @dsCard group="Feedback" height=80 subtitle="Status by shape and word" -->
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><style>html,body{margin:0;background:var(--surface-canvas)}.row{display:flex;flex-wrap:wrap;gap:12px;align-items:center}.stack{display:grid;gap:16px}</style></head>
+<body><div id="root" class="pp" style="padding:24px;background:var(--surface-canvas)"></div>
+<script>
+var P = window.PhantomPortals, h = React.createElement, F = React.Fragment;
+ReactDOM.createRoot(document.getElementById("root")).render(
+h('div', {className:'row'},
+  h(P.StatusBadge, {status:'ok'}, 'Verified'), h(P.StatusBadge, {status:'warn'}, 'Degraded'), h(P.StatusBadge, {status:'error'}, 'Failed'),
+  h(P.StatusBadge, {status:'run'}, 'Running'), h(P.StatusBadge, null, 'Idle'))
+);
+</script>
+</body></html>

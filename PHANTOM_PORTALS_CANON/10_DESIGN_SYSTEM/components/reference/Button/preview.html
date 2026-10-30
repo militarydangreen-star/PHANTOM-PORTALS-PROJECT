@@ -1,0 +1,21 @@
+<!-- @dsCard group="Actions" height=150 subtitle="Primary crimson, secondary black, ghost, loading, disabled" -->
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><style>html,body{margin:0;background:var(--surface-canvas)}.row{display:flex;flex-wrap:wrap;gap:12px;align-items:center}.stack{display:grid;gap:16px}</style></head>
+<body><div id="root" class="pp" style="padding:24px;background:var(--surface-canvas)"></div>
+<script>
+var P = window.PhantomPortals, h = React.createElement, F = React.Fragment;
+ReactDOM.createRoot(document.getElementById("root")).render(
+h('div', {className:'stack'},
+  h('div', {className:'row'},
+    h(P.Button, {variant:'primary', size:'lg', icon:'diagnostics'}, 'Run Diagnostics'),
+    h(P.Button, {variant:'secondary', icon:'terminal'}, 'Open Terminal'),
+    h(P.Button, {variant:'ghost'}, 'Export Report')),
+  h('div', {className:'row'},
+    h(P.Button, {variant:'primary', loading:true}, 'Scanning…'),
+    h(P.Button, {disabled:true}, 'Unavailable'),
+    h(P.IconButton, {icon:'reload', label:'Reload'}),
+    h(P.IconButton, {icon:'bookmark', label:'Bookmark', pressed:true}),
+    h(P.IconButton, {icon:'settings', label:'Settings'})))
+);
+</script>
+</body></html>

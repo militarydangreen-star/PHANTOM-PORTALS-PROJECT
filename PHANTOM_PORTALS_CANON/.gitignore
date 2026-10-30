@@ -1,0 +1,19 @@
+# Tooling
+80_TOOLS/node_modules/
+__pycache__/
+*.pyc
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+*.swp
+.vscode/
+.idea/
+
+# Test scratch output (run.sh also deletes these on exit)
+80_TOOLS/tests/*/out.css
+80_TOOLS/tests/*/result.txt
+80_TOOLS/tests/*/proof.png
+80_TOOLS/tests/*/fonts/
+80_TOOLS/tests/*/globals.css
+80_TOOLS/tests/*/phantom-fonts.css

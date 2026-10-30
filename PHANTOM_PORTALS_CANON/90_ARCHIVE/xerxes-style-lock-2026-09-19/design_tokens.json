@@ -1,0 +1,68 @@
+{
+  "color": {
+    "obsidian_black": "#050607",
+    "graphite": "#1A1A1A",
+    "sovereign_gold": "#D4AF37",
+    "phantom_purple": "#8B5CF6",
+    "platinum_white": "#F5F5F5"
+  },
+  "spacing": {
+    "1": 4,
+    "2": 8,
+    "3": 12,
+    "4": 16,
+    "5": 20,
+    "6": 24,
+    "8": 32,
+    "10": 40,
+    "12": 48
+  },
+  "radius": {
+    "sm": 4,
+    "md": 8,
+    "lg": 12
+  },
+  "border": {
+    "hairline": 1,
+    "standard": 1,
+    "heavy": 2
+  },
+  "shadow": {
+    "panel": "0 10px 40px rgba(0,0,0,.45)",
+    "active_gold": "0 0 22px rgba(212,175,55,.35)",
+    "active_purple": "0 0 22px rgba(139,92,246,.38)"
+  },
+  "type": {
+    "display": {
+      "size": "clamp(32px,4vw,64px)",
+      "weight": 800,
+      "tracking": "-0.02em"
+    },
+    "h1": {
+      "size": "32px",
+      "weight": 750
+    },
+    "h2": {
+      "size": "22px",
+      "weight": 700
+    },
+    "h3": {
+      "size": "16px",
+      "weight": 700
+    },
+    "body": {
+      "size": "14px",
+      "weight": 450,
+      "lineHeight": 1.5
+    },
+    "small": {
+      "size": "12px",
+      "weight": 500,
+      "lineHeight": 1.4
+    },
+    "mono": {
+      "size": "12px",
+      "weight": 450
+    }
+  }
+}

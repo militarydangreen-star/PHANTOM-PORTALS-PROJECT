@@ -1,0 +1,11 @@
+<!-- @dsCard group="Inputs" height=96 subtitle="In-page section tabs" -->
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><style>html,body{margin:0;background:var(--surface-canvas)}.row{display:flex;flex-wrap:wrap;gap:12px;align-items:center}.stack{display:grid;gap:16px}</style></head>
+<body><div id="root" class="pp" style="padding:24px;background:var(--surface-canvas)"></div>
+<script>
+var P = window.PhantomPortals, h = React.createElement, F = React.Fragment;
+ReactDOM.createRoot(document.getElementById("root")).render(
+h(P.Tabs, {label:'Device sections', tabs:[{id:'o',label:'Overview'},{id:'h',label:'Hardware'},{id:'n',label:'Network'},{id:'e',label:'Event Log'}]})
+);
+</script>
+</body></html>

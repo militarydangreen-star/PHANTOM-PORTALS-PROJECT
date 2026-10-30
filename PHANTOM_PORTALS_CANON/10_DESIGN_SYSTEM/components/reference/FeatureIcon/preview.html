@@ -1,0 +1,11 @@
+<!-- @dsCard group="Actions" height=246 subtitle="All 20 Trash Polka feature badges" -->
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><style>html,body{margin:0;background:var(--surface-canvas)}.row{display:flex;flex-wrap:wrap;gap:12px;align-items:center}.stack{display:grid;gap:16px}</style></head>
+<body><div id="root" class="pp" style="padding:24px;background:var(--surface-canvas)"></div>
+<script>
+var P = window.PhantomPortals, h = React.createElement, F = React.Fragment;
+ReactDOM.createRoot(document.getElementById("root")).render(
+h('div', {style:{display:'grid', gridTemplateColumns:'repeat(10, 1fr)', gap:12}}, Object.keys(P.featureIconUrls).map(function(n){ return h('div', {key:n, style:{textAlign:'center', font:'500 11px/16px var(--font-mono)', color:'var(--ink-secondary)'}}, h(P.FeatureIcon, {name:n, size:80}), n) }))
+);
+</script>
+</body></html>

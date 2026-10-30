@@ -1,0 +1,31 @@
+{
+  "id": "PP-REF-SRC-002",
+  "file": "imgres-(2).htm",
+  "title": "Google Images result page \u2192 www.istockphoto.com",
+  "status": "REFERENCE",
+  "canon_version": "1.0.0",
+  "kind": "reference",
+  "format": "htm",
+  "dimensions": null,
+  "bytes": 231992,
+  "sha256": "20bb7350af8744f6b707a65d287047a55f41e64e4086c49d8d189c4423727aa7",
+  "usage": "Provenance only: records where a moodboard image was found. Open SOURCES.md instead of this file.",
+  "rules": [
+    "THIRD-PARTY: the linked image belongs to its creator / stock agency. Never ship or trace it."
+  ],
+  "tags": [
+    "reference",
+    "third-party",
+    "provenance"
+  ],
+  "license": "Third-party page saved for provenance; no rights granted.",
+  "source": {
+    "site": "www.istockphoto.com",
+    "image_url": "https://media.istockphoto.com/id/1403400653/vector/black-and-red-grunge-designs.jpg?s=612x612&w=0&k=20&c=luTbU-YG5Fd3V1zQpO-zo0WV2NTrXjW9gc7GZnPu_Dc=",
+    "original_name": "imgres (2).htm",
+    "system": "Phantom Portals design system (White / Crimson / Black)",
+    "artifact": "https://claude.ai/artifact/HG2ihDf5JsALbo4fxCXcmV",
+    "path": "assets/INSPIRATION/imgres (2).htm",
+    "fetched": "2026-10-29"
+  }
+}

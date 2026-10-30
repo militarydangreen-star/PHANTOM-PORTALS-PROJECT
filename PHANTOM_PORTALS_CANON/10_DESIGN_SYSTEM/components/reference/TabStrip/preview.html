@@ -1,0 +1,17 @@
+<!-- @dsCard group="Browser Shell" height=64 subtitle="Chromium-style tab strip" -->
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><style>html,body{margin:0;background:var(--surface-canvas)}.row{display:flex;flex-wrap:wrap;gap:12px;align-items:center}.stack{display:grid;gap:16px}</style></head>
+<body><div id="root" class="pp" style="padding:0 0 24px;background:var(--surface-canvas)"></div>
+<script>
+var P = window.PhantomPortals, h = React.createElement, F = React.Fragment;
+ReactDOM.createRoot(document.getElementById("root")).render(
+h(function Demo(){
+  var s = React.useState([{id:'cc',title:'Command Center',icon:'home-portal'},{id:'dx',title:'Diagnostics — LAB-PC-07',icon:'diagnostics'},{id:'lib',title:'Resource Library',icon:'folder'}]);
+  var a = React.useState('cc');
+  return h(P.TabStrip, {tabs:s[0], activeId:a[0], onSelect:a[1],
+    onClose:function(id){ s[1](s[0].filter(function(t){return t.id!==id})) },
+    onNew:function(){ var id='t'+Date.now(); s[1](s[0].concat([{id:id,title:'New Tab',icon:'home-portal'}])); a[1](id) }});
+})
+);
+</script>
+</body></html>

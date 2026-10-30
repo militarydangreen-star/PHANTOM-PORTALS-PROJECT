@@ -1,0 +1,60 @@
+{
+  "name": "Phantom Portals / XerXes Visual System",
+  "version": "1.0",
+  "status": "STYLE LOCK \u2014 use as implementation source of truth",
+  "palette": {
+    "obsidian_black": "#050607",
+    "graphite": "#1A1A1A",
+    "sovereign_gold": "#D4AF37",
+    "phantom_purple": "#8B5CF6",
+    "platinum_white": "#F5F5F5"
+  },
+  "palette_rule": "Use only these five core colors. Create hierarchy with opacity, brightness, borders, gradients between core colors, and neutral transparency\u2014not new accent hues.",
+  "typography": {
+    "display_heading": [
+      "Montserrat",
+      "Segoe UI",
+      "Arial",
+      "sans-serif"
+    ],
+    "ui_body": [
+      "Inter",
+      "Segoe UI",
+      "Arial",
+      "sans-serif"
+    ],
+    "data_mono": [
+      "JetBrains Mono",
+      "Cascadia Mono",
+      "Consolas",
+      "monospace"
+    ],
+    "font_binary_note": "Font binaries are intentionally not bundled. Antigravity may use locally installed/open-source fonts during development or fall back to the provided system stacks."
+  },
+  "visual_identity": {
+    "overall": "Ultra-crisp technical, cinematic tactical, premium, highly readable",
+    "dominant_identity": "Detailed Phantom emblem",
+    "phantom_usage": "Rare hero imagery; emblem/glyph is common, full character is reserved for landing/hero/portal moments",
+    "icon_style": "Sharp outline, geometric, consistent stroke",
+    "panel_material": "Layered composite: near-black + graphite + metallic gold frame + controlled purple energy",
+    "panel_geometry": "Mixed by importance; heavy tactical frame on hero/critical panels, restrained precision frame on utility panels",
+    "glow": "Strong neon only on active/selected/hero states; normal states remain crisp and controlled",
+    "background": "Subtle circuitry/grid, dark and low contrast",
+    "selection": "Glow plus illuminated edge",
+    "telemetry": "Cinematic tactical but readable; data first, effects second",
+    "motion": "Balanced; short feedback motion for normal navigation, cinematic motion reserved for major transitions",
+    "layout": "Hybrid system: shared shell with flexible module-specific workspace",
+    "quotes": "Maximum one quote/tagline, only in a bottom corner or footer; never repeat quotes across the interface."
+  },
+  "content_rules": [
+    "Never use decorative typography for body copy.",
+    "Avoid letterspacing on paragraphs and small labels.",
+    "Use all-caps sparingly for small UI labels only.",
+    "Keep body copy bright enough for immediate reading.",
+    "Do not let glow reduce text sharpness.",
+    "Do not turn every border into a neon element.",
+    "Do not invent extra operator colors beyond the five-color system.",
+    "Do not place large Phantom character art behind dense data panels.",
+    "Keep controls and information hierarchy more important than decoration."
+  ]
+}

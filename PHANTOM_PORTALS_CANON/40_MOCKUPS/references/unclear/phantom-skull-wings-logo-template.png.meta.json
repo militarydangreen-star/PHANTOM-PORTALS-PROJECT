@@ -1,0 +1,31 @@
+{
+  "id": "PP-UNC-001",
+  "file": "phantom-skull-wings-logo-template.png",
+  "title": "Skull-and-wings \"PHANTOM / TAGLINE\" logo",
+  "status": "UNCLEAR",
+  "canon_version": "1.0.0",
+  "kind": "reference",
+  "format": "png",
+  "dimensions": "2000x2000",
+  "bytes": 302113,
+  "sha256": "b69473ff0e298dd47b7fa2d2339ef585fd869e7c1bd101fcbd995c4df4957b24",
+  "usage": "Do not use until the owner confirms origin and intent.",
+  "rules": [
+    "Not canon. Not for shipping."
+  ],
+  "tags": [
+    "unclear",
+    "logo"
+  ],
+  "license": "Unknown — treat as third-party until confirmed.",
+  "source": {
+    "system": "Phantom Portals design system (White / Crimson / Black)",
+    "artifact": "https://claude.ai/artifact/HG2ihDf5JsALbo4fxCXcmV",
+    "version": "1793296345-e7e7",
+    "path": "assets/essential assets/file.png",
+    "asset_id": "8d6c3f9a994ad3922d466505ae69240e",
+    "fetched": "2026-10-29",
+    "original_name": "file.png"
+  },
+  "notes": "Appears to be a stock logo template (placeholder TAGLINE text, orange-red palette). Not canon."
+}

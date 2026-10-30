@@ -1,0 +1,13 @@
+<!-- @dsCard group="Feedback" height=140 subtitle="Determinate and scanning progress" -->
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><style>html,body{margin:0;background:var(--surface-canvas)}.row{display:flex;flex-wrap:wrap;gap:12px;align-items:center}.stack{display:grid;gap:16px}</style></head>
+<body><div id="root" class="pp" style="padding:24px;background:var(--surface-canvas)"></div>
+<script>
+var P = window.PhantomPortals, h = React.createElement, F = React.Fragment;
+ReactDOM.createRoot(document.getElementById("root")).render(
+h('div', {className:'stack', style:{maxWidth:480}},
+  h(P.Progress, {label:'Imaging drive', value:62, detail:'62% · 4 MIN LEFT'}),
+  h(P.Progress, {label:'Scanning registry'}))
+);
+</script>
+</body></html>

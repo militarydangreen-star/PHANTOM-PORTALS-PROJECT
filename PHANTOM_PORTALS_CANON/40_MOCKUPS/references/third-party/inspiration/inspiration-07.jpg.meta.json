@@ -1,0 +1,32 @@
+{
+  "id": "PP-REF-007",
+  "file": "inspiration-07.jpg",
+  "title": "Trash Polka reference (images (6).jpg)",
+  "status": "REFERENCE",
+  "canon_version": "1.0.0",
+  "kind": "reference",
+  "format": "jpg",
+  "dimensions": "700x438",
+  "bytes": 39119,
+  "sha256": "475aad669f878117ac37fe24223583b3787545eafe1475eedcc59adcb424d6b7",
+  "usage": "Moodboard only — study composition, ratio of ink to crimson to paper, and mark-making.",
+  "rules": [
+    "THIRD-PARTY: never ship, trace, sample or train on this image.",
+    "Rights belong to the original artist or stock agency."
+  ],
+  "tags": [
+    "reference",
+    "third-party",
+    "trash-polka"
+  ],
+  "license": "Third-party. Reference only; all rights belong to the original creator.",
+  "source": {
+    "system": "Phantom Portals design system (White / Crimson / Black)",
+    "artifact": "https://claude.ai/artifact/HG2ihDf5JsALbo4fxCXcmV",
+    "version": "1793296345-e7e7",
+    "path": "assets/INSPIRATION/images (6).jpg",
+    "asset_id": "9ba4e853bc0281d6900c92f66ce16cbe",
+    "fetched": "2026-10-29",
+    "original_name": "images (6).jpg"
+  }
+}

@@ -1,0 +1,14 @@
+<!-- @dsCard group="Command Center" height=230 subtitle="Collapsible command module" -->
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><style>html,body{margin:0;background:var(--surface-canvas)}.row{display:flex;flex-wrap:wrap;gap:12px;align-items:center}.stack{display:grid;gap:16px}</style></head>
+<body><div id="root" class="pp" style="padding:24px;background:var(--surface-canvas)"></div>
+<script>
+var P = window.PhantomPortals, h = React.createElement, F = React.Fragment;
+ReactDOM.createRoot(document.getElementById("root")).render(
+h('div', {className:'stack', style:{maxWidth:560}},
+  h(P.CommandModule, {moduleId:'MOD-04', title:'Recovery Toolkit', defaultOpen:true},
+    h('p', {style:{margin:0, font:'400 14px/22px var(--font-sans)', color:'var(--ink-secondary)'}}, 'Restore points, offline registry repair and boot-record rebuild. Requires WinPE.')),
+  h(P.CommandModule, {moduleId:'MOD-05', title:'Imaging & Deployment'}, '…'))
+);
+</script>
+</body></html>

@@ -1,0 +1,18 @@
+<!-- @dsCard group="Feedback" height=308 subtitle="Toast notifications" -->
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><style>html,body{margin:0;background:var(--surface-canvas)}.row{display:flex;flex-wrap:wrap;gap:12px;align-items:center}.stack{display:grid;gap:16px}</style></head>
+<body><div id="root" class="pp" style="padding:24px;background:var(--surface-canvas)"></div>
+<script>
+var P = window.PhantomPortals, h = React.createElement, F = React.Fragment;
+ReactDOM.createRoot(document.getElementById("root")).render(
+h(function Demo(){
+  var s = React.useState(['ok','error','info']);
+  var d = function(k){ return function(){ s[1](s[0].filter(function(x){return x!==k})) } };
+  return h('div', {className:'stack'},
+    s[0].indexOf('ok')>=0 && h(P.Notification, {tone:'ok', title:'Restore point created', onDismiss:d('ok')}, 'LAB-PC-07 · 12:44'),
+    s[0].indexOf('error')>=0 && h(P.Notification, {tone:'error', title:'Driver rollback failed', onDismiss:d('error')}, 'Access denied. Run as administrator.'),
+    s[0].indexOf('info')>=0 && h(P.Notification, {title:'Working offline', icon:'cloud', onDismiss:d('info')}, 'Cloud sync resumes when a network is found.'));
+})
+);
+</script>
+</body></html>

@@ -1,0 +1,29 @@
+{
+  "id": "PP-TPL-002",
+  "file": "lower-third-1920x1080.svg",
+  "title": "Lower third template 1920×1080 (transparent)",
+  "status": "CURRENT",
+  "canon_version": "1.0.0",
+  "kind": "template",
+  "format": "svg",
+  "dimensions": "1920x1080",
+  "bytes": 6006,
+  "sha256": "c2643023349fdd75f0bd5735044339028f92fa797c11f1fd41baa1020e709e79",
+  "usage": "Name/role strap for video. Transparent background; import into the editor as a still or rebuild as a title template. Motion in 30_ASSETS/video/lower-thirds/README.md.",
+  "rules": [
+    "Stays inside 5 % title-safe.",
+    "Crimson only on the spine — never crimson text on black.",
+    "On screen ≥ 4 s; in/out under 400 ms; no motion with reduced-motion exports."
+  ],
+  "tags": [
+    "video",
+    "lower-third",
+    "template"
+  ],
+  "license": "Project-original artwork for Phantom Portals. Owner-controlled; all rights reserved by the project owner.",
+  "source": {
+    "origin": "Drawn for the canon on 2026-10-29 by 80_TOOLS/generators/make-media-templates.py (native SVG art; wordmark linked from 30_ASSETS/brand)",
+    "author": "Claude Code for the project owner",
+    "date": "2026-10-29"
+  }
+}

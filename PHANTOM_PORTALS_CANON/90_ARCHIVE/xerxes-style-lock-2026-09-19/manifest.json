@@ -1,0 +1,38 @@
+{
+  "manifestVersion": 3,
+  "name": "Design System",
+  "namespace": null,
+  "files": [
+    "assets/TOKENS/STYLE_LOCK.json",
+    "assets/TOKENS/design_tokens.json",
+    "assets/TOKENS/tokens.css"
+  ],
+  "libraries": [],
+  "components": [],
+  "assetGroups": [
+    {
+      "name": "TOKENS",
+      "files": [
+        {
+          "path": "assets/TOKENS/palette_reference.png",
+          "id": "bc934f10c55fbb1ff59850c058a5a6cf"
+        }
+      ]
+    }
+  ],
+  "storage": {
+    "files": {
+      "assets/TOKENS/palette_reference.png": {
+        "store": "blob",
+        "id": "bc934f10c55fbb1ff59850c058a5a6cf",
+        "sha256": "c222aa473fc5e1ef88f1d80d2cdfddc6864776f90002ef3b24a804fb28558814",
+        "bytes": 10143,
+        "type": "image/png",
+        "name": "palette_reference.png",
+        "addedAt": "2026-09-19T01:50:30.789Z",
+        "via": "page"
+      }
+    },
+    "blobBytesUsed": 10143
+  }
+}

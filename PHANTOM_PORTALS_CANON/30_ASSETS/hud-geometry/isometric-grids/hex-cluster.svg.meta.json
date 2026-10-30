@@ -1,0 +1,32 @@
+{
+  "id": "PP-VEC-014",
+  "file": "hex-cluster.svg",
+  "title": "Hex cluster",
+  "status": "CURRENT",
+  "canon_version": "1.0.0",
+  "kind": "vector",
+  "format": "svg",
+  "dimensions": "320x260",
+  "bytes": 1539,
+  "sha256": "b1440c90999542cc74e732f7e736e688099442ce9aaccdf5a45bb33b7640cf5d",
+  "usage": "Hero artwork, page-header edges, empty states, section dividers and transitions.",
+  "rules": [
+    "At most three vectors per composition, one of them crimson.",
+    "Pair every Trash Polka mark with a precision mark (brush cut + iso grid, splatter + reticle).",
+    "Never behind controls, tables, search results, terminal output or body text."
+  ],
+  "tags": [
+    "isometric",
+    "precision",
+    "ink-protocol"
+  ],
+  "license": "Project-original artwork for Phantom Portals. Owner-controlled; all rights reserved by the project owner.",
+  "source": {
+    "system": "Phantom Portals design system (White / Crimson / Black)",
+    "artifact": "https://claude.ai/artifact/HG2ihDf5JsALbo4fxCXcmV",
+    "version": "1793296345-e7e7",
+    "path": "assets/Vectors/hex-cluster.svg",
+    "asset_id": "ea0c0d1b7496af66204a786941877920",
+    "fetched": "2026-10-29"
+  }
+}

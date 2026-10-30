@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Phantom Portals · Starter</title>
+<!--
+  Phantom Portals HTML/CSS starter (canon 1.0.0). Works opened straight from disk, no network.
+  Copy this folder next to your screen, or keep it here and change CANON below.
+  Every path to the canon starts with ../../ — to move the starter, search-and-replace that prefix.
+-->
+<link rel="icon" href="../../30_ASSETS/brand/logo/phantom-monogram.svg">
+<link rel="stylesheet" href="../../10_DESIGN_SYSTEM/tokens/build/index.css">
+<link rel="stylesheet" href="../../10_DESIGN_SYSTEM/components/library/bundle.css">
+<style>
+  html, body { margin: 0; height: 100%; background: var(--surface-canvas); color: var(--ink-primary); }
+  body { font-family: var(--font-sans); }
+  .app { display: grid; grid-template-rows: auto auto auto 1fr; grid-template-columns: minmax(0, 1fr); height: 100vh; height: 100dvh; }
+  .app > * { min-width: 0; }  /* without this the implicit column grows to the tab strip's content on phones */
+  .omnirow { display: flex; align-items: center; gap: var(--space-8); padding: 0 var(--space-8); min-height: var(--omnibox-height);
+             background: var(--surface-primary); border-bottom: 1px solid var(--border-default); }
+  .omnirow > :last-child { flex: 1; min-width: 0; }
+  .body { display: grid; grid-template-columns: var(--rail-width) minmax(0, 1fr); min-height: 0; }
+  .work { overflow: auto; padding: var(--space-32); display: grid; gap: var(--space-24); align-content: start;
+          grid-auto-rows: max-content; /* a scroll container: without this, rows shrink and clip the hero */ }
+  .work > * { min-width: 0; }
+  .tiles { display: grid; gap: var(--space-16); grid-template-columns: repeat(auto-fill, minmax(min(260px, 100%), 1fr)); }
+  .sample { font: var(--text-mono-label); color: var(--ink-secondary); }
+
+  /* Responsive interim (10_DESIGN_SYSTEM/components/BACKLOG.md "Known gaps"): the library ships no breakpoint CSS yet.
+     Below 768 px the rail hides (BottomDock is in the backlog), tabs scroll, the hero drops to the emblem. */
+  @media (max-width: 767px) {
+    .body { grid-template-columns: minmax(0, 1fr); }
+    .body > nav { display: none; }
+    .work { padding: var(--space-16); }
+    .pp-tabstrip { overflow-x: auto; scrollbar-width: none; }
+    .pp-hero { min-height: 0; padding: var(--space-16); }
+    .pp-hero h1 { font: var(--text-h1); }
+    .pp-hero__art { width: 120px !important; height: 120px !important; top: var(--space-8) !important; right: var(--space-8) !important; transform: none !important; }
+    .pp-hero__copy { max-width: none; padding: var(--space-16); }  /* glass plate over the art keeps the copy readable */
+  }
+</style>
+<script src="../../10_DESIGN_SYSTEM/iconography/icons.data.js"></script>
+<script src="../../10_DESIGN_SYSTEM/components/library/lib/react.production.min.js"></script>
+<script src="../../10_DESIGN_SYSTEM/components/library/lib/react-dom.production.min.js"></script>
+<script src="../../10_DESIGN_SYSTEM/components/library/bundle.js"></script>
+</head>
+<body>
+<div id="root"></div>
+<noscript>Phantom Portals needs JavaScript to render its components.</noscript>
+<script>
+(function () {
+  var CANON = '../../';
+  var P = window.PhantomPortals, h = React.createElement;
+  var abs = function (p) { return new URL(CANON + p, location.href).href; };
+
+  // Offline wiring (ADR-0005). UI icons are CSS masks: a url() inside a custom property resolves against
+  // bundle.css, and browsers refuse mask images from file:// — so pass data URIs. Everything else: absolute URLs.
+  P.configureIcons(window.PhantomIconData);
+  P.configureFeatureIcons(function (n) { return abs('10_DESIGN_SYSTEM/iconography/icons/feature-svg/' + n + '.svg'); });
+  P.configureArt({
+    emblem: abs('30_ASSETS/brand/phantom-hero/phantom-emblem-512.png'),
+    slash: abs('30_ASSETS/textures/brush-strokes/brush-slash.svg'),
+    splatter: abs('30_ASSETS/textures/ink-splash/splatter-ink.svg'),
+    halftone: abs('30_ASSETS/textures/halftone/halftone-fade.svg')
+  });
+
+  function App() {
+    var view = React.useState('cc');
+    return h(P.PortalRoot, null,
+      h('div', { className: 'app' },
+        h(P.TabStrip, { tabs: [{ id: 'cc', title: 'Command Center', icon: 'home-portal' }], activeId: 'cc', onNew: function () {} }),
+        h('div', { className: 'omnirow' },
+          h(P.IconButton, { icon: 'back', label: 'Back', size: 'sm' }),
+          h(P.IconButton, { icon: 'forward', label: 'Forward', size: 'sm' }),
+          h(P.IconButton, { icon: 'reload', label: 'Reload', size: 'sm' }),
+          h(P.Omnibox, { label: 'Address and search', icon: 'home-portal', defaultValue: 'portal://command-center' })),
+        h(P.BookmarksBar, { items: [{ label: 'Diagnostics', href: '#', icon: 'diagnostics' }, { label: 'Terminal', href: '#', icon: 'terminal' }] }),
+        h('div', { className: 'body' },
+          h(P.UtilityRail, { activeId: view[0], onSelect: view[1], items: [
+            { id: 'cc', label: 'Command Center', icon: 'home-portal' }, { id: 'dg', label: 'Diagnostics', icon: 'diagnostics' },
+            { id: 'tm', label: 'Terminal', icon: 'terminal' }, 'separator', { id: 'st', label: 'Settings', icon: 'settings' }] }),
+          h('main', { className: 'work', id: 'main' },
+            // Replace from here down with your screen. One crimson primary action per screen.
+            h(P.PhantomHero, { eyebrow: 'OFFLINE-FIRST IT COMMAND CENTER', title: 'Your screen', accent: 'starts here',
+              description: 'Compose it from the component library and tokens. Art lives in the hero and empty states only.',
+              actions: h(P.Button, { variant: 'primary', size: 'lg', icon: 'diagnostics' }, 'Primary action') }),
+            h(P.Omnibox, { label: 'Ask Phantom or run a command', icon: 'ai-core', placeholder: 'Ask Phantom, or type > to run a command', shortcut: 'CTRL K' }),
+            h('div', { className: 'tiles' },
+              h(P.ToolTile, { icon: 'diagnostics', title: 'Module one', description: 'What this tool does, in one line.', meta: 'MOD-01', current: true }),
+              h(P.ToolTile, { icon: 'network', feature: true, title: 'Module two', description: 'What this tool does, in one line.', meta: 'MOD-02' })),
+            h('span', { className: 'sample' }, 'SAMPLE — the starter shows no real data. Wire your own source; never invent readings.')))));
+  }
+
+  ReactDOM.createRoot(document.getElementById('root')).render(h(App));
+})();
+</script>
+</body>
+</html>

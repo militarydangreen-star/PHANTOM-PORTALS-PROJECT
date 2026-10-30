@@ -1,0 +1,13 @@
+<!-- @dsCard group="Signature" height=424 subtitle="Hero artwork: the Phantom with Trash Polka framing" -->
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><style>html,body{margin:0;background:var(--surface-canvas)}.row{display:flex;flex-wrap:wrap;gap:12px;align-items:center}.stack{display:grid;gap:16px}</style></head>
+<body><div id="root" class="pp" style="padding:0;background:var(--surface-canvas)"></div>
+<script>
+var P = window.PhantomPortals, h = React.createElement, F = React.Fragment;
+ReactDOM.createRoot(document.getElementById("root")).render(
+h(P.PhantomHero, {eyebrow:'OFFLINE-FIRST IT COMMAND CENTER', title:'Enter the', accent:'Portal',
+  description:'Diagnose, repair and recover machines from one portable toolkit — no network required.',
+  actions:h(F, null, h(P.Button, {variant:'primary', size:'lg', href:'#'}, 'Open Command Center'), h(P.Button, {variant:'ghost', size:'lg', href:'#'}, 'View Toolkit'))})
+);
+</script>
+</body></html>

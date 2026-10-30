@@ -1,0 +1,22 @@
+:root {
+  --black: #08090b;
+  --obsidian: #101215;
+  --graphite: #191c21;
+  --line: #30343b;
+  --line-strong: #72777f;
+  --platinum: #ece9e2;
+  --muted: #a1a5ad;
+  --gold: #d7b982;
+  --gold-hover: #f0d5a5;
+  --ruby: #a0112b;
+  --ruby-ink: #ee5367;
+  --crimson: var(--ruby-ink); /* Compatibility alias; new integrations use ruby tokens. */
+  --danger-surface: #290d16;
+  --font-display: 'Cinzel', Georgia, serif;
+  --font-body: 'Space Grotesk', 'Segoe UI', Arial, sans-serif;
+  --font-mono: 'IBM Plex Mono', Consolas, monospace;
+  --space-1: 4px; --space-2: 8px; --space-3: 12px; --space-4: 16px;
+  --space-6: 24px; --space-8: 32px; --space-12: 48px; --space-16: 64px;
+  --radius: 4px;
+  --content-width: 1280px;
+}

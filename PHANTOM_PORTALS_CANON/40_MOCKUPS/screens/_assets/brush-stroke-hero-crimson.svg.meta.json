@@ -1,0 +1,28 @@
+{
+  "id": "PP-MOCK-003",
+  "file": "brush-stroke-hero-crimson.svg",
+  "title": "brush-stroke (v1) recoloured to accent-hero",
+  "status": "UNCLEAR",
+  "canon_version": "1.0.0",
+  "kind": "vector",
+  "format": "svg",
+  "dimensions": "800x200",
+  "bytes": 1952,
+  "sha256": "6afccedb52585ff1364c3dc22cf266df2288d462183af708d6785c689d6d2fec",
+  "usage": "Used only by the poster and boot mockups; derived from the superseded v1 vectors.",
+  "rules": [
+    "Rebuild from the current Ink Protocol vector before any production use."
+  ],
+  "tags": [
+    "mockup",
+    "derivative",
+    "v1"
+  ],
+  "license": "Project-original artwork for Phantom Portals. Owner-controlled; all rights reserved by the project owner.",
+  "source": {
+    "system": "Claude Design canvas \"Phantom Portals\"",
+    "artifact": "https://claude.ai/artifact/6jk64Yyaaq6JU2Uy41jXv6",
+    "fetched": "2026-10-29"
+  },
+  "notes": "Recolour made in the 2026-10-29 Claude Design canvas session."
+}

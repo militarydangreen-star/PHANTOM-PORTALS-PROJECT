@@ -1,0 +1,243 @@
+/* Phantom Portals — generated from tokens.json */
+:root, [data-theme="core"] {
+  --void: #030405; /* Material 01. Application exterior, negative space, landing scenes, the deepest background layer. Carries Phantom White at 18.8:1. */
+  --obsidian: #080a0c; /* Material 02. The primary shell material: navigation, shell framing, large workspace surfaces. Platinum reads at 12.1:1 here. */
+  --carbon: #0e1114; /* Material 03. Slightly elevated structure: major panels, dashboards, command regions. */
+  --graphite: #151a1f; /* Material 04. The functional interactive surface: tool cards, controls, menus, drawers, selected structural areas. */
+  --gunmetal: #22282e; /* Material 05. Strong neutral architecture: inactive controls, separators, elevated frames, panel seams. A hairline, not a perceivable control edge — that is platinum-mute. */
+  --smoked-glass: rgba(10, 13, 16, 0.78); /* Material 06. Dark translucent overlay for command palettes, floating utility panels and contextual HUD layers. Always over a backdrop blur, always with an opaque fallback. Blur is secondary — this is not a glassmorphism system. */
+  --platinum: #c6cbd0; /* Material 07. The primary metallic neutral: technical labels, important icons, neutral controls, instrumentation. The default text colour. */
+  --platinum-dim: #8a9198; /* Platinum at lower energy. Supporting copy, column headers, units, inactive rail labels. 6.0:1 on carbon. */
+  --platinum-mute: #626a72; /* Platinum at its lowest readable energy. Perceivable control edges, engraved marks, disabled glyphs, 24px-and-up metadata. 3.5:1 on carbon — clears 3:1 for edges, never body text. */
+  --phantom-white: #f3f5f7; /* Material 08. Maximum information contrast, used sparingly: primary headings, active values, critical system output. */
+  --sovereign-gold: #d1a64a; /* The primary Phantom brand metal. Emblem, major structural lines, section identifiers, premium controls, important navigation architecture. Gold is precious — too much of it destroys its authority, so it is never a generic highlight. */
+  --deep-gold: #866324; /* Recessed gold: secondary borders, the shadow side of a metallic edge, a gold node's seat. */
+  --highlight-gold: #f1d487; /* Reflective highlight. Extremely sparing — emblem illumination and high-value selected states only. */
+  --blood-crimson: #8f1024; /* Atmospheric Phantom crimson: environmental depth, warning illumination, danger-adjacent structure. Too dark for text at 2.3:1 on carbon. */
+  --signal-crimson: #880000; /* Higher-energy crimson for alert emphasis: danger edges, destructive control borders, critical rails. 3.9:1 on carbon — an edge and fill colour, not a text colour. Danger text uses bright-crimson. */
+  --bright-crimson: #ff0000; /* The Bright step of the crimson family, added so danger can be written as well as drawn. 7.0:1 on carbon. Error text, failed status labels, destructive button labels. */
+  --deep-blood: #35070f; /* Background atmosphere and warning depth. The ground behind a critical alert, never a surface that carries body text. */
+}
+[data-theme="technician"] {
+  --signal-crimson: #9b0000;
+}
+[data-theme="cyber"] {
+  --signal-crimson: #9b0000;
+}
+[data-theme="recovery"] {
+  --signal-crimson: #9b0000;
+}
+[data-theme="forensics"] {
+  --signal-crimson: #8a0000;
+}
+:root {
+  --space-1: 4px; /* Icon-to-label gap; the inset on a micro-label; a rail's breathing room. */
+  --space-2: 8px; /* Inside a control; between adjacent controls; dense table cell padding. */
+  --space-3: 12px; /* Standard row padding; compact component interiors. */
+  --space-4: 16px; /* Card and panel padding; the default gap between modules. */
+  --space-6: 24px; /* Between content groups; comfortable panel padding. */
+  --space-8: 32px; /* Between sections; the workspace gutter. */
+  --space-12: 48px; /* Major page divisions. */
+  --space-16: 64px; /* Command region separation on the home workstation. */
+  --space-24: 96px; /* Landing and operator-selection negative space. Darkness is structure — this step is where it lives. */
+  --radius-none: 0; /* Panels, rails, tables, frames — anything structural. */
+  --radius-xs: 2px; /* Buttons, inputs, toggles and small controls. */
+  --radius-sm: 3px; /* Cards and menus. The largest radius in the system. */
+  --radius-pill: 999px; /* Status dots and the toggle knob. Nothing else. */
+  --cut-sm: 10px; /* Buttons and compact cards. */
+  --cut-md: 16px; /* Standard panels, tool cards, command modules. */
+  --cut-lg: 28px; /* Modal architecture, hero panels, the operator matrix. */
+  --rail-width: 3px; /* The operator-energy rail on a selected card, row or nav item. */
+  --node-size: 5px; /* The gold node in a Phantom Line. */
+  --border-hairline: 1px; /* Panel seams, card edges, table rules, control borders at rest. */
+  --border-edge: 2px; /* An illuminated operator edge on an active or selected surface. */
+  --border-focus: 2px; /* The keyboard focus outline. Never replaced by glow. */
+  --focus-offset: 2px; /* Offset between a control's edge and its focus outline. */
+  --masthead-height: 56px; /* The command masthead. Controlled height — part of the machine, not a website header. */
+  --rail-expanded: 248px; /* Navigation rail with icon and label. */
+  --rail-collapsed: 64px; /* Navigation rail as icons only. */
+  --context-panel: 360px; /* Right-hand context panel. Collapses when unnecessary. */
+  --telemetry-height: 32px; /* The bottom system telemetry rail. */
+  --row-comfortable: 48px; /* Comfortable density: landing, operator selection, settings, onboarding. */
+  --row-standard: 40px; /* Standard density. The default for dashboards, tool browsers and the command center. */
+  --row-dense: 32px; /* Dense: logs, networking, diagnostics, forensic tables, inventory. */
+  --content-max: 1680px; /* Maximum workspace width; technical tables may exceed it and scroll. */
+  --measure: 72ch; /* Maximum line length for interface copy. */
+  --blur-glass: 14px; /* Backdrop blur behind smoked glass. Subtle, and always with an opaque fallback. */
+  --font-command: "Bahnschrift", "DIN Alternate", "Avenir Next Condensed", "Segoe UI Variable Display", system-ui, sans-serif;
+  --font-interface: "Inter", "Segoe UI Variable Text", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --font-technical: "JetBrains Mono", "Cascadia Mono", Consolas, ui-monospace, SFMono-Regular, monospace;
+  --text-system-title: 700 44px/46px var(--font-command); /* The system mark on landing and portal screens. Uppercase, expanded tracking, once per screen. */
+  --text-operator-title: 600 22px/26px var(--font-command); /* Operator identification in the masthead and on entry. Always carries the operator code after the double slash. */
+  --text-section-header: 600 12px/16px var(--font-command); /* Section identifier, uppercase, usually sitting on a Phantom Line. The one place uppercase is routine. */
+  --text-page-title: 600 26px/32px var(--font-interface); /* The working-context title of a workspace. */
+  --text-panel-header: 600 15px/20px var(--font-interface); /* Panel, card and drawer headings. Short and direct. */
+  --text-body: 400 14px/22px var(--font-interface); /* Interface copy, in platinum. Measure capped at 72 characters. */
+  --text-body-sm: 400 13px/20px var(--font-interface); /* Dense rows, card descriptions, secondary copy. */
+  --text-label: 500 12px/16px var(--font-interface); /* Buttons, field labels, menu items, table headers. */
+  --text-readout: 500 40px/42px var(--font-technical); /* Instrumentation numerals. Tabular figures, tight leading, a micro-label beneath — never a marketing metric. */
+  --text-mono: 400 13px/20px var(--font-technical); /* Paths, hashes, identifiers, addresses, build strings. Never long descriptive prose. */
+  --text-telemetry: 500 12px/18px var(--font-technical); /* The telemetry rail, meter readouts, log lines. */
+  --text-micro-label: 600 11px/14px var(--font-technical); /* Engraved identifiers on panel architecture: STATE, TARGET, BUILD, NODE. Used sparingly — this is the marking on the machine, not a heading. */
+}
+.system-title {
+  font-family: var(--font-command);
+  font-size: 44px;
+  line-height: 46px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+}
+.operator-title {
+  font-family: var(--font-command);
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+}
+.section-header {
+  font-family: var(--font-command);
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+}
+.page-title {
+  font-family: var(--font-interface);
+  font-size: 26px;
+  line-height: 32px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+.panel-header {
+  font-family: var(--font-interface);
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+.body {
+  font-family: var(--font-interface);
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+.body-sm {
+  font-family: var(--font-interface);
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+.label {
+  font-family: var(--font-interface);
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+.readout {
+  font-family: var(--font-technical);
+  font-size: 40px;
+  line-height: 42px;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+}
+.mono {
+  font-family: var(--font-technical);
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+.telemetry {
+  font-family: var(--font-technical);
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+}
+.micro-label {
+  font-family: var(--font-technical);
+  font-size: 11px;
+  line-height: 14px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+}
+@font-face {
+  font-family: "ibm plex mono";
+  src: url("fonts/ibm-plex-mono-regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "space grotesk";
+  src: url("fonts/space-grotesk-variable.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "cinzel";
+  src: url("../_blob/e90bb10560c9bdff261f497091c1ac66") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "ibm plex mono";
+  src: url("../_blob/05a04362dd6e3d97dcef98420e0fd4a8") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "space grotesk";
+  src: url("../_blob/b56b359da643afc10f58711d90478add") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "cinzel";
+  src: url("../_blob/e90bb10560c9bdff261f497091c1ac66") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "ibm plex mono";
+  src: url("../_blob/05a04362dd6e3d97dcef98420e0fd4a8") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "space grotesk";
+  src: url("../_blob/b56b359da643afc10f58711d90478add") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "cinzel";
+  src: url("../_blob/e90bb10560c9bdff261f497091c1ac66") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "ibm plex mono";
+  src: url("../_blob/05a04362dd6e3d97dcef98420e0fd4a8") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "space grotesk";
+  src: url("../_blob/b56b359da643afc10f58711d90478add") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}

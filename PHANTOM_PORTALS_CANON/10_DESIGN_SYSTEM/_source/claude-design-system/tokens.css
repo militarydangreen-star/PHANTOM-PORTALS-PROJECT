@@ -1,0 +1,247 @@
+/* Phantom Portals — generated from tokens.json */
+:root, [data-theme="light"] {
+  --surface-canvas: #f6f5f2; /* Main white-forward background (55–65% of any composition). Spec: surface.canvas. */
+  --surface-primary: #ffffff; /* Cards, forms, command surfaces. Spec: surface.primary. */
+  --surface-sunken: #eceae6; /* DERIVED. Wells, tab-strip ground, table header rows, disabled fills. ink-secondary reads 6.38:1 on it. */
+  --surface-inverse: #151519; /* Matte-black architecture: utility rail, terminals, HUD panels, secondary buttons. Spec: surface.inverse. */
+  --surface-inverse-raised: #2a2a30; /* DERIVED. Raised layer on black: terminal title bar, hovered rail item. White reads 14.3:1. */
+  --surface-crimson-soft: #fce8eb; /* Selected rows, active tab ground, annotations. ink-primary 15.5:1, accent-crimson 6.85:1 on it. Spec: surface.crimson-soft. */
+  --ink-primary: #151519; /* Main typography and technical markings. 18.2:1 on white, 16.7:1 on canvas. Spec: ink.primary. */
+  --ink-secondary: #55525a; /* Descriptions, metadata, labels. 7.66:1 on white, 7.03:1 on canvas. Spec: ink.secondary. */
+  --ink-on-inverse: #ffffff; /* Text and icons on surface-inverse (18.2:1) and on crimson (8.05:1). */
+  --ink-on-inverse-secondary: #b4b1b9; /* DERIVED. Secondary text on surface-inverse: 8.61:1. */
+  --accent-crimson: #a0112b; /* Primary actions, active indicators, focus ring on light. 8.05:1 on white — safe for text and icons. Spec: accent.crimson. */
+  --accent-crimson-pressed: #7e0d22; /* DERIVED. Pressed state of crimson controls; white reads 10.7:1. */
+  --accent-hero: #b8143e; /* Large crimson artwork and signature graphics (brush cuts, hero fields). White reads 6.55:1. Spec: accent.hero. */
+  --accent-electric: #ee5367; /* Decorative lighting and animation only (laser lines, scan sweeps). Never text on light: 3.46:1 on white. Spec: accent.electric. */
+  --accent-crimson-on-inverse: #ff6b7d; /* DERIVED. Active indicators and crimson text on surface-inverse — accent-crimson is only 2.26:1 there. 6.63:1. */
+  --border-default: #d8d5d6; /* Subtle separation between surfaces (1.46:1 — never the only boundary of a control). Spec: border.default. */
+  --border-control: #86828a; /* DERIVED. Boundaries of inputs, toggles, ghost buttons: 3.77:1 on white, 3.46:1 on canvas (meets 3:1 for UI boundaries). */
+  --border-inverse: #6e6a73; /* DERIVED. Control boundaries on surface-inverse: 3.44:1. */
+  --status-success: #1e6b47; /* DERIVED. Verified / complete. Muted, not neon: 6.46:1 on white. Always with an icon and a word. */
+  --status-warning: #8a5300; /* DERIVED. Caution, degraded, pending review: 6.33:1 on white. Always with an icon and a word. */
+  --status-error: var(--accent-crimson); /* Errors and failed operations. Pair with the alert icon and a label. */
+  --focus-ring: var(--accent-crimson); /* Keyboard focus on light surfaces: 2px solid, 2px offset. */
+  --focus-ring-inverse: var(--ink-on-inverse); /* Keyboard focus on surface-inverse: 2px solid white, 2px offset. */
+  --overlay-glass: rgba(255,255,255,.88); /* Glass overlays over artwork. Keep ≥ .85 alpha so text contrast holds; verify over the actual art. */
+  --overlay-scrim: rgba(21,21,25,.48); /* Modal scrim over the canvas. */
+  --depth-1: 0 1px 2px rgba(21,21,25,.08), 0 1px 1px rgba(21,21,25,.04); /* Resting cards and tiles. */
+  --depth-2: 0 8px 24px rgba(21,21,25,.10), 0 2px 6px rgba(21,21,25,.06); /* Hovered tiles, dropdowns, tooltips. */
+  --depth-3: 0 18px 48px rgba(21,21,25,.16), 0 4px 12px rgba(21,21,25,.08); /* Dialogs, command palette, floating panels. */
+  --crimson-edge: 0 0 0 1px #a0112b, 0 6px 18px rgba(160,17,43,.20); /* Active/selected signature edge with controlled bloom. One per view. */
+  --laser-glow: 0 0 10px rgba(238,83,103,.45); /* Electric laser lines and scan sweeps only. */
+  --inset-well: inset 0 1px 2px rgba(21,21,25,.08); /* Input wells and sunken fields. */
+}
+:root {
+  --space-4: 4px; /* Icon-to-text in compact chips; hairline gaps. */
+  --space-8: 8px; /* Compact HUD internal spacing; gap between related controls. */
+  --space-12: 12px; /* Compact HUD padding; list row gap. */
+  --space-16: 16px; /* Panel padding (minimum); grid gutter. */
+  --space-24: 24px; /* Panel padding (comfortable); card gap. */
+  --space-32: 32px; /* Separation between major sections (minimum). */
+  --space-48: 48px; /* Separation between major sections (generous); hero padding. */
+  --space-64: 64px; /* Hero and page-level breathing room. */
+  --radius-0: 0; /* Tactical frames, buttons, inputs, terminal and HUD panels — sharp or chamfered. */
+  --radius-8: 8px; /* Cards, tool tiles, notifications (spec 8–12px). */
+  --radius-12: 12px; /* Large surfaces: dialogs, AI response panel, hero card. */
+  --radius-full: 999px; /* Pills, toggles, status dots, HUD rings. */
+  --chamfer-6: 6px; /* Small controls, badges. */
+  --chamfer-10: 10px; /* Buttons, inputs, HUD frames. */
+  --chamfer-16: 16px; /* Hero frames, terminal panels. */
+  --stroke-1: 1px; /* Default borders, technical lines. */
+  --stroke-2: 2px; /* Heavier framing of major surfaces, focus rings, active indicators. */
+  --control-sm: 32px; /* Compact toolbar controls (pointer only; ≥24px target). */
+  --control-md: 40px; /* Default buttons and inputs (spec minimum 40px). */
+  --control-lg: 44px; /* Primary and touch actions (spec preferred 44px). */
+  --tabstrip-height: 40px; /* Browser tab strip. */
+  --omnibox-height: 44px; /* Omnibox / command field. */
+  --rail-width: 56px; /* Left utility rail. */
+  --bookmarks-height: 32px; /* Favorites bar. */
+  --font-sans: Inter, "Segoe UI", system-ui, sans-serif;
+  --font-heading: "Space Grotesk", Inter, "Segoe UI", sans-serif;
+  --font-mono: "JetBrains Mono", "Cascadia Mono", Consolas, monospace;
+  --text-display: 700 56px/60px var(--font-heading); /* Hero headline only (spec 48–64px). One per screen. */
+  --text-h1: 700 36px/44px var(--font-heading); /* Page titles (spec 32–40px). */
+  --text-h2: 600 26px/34px var(--font-heading); /* Section headings (spec 24–28px). */
+  --text-h3: 600 20px/28px var(--font-heading); /* Panel and card titles (spec 18–20px). */
+  --text-stat: 600 40px/44px var(--font-heading); /* Prominent statistics; use tabular figures (font-variant-numeric: tabular-nums). */
+  --text-eyebrow: 600 12px/16px var(--font-heading); /* Uppercase section markers above headings. */
+  --text-body-lg: 400 16px/26px var(--font-sans); /* Lead paragraphs. */
+  --text-body: 400 15px/24px var(--font-sans); /* Default reading text (spec 14–16px). */
+  --text-body-sm: 400 14px/22px var(--font-sans); /* Dense panels, table cells. */
+  --text-label: 500 14px/20px var(--font-sans); /* Form labels, navigation, tabs (spec labels 12–14px). */
+  --text-button: 600 14px/20px var(--font-sans); /* Button labels. */
+  --text-label-sm: 600 12px/16px var(--font-sans); /* Badges, column headers, compact controls. */
+  --text-caption: 400 12px/16px var(--font-sans); /* Helper text, tooltips. */
+  --text-mono: 400 13px/20px var(--font-mono); /* Terminal output, code (spec 11–13px). */
+  --text-mono-sm: 400 12px/18px var(--font-mono); /* Timestamps, command identifiers, paths. */
+  --text-mono-label: 500 11px/16px var(--font-mono); /* Telemetry labels and HUD coordinates. */
+}
+.display {
+  font-family: var(--font-heading);
+  font-size: 56px;
+  line-height: 60px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+.h1 {
+  font-family: var(--font-heading);
+  font-size: 36px;
+  line-height: 44px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+.h2 {
+  font-family: var(--font-heading);
+  font-size: 26px;
+  line-height: 34px;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+.h3 {
+  font-family: var(--font-heading);
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+.stat {
+  font-family: var(--font-heading);
+  font-size: 40px;
+  line-height: 44px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+.eyebrow {
+  font-family: var(--font-heading);
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+}
+.body-lg {
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+.body {
+  font-family: var(--font-sans);
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+.body-sm {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+.label {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+.button {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+.label-sm {
+  font-family: var(--font-sans);
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+.caption {
+  font-family: var(--font-sans);
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+.mono {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+.mono-sm {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+.mono-label {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  line-height: 16px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("fonts/inter-latin-400-normal.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("fonts/inter-latin-500-normal.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("fonts/inter-latin-600-normal.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("fonts/space-grotesk-latin-500-normal.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("fonts/space-grotesk-latin-600-normal.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("fonts/space-grotesk-latin-700-normal.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("fonts/jetbrains-mono-latin-400-normal.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("fonts/jetbrains-mono-latin-500-normal.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}

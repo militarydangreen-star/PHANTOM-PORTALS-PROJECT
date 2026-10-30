@@ -1,0 +1,32 @@
+{
+  "id": "PP-ICON-005",
+  "file": "check.svg",
+  "title": "Icon — check",
+  "status": "CURRENT",
+  "canon_version": "1.0.0",
+  "kind": "vector",
+  "format": "svg",
+  "dimensions": "24x24",
+  "bytes": 466,
+  "sha256": "05a64f18690dfcc52da330af3e6f798f75e69e8b484d9930969e5445e0e4ddbe",
+  "usage": "24 px keyline grid, 1.5 px square-capped ink strokes, one crimson accent on the part that acts.",
+  "rules": [
+    "Render through <Icon> / .pp-icon as a one-ink mask (currentColor).",
+    "Sizes 16, 20 (default), 24; below 16 px use a text label.",
+    "Icon-only controls need an accessible name and a tooltip.",
+    "Never emoji."
+  ],
+  "tags": [
+    "icon",
+    "ui"
+  ],
+  "license": "Project-original artwork for Phantom Portals. Owner-controlled; all rights reserved by the project owner.",
+  "source": {
+    "system": "Phantom Portals design system (White / Crimson / Black)",
+    "artifact": "https://claude.ai/artifact/HG2ihDf5JsALbo4fxCXcmV",
+    "version": "1793296345-e7e7",
+    "path": "assets/Icons/check.svg",
+    "asset_id": "255a4e5b9e3269d7c267a794a2c0d444",
+    "fetched": "2026-10-29"
+  }
+}

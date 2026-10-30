@@ -1,0 +1,21 @@
+PHANTOM PORTALS — DESIGN SYSTEM HAND-OFF v1.1 (canon 1.1.0) — for OpenAI Codex
+
+You are working in the EXISTING PhantomPortals workbench on the PHANTOM USB. The owner's design canon is the folder PHANTOM_PORTALS_CANON (attach it, or place it beside the repo). The canon is the visual authority; the repo is the code authority. Continue → Improve → Integrate. Do not replace working features.
+
+READ FIRST (in this order, and prefer them over memory):
+1. PHANTOM_PORTALS_CANON/50_AGENTS/project-instructions.md — precedence and rules.
+2. PHANTOM_PORTALS_CANON/00_START_HERE/CANON_REGISTER.md — CURRENT / RETIRED / UNCLEAR, open conflicts C-01 … C-07 (C-08 palette is resolved).
+3. PHANTOM_PORTALS_CANON/10_DESIGN_SYSTEM/adapters/shadcn/README.md — the theme you will install.
+4. PHANTOM_PORTALS_CANON/10_DESIGN_SYSTEM/components/status-vocabulary.md — the only status words allowed.
+5. The repo's own AGENTS.md, UNIVERSAL_CANON_v4.md, TRASH_POLKA_DESIGN_DIRECTION.md and the shared ledger (06_AI_AND_KNOWLEDGE\01_PHANTOM_AI\06_AGENTS\SHARED_LEDGER\). Do not overwrite another agent's uncommitted work.
+
+WORK (gated; stop and report at the end of each gate):
+GATE 1 — Inventory (read-only). List every place the app defines colours, fonts, radii and status labels. Map each colour to a canon token using tokens.json → $extensions.com.phantomportals.v31 (the v3.1 prototype values: #121316, #17181B, #A00920, #CE102B, #F7F7F7, #DFE1E3, #697078). Report the table. The owner decided (ADR-0011, accepted 2026-10-30): canon tokens win; #CE102B maps to accent-crimson. Do NOT invent an accent-signal token.
+GATE 2 — Theme. Where the app uses Tailwind v4 / shadcn: install the canon theme (npx shadcn@latest add <path>/phantom-portals.json, or use adapters/shadcn/globals.css + phantom-fonts.css and copy 30_ASSETS/fonts with each OFL.txt). Where it uses plain CSS: import 10_DESIGN_SYSTEM/tokens/build/index.css and replace raw values with var(--token). Light (:root) is the product; .dark is ONLY for inverse regions (boot, terminal stage, media preview). Keep the unlayered [data-slot] squaring rule outside @layer.
+GATE 3 — Status vocabulary. Import components/status-vocabulary.json. Replace every ad-hoc status word with the exact labels (READY … UNKNOWN; VERIFIED … PROPOSED). Unknown values show a state, never 0 or "—". Command previews say "Copied — not run".
+GATE 4 — Verify. Run the repo's own checks (typecheck, lint, tests, build). Open each changed surface in a headless browser at 390, 768, 1024 and 1440 px: no console errors, no horizontal scroll, visible crimson focus ring (white on inverse), no network requests for fonts/icons. Optional cross-check: bash PHANTOM_PORTALS_CANON/80_TOOLS/tests/shadcn-theme/run.sh.
+GATE 5 — Report and ledger. Write a ledger entry using the evidence labels VERIFIED / IMPLEMENTED / PROPOSED / UNVERIFIED / PARTIALLY TESTED for every surface, with exact paths and the commands you ran. Take dated screenshots of real builds into the repo's screenshot folder (and, if the owner wants, into PHANTOM_PORTALS_CANON/40_MOCKUPS/screenshots/).
+
+NEVER: change boot invariants (ventoy\, memtest86.efi, startup.nsh, autorun.inf), partitions, ISOs, credentials or 08_VAULT_ARCHIVE; hard-code a drive letter; load fonts/icons/scripts from a CDN; invent telemetry, measurements, connections or test results; reintroduce retired looks (Cyberpunk cyan/magenta/smoked glass, Ruby gold, Operator colours, XerXes purple, alpine hero); put Trash Polka art behind controls, tables, terminals or text; add more than one crimson primary action per view; push, publish or deploy without the owner's approval.
+
+DONE MEANS: the gates above are reported with evidence; anything you could not verify is labelled UNVERIFIED with the reason.

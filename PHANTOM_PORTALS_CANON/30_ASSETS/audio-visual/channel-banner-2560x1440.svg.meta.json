@@ -1,0 +1,30 @@
+{
+  "id": "PP-TPL-004",
+  "file": "channel-banner-2560x1440.svg",
+  "title": "Channel banner template 2560×1440",
+  "status": "CURRENT",
+  "canon_version": "1.0.0",
+  "kind": "template",
+  "format": "svg",
+  "dimensions": "2560x1440",
+  "bytes": 83718,
+  "sha256": "12ce092dace2e8979dec6878597511951b24b36d877f3478f8f4c56c190f3182",
+  "usage": "YouTube channel art. Keep the wordmark and tagline in the central 1546×423 safe band (GUIDES layer). Export PNG/JPG ≤ 6 MB.",
+  "rules": [
+    "Nothing essential outside the 1546×423 safe band.",
+    "Tagline must not repeat the wordmark sublines.",
+    "One crimson cut."
+  ],
+  "tags": [
+    "youtube",
+    "banner",
+    "channel",
+    "template"
+  ],
+  "license": "Project-original artwork for Phantom Portals. Owner-controlled; all rights reserved by the project owner.",
+  "source": {
+    "origin": "Drawn for the canon on 2026-10-29 by 80_TOOLS/generators/make-media-templates.py (native SVG art; wordmark linked from 30_ASSETS/brand)",
+    "author": "Claude Code for the project owner",
+    "date": "2026-10-29"
+  }
+}
