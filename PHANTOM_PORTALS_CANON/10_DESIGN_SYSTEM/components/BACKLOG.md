@@ -13,6 +13,9 @@ Pieces the product needs that the library does not ship yet. Status **DRAFT** un
 | **Chart (telemetry)** | System monitoring charts | design system, agent brief | Monochrome with sparing crimson focal data; axes, legends, units, text alternative |
 | **EmptyState** | Every panel's empty state | design system (empty states may carry art) | One Trash Polka mark + precision mark, a sentence, an action |
 | **PageSidebar / IntelligenceRail / AIWorkbench** | Codex v3.1 information architecture | Codex handoff v3.1 | Blocked on [C-03](../../00_START_HERE/CANON_REGISTER.md#open-conflicts) |
+| **ItemCard** | Catalog / inventory grids (artifacts, tools, ISOs, drivers) | Owner concept PP-CON-001; prototyped in [artifact-inventory.html](../../40_MOCKUPS/screens/catalog/artifact-inventory.html) | Dark art tile + white meta; quantity chip on `overlay-scrim`; selected = `crimson-edge` + check tile; `aria-pressed`; name never only in the art |
+| **RarityPips** | Tiered quality without colour | Same | 1–4 diamond pips (filled `ink-primary`, empty `border-control` outline) + the word; legendary = 4 pips + bold word. **Never** gold / purple / green — the concept's colours are off-palette |
+| **ItemDetailPanel** | Selected-item inspector: art stage, properties, uses, actions | Same | `radius-12`, `depth-1`; properties via `Progress`; unknown values show the `Unknown` state, never invented numbers; one primary action |
 | **BrainHud** | Optional 3D neural HUD | [brain-hud.md](../motion-vfx/brain-hud.md) | Only on request; static fallback |
 
 ## Known gaps in the shipped library (found while building the gallery, 2026-10-29)

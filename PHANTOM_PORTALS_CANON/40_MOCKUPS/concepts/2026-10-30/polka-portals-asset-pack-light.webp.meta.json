@@ -1,0 +1,27 @@
+{
+  "id": "PP-CON-003",
+  "file": "polka-portals-asset-pack-light.webp",
+  "title": "Polka Portals — asset pack sheet (light)",
+  "status": "UNCLEAR",
+  "canon_version": "1.2.0",
+  "kind": "raster",
+  "format": "webp",
+  "dimensions": "1125x750",
+  "bytes": 507670,
+  "sha256": "400de61df4152d046af34bd9930dd105d057cb34b32ab155855af5bfcacd10d7",
+  "usage": "Same layout as PP-CON-002 on a light ground, 1125 × 750.",
+  "rules": [
+    "As PP-CON-002."
+  ],
+  "tags": [
+    "concept",
+    "brand",
+    "asset-pack",
+    "polka-portals"
+  ],
+  "license": "Owner-generated concept art (AI-assisted, tool not recorded). Owner-controlled. Contains AI-garbled micro-text — not for publication as-is.",
+  "source": {
+    "origin": "Uploaded by the owner on 2026-10-30 (\"incorporate these assets into build\")",
+    "upload_name": "4.webp"
+  }
+}

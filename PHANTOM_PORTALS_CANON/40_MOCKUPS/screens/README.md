@@ -8,6 +8,7 @@ Six artboards from the Claude Design canvas **Phantom Portals** — live at http
 | shell | [command-center-phone.dc.html](shell/command-center-phone.dc.html) | Command Center · Phone | 390 × 844 |
 | diagnostics | [full-scan.dc.html](diagnostics/full-scan.dc.html) | Diagnostics · Full Scan | 1440 × 1440 |
 | boot | [boot-screen.dc.html](boot/boot-screen.dc.html) | Boot Screen | 1440 × 900 |
+| catalog | [artifact-inventory.html](catalog/artifact-inventory.html) | — (built on the canon library, not the canvas) | responsive |
 | marketing | [poster-light.dc.html](marketing/poster-light.dc.html) | Trash Polka Poster | 1080 × 1350 |
 | marketing | [poster-dark.dc.html](marketing/poster-dark.dc.html) | Trash Polka Poster · Dark | 1080 × 1350 |
 

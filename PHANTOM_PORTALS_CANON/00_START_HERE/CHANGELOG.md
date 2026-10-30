@@ -5,6 +5,19 @@ All notable changes to the Phantom Portals canon. Format: [Keep a Changelog](htt
 
 Dates before 1.0.0 are reconstructed from the version stamps of the owner's Claude artifacts.
 
+## [1.2.0] — 2026-10-30
+
+The owner's 2026-10-30 concept sheets brought into the canon and the inventory concept built on the canon components.
+
+### Added
+- **Concept art** `40_MOCKUPS/concepts/2026-10-30/` (PP-CON-001 … 005, sidecar-tracked): Polka Portals UI inventory, two asset-pack sheets, Plate 01 *The Operator* specimen sheet, and an auto-traced asset-pack SVG (checked: no scripts or links). Duplicate uploads kept once. Each sheet measured for paper / black / crimson / off-palette weight and audited ([concepts/README.md](../40_MOCKUPS/concepts/README.md)).
+- **Artifact inventory screen** `40_MOCKUPS/screens/catalog/artifact-inventory.html` (DRAFT, CR-069): the concept rebuilt with the canon shell and components — category tabs, capacity meter, 24-item grid, detail panel, one crimson primary. Rarity as ink pips + word instead of gold/purple/green; purple art shown in monochrome; undescribed items show *Unknown*; item art served from the concept sheet as CSS sprites (no new image files). Screenshots at 1440 and 390 px.
+- **Backlog**: ItemCard, RarityPips, ItemDetailPanel.
+- **Conflicts** C-09 (name *Polka Portals* vs *Phantom Portals*) and C-10 (shield-mask logo vs the hooded-reaper emblem); register CR-068, CR-069.
+
+### Changed
+- `40_MOCKUPS/concepts` is a sidecar-tracked folder.
+
 ## [1.1.0] — 2026-10-30
 
 Owner direction of 2026-10-29 filed; the design system reaches shadcn/ui (for Codex), Figma and Canva.

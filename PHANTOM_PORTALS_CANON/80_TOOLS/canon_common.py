@@ -10,7 +10,7 @@ CANON_VERSION = (ROOT / 'VERSION').read_text().strip() if (ROOT / 'VERSION').exi
 STATUSES = {'CURRENT', 'RETIRED', 'UNCLEAR', 'REFERENCE', 'DRAFT'}
 SIDECAR_REQUIRED = ['id', 'file', 'title', 'status', 'canon_version', 'kind', 'format', 'bytes', 'sha256', 'license', 'source']
 # Folders whose binaries must carry a sidecar.
-SIDECAR_ROOTS = ['30_ASSETS', '10_DESIGN_SYSTEM/iconography', '40_MOCKUPS/references', '40_MOCKUPS/screens/_assets']
+SIDECAR_ROOTS = ['30_ASSETS', '10_DESIGN_SYSTEM/iconography', '40_MOCKUPS/references', '40_MOCKUPS/concepts', '40_MOCKUPS/screens/_assets']
 # Files in those folders that are not assets: docs (any .md), licences, generated catalogs.
 # icons.data.js is generated from the icon SVGs (which carry the sidecars) and checked by build-icon-data.py --check.
 SIDECAR_EXEMPT = {'OFL.txt', 'INDEX.json', 'INDEX.js', '.gitkeep', 'icons.data.js'}

@@ -1,0 +1,29 @@
+{
+  "id": "PP-CON-001",
+  "file": "polka-portals-ui-inventory-concept.webp",
+  "title": "Polka Portals — UI components: artifact inventory concept",
+  "status": "UNCLEAR",
+  "canon_version": "1.2.0",
+  "kind": "raster",
+  "format": "webp",
+  "dimensions": "2000x1333",
+  "bytes": 337582,
+  "sha256": "3eeaaa8675ddd091fd60fce89e5b47964e8c7049c68356e4649849ddf00806cd",
+  "usage": "Inventory screen concept: top nav, category tabs, capacity meter, 24-item grid with rarity, detail panel with 3D-style render, property meters, uses, Equip/Details/Discard/Favorite. Basis of the canon inventory screen mockup (40_MOCKUPS/screens/catalog).",
+  "rules": [
+    "Rarity in gold, purple and green is off-palette — the canon screen redraws rarity as ink pips.",
+    "Crimson weight 16% (canon 5–10%).",
+    "Name \"Polka Portals\" and the shield logo are unresolved (C-09, C-10)."
+  ],
+  "tags": [
+    "concept",
+    "ui",
+    "inventory",
+    "polka-portals"
+  ],
+  "license": "Owner-generated concept art (AI-assisted, tool not recorded). Owner-controlled. Contains AI-garbled micro-text — not for publication as-is.",
+  "source": {
+    "origin": "Uploaded by the owner on 2026-10-30 (\"incorporate these assets into build\")",
+    "upload_name": "1.webp (also sent as 3.webp — identical, SHA-256 match, not kept twice)"
+  }
+}

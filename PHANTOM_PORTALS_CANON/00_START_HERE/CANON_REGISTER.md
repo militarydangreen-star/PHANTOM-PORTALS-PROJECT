@@ -3,7 +3,7 @@
 
 Every canon item and its status. Per-file detail (hash, size, licence, origin) lives in each asset's `.meta.json` and in the generated catalogs [`30_ASSETS/INDEX.json`](../30_ASSETS/INDEX.json) and [`20_PROMPT_LIBRARY/INDEX.json`](../20_PROMPT_LIBRARY/INDEX.json).
 
-**Canon 1.1.0 · 2026-10-30** · Statuses: **CURRENT** · **RETIRED** · **UNCLEAR** · REFERENCE · DRAFT (defined in [README](README.md#status-vocabulary)).
+**Canon 1.2.0 · 2026-10-30** · Statuses: **CURRENT** · **RETIRED** · **UNCLEAR** · REFERENCE · DRAFT (defined in [README](README.md#status-vocabulary)).
 
 ## Identity
 
@@ -84,6 +84,8 @@ Every canon item and its status. Per-file detail (hash, size, licence, origin) l
 | CR-062 | 25 Trash Polka inspiration images + 3 source pages | REFERENCE | PP-REF-001 … 025, PP-REF-SRC-001 … 003 — third-party, some watermarked stock |
 | CR-063 | "PHANTOM / TAGLINE" skull-and-wings logo | **UNCLEAR** | PP-UNC-001 — looks like a stock logo template |
 | CR-064 | Hooded "PHANTOM" esports mascot | **UNCLEAR** | PP-UNC-002 — gaming style conflicts with canon |
+| CR-068 | Owner concept sheets 2026-10-30: Polka Portals UI inventory, two asset packs, Plate 01 specimen, asset-pack vector trace (PP-CON-001 … 005) | **UNCLEAR** — pending C-09, C-10 | [concepts/](../40_MOCKUPS/concepts/README.md) | Owner-made, may be published; audited, not shipped |
+| CR-069 | Artifact inventory screen (canon rebuild of PP-CON-001) | **DRAFT** | [screens/catalog/artifact-inventory.html](../40_MOCKUPS/screens/catalog/artifact-inventory.html) | Canon components; rarity as ink pips; SAMPLE data |
 | CR-066 | DGAS Design "Trash Polka" Photoshop action (.atn, brushes, patterns) | **REFERENCE** — licensed third-party tool, files not stored | [references/third-party/tools](../40_MOCKUPS/references/third-party/tools/README.md) | Pointer with SHA-256 only; never redistribute |
 | CR-067 | shadcn/ui source (MIT) | **REFERENCE** | [references/third-party/tools](../40_MOCKUPS/references/third-party/tools/README.md#shadcnui-source-mit) | Source of the shadcn adapter's format |
 | CR-065 | Screenshots of real builds | **CURRENT** | [screenshots/](../40_MOCKUPS/screenshots/README.md) — only the offline gallery so far |
@@ -113,4 +115,6 @@ Each needs an owner decision. Until then the **resolution in use** applies.
 | C-05 | Plate 01 is titled "The Operator" while the Operator System is retired | Keep the title: it names the Phantom's role, not a persona. Never reintroduce operator personas or colours | ADR-0006 |
 | C-06 | Canvas mockups use v1 art and sample readings | Use for layout only; rebuild with Ink Protocol assets before any sign-off | — |
 | C-08 | The owner's 2026-10-29 direction gives an eight-value palette (from the v3.1 prototype) that differs from the design-system tokens: secondary text `#697078` vs `#55525A`, a new primary red `#CE102B`, and five near-identical values | **Resolved 2026-10-30:** canon tokens stay; v3.1 values are mappings in `tokens.json`; `#CE102B` → `accent-crimson` | [ADR-0011](decisions/ADR-0011-palette-reconciliation-v31.md) — *Accepted* |
+| C-09 | Four concept sheets (2026-10-30) brand the project **Polka Portals** and show a game-style artifact inventory; the canon, Plate 01 and the USB are **Phantom Portals**, an IT command center | Phantom Portals stays the name; Polka Portals material is filed as concept art | Owner: rename, sub-brand (e.g. the UI kit or a game layer), or drop |
+| C-10 | The concept sheets use a red/white/black **shield-mask logo**; the canon logo is the Ink Protocol hooded-reaper emblem | Canon emblem stays; the shield mark is UNCLEAR | Owner: adopt (then a clean vector redraw + ADR), use as a secondary badge, or drop |
 | C-07 | Logo clear space: v1 card said "half the emblem's height", Ink Protocol README says "a quarter of the emblem's width" | Quarter of the width (newer, matches the current artwork) | — |

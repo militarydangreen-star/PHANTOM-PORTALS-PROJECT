@@ -1,0 +1,29 @@
+{
+  "id": "PP-CON-005",
+  "file": "polka-portals-asset-pack-trace.svg",
+  "title": "Polka Portals — asset pack sheet, auto-traced vector",
+  "status": "UNCLEAR",
+  "canon_version": "1.2.0",
+  "kind": "vector",
+  "format": "svg",
+  "dimensions": "2048x1364 (viewBox)",
+  "bytes": 1868669,
+  "sha256": "3cf91fcc2e345dbbc0a8dad749a34698fe60c4d9e0d18d81262ff464a89aa920",
+  "usage": "Auto-traced SVG (4,049 paths, 2048 × 1364) of a third asset-pack layout: logo variations, iconography, badges/marks, HUD elements, frames/panels, graphic elements, textures/patterns, background elements, portal elements, palette.",
+  "rules": [
+    "Tracing degraded small text and fine HUD lines; use as layout reference, not as production vectors.",
+    "Checked: no scripts, links, embedded images or foreignObject."
+  ],
+  "tags": [
+    "concept",
+    "brand",
+    "asset-pack",
+    "vector-trace",
+    "polka-portals"
+  ],
+  "license": "Owner-generated concept art (AI-assisted, tool not recorded). Owner-controlled. Contains AI-garbled micro-text — not for publication as-is.",
+  "source": {
+    "origin": "Uploaded by the owner on 2026-10-30 (\"incorporate these assets into build\")",
+    "upload_name": "4abed8f3-…-2026-10-30.svg (also sent as …_1.svg — identical, not kept twice)"
+  }
+}

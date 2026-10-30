@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Phantom Portals · Artifact inventory (concept rebuild)</title>
+<!--
+  DRAFT mockup (register CR-069): the owner's "Polka Portals — UI components" inventory concept
+  (40_MOCKUPS/concepts/2026-10-30/polka-portals-ui-inventory-concept.webp, PP-CON-001) rebuilt on the canon:
+  canon shell and components, tokens only, rarity as ink pips + word (the concept's gold/purple/green is off-palette),
+  one crimson primary action, crimson edge only on the selected item, SAMPLE data, "Unknown" instead of invented values.
+  Item art is shown straight from the concept sheet as CSS sprites — no new image files. Two tiles whose art is
+  purple (Planar Sigil, Spectral Wing) are shown in monochrome to keep the three inks.
+  Works opened from disk; no network.
+-->
+<link rel="icon" href="../../../30_ASSETS/brand/logo/phantom-monogram.svg">
+<link rel="stylesheet" href="../../../10_DESIGN_SYSTEM/tokens/build/index.css">
+<link rel="stylesheet" href="../../../10_DESIGN_SYSTEM/components/library/bundle.css">
+<style>
+  html, body { margin: 0; height: 100%; background: var(--surface-canvas); color: var(--ink-primary); }
+  body { font-family: var(--font-sans); }
+  .app { display: grid; grid-template-rows: auto auto 1fr; grid-template-columns: minmax(0, 1fr); height: 100vh; height: 100dvh; }
+  .app > * { min-width: 0; }
+  .omnirow { display: flex; align-items: center; gap: var(--space-8); padding: 0 var(--space-8); min-height: var(--omnibox-height);
+             background: var(--surface-primary); border-bottom: 1px solid var(--border-default); }
+  .omnirow > .pp-omni { flex: 1; min-width: 0; }
+  .body { display: grid; grid-template-columns: var(--rail-width) minmax(0, 1fr); min-height: 0; }
+  .work { overflow: auto; padding: var(--space-32); display: grid; gap: var(--space-24); align-content: start; grid-auto-rows: max-content; }
+  .work > * { min-width: 0; }
+
+  /* Page header */
+  .head { display: grid; grid-template-columns: minmax(0, 1fr) minmax(240px, 360px); gap: var(--space-24); align-items: end; }
+  .head h1 { margin: var(--space-4) 0 0; font: var(--text-h1); display: flex; align-items: center; gap: var(--space-12); flex-wrap: wrap; }
+  .eyebrow { font: var(--text-eyebrow); letter-spacing: .14em; text-transform: uppercase; color: var(--ink-secondary); }
+  .toolbar { display: flex; align-items: end; justify-content: space-between; gap: var(--space-16); flex-wrap: wrap; }
+  .toolbar .pp-tabs { flex: 1; min-width: 0; overflow-x: auto; scrollbar-width: none; }
+
+  /* Inventory layout */
+  .inv { display: grid; grid-template-columns: minmax(0, 1fr) 420px; gap: var(--space-24); align-items: start; }
+  .grid { display: grid; gap: var(--space-12); grid-template-columns: repeat(auto-fill, minmax(min(148px, 100%), 1fr)); margin: 0; padding: 0; list-style: none; }
+
+  /* Item card */
+  .card { all: unset; box-sizing: border-box; display: grid; width: 100%; cursor: pointer; background: var(--surface-primary);
+          box-shadow: inset 0 0 0 1px var(--border-default); border-radius: var(--radius-8); overflow: hidden; }
+  .card:hover { box-shadow: inset 0 0 0 1px var(--border-control), var(--depth-2); }
+  .card:focus-visible { outline: 2px solid var(--focus-ring); outline-offset: 2px; }
+  .card[aria-pressed="true"] { box-shadow: var(--crimson-edge); }
+  .thumb { position: relative; aspect-ratio: 125 / 94; background-color: var(--surface-inverse); background-repeat: no-repeat;
+           background-image: url("../../concepts/2026-10-30/polka-portals-ui-inventory-concept.webp"); }
+  .thumb.mono { filter: grayscale(1) contrast(1.08); }
+  .qty { position: absolute; top: var(--space-8); right: var(--space-8); font: var(--text-mono-label); letter-spacing: .06em; color: var(--ink-on-inverse);
+         background: var(--overlay-scrim); padding: 2px 6px; }
+  .tick { position: absolute; top: 0; left: 0; width: 28px; height: 28px; display: none; place-items: center; background: var(--accent-crimson); color: var(--ink-on-inverse); }
+  .card[aria-pressed="true"] .tick { display: grid; }
+  .meta { padding: var(--space-8) var(--space-12) var(--space-12); display: grid; gap: var(--space-4); }
+  .name { font: var(--text-label); font-weight: 600; letter-spacing: .02em; text-transform: uppercase; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+  /* Rarity: shape + count + word, never colour alone (the concept's gold / purple / green is off-palette) */
+  .rar { display: inline-flex; align-items: center; gap: var(--space-8); font: var(--text-mono-label); letter-spacing: .06em; text-transform: uppercase; color: var(--ink-secondary); }
+  .pips { display: inline-flex; gap: 3px; }
+  .pips i { width: 7px; height: 7px; transform: rotate(45deg); box-shadow: inset 0 0 0 1px var(--border-control); }
+  .pips i.on { background: var(--ink-primary); box-shadow: none; }
+  .rar.legendary { color: var(--ink-primary); font-weight: 700; }
+
+  /* Detail panel */
+  .detail { background: var(--surface-primary); box-shadow: inset 0 0 0 1px var(--border-default), var(--depth-1); border-radius: var(--radius-12);
+            padding: var(--space-24); display: grid; gap: var(--space-16); position: sticky; top: 0; }
+  .detail header { display: flex; justify-content: space-between; gap: var(--space-12); align-items: start; }
+  .detail h2 { margin: 0; font: var(--text-h1); letter-spacing: -.01em; }
+  .detail p { margin: 0; font: var(--text-body); color: var(--ink-secondary); }
+  .idno { font: var(--text-mono-label); letter-spacing: .06em; color: var(--ink-secondary); text-align: right; white-space: nowrap; }
+  /* #F2F2F2 is sampled from the concept sheet behind the render, so the crop blends; it is not a UI colour. */
+  .stage { position: relative; aspect-ratio: 490 / 540; max-height: 360px; margin: 0 auto; width: 100%; background-color: #F2F2F2; background-repeat: no-repeat; border-radius: var(--radius-8);
+           background-image: url("../../concepts/2026-10-30/polka-portals-ui-inventory-concept.webp"); }
+  .stage.hero::before { content: ""; position: absolute; left: 0; top: 0; width: 44%; height: 16%; background: linear-gradient(135deg, #F2F2F2 70%, transparent); }
+  .stage.tile { aspect-ratio: 125 / 94; background-color: var(--surface-inverse); }
+  .stage.tile.mono { filter: grayscale(1) contrast(1.08); }
+  .props { display: grid; gap: var(--space-12); }
+  .uses { display: grid; gap: var(--space-8); margin: 0; padding: 0; list-style: none; }
+  .uses li { display: flex; align-items: center; gap: var(--space-12); font: var(--text-body); }
+  .uses .pp-icon { color: var(--ink-primary); }
+  .actions { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-8); }
+  .actions > :first-child { grid-column: 1 / -1; }
+  .label { font: var(--text-eyebrow); letter-spacing: .14em; text-transform: uppercase; color: var(--ink-secondary); margin: 0; }
+  .note { font: var(--text-caption); color: var(--ink-secondary); }
+
+  @media (max-width: 1279px) { .inv { grid-template-columns: minmax(0, 1fr); } .detail { position: static; } }
+  @media (max-width: 767px) {
+    .body { grid-template-columns: minmax(0, 1fr); }
+    .body > nav { display: none; }
+    .work { padding: var(--space-16); }
+    .head { grid-template-columns: minmax(0, 1fr); }
+    .pp-tabstrip { overflow-x: auto; scrollbar-width: none; }
+    .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  }
+</style>
+<script src="../../../10_DESIGN_SYSTEM/iconography/icons.data.js"></script>
+<script src="../../../10_DESIGN_SYSTEM/components/status-vocabulary.js"></script>
+<script src="../../../10_DESIGN_SYSTEM/components/library/lib/react.production.min.js"></script>
+<script src="../../../10_DESIGN_SYSTEM/components/library/lib/react-dom.production.min.js"></script>
+<script src="../../../10_DESIGN_SYSTEM/components/library/bundle.js"></script>
+</head>
+<body>
+<div id="root"></div>
+<noscript>This mockup renders the canon component library and needs JavaScript.</noscript>
+<script>
+(function () {
+  var P = window.PhantomPortals, h = React.createElement;
+  P.configureIcons(window.PhantomIconData);
+  var STATE = {};
+  (window.PhantomStatus ? window.PhantomStatus.capability_states : []).forEach(function (s) { STATE[s.code] = s; });
+
+  // Concept sheet geometry (2000 x 1333). Tiles start at these x / y; the inset crop (125 x 94) skips the baked-in labels.
+  var SHEET = { w: 2000, h: 1333 }, TILE = { dx: 26, dy: 40, w: 125, h: 94 };
+  var XS = [42, 236, 430, 623, 816, 1009], YS = [220, 467, 718, 971];
+  var RARITY = { uncommon: 1, rare: 2, epic: 3, legendary: 4 };
+  // name, rarity, quantity — as printed in the concept (SAMPLE). mono: art carries off-palette purple.
+  var ROWS = [
+    [['Phantom Shard', 'rare', 3], ['Void Core', 'legendary', 1], ['Echo Node', 'epic', 2], ['Realm Lens', 'rare', 4], ['Obscura Fragment', 'uncommon', 7], ['Singularity Seed', 'epic', 1]],
+    [['The Observatory', 'legendary', 1], ['Time Veil', 'rare', 3], ['Nexus Key', 'epic', 1], ['The Void', 'legendary', 1], ['Memory Sphere', 'rare', 5], ['Anchor Relic', 'uncommon', 2]],
+    [['Fracture Map', 'rare', 6], ['Residual Flux', 'uncommon', 4], ['Resonance Bell', 'epic', 1], ['Planar Sigil', 'rare', 3, true], ['Dream Catcher', 'uncommon', 2], ['Null Stone', 'rare', 8]],
+    [['Spectral Wing', 'epic', 1, true], ['Paradox Coin', 'rare', 3], ['Ghost Veil', 'uncommon', 4], ['Rift Compass', 'legendary', 1], ['Entropy Vial', 'rare', 5], ['Celestial Gear', 'epic', 1]]
+  ];
+  var ITEMS = [];
+  ROWS.forEach(function (row, r) { row.forEach(function (it, c) {
+    ITEMS.push({ id: 'PP-' + String(ITEMS.length + 1).padStart(3, '0'), name: it[0], rarity: it[1], qty: it[2], mono: !!it[3], x: XS[c] + TILE.dx, y: YS[r] + TILE.dy });
+  }); });
+  // Only the Phantom Shard is described in the concept; everything else shows Unknown rather than invented numbers.
+  var KNOWN = { 'Phantom Shard': {
+    text: 'A remnant of a collapsed realm. Crystallized phantom energy, used to stabilize portals and attune with lost realms.',
+    props: [['Realm affinity', 78], ['Stability', 42], ['Corruption risk', 18]],
+    uses: [['shield', 'Stabilize portals'], ['tools', 'Enhance artifacts'], ['settings', 'Craft equipment']] } };
+
+  function sprite(x, y, w, hgt) {
+    return { backgroundSize: (SHEET.w / w * 100).toFixed(3) + '% auto',
+             backgroundPosition: (x / (SHEET.w - w) * 100).toFixed(3) + '% ' + (y / (SHEET.h - hgt) * 100).toFixed(3) + '%' };
+  }
+  function Rarity(props) {
+    var n = RARITY[props.rarity], pips = [];
+    for (var i = 1; i <= 4; i++) pips.push(h('i', { key: i, className: i <= n ? 'on' : '' }));
+    return h('span', { className: 'rar' + (props.rarity === 'legendary' ? ' legendary' : '') },
+      h('span', { className: 'pips', 'aria-hidden': true }, pips), props.rarity);
+  }
+  function Card(props) {
+    var it = props.item;
+    return h('li', null, h('button', { className: 'card', 'aria-pressed': props.selected, onClick: props.onSelect,
+        'aria-label': it.name + ', ' + it.rarity + ', quantity ' + it.qty + (props.selected ? ', selected' : '') },
+      h('span', { className: 'thumb' + (it.mono ? ' mono' : ''), style: sprite(it.x, it.y, TILE.w, TILE.h) },
+        h('span', { className: 'tick', 'aria-hidden': true }, h(P.Icon, { name: 'check', size: 16 })),
+        h('span', { className: 'qty', 'aria-hidden': true }, '×' + it.qty)),
+      h('span', { className: 'meta' }, h('span', { className: 'name' }, it.name), h(Rarity, { rarity: it.rarity }))));
+  }
+  function Detail(props) {
+    var it = props.item, k = KNOWN[it.name], unknown = STATE.UNKNOWN ? STATE.UNKNOWN.label : 'Unknown';
+    var stage = k ? h('div', { className: 'stage hero', role: 'img', 'aria-label': it.name + ' render (concept art)', style: sprite(1340, 280, 490, 540) })
+                  : h('div', { className: 'stage tile' + (it.mono ? ' mono' : ''), role: 'img', 'aria-label': it.name + ' (concept art)', style: sprite(it.x, it.y, TILE.w, TILE.h) });
+    return h('aside', { className: 'detail', 'aria-labelledby': 'detail-title' },
+      h('header', null,
+        h('div', null, h(Rarity, { rarity: it.rarity }), h('h2', { id: 'detail-title' }, it.name)),
+        h('div', { className: 'idno' }, 'ITEM #' + it.id, h('br'), 'OWNED ' + it.qty)),
+      h('p', null, k ? k.text : 'No description in the concept.'),
+      stage,
+      h('h3', { className: 'label' }, 'Properties'),
+      k ? h('div', { className: 'props' }, k.props.map(function (p) { return h(P.Progress, { key: p[0], label: p[0], value: p[1], max: 100, detail: p[1] + ' %' }); }))
+        : h('div', null, h(P.StatusBadge, { status: 'warn' }, unknown), ' ', h('span', { className: 'note' }, 'Not given in the concept — not invented here.')),
+      h('h3', { className: 'label' }, 'Uses'),
+      k ? h('ul', { className: 'uses' }, k.uses.map(function (u) { return h('li', { key: u[1] }, h(P.Icon, { name: u[0], size: 24 }), u[1]); }))
+        : h('div', null, h(P.StatusBadge, { status: 'warn' }, unknown)),
+      h('div', { className: 'actions' },
+        h(P.Button, { variant: 'primary', size: 'lg', icon: 'check' }, 'Equip'),
+        h(P.Button, { variant: 'secondary', icon: 'search' }, 'Details'),
+        h(P.Button, { variant: 'ghost', icon: 'bookmark' }, 'Favorite'),
+        h(P.Button, { variant: 'ghost', icon: 'close' }, 'Discard')));
+  }
+  function App() {
+    var sel = React.useState('Phantom Shard'), rail = React.useState('inv'), cat = React.useState('artifacts');
+    var item = ITEMS.filter(function (i) { return i.name === sel[0]; })[0];
+    var owned = ITEMS.reduce(function (s, i) { return s + i.qty; }, 0);
+    return h(P.PortalRoot, null,
+      h('div', { className: 'app' },
+        h(P.TabStrip, { tabs: [{ id: 'inv', title: 'Artifact inventory', icon: 'folder' }], activeId: 'inv', onNew: function () {} }),
+        h('div', { className: 'omnirow' },
+          h(P.IconButton, { icon: 'back', label: 'Back', size: 'sm' }), h(P.IconButton, { icon: 'forward', label: 'Forward', size: 'sm' }),
+          h(P.IconButton, { icon: 'reload', label: 'Reload', size: 'sm' }),
+          h(P.Omnibox, { label: 'Search items', icon: 'search', placeholder: 'Search items…', shortcut: 'CTRL K' })),
+        h('div', { className: 'body' },
+          h(P.UtilityRail, { activeId: rail[0], onSelect: rail[1], items: [
+            { id: 'portals', label: 'Portals', icon: 'home-portal' }, { id: 'map', label: 'Map', icon: 'network' },
+            { id: 'chars', label: 'Characters', icon: 'ai-core' }, { id: 'inv', label: 'Inventory', icon: 'folder' }, 'separator',
+            { id: 'settings', label: 'Settings', icon: 'settings' }] }),
+          h('main', { className: 'work', id: 'main' },
+            h('div', { className: 'head' },
+              h('div', null, h('div', { className: 'eyebrow' }, 'Inventory · concept rebuild'),
+                h('h1', null, 'Artifacts', h(P.StatusBadge, { status: 'warn' }, STATE.SAMPLE ? STATE.SAMPLE.label : 'Sample'))),
+              h(P.Progress, { label: 'Inventory capacity', value: 62, max: 120, detail: '62 / 120' })),
+            h('div', { className: 'toolbar' },
+              h(P.Tabs, { label: 'Item categories', value: cat[0], onChange: cat[1], tabs: [
+                { id: 'artifacts', label: 'Artifacts' }, { id: 'consumables', label: 'Consumables' }, { id: 'materials', label: 'Materials' },
+                { id: 'keys', label: 'Key items' }, { id: 'shards', label: 'Shards' }] }),
+              h(P.Select, { label: 'Sort', options: [{ value: 'rarity', label: 'Rarity' }, { value: 'name', label: 'Name' }, { value: 'qty', label: 'Quantity' }] })),
+            h('div', { className: 'inv' },
+              h('section', { 'aria-label': 'Artifacts (' + ITEMS.length + ' kinds, ' + owned + ' owned)' },
+                h('ul', { className: 'grid' }, ITEMS.map(function (it) {
+                  return h(Card, { key: it.id, item: it, selected: it.name === sel[0], onSelect: function () { sel[1](it.name); } });
+                }))),
+              h(Detail, { item: item })),
+            h('p', { className: 'note' }, 'SAMPLE — items, quantities and properties come from the owner\'s concept sheet (PP-CON-001). Item art is the concept\'s own raster art; Planar Sigil and Spectral Wing are shown in monochrome because their art is purple.')))));
+  }
+  ReactDOM.createRoot(document.getElementById('root')).render(h(App));
+})();
+</script>
+</body>
+</html>

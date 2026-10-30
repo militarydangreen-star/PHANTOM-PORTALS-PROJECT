@@ -1,6 +1,6 @@
 # Design system — White / Crimson / Black
 
-**White-Forward Phantom Edition · tokens v2 · canon 1.1.0**
+**White-Forward Phantom Edition · tokens v2 · canon 1.2.0**
 
 Trash Polka × isometric cybernetic HUD × premium command center. The system makes a functional technical workstation feel like a premium piece of interactive digital art — not a corporate dashboard, not a gaming interface.
 
