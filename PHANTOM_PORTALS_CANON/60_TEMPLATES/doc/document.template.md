@@ -41,7 +41,7 @@ The substance. Use tables for comparisons, numbered steps for procedures, and on
 - 0.1.0 — YYYY-MM-DD — first draft.
 
 <!--
-Style for Phantom Portals documents:
+Style for Polka Portals documents:
 - Plain, direct sentences. Lead with the result; reasons after.
 - Name things by their canon names (token names, component names, asset ids).
 - Every number has a unit and a source. Sample data is labelled SAMPLE.

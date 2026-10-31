@@ -1,6 +1,6 @@
 # Status vocabulary — truthful states
 
-Phantom Portals never shows a state it has not established. These are the only words a screen, report or agent may use for capability and evidence, adopted from [Universal Canon v4](../../50_AGENTS/handoffs/universal-canon-v4/README.md) Law 3 and its evidence standard ([ADR-0012](../../00_START_HERE/decisions/ADR-0012-status-vocabulary.md)). The machine-readable copy is [`status-vocabulary.json`](status-vocabulary.json) — import it instead of retyping labels.
+Polka Portals never shows a state it has not established. These are the only words a screen, report or agent may use for capability and evidence, adopted from [Universal Canon v4](../../50_AGENTS/handoffs/universal-canon-v4/README.md) Law 3 and its evidence standard ([ADR-0012](../../00_START_HERE/decisions/ADR-0012-status-vocabulary.md)). The machine-readable copy is [`status-vocabulary.json`](status-vocabulary.json) — import it instead of retyping labels.
 
 ## How a state is drawn
 Every state renders as a [`StatusBadge`](feedback.md#statusbadge): **shape + colour + word**, never colour alone (WCAG 1.4.1). Ten states share five shapes by severity class; the word tells states within a class apart.

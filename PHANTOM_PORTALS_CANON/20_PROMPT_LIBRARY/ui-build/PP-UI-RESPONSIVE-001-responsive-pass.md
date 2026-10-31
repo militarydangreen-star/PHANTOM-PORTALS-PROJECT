@@ -24,7 +24,7 @@ Making a screen (or the library itself) follow the six canon breakpoints. The sh
 
 ## Prompt
 ```text
-Make {{TARGET}} follow the Phantom Portals breakpoints.
+Make {{TARGET}} follow the Polka Portals breakpoints.
 
 Read first: 10_DESIGN_SYSTEM/foundations/breakpoints.md (six ranges, what the shell and Command Center do in each), components/BACKLOG.md "Known gaps in the shipped library" (PhantomHero art, TabStrip overflow, UtilityRail on phones, StatusPanel word values) and the proposed CSS patch there.
 

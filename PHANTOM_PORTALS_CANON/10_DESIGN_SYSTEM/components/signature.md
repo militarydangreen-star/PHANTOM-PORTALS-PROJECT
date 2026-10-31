@@ -24,4 +24,4 @@ One-ink mask that takes `currentColor` (black on light, white or crimson-on-inve
 The Trash Polka badge version of each icon (dry-brush ensō, crimson dab, halftone quarter, tick arc, glyph). 56–160 px; tiles, launchers, onboarding, empty states — never dense UI.
 
 ## PortalRoot
-Wraps an app or region in `.pp` (or `.pp-inverse` for black regions): sets the font, canvas background, focus-visible ring and reduced-motion rules. Wrap every Phantom Portals surface in it.
+Wraps an app or region in `.pp` (or `.pp-inverse` for black regions): sets the font, canvas background, focus-visible ring and reduced-motion rules. Wrap every Polka Portals surface in it.

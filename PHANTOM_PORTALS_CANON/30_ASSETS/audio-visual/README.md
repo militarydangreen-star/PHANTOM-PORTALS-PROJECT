@@ -15,7 +15,7 @@ Templates for the project's music and channel presence.
 
 ## Channel banner
 - YouTube crops it per device. Only the central **1546 × 423** band is visible everywhere; desktop shows up to 2560 × 423, TV the whole 2560 × 1440. The GUIDES layer draws all four.
-- Wordmark and tagline stay in the safe band. The tagline must not repeat the wordmark's sublines (OFFLINE-FIRST IT COMMAND CENTER / EST. MMXXVI).
+- Logo (the horizontal lockup, [logo.md](../../10_DESIGN_SYSTEM/visual-language/logo.md)) and tagline stay in the safe band. One shield per surface.
 - Max 6 MB. Art from [PP-IMG-ALBUM-002](../../20_PROMPT_LIBRARY/image-gen/album-art/PP-IMG-ALBUM-002-channel-banner.md) can replace the ART layer.
 
 Fonts, linked files and editing apps: see [video/README.md](../video/README.md) — the same notes apply.

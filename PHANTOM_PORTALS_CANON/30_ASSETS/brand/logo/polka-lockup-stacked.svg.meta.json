@@ -1,0 +1,35 @@
+{
+  "id": "PP-BRAND-032",
+  "file": "polka-lockup-stacked.svg",
+  "title": "Polka Portals lockup, stacked",
+  "status": "CURRENT",
+  "canon_version": "1.3.0",
+  "kind": "vector",
+  "format": "svg",
+  "dimensions": "510.18x309.6",
+  "bytes": 5223,
+  "sha256": "0dfa2e11980d836e248bd35c95d68f81ec6ea5b8ed4a18cc353d82508d4560ec",
+  "usage": "Shield over wordmark on paper: splash screens, posters, covers, square formats.",
+  "rules": [
+    "Clear space: half the shield width on every side.",
+    "Minimum size: 48 px tall for the full shield; below that use polka-shield-small.svg (32 px) or the favicon.",
+    "Three inks only (ink #151519, paper #F6F5F2, crimson #A0112B). Never recolour, outline, add effects, rotate or stretch.",
+    "One shield per surface. The hooded Phantom is the character, not the logo; never combine them into one mark."
+  ],
+  "tags": [
+    "polka-portals",
+    "lockup",
+    "logo"
+  ],
+  "license": "Project-original artwork for Polka Portals. Owner-controlled; all rights reserved by the project owner. Wordmark letterforms are outlined from Space Grotesk (SIL Open Font License 1.1).",
+  "source": {
+    "system": "Polka Portals canon (White / Crimson / Black)",
+    "decision": "ADR-0015",
+    "generator": "80_TOOLS/generators/make-shield-logo.py",
+    "derived_from": [
+      "PP-CON-002 polka-portals-asset-pack-dark.webp",
+      "PP-CON-004 phantom-portals-plate-01-operator-spec.webp"
+    ],
+    "drawn": "2026-10-31"
+  }
+}

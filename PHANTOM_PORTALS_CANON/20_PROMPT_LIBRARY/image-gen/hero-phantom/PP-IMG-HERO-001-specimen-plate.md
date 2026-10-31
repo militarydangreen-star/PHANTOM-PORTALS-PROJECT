@@ -23,7 +23,7 @@ updated: 2026-10-29
 # The Phantom — Ink Protocol specimen plate
 
 ## Use
-New key visuals in the series that Plate 01 — The Operator started: posters, about pages, print. The result is the figure and its instrument only; the field-manual typography (PHANTOM PORTALS, PLATE 0N, FIG. labels, colour specimens) is added in layout with the real fonts — see `60_TEMPLATES`.
+New key visuals in the series that Plate 01 — The Operator started: posters, about pages, print. The result is the figure and its instrument only; the field-manual typography (POLKA PORTALS, PLATE 0N, FIG. labels, colour specimens) is added in layout with the real fonts — see `60_TEMPLATES`.
 
 ## Prompt
 ```text

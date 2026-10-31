@@ -1,4 +1,4 @@
-# Figma — Phantom Portals design system file
+# Figma — Polka Portals design system file
 
 [`figma-variables.json`](figma-variables.json) is the build sheet for the Figma library, generated from the tokens:
 

@@ -1,4 +1,4 @@
-// Phantom Portals canon — tailwind.tokens.js
+// Polka Portals canon — tailwind.tokens.js
 // GENERATED from 10_DESIGN_SYSTEM/tokens/tokens.json by 80_TOOLS/build-tokens. Do not edit.
 // Tailwind CSS v3 preset: presets: [require('./tailwind.tokens.js')]. For Tailwind v4 import tailwind.theme.css instead.
 module.exports = {

@@ -1,6 +1,6 @@
 {
   "generated_by": "80_TOOLS/index-prompts.py",
-  "canon_version": "1.2.0",
+  "canon_version": "1.3.0",
   "count": 27,
   "by_category": {
     "design-audit": 4,
@@ -720,12 +720,12 @@
       "title": "Retired-canon avoid-list",
       "category": "negative",
       "status": "CURRENT",
-      "version": "1.1.0",
+      "version": "1.2.0",
       "targets": [
         "any-image",
         "any-llm"
       ],
-      "output": "Text appended when a prompt risks pulling in old Phantom Portals directions",
+      "output": "Text appended when a prompt risks pulling in old Polka Portals directions",
       "canon_refs": [
         "00_START_HERE/CANON_REGISTER.md",
         "90_ARCHIVE/README.md"
@@ -734,9 +734,9 @@
         "negative",
         "retired"
       ],
-      "updated": "2026-10-30",
+      "updated": "2026-10-31",
       "path": "20_PROMPT_LIBRARY/negative/retired-canon-negative.md",
-      "words": 193
+      "words": 259
     },
     {
       "id": "PP-NEG-UI-001",

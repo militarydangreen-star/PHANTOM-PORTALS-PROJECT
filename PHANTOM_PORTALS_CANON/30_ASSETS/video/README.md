@@ -10,6 +10,6 @@ All templates are layered SVG (ART / TEXT / GUIDES). Open them in Inkscape (laye
 
 **Fonts in desktop apps:** `30_ASSETS/fonts` holds WOFF2 files for the web. Desktop design and video apps need the TTF/OTF versions of the same families (Inter, Space Grotesk, JetBrains Mono — all OFL, from their official repositories or Google Fonts). The SVGs fall back to Inter or a system sans if the font is missing, so check the title before exporting.
 
-**Linked files:** templates link the wordmark from `30_ASSETS/brand` by relative path. Keep the folder structure, or embed the image (Inkscape: *Extensions → Images → Embed Images*) before sending a template elsewhere.
+**Linked files:** templates link the logo lockup (`brand/logo/polka-lockup-horizontal.svg`) from `30_ASSETS/brand` by relative path. Keep the folder structure, or embed the image (Inkscape: *Extensions → Images → Embed Images*) before sending a template elsewhere.
 
 Regenerate a fresh copy (overwrites edits): `python3 80_TOOLS/generators/make-media-templates.py`.

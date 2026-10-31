@@ -27,7 +27,7 @@ Adding a component the product needs and the library does not ship yet — Botto
 
 ## Prompt
 ```text
-Build the {{COMPONENT}} component for the Phantom Portals component library.
+Build the {{COMPONENT}} component for the Polka Portals component library.
 
 Read first: 10_DESIGN_SYSTEM/components/BACKLOG.md (the row for {{COMPONENT}}: why, source, notes), components/README.md, library/README.md and src/index.tsx (match the existing component style, naming — `pp-` class prefix, BEM-like `pp-name__part--state` — and prop conventions), accessibility/focus-states.md, motion-vfx/reduced-motion.md.
 

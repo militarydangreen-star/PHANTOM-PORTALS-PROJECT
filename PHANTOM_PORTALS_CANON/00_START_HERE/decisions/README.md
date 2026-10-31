@@ -15,3 +15,8 @@ Architecture Decision Records (ADRs) for the canon. One decision per file, never
 | [0008](ADR-0008-shell-dimensions.md) | Shell dimensions follow the tokens, not the agent brief | **Proposed** — owner to confirm |
 | [0009](ADR-0009-brain-hud-optional.md) | The 3D brain / neural HUD is optional, never the default hero | Accepted |
 | [0010](ADR-0010-canon-governance.md) | Statuses, register, validator gate, semantic versions, sealed archive | Accepted |
+| [0011](ADR-0011-palette-reconciliation-v31.md) | Keep the design-system palette; map the v3.1 prototype palette onto it | Accepted |
+| [0012](ADR-0012-status-vocabulary.md) | The Universal Canon's truthful states are the status vocabulary | Accepted |
+| [0013](ADR-0013-tool-adapters.md) | Generate shadcn/ui, Figma and Canva adapters from the tokens | Accepted |
+| [0014](ADR-0014-rename-polka-portals.md) | The project is renamed Polka Portals; identifiers and history keep the old name | Accepted |
+| [0015](ADR-0015-shield-logo.md) | The shield mask is the logo; the hooded Phantom is the character | Accepted |

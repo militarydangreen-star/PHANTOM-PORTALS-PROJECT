@@ -17,7 +17,7 @@ The brief's front matter uses the VS Code custom-agent format (`tools: ['read', 
 ```markdown
 ---
 name: trashy-mr-polka-bot
-description: Phantom Portals specialist for white-forward Trash Polka visual design, isometric HUDs, browser-shell UX and frontend visual QA.
+description: Polka Portals specialist for white-forward Trash Polka visual design, isometric HUDs, browser-shell UX and frontend visual QA.
 tools: Read, Grep, Glob, Edit, Write, Bash
 ---
 <body of trashy-mr-polka-bot.agent.md>

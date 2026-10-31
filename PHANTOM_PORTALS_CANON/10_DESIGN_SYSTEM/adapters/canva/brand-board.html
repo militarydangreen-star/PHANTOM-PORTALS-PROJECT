@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-version="1.3.0">
 <head>
 <meta charset="utf-8">
-<title>Phantom Portals · Brand board</title>
+<title>Polka Portals · Brand board</title>
 <!--
-  Brand board for Canva (and anyone else): 9 pages at 1920×1080, built from canon files only.
+  Brand board for Canva (and anyone else): 10 pages at 1920×1080, built from canon files only.
   Print to PDF from Chromium (one page per slide): the PDF is what gets uploaded to Canva.
   Colours come from tokens.global.js, status words from status-vocabulary.js — nothing is retyped.
 -->
@@ -28,6 +28,19 @@
   .foot { position: absolute; left: 120px; right: 120px; bottom: 48px; display: flex; justify-content: space-between; }
   .page--inverse .foot .mono { color: var(--ink-on-inverse-secondary); }
   .art { position: absolute; pointer-events: none; }
+  /* logo */
+  .logo-grid { display: grid; grid-template-columns: 520px 1fr; gap: 56px; align-items: stretch; }
+  .logo-hero { background: var(--surface-primary); box-shadow: var(--depth-1); display: grid; place-items: center; padding: 40px; }
+  .logo-hero img { height: 470px; }
+  .logo-side { display: grid; gap: 22px; align-content: start; }
+  .logo-row { display: flex; gap: 28px; align-items: center; }
+  .logo-cell { background: var(--surface-primary); box-shadow: var(--depth-1); height: 168px; flex: 1; display: grid; place-items: center; padding: 18px; }
+  .logo-cell.inv { background: var(--surface-inverse); }
+  .logo-cell img { max-height: 128px; max-width: 100%; }
+  .logo-sizes { display: flex; gap: 22px; align-items: end; }
+  .logo-rules { margin: 0; padding: 0; list-style: none; display: grid; gap: 10px; }
+  .logo-rules li { font-size: 21px; line-height: 1.35; color: var(--ink-secondary); padding-left: 28px; position: relative; }
+  .logo-rules li::before { content: ""; position: absolute; left: 0; top: .5em; width: 12px; height: 12px; background: var(--accent-crimson); clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%); }
   /* colour */
   .swatches { display: grid; grid-template-columns: repeat(5, 1fr); gap: 24px; }
   .sw { background: var(--surface-primary); box-shadow: var(--depth-1); display: grid; }
@@ -78,9 +91,36 @@
   <img class="art" src="../../../30_ASSETS/hud-geometry/callouts/hud-ring.svg" alt="" style="right:120px;top:150px;width:680px;opacity:.9">
   <img class="art" src="../../../30_ASSETS/brand/phantom-hero/phantom-emblem-2048.png" alt="" style="right:180px;top:170px;width:560px">
   <div class="eyebrow" style="margin-top:120px">Offline-first IT command center</div>
-  <h1>Phantom<br><em>Portals</em></h1>
+  <h1>Polka<br><em>Portals</em></h1>
   <p>Design system · White / Crimson / Black · Trash Polka × isometric HUD</p>
-  <div class="foot"><img src="../../../30_ASSETS/brand/wordmark/phantom-wordmark.svg" alt="Phantom Portals" style="height:48px"><span class="mono" id="cover-version"></span></div>
+  <div class="foot"><img src="../../../30_ASSETS/brand/logo/polka-lockup-horizontal.svg" alt="Polka Portals" style="height:56px"><span class="mono" id="cover-version"></span></div>
+</section>
+
+<section class="page" id="logo">
+  <div class="eyebrow">00 — Logo</div>
+  <div class="logo-grid">
+    <div class="logo-hero"><img src="../../../30_ASSETS/brand/shield/polka-shield.svg" alt="Polka Portals shield"></div>
+    <div class="logo-side">
+      <h2 style="font-size:54px">The <em>shield</em> is the logo. The Phantom is the character.</h2>
+      <div class="logo-row">
+        <div class="logo-cell"><img src="../../../30_ASSETS/brand/logo/polka-lockup-horizontal.svg" alt="Horizontal lockup" style="max-height:96px"></div>
+        <div class="logo-cell inv"><img src="../../../30_ASSETS/brand/logo/polka-lockup-horizontal-inverse.svg" alt="Horizontal lockup on ink" style="max-height:96px"></div>
+      </div>
+      <div class="logo-row">
+        <div class="logo-cell"><img src="../../../30_ASSETS/brand/shield/polka-shield-mono-ink.svg" alt="One colour"></div>
+        <div class="logo-cell inv"><img src="../../../30_ASSETS/brand/shield/polka-shield-mono-paper.svg" alt="One colour on ink"></div>
+        <div class="logo-cell"><img src="../../../30_ASSETS/brand/shield/polka-shield-outline.svg" alt="Line art"></div>
+        <div class="logo-cell"><img src="../../../30_ASSETS/brand/shield/polka-shield-badge.svg" alt="Badge"></div>
+        <div class="logo-cell" style="flex:1.3"><div class="logo-sizes"><img src="../../../30_ASSETS/brand/shield/polka-shield.svg" alt="" style="height:96px"><img src="../../../30_ASSETS/brand/shield/polka-shield.svg" alt="" style="height:48px"><img src="../../../30_ASSETS/brand/shield/polka-shield-small.svg" alt="" style="height:32px"><img src="../../../30_ASSETS/brand/shield/polka-shield-small.svg" alt="" style="height:16px"></div></div>
+      </div>
+      <ul class="logo-rules">
+        <li>Clear space: half the shield's width all round. Full shield from 48 px; smaller, use the small shield.</li>
+        <li>Three inks only. Never recolour, outline, rotate, stretch or add effects.</li>
+        <li>One shield per surface. Never merge it with the Phantom: shield in the chrome, Phantom as the art.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="foot"><span class="mono">30_ASSETS/brand · ADR-0015 · drawn by 80_TOOLS/generators/make-shield-logo.py</span><span class="mono">00</span></div>
 </section>
 
 <section class="page" id="colour">

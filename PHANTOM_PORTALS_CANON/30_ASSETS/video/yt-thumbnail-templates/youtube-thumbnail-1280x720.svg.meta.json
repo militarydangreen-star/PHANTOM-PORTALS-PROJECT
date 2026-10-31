@@ -3,12 +3,12 @@
   "file": "youtube-thumbnail-1280x720.svg",
   "title": "YouTube thumbnail template 1280×720",
   "status": "CURRENT",
-  "canon_version": "1.0.0",
+  "canon_version": "1.3.0",
   "kind": "template",
   "format": "svg",
   "dimensions": "1280x720",
-  "bytes": 34960,
-  "sha256": "c94ffe064f750831e508c17f64f759bfae27a862ae3d55320d1d9064c21c633b",
+  "bytes": 34964,
+  "sha256": "1a5dc65e2f99f747c4606af80e728f3cb16c565db4361efc51ad5a64cad83174",
   "usage": "YouTube thumbnail. Edit the TEXT layer (episode label, two-line title, subtitle); keep or replace the ART layer with art from PP-IMG-THUMB-001/002. Export PNG ≤ 2 MB.",
   "rules": [
     "Title readable at 160 px wide: two lines, ≤ 18 characters each.",
@@ -20,7 +20,7 @@
     "thumbnail",
     "template"
   ],
-  "license": "Project-original artwork for Phantom Portals. Owner-controlled; all rights reserved by the project owner.",
+  "license": "Project-original artwork for Polka Portals. Owner-controlled; all rights reserved by the project owner.",
   "source": {
     "origin": "Drawn for the canon on 2026-10-29 by 80_TOOLS/generators/make-media-templates.py (native SVG art; wordmark linked from 30_ASSETS/brand)",
     "author": "Claude Code for the project owner",

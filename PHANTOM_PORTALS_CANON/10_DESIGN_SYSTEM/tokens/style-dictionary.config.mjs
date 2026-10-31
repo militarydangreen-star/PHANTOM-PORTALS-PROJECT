@@ -1,4 +1,4 @@
-// Style Dictionary configuration for the Phantom Portals tokens.
+// Style Dictionary configuration for the Polka Portals tokens.
 // Plain data and format functions only — no imports — so it can be loaded by
 // 80_TOOLS/build-tokens.mjs, which owns the Style Dictionary dependency.
 //
@@ -6,7 +6,7 @@
 // Output:  10_DESIGN_SYSTEM/tokens/build/*      (generated — never edit by hand)
 
 const HEADER = (file) =>
-  `Phantom Portals canon — ${file}\nGENERATED from 10_DESIGN_SYSTEM/tokens/tokens.json by 80_TOOLS/build-tokens. Do not edit.`;
+  `Polka Portals canon — ${file}\nGENERATED from 10_DESIGN_SYSTEM/tokens/tokens.json by 80_TOOLS/build-tokens. Do not edit.`;
 
 const comment = (file, style = 'css') =>
   style === 'css' ? `/*\n * ${HEADER(file).replace(/\n/g, '\n * ')}\n */\n` : `// ${HEADER(file).replace(/\n/g, '\n// ')}\n`;

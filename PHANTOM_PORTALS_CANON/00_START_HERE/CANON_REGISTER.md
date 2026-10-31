@@ -3,12 +3,13 @@
 
 Every canon item and its status. Per-file detail (hash, size, licence, origin) lives in each asset's `.meta.json` and in the generated catalogs [`30_ASSETS/INDEX.json`](../30_ASSETS/INDEX.json) and [`20_PROMPT_LIBRARY/INDEX.json`](../20_PROMPT_LIBRARY/INDEX.json).
 
-**Canon 1.2.0 · 2026-10-30** · Statuses: **CURRENT** · **RETIRED** · **UNCLEAR** · REFERENCE · DRAFT (defined in [README](README.md#status-vocabulary)).
+**Canon 1.3.0 · 2026-10-31** · Statuses: **CURRENT** · **RETIRED** · **UNCLEAR** · REFERENCE · DRAFT (defined in [README](README.md#status-vocabulary)).
 
 ## Identity
 
 | ID | Item | Status | Where | Notes |
 |---|---|---|---|---|
+| CR-009 | Name: **Polka Portals** (was *Phantom Portals* until 2026-10-31); identifiers and history keep the old name | **CURRENT** | [ADR-0014](decisions/ADR-0014-rename-polka-portals.md) | Closes C-09 |
 | CR-001 | Visual formula: white-forward Trash Polka × isometric cybernetic HUD (50/50) | **CURRENT** | [visual-language/](../10_DESIGN_SYSTEM/visual-language/composition-ratios.md) | [ADR-0001](decisions/ADR-0001-white-forward-canon.md) |
 | CR-002 | Colour distribution 55–65 % white · 25–35 % black · 5–10 % crimson | **CURRENT** | [composition-ratios.md](../10_DESIGN_SYSTEM/visual-language/composition-ratios.md) | |
 | CR-003 | Twelve design principles | **CURRENT** | [10_DESIGN_SYSTEM/README.md](../10_DESIGN_SYSTEM/README.md#principles) | |
@@ -45,9 +46,11 @@ Every canon item and its status. Per-file detail (hash, size, licence, origin) l
 
 | ID | Item | Status | Asset IDs |
 |---|---|---|---|
-| CR-030 | Phantom emblem, emblem inverse (vector masters, ~1.8 MB each) | **CURRENT** | PP-BRAND-001, 002 |
-| CR-031 | Monogram, app icon, lockup | **CURRENT** | PP-BRAND-003 … 005 |
-| CR-032 | Wordmark, wordmark inverse | **CURRENT** | PP-BRAND-006, 007 |
+| CR-035 | **Logo: the shield mask** — primary, one-colour ink/paper, line art, small (16–47 px), badge, app icon; PNG/ICO exports ([logo.md](../10_DESIGN_SYSTEM/visual-language/logo.md)) | **CURRENT** | PP-BRAND-013 … 027 — [ADR-0015](decisions/ADR-0015-shield-logo.md); drawn by `80_TOOLS/generators/make-shield-logo.py` |
+| CR-036 | POLKA PORTALS wordmark (ink, inverse) and lockups (horizontal, horizontal inverse, stacked) | **CURRENT** | PP-BRAND-028 … 032 |
+| CR-030 | Phantom emblem, emblem inverse (vector masters, ~1.8 MB each) — **character art, not the logo**; moved to `brand/phantom-hero/` | **CURRENT** | PP-BRAND-001, 002 |
+| CR-031 | Reaper monogram, app icon, lockup | **RETIRED** 2026-10-31 → [90_ARCHIVE](../90_ARCHIVE/brand-marks-phantom-2026-10-31/README.md) | PP-BRAND-003 … 005 |
+| CR-032 | PHANTOM PORTALS wordmark, wordmark inverse | **RETIRED** 2026-10-31 → 90_ARCHIVE | PP-BRAND-006, 007 |
 | CR-033 | Emblem PNGs 512/2048, light and inverse | **CURRENT** | PP-BRAND-008 … 011 |
 | CR-034 | Plate 01 — The Operator (2400 × 3000 key visual) | **CURRENT** | PP-BRAND-012 — title kept, see C-05 |
 
@@ -84,7 +87,7 @@ Every canon item and its status. Per-file detail (hash, size, licence, origin) l
 | CR-062 | 25 Trash Polka inspiration images + 3 source pages | REFERENCE | PP-REF-001 … 025, PP-REF-SRC-001 … 003 — third-party, some watermarked stock |
 | CR-063 | "PHANTOM / TAGLINE" skull-and-wings logo | **UNCLEAR** | PP-UNC-001 — looks like a stock logo template |
 | CR-064 | Hooded "PHANTOM" esports mascot | **UNCLEAR** | PP-UNC-002 — gaming style conflicts with canon |
-| CR-068 | Owner concept sheets 2026-10-30: Polka Portals UI inventory, two asset packs, Plate 01 specimen, asset-pack vector trace (PP-CON-001 … 005) | **UNCLEAR** — pending C-09, C-10 | [concepts/](../40_MOCKUPS/concepts/README.md) | Owner-made, may be published; audited, not shipped |
+| CR-068 | Owner concept sheets 2026-10-30: Polka Portals UI inventory, two asset packs, Plate 01 specimen, asset-pack vector trace (PP-CON-001 … 005) | **REFERENCE** — source of the name and the logo (ADR-0014, 0015); direction, not finished assets | [concepts/](../40_MOCKUPS/concepts/README.md) | Owner-made, may be published; audited, not shipped |
 | CR-069 | Artifact inventory screen (canon rebuild of PP-CON-001) | **DRAFT** | [screens/catalog/artifact-inventory.html](../40_MOCKUPS/screens/catalog/artifact-inventory.html) | Canon components; rarity as ink pips; SAMPLE data |
 | CR-066 | DGAS Design "Trash Polka" Photoshop action (.atn, brushes, patterns) | **REFERENCE** — licensed third-party tool, files not stored | [references/third-party/tools](../40_MOCKUPS/references/third-party/tools/README.md) | Pointer with SHA-256 only; never redistribute |
 | CR-067 | shadcn/ui source (MIT) | **REFERENCE** | [references/third-party/tools](../40_MOCKUPS/references/third-party/tools/README.md#shadcnui-source-mit) | Source of the shadcn adapter's format |
@@ -101,6 +104,7 @@ Every canon item and its status. Per-file detail (hash, size, licence, origin) l
 | CR-094 | v1 flat vectors — first white-forward emblem, 20 icons at 1.75 px, 16 vectors | 2026-10-29 (superseded the same day) | ADR-0003 |
 | CR-095 | Alpine landscape hero, holographic brain as required homepage hero, orange/sapphire/violet scheme | before v3.1 | Named as inactive by the Codex v3.1 handoff; no files survive here |
 | CR-096 | Cyberpunk direction — obsidian/carbon, smoked glass, dark alloy, cyan/magenta emissions, amber, platinum text, HUD styling on nearly all buttons, cockpit with the neural brain in the central projection bay (Universal Canon v4 Law 4) | 2026-10-17 → 29 | The owner's [2026-10-29 Trash Polka direction](directions/2026-10-29_TRASH_POLKA_DESIGN_DIRECTION.md); no design files survive here |
+| CR-097 | Phantom brand marks: reaper monogram, app icon, lockup, PHANTOM PORTALS wordmark (ink in PHANTOM, crimson PORTALS, mono sublines) | 2026-10-29 → 31 | The Polka Portals shield and wordmark ([ADR-0015](decisions/ADR-0015-shield-logo.md)) |
 
 ## Open conflicts
 
@@ -115,6 +119,7 @@ Each needs an owner decision. Until then the **resolution in use** applies.
 | C-05 | Plate 01 is titled "The Operator" while the Operator System is retired | Keep the title: it names the Phantom's role, not a persona. Never reintroduce operator personas or colours | ADR-0006 |
 | C-06 | Canvas mockups use v1 art and sample readings | Use for layout only; rebuild with Ink Protocol assets before any sign-off | — |
 | C-08 | The owner's 2026-10-29 direction gives an eight-value palette (from the v3.1 prototype) that differs from the design-system tokens: secondary text `#697078` vs `#55525A`, a new primary red `#CE102B`, and five near-identical values | **Resolved 2026-10-30:** canon tokens stay; v3.1 values are mappings in `tokens.json`; `#CE102B` → `accent-crimson` | [ADR-0011](decisions/ADR-0011-palette-reconciliation-v31.md) — *Accepted* |
-| C-09 | Four concept sheets (2026-10-30) brand the project **Polka Portals** and show a game-style artifact inventory; the canon, Plate 01 and the USB are **Phantom Portals**, an IT command center | Phantom Portals stays the name; Polka Portals material is filed as concept art | Owner: rename, sub-brand (e.g. the UI kit or a game layer), or drop |
-| C-10 | The concept sheets use a red/white/black **shield-mask logo**; the canon logo is the Ink Protocol hooded-reaper emblem | Canon emblem stays; the shield mark is UNCLEAR | Owner: adopt (then a clean vector redraw + ADR), use as a secondary badge, or drop |
-| C-07 | Logo clear space: v1 card said "half the emblem's height", Ink Protocol README says "a quarter of the emblem's width" | Quarter of the width (newer, matches the current artwork) | — |
+| C-09 | Four concept sheets (2026-10-30) brand the project **Polka Portals**; the canon, Plate 01 and the USB were **Phantom Portals** | **Resolved 2026-10-31:** a rename — the project is Polka Portals | [ADR-0014](decisions/ADR-0014-rename-polka-portals.md) — *Accepted* |
+| C-10 | The concept sheets use a red/white/black **shield-mask logo**; the canon logo was the Ink Protocol hooded-reaper emblem | **Resolved 2026-10-31:** the shield is the logo (clean vector redraw, PP-BRAND-013 … 032); the Phantom stays the character | [ADR-0015](decisions/ADR-0015-shield-logo.md) — *Accepted* |
+| C-11 | The drive product is **PHANTOM USB** (Universal Canon v4) while the project is now Polka Portals | PHANTOM USB keeps its name; it reads as the Phantom's drive | Owner: keep, or rename (e.g. POLKA USB) |
+| C-07 | Emblem clear space: v1 card said "half the emblem's height", Ink Protocol README says "a quarter of the emblem's width" | Quarter of the width — now for the Phantom as character art only; the logo's clear space is set by ADR-0015 | — |

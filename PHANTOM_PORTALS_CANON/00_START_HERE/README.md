@@ -1,10 +1,12 @@
 # Start here
 
-**Phantom Portals Canon — version 1.0.0 (2026-10-29)**
+![Polka Portals](../30_ASSETS/brand/logo/polka-lockup-horizontal.svg)
 
-This folder is the single source of truth for what Phantom Portals looks like, sounds like and is built with. If something is not here, or is here with a status other than **CURRENT**, it is not canon.
+**Polka Portals Canon — version 1.3.0 (2026-10-31)**
 
-Phantom Portals is an elite, offline-first IT command center: a Chromium-style browser shell, diagnostic workspaces, AI tools and system utilities, dressed as a premium piece of interactive digital art. Its identity is **white-forward Trash Polka × isometric cybernetic HUD** — white paper surfaces, matte-black architecture, blood-crimson accents and one hooded Phantom.
+This folder is the single source of truth for what Polka Portals looks like, sounds like and is built with. If something is not here, or is here with a status other than **CURRENT**, it is not canon.
+
+Polka Portals (called *Phantom Portals* until 2026-10-31, [ADR-0014](decisions/ADR-0014-rename-polka-portals.md)) is an elite, offline-first IT command center: a Chromium-style browser shell, diagnostic workspaces, AI tools and system utilities, dressed as a premium piece of interactive digital art. Its identity is **white-forward Trash Polka × isometric cybernetic HUD** — white paper surfaces, matte-black architecture, blood-crimson accents and one hooded Phantom.
 
 > White creates clarity. Black creates authority. Crimson creates identity. Geometry creates precision. Trash Polka creates character. Function holds everything together.
 > **CONTINUE → IMPROVE → INTEGRATE.**
@@ -56,7 +58,7 @@ python3 80_TOOLS/index-prompts.py
 python3 80_TOOLS/validate-canon.py         # must end with 11/11 checks passed
 # 4. Record it: CHANGELOG.md, CANON_REGISTER.md, and a decision record if it changes what is canon
 # 5. Release (semantic versioning — see decisions/ADR-0010)
-python3 80_TOOLS/hash-manifest.py release 1.1.0
+python3 80_TOOLS/hash-manifest.py release 1.3.0
 ```
 
 New asset? `python3 80_TOOLS/index-assets.py --new 30_ASSETS/<folder>/<file> --id PP-VEC-020 --title "…"` writes its sidecar.
@@ -67,7 +69,11 @@ Canon 1.0.0 was assembled on 2026-10-29 from the owner's Claude artifacts — th
 
 Canon 1.1.0 (2026-10-30) added the owner's [2026-10-29 Trash Polka direction](directions/README.md), the Universal Canon v4 laws, the [status vocabulary](../10_DESIGN_SYSTEM/components/status-vocabulary.md), and [adapters](../10_DESIGN_SYSTEM/adapters/README.md) that carry the tokens into shadcn/ui (for Codex), Figma and Canva.
 
-Live sources:
+Canon 1.2.0 (2026-10-30) filed the owner's concept sheets and rebuilt the inventory concept on the canon components.
+
+Canon 1.3.0 (2026-10-31) renamed the project **Polka Portals** and adopted the **shield mask** as the logo, redrawn as clean vectors ([ADR-0014](decisions/ADR-0014-rename-polka-portals.md), [ADR-0015](decisions/ADR-0015-shield-logo.md), [logo.md](../10_DESIGN_SYSTEM/visual-language/logo.md)); the hooded Phantom stays the character.
+
+Live sources (titled with the old name until the owner renames them):
 
 - Design system: <https://claude.ai/artifact/HG2ihDf5JsALbo4fxCXcmV>
 - Design canvas (mockups): <https://claude.ai/artifact/6jk64Yyaaq6JU2Uy41jXv6>

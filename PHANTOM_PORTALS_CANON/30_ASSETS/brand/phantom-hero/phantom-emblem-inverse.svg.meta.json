@@ -1,7 +1,7 @@
 {
   "id": "PP-BRAND-002",
   "file": "phantom-emblem-inverse.svg",
-  "title": "Phantom emblem, inverse (on matte black)",
+  "title": "The Phantom — character emblem inverse (Ink Protocol vector master)",
   "status": "CURRENT",
   "canon_version": "1.0.0",
   "kind": "vector",
@@ -9,18 +9,19 @@
   "dimensions": "1024x1024",
   "bytes": 1783788,
   "sha256": "8daab5de3b9e0ba98c400133e8e2e75bf74981e4f0542c0f4da151f797c116aa",
-  "usage": "Boot screens and dark heroes. The silhouette is carried by rim light.",
+  "usage": "Character art on black: boot, dark posters, inverse hero. ~1.8 MB of drawn detail; for screens use the PNGs beside it. Not the logo — the shield is (ADR-0015).",
   "rules": [
     "One Phantom per surface.",
     "Clear space: a quarter of the emblem width on every side.",
-    "Never recolour the figure, add a second character, stretch it, or place it over busy art."
+    "Never recolour the figure, add a second character, stretch it, or place it over busy art.",
+    "Never use it as the logo or merge it with the shield; with both on one surface, the shield sits in the chrome and the Phantom is the art."
   ],
   "tags": [
     "phantom",
-    "logo",
-    "ink-protocol"
+    "ink-protocol",
+    "character"
   ],
-  "license": "Project-original artwork for Phantom Portals. Owner-controlled; all rights reserved by the project owner.",
+  "license": "Project-original artwork for Polka Portals. Owner-controlled; all rights reserved by the project owner.",
   "source": {
     "system": "Phantom Portals design system (White / Crimson / Black)",
     "artifact": "https://claude.ai/artifact/HG2ihDf5JsALbo4fxCXcmV",

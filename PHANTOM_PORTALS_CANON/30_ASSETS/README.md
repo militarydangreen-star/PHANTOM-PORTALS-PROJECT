@@ -5,9 +5,10 @@ Every file the project ships or designs with: brand marks, the Phantom, fonts, t
 ## Folders
 | Folder | Ids | What | Count |
 |---|---|---|---:|
-| [brand/logo](brand/logo/) | PP-BRAND-001…005 | Emblem (vector master), inverse emblem, monogram (16–128 px), app icon, lockup | 5 |
-| [brand/wordmark](brand/wordmark/) | PP-BRAND-006, 007 | PHANTOM PORTALS wordmark, light and inverse; text outlined | 2 |
-| [brand/phantom-hero](brand/phantom-hero/) | PP-BRAND-008…012 | Emblem PNGs at 512 and 2048 (light and inverse), Plate 01 key visual 2400 × 3000 | 5 |
+| [brand/shield](brand/shield/) | PP-BRAND-013…027 | **The logo** ([ADR-0015](../00_START_HERE/decisions/ADR-0015-shield-logo.md)): shield primary, one-colour ink/paper, line art, small (16–47 px), badge, app icon; PNG 512/2048, app icon 1024/180, favicons 16/32/48 + ICO | 15 |
+| [brand/logo](brand/logo/) | PP-BRAND-030…032 | Lockups: horizontal, horizontal inverse, stacked | 3 |
+| [brand/wordmark](brand/wordmark/) | PP-BRAND-028, 029 | POLKA PORTALS wordmark, ink and inverse; Space Grotesk 700 outlined | 2 |
+| [brand/phantom-hero](brand/phantom-hero/) | PP-BRAND-001, 002, 008…012 | **The Phantom** — character art, not the logo: emblem vector masters (light, inverse), emblem PNGs at 512 and 2048, Plate 01 key visual 2400 × 3000 | 7 |
 | [fonts](fonts/) | PP-FONT-001…008 | Inter 400/500/600, Space Grotesk 500/600/700, JetBrains Mono 400/500 (WOFF2, latin) + OFL.txt per family | 8 |
 | [textures/brush-strokes](textures/brush-strokes/) | PP-VEC-… | Dry-brush slash, stroke, X, ensō ring, engraved hatch | 5 |
 | [textures/ink-splash](textures/ink-splash/) | PP-VEC-… | Splatter (ink, crimson), ink drips | 3 |
@@ -21,18 +22,18 @@ Every file the project ships or designs with: brand marks, the Phantom, fonts, t
 | [video](video/) | PP-TPL-001, 002 | YouTube thumbnail and lower-third templates; intros (none yet) | 2 |
 | [audio-visual](audio-visual/) | PP-TPL-003, 004 | Album cover and channel banner templates | 2 |
 
-Use the vectors by file name (each SVG has a `<title>`); the exact id of every file is in `INDEX.json` and in its sidecar. Which vector for which job: [ink-protocol.md](../10_DESIGN_SYSTEM/visual-language/ink-protocol.md). Which Phantom file for which size: [the-phantom.md](../10_DESIGN_SYSTEM/visual-language/the-phantom.md#files-30_assetsbrand).
+Use the vectors by file name (each SVG has a `<title>`); the exact id of every file is in `INDEX.json` and in its sidecar. Which vector for which job: [ink-protocol.md](../10_DESIGN_SYSTEM/visual-language/ink-protocol.md). Which logo file for which job: [logo.md](../10_DESIGN_SYSTEM/visual-language/logo.md); which Phantom file: [the-phantom.md](../10_DESIGN_SYSTEM/visual-language/the-phantom.md).
 
 ## Sidecars
 Every asset has a `<file>.meta.json` beside it:
 
 ```json
 {
-  "id": "PP-BRAND-003", "file": "phantom-monogram.svg", "title": "Phantom monogram",
-  "status": "CURRENT", "canon_version": "1.0.0", "kind": "vector", "format": "svg",
-  "dimensions": "128x128", "bytes": 194238, "sha256": "5de9…7501",
+  "id": "PP-BRAND-013", "file": "polka-shield.svg", "title": "Polka Portals shield (primary)",
+  "status": "CURRENT", "canon_version": "1.3.0", "kind": "vector", "format": "svg",
+  "dimensions": "200x240", "bytes": 1587, "sha256": "43d1…98ff",
   "usage": "…", "rules": ["…"], "tags": ["…"],
-  "license": "…", "source": { "artifact": "…", "version": "…", "path": "…", "fetched": "2026-10-29" }
+  "license": "…", "source": { "generator": "80_TOOLS/generators/make-shield-logo.py", "decision": "ADR-0015", "drawn": "2026-10-31" }
 }
 ```
 
@@ -50,6 +51,6 @@ Every asset has a `<file>.meta.json` beside it:
 **Icons:** the design-system copy in `10_DESIGN_SYSTEM/iconography/` is the source. Copy changes here and run `python3 80_TOOLS/build-icon-data.py`; the `mirrors` check fails if the two folders differ.
 
 ## Licences
-- Brand, Phantom, vectors, icons and templates: project-original, owner-controlled ([sidecars](brand/logo/phantom-emblem.svg.meta.json) say so per file).
+- Brand, Phantom, vectors, icons and templates: project-original, owner-controlled ([sidecars](brand/phantom-hero/phantom-emblem.svg.meta.json) say so per file).
 - Fonts: SIL Open Font License 1.1 — the `OFL.txt` in each family folder must travel with the files.
 - Third-party images are **not** here; they live in `40_MOCKUPS/references/` and are never shipped ([ADR-0007](../00_START_HERE/decisions/ADR-0007-third-party-references.md)).

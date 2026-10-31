@@ -24,6 +24,7 @@ Pieces the product needs that the library does not ship yet. Status **DRAFT** un
 
 | Component | Below 768 px today | Canon says |
 |---|---|---|
+| `PhantomHero` (name) | The section's `aria-label` is the hard-coded old name "Phantom Portals" | Should read **Polka Portals** ([ADR-0014](../../00_START_HERE/decisions/ADR-0014-rename-polka-portals.md)). Fix in the next design-system export (or accept an `aria-label` prop); until then wrap the hero in a labelled region in app code |
 | `PhantomHero` | Art stays 420 px wide and absolutely positioned; headline stays 56 px; 48 px padding — the glass plate keeps copy readable, but the art is mostly clipped | Art drops to the emblem alone; hero 180–300 px tall; display size steps down |
 | `TabStrip` | Tabs overflow the strip | Strip scrolls horizontally, or becomes a tab switcher |
 | `UtilityRail` | Stays a vertical rail | Becomes a 5-item bottom dock |

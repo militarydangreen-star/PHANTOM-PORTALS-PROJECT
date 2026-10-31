@@ -2,7 +2,7 @@
   "id": "PP-CON-004",
   "file": "phantom-portals-plate-01-operator-spec.webp",
   "title": "Phantom Portals — Plate 01/07, Fig. 1 The Operator (specimen sheet)",
-  "status": "UNCLEAR",
+  "status": "REFERENCE",
   "canon_version": "1.2.0",
   "kind": "raster",
   "format": "webp",
@@ -12,7 +12,7 @@
   "usage": "Character specimen sheet in the canon inks: hooded figure holding the crimson singularity, side studies (sample, rear view, portal core, sync interface, stabilization waveform, isometric reference), shield logo, palette #151519 / #F6F5F2 / #A0112B. Matches the PP-IMG-HERO-001 specimen-plate brief.",
   "rules": [
     "PP-AUD-IMAGE-001: REWORK — garbled micro-text in captions, 4% warm orange glow (orb), three views of the figure on one sheet (acceptable for a character sheet, not for UI).",
-    "Pairs the shield logo with the name Phantom Portals (C-10)."
+    "Pairs the shield logo with the old name Phantom Portals; the shield was adopted as the logo on 2026-10-31 (ADR-0015)."
   ],
   "tags": [
     "concept",

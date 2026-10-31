@@ -27,7 +27,7 @@ A new tool page in the Command Center — Diagnostics, Network, Recovery, Drive 
 
 ## Prompt
 ```text
-You are building the {{MODULE}} screen of Phantom Portals, an offline-first IT command center. Its purpose: {{PURPOSE}}.
+You are building the {{MODULE}} screen of Polka Portals, an offline-first IT command center. Its purpose: {{PURPOSE}}.
 
 Read first, in this order, and follow them over anything you remember:
 1. PHANTOM_PORTALS_CANON/50_AGENTS/project-instructions.md

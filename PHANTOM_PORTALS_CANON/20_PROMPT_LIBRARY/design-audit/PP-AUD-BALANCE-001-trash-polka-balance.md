@@ -25,7 +25,7 @@ Art direction check for anything visual: a hero, a poster, a thumbnail, a cover,
 
 ## Prompt
 ```text
-Review the composition of {{TARGET}} against the Phantom Portals visual language (composition-ratios.md, trash-polka-rules.md, isometric-hud-rules.md, the-phantom.md).
+Review the composition of {{TARGET}} against the Polka Portals visual language (composition-ratios.md, trash-polka-rules.md, isometric-hud-rules.md, the-phantom.md).
 
 Measure (with code where you can — e.g. Python + Pillow on a screenshot or the image):
 1. Colour weight: classify every pixel to the nearest of paper #F6F5F2 / white, ink #151519 / black, crimson #A0112B–#B8143E, other. Report percentages. Target 55–65 % white · 25–35 % black · 5–10 % crimson; "other" should be near zero apart from anti-aliasing and photo-free greys.

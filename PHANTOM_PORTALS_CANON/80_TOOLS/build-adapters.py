@@ -164,10 +164,10 @@ def build_shadcn():
         '$schema': 'https://ui.shadcn.com/schema/registry-item.json',
         'name': 'phantom-portals',
         'type': 'registry:theme',
-        'title': 'Phantom Portals — White / Crimson / Black',
-        'description': ('White-forward Trash Polka x isometric HUD theme from the Phantom Portals canon. '
+        'title': 'Polka Portals — White / Crimson / Black',
+        'description': ('White-forward Trash Polka x isometric HUD theme from the Polka Portals canon. '
                         'Light is the default white-forward UI; dark is for inverse regions (boot, terminal, media stages). ' + HEADER),
-        'author': 'Phantom Portals canon',
+        'author': 'Polka Portals canon',
         'cssVars': {
             'theme': {'font-sans': font_stack('font-sans'), 'font-heading': font_stack('font-heading'), 'font-mono': font_stack('font-mono')},
             'light': light,
@@ -179,7 +179,7 @@ def build_shadcn():
     darkc = '\n'.join(f'  --{k}: {v};' for k, v in dark.items())
     theme_colors = '\n'.join(f'  --color-{r}: var(--{r});' for r in roles)
     css = f"""/* {HEADER}
- * Phantom Portals theme for shadcn/ui on Tailwind CSS v4.
+ * Polka Portals theme for shadcn/ui on Tailwind CSS v4.
  * Light (:root) is the white-forward UI. Put .dark on inverse REGIONS (boot, terminal stage, media preview),
  * not on the whole site — the product is white-forward.
  * Fonts: copy 30_ASSETS/fonts to ./fonts next to phantom-fonts.css (keeps OFL.txt with each family).
@@ -336,7 +336,7 @@ def build_figma():
         floats.append({'name': t['path'].replace('.', '/'), 'type': 'FLOAT', 'value': val, 'scopes': scope, 'codeSyntax': {'WEB': f'var(--{name})'}, 'token': name})
     spec = {
         '_generated': HEADER,
-        'file': {'name': 'Phantom Portals — Design System', 'pages': ['Cover', 'Getting started', 'Foundations', 'Components', 'Templates', '_Scratch']},
+        'file': {'name': 'Polka Portals — Design System', 'pages': ['Cover', 'Getting started', 'Foundations', 'Components', 'Templates', '_Scratch']},
         'collections': [
             {'name': 'Primitives', 'modes': ['Value'], 'note': 'Raw canon colours; hidden from pickers (scopes []).', 'variables': prim + overlays},
             {'name': 'Color', 'modes': ['Light', 'Inverse'], 'note': 'Semantic roles, same names as the shadcn CSS variables. Inverse = black architecture regions. A second mode needs a Figma Professional plan or higher.',
@@ -362,9 +362,9 @@ def build_canva():
     rows = '\n'.join(f'| {n} | `{hexv(t)}` | `{t}` | {u} |' for n, t, u in colours)
     fonts = SRC['font']
     md = f"""<!-- {HEADER} -->
-# Canva Brand Kit — Phantom Portals
+# Canva Brand Kit — Polka Portals
 
-Canva's API can read Brand Kits but cannot create them, so set this one up once by hand: **Canva → Brand → Add new → "Phantom Portals"**. Every value below comes from the canon tokens.
+Canva's API can read Brand Kits but cannot create them, so set this one up once by hand: **Canva → Brand → Add new → "Polka Portals"**. Every value below comes from the canon tokens.
 
 ## Colours (enter in this order)
 | Name | Hex | Canon token | Use |
@@ -384,12 +384,13 @@ Rules: paper dominates (55–65 %), black frames (25–35 %), crimson is one poi
 ## Logos (upload from `30_ASSETS/brand`)
 | Canva logo slot | File |
 |---|---|
-| Primary logo | `logo/phantom-lockup.svg` |
-| Wordmark | `wordmark/phantom-wordmark.svg` |
-| Wordmark on dark | `wordmark/phantom-wordmark-inverse.svg` |
-| Icon | `logo/phantom-monogram.svg` |
-| Emblem | `phantom-hero/phantom-emblem-2048.png` |
-| Emblem on dark | `phantom-hero/phantom-emblem-inverse-2048.png` |
+| Primary logo | `logo/polka-lockup-horizontal.svg` (on dark: `logo/polka-lockup-horizontal-inverse.svg`) |
+| Stacked logo | `logo/polka-lockup-stacked.svg` |
+| Shield (the mark alone) | `shield/polka-shield.svg` · PNG `shield/polka-shield-2048.png` |
+| Shield, one colour | `shield/polka-shield-mono-ink.svg`, `shield/polka-shield-mono-paper.svg` |
+| Small sizes / profile icon | `shield/polka-shield-small.svg`, `shield/polka-shield-badge.svg` |
+| Wordmark | `wordmark/polka-wordmark.svg` (on dark: `-inverse.svg`) |
+| Character art (not a logo) | `phantom-hero/phantom-emblem-2048.png` (on dark: `phantom-emblem-inverse-2048.png`) |
 
 Clear space: a quarter of the emblem's width on every side. One Phantom per page.
 

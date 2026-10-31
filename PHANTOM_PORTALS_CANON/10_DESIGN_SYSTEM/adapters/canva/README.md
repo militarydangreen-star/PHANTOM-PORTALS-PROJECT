@@ -1,6 +1,8 @@
-# Canva kit — Phantom Portals
+# Canva kit — Polka Portals
 
 What lives in the owner's Canva account, where it came from in this canon, and how to rebuild it. Built 2026-10-30 through the Canva connector.
+
+> **Canon 1.3.0 (2026-10-31): not yet synced.** The project is now **Polka Portals** and the logo is the shield ([ADR-0014](../../../00_START_HERE/decisions/ADR-0014-rename-polka-portals.md), [ADR-0015](../../../00_START_HERE/decisions/ADR-0015-shield-logo.md)). The Canva items below still carry the old name and the retired reaper marks. To sync (needs the owner's approval in Canva): rename the folder and board, replace the board with the 10-page `brand-board.pdf` (it now opens with a logo page), upload `30_ASSETS/brand/shield/polka-shield-2048.png`, `polka-app-icon-1024.png` and PNG renders of the lockups and wordmark, and delete the five retired uploads marked † below. The Brand Kit sheet ([brand-kit.md](brand-kit.md)) already lists the new files.
 
 ## In Canva
 | Item | Canva ID | Link | Status |
@@ -15,11 +17,11 @@ Canva does not reliably render the SVG filters and masks the Ink Protocol vector
 | Canva media ID | File | Canon source |
 |---|---|---|
 | `MAHZgPG2-oc` | phantom-emblem-2048.png | `30_ASSETS/brand/phantom-hero/phantom-emblem-2048.png` (as is) |
-| `MAHZgIRSNGo` | phantom-lockup.png | `30_ASSETS/brand/logo/phantom-lockup.svg` |
-| `MAHZgLJ9h5s` | phantom-monogram.png | `30_ASSETS/brand/logo/phantom-monogram.svg` |
-| `MAHZgAtjFaM` | phantom-app-icon.png | `30_ASSETS/brand/logo/phantom-app-icon.svg` |
-| `MAHZgMp8emw` | phantom-wordmark.png | `30_ASSETS/brand/wordmark/phantom-wordmark.svg` |
-| `MAHZgI-YhBA` | phantom-wordmark-inverse.png | `30_ASSETS/brand/wordmark/phantom-wordmark-inverse.svg` |
+| `MAHZgIRSNGo` | phantom-lockup.png † | retired — `90_ARCHIVE/brand-marks-phantom-2026-10-31/phantom-lockup.svg` |
+| `MAHZgLJ9h5s` | phantom-monogram.png † | retired — `90_ARCHIVE/brand-marks-phantom-2026-10-31/phantom-monogram.svg` |
+| `MAHZgAtjFaM` | phantom-app-icon.png † | retired — `90_ARCHIVE/brand-marks-phantom-2026-10-31/phantom-app-icon.svg` |
+| `MAHZgMp8emw` | phantom-wordmark.png † | retired — `90_ARCHIVE/brand-marks-phantom-2026-10-31/phantom-wordmark.svg` |
+| `MAHZgI-YhBA` | phantom-wordmark-inverse.png † | retired — `90_ARCHIVE/brand-marks-phantom-2026-10-31/phantom-wordmark-inverse.svg` |
 | `MAHZgLyQmAQ` | brush-slash.png | `30_ASSETS/textures/brush-strokes/brush-slash.svg` |
 | `MAHZgJ1gb74` | enso-ring.png | `30_ASSETS/textures/brush-strokes/enso-ring.svg` |
 | `MAHZgC-k-40` | splatter-crimson.png | `30_ASSETS/textures/ink-splash/splatter-crimson.svg` |

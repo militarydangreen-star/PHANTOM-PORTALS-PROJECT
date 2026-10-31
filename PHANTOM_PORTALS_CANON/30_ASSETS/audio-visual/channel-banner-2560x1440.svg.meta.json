@@ -3,12 +3,12 @@
   "file": "channel-banner-2560x1440.svg",
   "title": "Channel banner template 2560×1440",
   "status": "CURRENT",
-  "canon_version": "1.0.0",
+  "canon_version": "1.3.0",
   "kind": "template",
   "format": "svg",
   "dimensions": "2560x1440",
-  "bytes": 83718,
-  "sha256": "12ce092dace2e8979dec6878597511951b24b36d877f3478f8f4c56c190f3182",
+  "bytes": 83722,
+  "sha256": "c260f052d489f868a4eb5c15a26caad6135f9f50550681c22f4b722cd38a3d67",
   "usage": "YouTube channel art. Keep the wordmark and tagline in the central 1546×423 safe band (GUIDES layer). Export PNG/JPG ≤ 6 MB.",
   "rules": [
     "Nothing essential outside the 1546×423 safe band.",
@@ -21,7 +21,7 @@
     "channel",
     "template"
   ],
-  "license": "Project-original artwork for Phantom Portals. Owner-controlled; all rights reserved by the project owner.",
+  "license": "Project-original artwork for Polka Portals. Owner-controlled; all rights reserved by the project owner.",
   "source": {
     "origin": "Drawn for the canon on 2026-10-29 by 80_TOOLS/generators/make-media-templates.py (native SVG art; wordmark linked from 30_ASSETS/brand)",
     "author": "Claude Code for the project owner",

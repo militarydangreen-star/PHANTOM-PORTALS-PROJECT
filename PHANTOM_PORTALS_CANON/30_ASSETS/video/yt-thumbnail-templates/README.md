@@ -4,7 +4,7 @@
 
 | Layer | Holds | Edit |
 |---|---|---|
-| TEXT | Episode label (JetBrains Mono 500, crimson), two-line title (Space Grotesk 700, 104 px, ink), crimson rule, subtitle (Inter 400, ink-secondary), wordmark | Replace the words; keep sizes |
+| TEXT | Episode label (JetBrains Mono 500, crimson), two-line title (Space Grotesk 700, 104 px, ink), crimson rule, subtitle (Inter 400, ink-secondary), logo lockup | Replace the words; keep sizes |
 | ART | Isometric grid, halftone fade, graduated ring with a crimson arc, the crimson slash, splatter | Keep, or replace with art from [PP-IMG-THUMB-001](../../../20_PROMPT_LIBRARY/image-gen/thumbnails/PP-IMG-THUMB-001-tutorial-thumbnail.md) / [002](../../../20_PROMPT_LIBRARY/image-gen/thumbnails/PP-IMG-THUMB-002-phantom-feature-thumbnail.md) |
 | GUIDES (hidden) | 64 px margin, art zone line at x = 704, timestamp overlay box bottom-right | Show while editing |
 

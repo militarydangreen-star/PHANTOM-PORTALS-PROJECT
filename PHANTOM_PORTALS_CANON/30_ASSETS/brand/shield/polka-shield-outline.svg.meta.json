@@ -1,0 +1,35 @@
+{
+  "id": "PP-BRAND-016",
+  "file": "polka-shield-outline.svg",
+  "title": "Polka Portals shield, line art",
+  "status": "CURRENT",
+  "canon_version": "1.3.0",
+  "kind": "vector",
+  "format": "svg",
+  "dimensions": "200x240",
+  "bytes": 1154,
+  "sha256": "a028f127012e76d80e8b5e1eb4839759819dd29cf3159017ba6ba6afaa0e1769",
+  "usage": "Blueprint and spec sheets, line-art illustration, laser cutting. Not a primary logo.",
+  "rules": [
+    "Clear space: half the shield width on every side.",
+    "Minimum size: 48 px tall for the full shield; below that use polka-shield-small.svg (32 px) or the favicon.",
+    "Three inks only (ink #151519, paper #F6F5F2, crimson #A0112B). Never recolour, outline, add effects, rotate or stretch.",
+    "One shield per surface. The hooded Phantom is the character, not the logo; never combine them into one mark."
+  ],
+  "tags": [
+    "polka-portals",
+    "shield",
+    "line-art"
+  ],
+  "license": "Project-original artwork for Polka Portals. Owner-controlled; all rights reserved by the project owner. Wordmark letterforms are outlined from Space Grotesk (SIL Open Font License 1.1).",
+  "source": {
+    "system": "Polka Portals canon (White / Crimson / Black)",
+    "decision": "ADR-0015",
+    "generator": "80_TOOLS/generators/make-shield-logo.py",
+    "derived_from": [
+      "PP-CON-002 polka-portals-asset-pack-dark.webp",
+      "PP-CON-004 phantom-portals-plate-01-operator-spec.webp"
+    ],
+    "drawn": "2026-10-31"
+  }
+}

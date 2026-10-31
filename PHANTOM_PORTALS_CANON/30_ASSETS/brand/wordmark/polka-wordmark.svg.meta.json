@@ -1,0 +1,33 @@
+{
+  "id": "PP-BRAND-028",
+  "file": "polka-wordmark.svg",
+  "title": "Polka Portals wordmark",
+  "status": "CURRENT",
+  "canon_version": "1.3.0",
+  "kind": "vector",
+  "format": "svg",
+  "dimensions": "992x70",
+  "bytes": 3004,
+  "sha256": "2ccc9afdb8a0a55a65e6369f48e0e45ff329910415b336886e69b3820305e9b6",
+  "usage": "Name on its own, ink on paper. Space Grotesk 700 outlined, tracking +0.20 em.",
+  "rules": [
+    "Clear space: the cap height on every side.",
+    "Minimum width: 120 px on screen, 30 mm in print.",
+    "Never retype the name in another font, re-track it, or set it in crimson."
+  ],
+  "tags": [
+    "polka-portals",
+    "wordmark"
+  ],
+  "license": "Project-original artwork for Polka Portals. Owner-controlled; all rights reserved by the project owner. Wordmark letterforms are outlined from Space Grotesk (SIL Open Font License 1.1).",
+  "source": {
+    "system": "Polka Portals canon (White / Crimson / Black)",
+    "decision": "ADR-0015",
+    "generator": "80_TOOLS/generators/make-shield-logo.py",
+    "derived_from": [
+      "PP-CON-002 polka-portals-asset-pack-dark.webp",
+      "PP-CON-004 phantom-portals-plate-01-operator-spec.webp"
+    ],
+    "drawn": "2026-10-31"
+  }
+}

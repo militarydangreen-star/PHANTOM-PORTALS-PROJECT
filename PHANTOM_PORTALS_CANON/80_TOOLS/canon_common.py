@@ -1,4 +1,4 @@
-"""Shared helpers for the Phantom Portals canon tools. Stdlib only, offline."""
+"""Shared helpers for the Polka Portals canon tools. Stdlib only, offline."""
 import hashlib
 import json
 import re

@@ -3,12 +3,12 @@
   "file": "album-cover-3000.svg",
   "title": "Album / single cover template 3000×3000",
   "status": "CURRENT",
-  "canon_version": "1.0.0",
+  "canon_version": "1.3.0",
   "kind": "template",
   "format": "svg",
   "dimensions": "3000x3000",
-  "bytes": 43529,
-  "sha256": "9d5ad913d88919a565e432997e337aa63a446a0f2e4e5cb04546e973e4bf02f1",
+  "bytes": 43525,
+  "sha256": "ade75e23e8243b031094ccc629d5edff12d99ddda6fdd36cf133642f30c39952",
   "usage": "Album / single cover. Edit the TEXT layer; place the emblem or PP-IMG-ALBUM-001 art in the centrepiece guide (GUIDES layer). Export 3000×3000 RGB JPG/PNG.",
   "rules": [
     "Must read at 64 px: short title or none.",
@@ -21,7 +21,7 @@
     "music",
     "template"
   ],
-  "license": "Project-original artwork for Phantom Portals. Owner-controlled; all rights reserved by the project owner.",
+  "license": "Project-original artwork for Polka Portals. Owner-controlled; all rights reserved by the project owner.",
   "source": {
     "origin": "Drawn for the canon on 2026-10-29 by 80_TOOLS/generators/make-media-templates.py (native SVG art; wordmark linked from 30_ASSETS/brand)",
     "author": "Claude Code for the project owner",

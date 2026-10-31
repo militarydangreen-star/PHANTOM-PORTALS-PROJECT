@@ -22,10 +22,10 @@ await sd.buildAllPlatforms();
 // css/variables has no header option that matches ours; prepend it.
 const cssPath = join(here, '../10_DESIGN_SYSTEM/tokens/build/tokens.css');
 const css = await readFile(cssPath, 'utf8');
-if (!css.startsWith('/*\n * Phantom Portals canon')) {
+if (!css.startsWith('/*\n * Polka Portals canon')) {
   await writeFile(
     cssPath,
-    '/*\n * Phantom Portals canon — tokens.css\n * GENERATED from 10_DESIGN_SYSTEM/tokens/tokens.json by 80_TOOLS/build-tokens. Do not edit.\n */\n' + css,
+    '/*\n * Polka Portals canon — tokens.css\n * GENERATED from 10_DESIGN_SYSTEM/tokens/tokens.json by 80_TOOLS/build-tokens. Do not edit.\n */\n' + css,
   );
 }
 // validate-canon.py compares this against tokens.json to catch a stale build.

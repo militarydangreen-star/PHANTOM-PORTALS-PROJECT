@@ -1,0 +1,35 @@
+{
+  "id": "PP-BRAND-019",
+  "file": "polka-app-icon.svg",
+  "title": "Polka Portals app icon",
+  "status": "CURRENT",
+  "canon_version": "1.3.0",
+  "kind": "vector",
+  "format": "svg",
+  "dimensions": "1024x1024",
+  "bytes": 1598,
+  "sha256": "fb21a19a21fb9c31cfb6bd0a175b576fd9a253cc548f9f2bbc2c4c81b657bc04",
+  "usage": "Master for app and PWA icons: full-bleed ink square; the platform applies its own corner mask.",
+  "rules": [
+    "Clear space: half the shield width on every side.",
+    "Minimum size: 48 px tall for the full shield; below that use polka-shield-small.svg (32 px) or the favicon.",
+    "Three inks only (ink #151519, paper #F6F5F2, crimson #A0112B). Never recolour, outline, add effects, rotate or stretch.",
+    "One shield per surface. The hooded Phantom is the character, not the logo; never combine them into one mark."
+  ],
+  "tags": [
+    "polka-portals",
+    "shield",
+    "app-icon"
+  ],
+  "license": "Project-original artwork for Polka Portals. Owner-controlled; all rights reserved by the project owner. Wordmark letterforms are outlined from Space Grotesk (SIL Open Font License 1.1).",
+  "source": {
+    "system": "Polka Portals canon (White / Crimson / Black)",
+    "decision": "ADR-0015",
+    "generator": "80_TOOLS/generators/make-shield-logo.py",
+    "derived_from": [
+      "PP-CON-002 polka-portals-asset-pack-dark.webp",
+      "PP-CON-004 phantom-portals-plate-01-operator-spec.webp"
+    ],
+    "drawn": "2026-10-31"
+  }
+}

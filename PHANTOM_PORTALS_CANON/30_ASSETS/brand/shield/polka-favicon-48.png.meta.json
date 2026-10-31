@@ -1,0 +1,35 @@
+{
+  "id": "PP-BRAND-024",
+  "file": "polka-favicon-48.png",
+  "title": "Polka Portals favicon, 48 px",
+  "status": "CURRENT",
+  "canon_version": "1.3.0",
+  "kind": "raster",
+  "format": "png",
+  "dimensions": "40x48",
+  "bytes": 2582,
+  "sha256": "8f513fdac40ee8cbfc03b5d82ae11dc6d8088944755e0deb9dbdec9eb79da418",
+  "usage": "Favicon / PWA small icon.",
+  "rules": [
+    "Clear space: half the shield width on every side.",
+    "Minimum size: 48 px tall for the full shield; below that use polka-shield-small.svg (32 px) or the favicon.",
+    "Three inks only (ink #151519, paper #F6F5F2, crimson #A0112B). Never recolour, outline, add effects, rotate or stretch.",
+    "One shield per surface. The hooded Phantom is the character, not the logo; never combine them into one mark."
+  ],
+  "tags": [
+    "polka-portals",
+    "favicon",
+    "png"
+  ],
+  "license": "Project-original artwork for Polka Portals. Owner-controlled; all rights reserved by the project owner. Wordmark letterforms are outlined from Space Grotesk (SIL Open Font License 1.1).",
+  "source": {
+    "system": "Polka Portals canon (White / Crimson / Black)",
+    "decision": "ADR-0015",
+    "generator": "80_TOOLS/generators/make-shield-logo.py",
+    "derived_from": [
+      "PP-CON-002 polka-portals-asset-pack-dark.webp",
+      "PP-CON-004 phantom-portals-plate-01-operator-spec.webp"
+    ],
+    "drawn": "2026-10-31"
+  }
+}

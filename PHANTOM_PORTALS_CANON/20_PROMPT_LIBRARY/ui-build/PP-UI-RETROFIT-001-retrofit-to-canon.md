@@ -27,7 +27,7 @@ Older screens built in the Ruby Edition, the Operator system or the XerXes style
 
 ## Prompt
 ```text
-Restyle {{FILE}} to the current Phantom Portals canon (White-Forward Phantom Edition) without changing what it does.
+Restyle {{FILE}} to the current Polka Portals canon (White-Forward Phantom Edition) without changing what it does.
 
 Read first: PHANTOM_PORTALS_CANON/50_AGENTS/project-instructions.md, 00_START_HERE/CANON_REGISTER.md (what is CURRENT and RETIRED), ADR-0001 and ADR-0002, and 20_PROMPT_LIBRARY/negative/retired-canon-negative.md (every retired colour and font).
 

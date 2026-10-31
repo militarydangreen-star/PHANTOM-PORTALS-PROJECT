@@ -1,7 +1,7 @@
 {
   "id": "PP-BRAND-001",
   "file": "phantom-emblem.svg",
-  "title": "Phantom emblem (Ink Protocol master)",
+  "title": "The Phantom — character emblem (Ink Protocol vector master)",
   "status": "CURRENT",
   "canon_version": "1.0.0",
   "kind": "vector",
@@ -9,18 +9,19 @@
   "dimensions": "1024x1024",
   "bytes": 1782764,
   "sha256": "4d358d88fbe57f2accbf6269c76601a6188f87e8b434a0e89bef081e475d01f4",
-  "usage": "Primary emblem on white or canvas: print, posters, about pages, splash. ~1.8 MB of drawn detail; for screens use the PNGs in brand/phantom-hero.",
+  "usage": "Character art on white or canvas: print, posters, about pages, splash. ~1.8 MB of drawn detail; for screens use the PNGs beside it. Not the logo — the shield is (ADR-0015).",
   "rules": [
     "One Phantom per surface.",
     "Clear space: a quarter of the emblem width on every side.",
-    "Never recolour the figure, add a second character, stretch it, or place it over busy art."
+    "Never recolour the figure, add a second character, stretch it, or place it over busy art.",
+    "Never use it as the logo or merge it with the shield; with both on one surface, the shield sits in the chrome and the Phantom is the art."
   ],
   "tags": [
     "phantom",
-    "logo",
-    "ink-protocol"
+    "ink-protocol",
+    "character"
   ],
-  "license": "Project-original artwork for Phantom Portals. Owner-controlled; all rights reserved by the project owner.",
+  "license": "Project-original artwork for Polka Portals. Owner-controlled; all rights reserved by the project owner.",
   "source": {
     "system": "Phantom Portals design system (White / Crimson / Black)",
     "artifact": "https://claude.ai/artifact/HG2ihDf5JsALbo4fxCXcmV",

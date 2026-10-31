@@ -26,7 +26,7 @@ Every AI-generated image passes this before it is saved into `30_ASSETS` (where 
 
 ## Prompt
 ```text
-Review the attached image, generated with prompt {{PROMPT_ID}} from the Phantom Portals prompt library, before it enters the asset library. Be strict; a rejected image costs one more generation, an accepted bad one costs the brand.
+Review the attached image, generated with prompt {{PROMPT_ID}} from the Polka Portals prompt library, before it enters the asset library. Be strict; a rejected image costs one more generation, an accepted bad one costs the brand.
 
 Hard gates — any failure is REJECT:
 1. Palette: only ink black, warm paper and blood crimson (plus at most a tiny electric #EE5367 point of light). No gold, purple, teal, neon, rainbow, or obsidian-dark full-bleed backgrounds unless the prompt was an inverse/dark variant.

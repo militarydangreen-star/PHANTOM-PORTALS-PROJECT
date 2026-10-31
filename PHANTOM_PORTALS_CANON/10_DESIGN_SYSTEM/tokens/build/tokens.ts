@@ -1,4 +1,4 @@
-// Phantom Portals canon — tokens.ts
+// Polka Portals canon — tokens.ts
 // GENERATED from 10_DESIGN_SYSTEM/tokens/tokens.json by 80_TOOLS/build-tokens. Do not edit.
 export const tokens = {
   "surface": {

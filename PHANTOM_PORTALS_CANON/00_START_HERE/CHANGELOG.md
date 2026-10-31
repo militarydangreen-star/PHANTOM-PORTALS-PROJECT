@@ -1,9 +1,47 @@
 <!-- canon-lint: allow-retired -->
 # Changelog
 
-All notable changes to the Phantom Portals canon. Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/); versions follow [ADR-0010](decisions/ADR-0010-canon-governance.md) (semantic versioning for the canon).
+All notable changes to the Polka Portals canon (called Phantom Portals until 1.3.0). Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/); versions follow [ADR-0010](decisions/ADR-0010-canon-governance.md) (semantic versioning for the canon).
 
 Dates before 1.0.0 are reconstructed from the version stamps of the owner's Claude artifacts.
+
+## [1.3.0] — 2026-10-31
+
+The project is renamed **Polka Portals** and the **shield mask** becomes its logo, redrawn as clean vectors. The hooded Phantom stays as the character. These close conflicts C-09 and C-10.
+
+### Added
+- **Decisions** [ADR-0014](decisions/ADR-0014-rename-polka-portals.md) (rename) and [ADR-0015](decisions/ADR-0015-shield-logo.md) (shield logo). Both are Accepted on the owner's word. The decision index now also lists ADR-0011 … 0013.
+- **Logo family** (PP-BRAND-013 … 032, sidecar-tracked):
+  - `30_ASSETS/brand/shield/`: the primary shield, one-colour ink and paper versions, line art, a small version for 16–47 px, a badge and an app icon. Also PNGs at 512 and 2048, app icon PNGs at 1024 and 180, and favicons at 16, 32 and 48 plus an `.ico`.
+  - `brand/wordmark/polka-wordmark*.svg`: Space Grotesk 700, outlined, tracking +0.20 em.
+  - `brand/logo/polka-lockup-*.svg`: horizontal, horizontal inverse and stacked.
+  - All drawn by `80_TOOLS/generators/make-shield-logo.py` from the concept geometry. Each colour is one flattened path in the three canon inks, with no masks, filters or strokes.
+- **[logo.md](../10_DESIGN_SYSTEM/visual-language/logo.md)**: anatomy, which file for which job, and the rules (clear space, minimum sizes, three inks, one shield per surface, never merged with the Phantom).
+- **Brand board**: a new opening *00 — Logo* page, making 10 pages. `brand-board.pdf` was re-rendered.
+- **Conflict C-11**: the PHANTOM USB product name, which stays for now. Register CR-009, CR-035, CR-036 and CR-097.
+
+### Changed
+- **Name**: every name a person reads in CURRENT canon now says Polka Portals. That covers docs, page titles, the gallery, templates, adapter titles (shadcn theme, Figma spec, Canva kit sheet), prompts, agent instructions, the Codex hand-off and sidecar licence lines.
+- **What keeps the old name**: identifiers (`PHANTOM_PORTALS_CANON/`, `window.PhantomPortals`, `.pp-*`, `PP-` IDs, file names), history (90_ARCHIVE, 99_RELEASES, earlier changelog entries, accepted ADRs), the owner's verbatim documents, `_source` and sidecar provenance.
+- **Logo slots** now use the shield: gallery header and favicon, HTML starter, deck (title footer and closing lockup), artifact inventory, media templates (YouTube thumbnail and channel banner link the horizontal lockup), the Canva Brand Kit sheet and the brand board cover.
+- **The Phantom**:
+  - The emblem vector masters (PP-BRAND-001, 002) moved from `brand/logo/` to `brand/phantom-hero/` as character art.
+  - [the-phantom.md](../10_DESIGN_SYSTEM/visual-language/the-phantom.md) lists character files only.
+  - C-07 (emblem clear space) now applies to character art only.
+- **Concept sheets** PP-CON-001 … 005 move from UNCLEAR to **REFERENCE**, as the source of the name and logo (CR-068).
+- **Codex hand-off v1.1**:
+  - The work order gains a name-and-logo addendum: user-facing chrome shows Polka Portals with the shield favicon, app icon and lockup, and code identifiers stay.
+  - `AGENTS_SNIPPET.md` and `project-instructions.md` (full and compact blocks) carry the brand rule.
+- **Negative prompt** PP-NEG-RETIRED-001 v1.2.0 now also avoids the old name and the reaper used as a logo.
+- **Backlog**: PhantomHero's hard-coded `aria-label` still says "Phantom Portals". It will be fixed in the next design-system export.
+
+### Retired
+- To `90_ARCHIVE/brand-marks-phantom-2026-10-31/` (sealed): the reaper monogram, app icon and lockup, and the PHANTOM PORTALS wordmark and its inverse (PP-BRAND-003 … 007). Their sidecars are folded into the folder's README.
+
+### Not done (needs the owner)
+- **Canva**: the folder, board and uploads still carry the old name and marks. Updating them needs the owner's approval; the steps are in [canva/README.md](../10_DESIGN_SYSTEM/adapters/canva/README.md).
+- **Figma**: the connector is still not enabled.
+- **Trademark**: no search has been run on the name.
 
 ## [1.2.0] — 2026-10-30
 

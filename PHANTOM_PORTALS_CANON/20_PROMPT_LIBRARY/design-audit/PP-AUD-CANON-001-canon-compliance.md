@@ -27,7 +27,7 @@ Before a screen, component or page is promoted from DRAFT to CURRENT, and after 
 
 ## Prompt
 ```text
-Audit {{TARGET}} against the Phantom Portals canon. Read the files, then open the page in a headless browser where possible — judge the rendered result, not only the source.
+Audit {{TARGET}} against the Polka Portals canon. Read the files, then open the page in a headless browser where possible — judge the rendered result, not only the source.
 
 Sources of truth, in order: 10_DESIGN_SYSTEM/tokens/tokens.json → 10_DESIGN_SYSTEM docs → 00_START_HERE/CANON_REGISTER.md (CURRENT/RETIRED) → 50_AGENTS/project-instructions.md.
 

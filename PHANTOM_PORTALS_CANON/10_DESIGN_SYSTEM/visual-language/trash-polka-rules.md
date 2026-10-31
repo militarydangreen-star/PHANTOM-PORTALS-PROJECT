@@ -1,6 +1,6 @@
 # Trash Polka rules
 
-Trash Polka is the expressive half of the formula: red, black and white collage — brush cuts, ink splatter, halftone dots, torn paper, ensō rings, hex fragments, typewriter fragments. In Phantom Portals it **enhances the interface and never overwhelms it**.
+Trash Polka is the expressive half of the formula: red, black and white collage — brush cuts, ink splatter, halftone dots, torn paper, ensō rings, hex fragments, typewriter fragments. In Polka Portals it **enhances the interface and never overwhelms it**.
 
 ## The parts
 All shipped marks are project-original Ink Protocol vectors in [`30_ASSETS/textures`](../../30_ASSETS/textures/) and [`30_ASSETS/hud-geometry`](../../30_ASSETS/hud-geometry/).

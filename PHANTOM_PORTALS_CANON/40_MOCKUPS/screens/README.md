@@ -1,6 +1,6 @@
 # Screens (mockups)
 
-Six artboards from the Claude Design canvas **Phantom Portals** — live at https://claude.ai/artifact/6jk64Yyaaq6JU2Uy41jXv6 — exported on 2026-10-29 and filed by module.
+Six artboards from the Claude Design canvas **Phantom Portals** (the project's name until 2026-10-31; the exports keep it) — live at https://claude.ai/artifact/6jk64Yyaaq6JU2Uy41jXv6 — exported on 2026-10-29 and filed by module.
 
 | Module | File | Canvas board | Size |
 |---|---|---|---|

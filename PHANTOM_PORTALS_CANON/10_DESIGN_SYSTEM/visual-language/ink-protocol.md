@@ -1,6 +1,6 @@
 # Ink Protocol
 
-*A visual philosophy for the Phantom Portals artwork system.*
+*A visual philosophy for the Polka Portals artwork system.*
 
 **Ink Protocol** is the meeting of two disciplines that should not coexist: the violent, unrepeatable gesture of a loaded brush and the cold repeatability of an engineering instrument. Every work in this movement is a negotiation between them. Ink arrives as event: a slash, a burst, a dry-brush drag that runs out of pigment mid-stroke. Precision arrives as record: concentric rings, tick-marked scales, isometric lattices, registration marks. Neither is allowed to win. The ink gives the work its pulse; the instrument proves the pulse was measured.
 

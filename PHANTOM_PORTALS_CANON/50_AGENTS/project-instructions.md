@@ -11,12 +11,14 @@ Paste the **full** block into a Claude Project, a Codex/Cursor `AGENTS.md`, or a
 
 ## Full block
 ```text
-You are working on PHANTOM PORTALS, an offline-first IT command center (a portable browser-shell app on a recovery USB) with a White-Forward Trash Polka × isometric HUD identity.
+You are working on POLKA PORTALS, an offline-first IT command center (a portable browser-shell app on a recovery USB) with a White-Forward Trash Polka × isometric HUD identity.
 
 SOURCE OF TRUTH — read before designing or coding, and prefer it over memory:
 PHANTOM_PORTALS_CANON/ — tokens: 10_DESIGN_SYSTEM/tokens/tokens.json (built CSS/TS/Tailwind in tokens/build); docs: 10_DESIGN_SYSTEM; status of everything: 00_START_HERE/CANON_REGISTER.md; prompts: 20_PROMPT_LIBRARY; assets: 30_ASSETS (catalog INDEX.json). Precedence: tokens > design-system docs > register > agent brief (50_AGENTS/trashy-mr-polka-bot.agent.md) > older handoffs. Where the agent brief's shell sizes differ, the tokens win: tab strip 40, omnibox 44, bookmarks 32, rail 56.
 
 LOOK: white/paper dominates (55–65 %), matte black is the frame (25–35 %: tab strip, rail, terminals), blood crimson is the point (5–10 %: one primary action per context, active states, one cut of art). Fonts: Space Grotesk (headings), Inter (UI/body), JetBrains Mono (data/commands) — bundled locally. Art: ≤ 3 vectors per composition (one crimson), one hooded Phantom at most, never behind controls, tables, terminals, forms or text. Isometric precision for HUD geometry. Style balance ~50/50 across a screen, controls 100 % precise.
+
+BRAND: the name is Polka Portals (Phantom Portals until 2026-10-31; code identifiers such as window.PhantomPortals keep the old name). The logo is the shield mask — 30_ASSETS/brand/shield, lockups in 30_ASSETS/brand/logo, rules in 10_DESIGN_SYSTEM/visual-language/logo.md; copy the files, never redraw or recolour them. The hooded Phantom is the character (hero art), never the logo, never merged with the shield.
 
 RETIRED — never use: the dark Ruby Edition (obsidian + gold, Cinzel), the Operator System (seven operator personas and colours, Bahnschrift, IBM Plex Mono), the XerXes lock (gold + purple, Montserrat), alpine-landscape heroes, orange/sapphire/violet schemes. Full list: 20_PROMPT_LIBRARY/negative/retired-canon-negative.md.
 
@@ -31,8 +33,9 @@ CHANGING THE CANON: new or changed assets get a sidecar (80_TOOLS/index-assets.p
 
 ## Compact block (≤ 1,500 characters)
 ```text
-Phantom Portals: offline-first IT command center. Canon: PHANTOM_PORTALS_CANON (tokens.json > design-system docs > CANON_REGISTER > agent brief; shell sizes from tokens: tabs 40, omnibox 44, bookmarks 32, rail 56).
+Polka Portals: offline-first IT command center. Canon: PHANTOM_PORTALS_CANON (tokens.json > design-system docs > CANON_REGISTER > agent brief; shell sizes from tokens: tabs 40, omnibox 44, bookmarks 32, rail 56).
 Look: white-forward — paper 55–65 %, matte black frame 25–35 %, blood crimson #A0112B 5–10 % (one primary action, active states, one art cut). Space Grotesk headings, Inter UI, JetBrains Mono data — local files, no CDNs. Trash Polka art (≤3 vectors, one crimson, one hooded Phantom max) only in heroes and empty states, never behind controls, tables, terminals or text; isometric precision for HUD lines.
+Logo: the shield mask (30_ASSETS/brand/shield, lockups in brand/logo); the Phantom is character art, never the logo.
 Retired, never use: Ruby obsidian+gold, Operator personas/colours, XerXes gold+purple, Cinzel, Montserrat, Bahnschrift, IBM Plex Mono.
 Build with the component library and tokens only; works from file:// (icons.data.js for icons, absolute asset URLs).
 WCAG 2.2 AA: approved contrast pairs only, 2px crimson focus ring, never colour alone, reduced motion.

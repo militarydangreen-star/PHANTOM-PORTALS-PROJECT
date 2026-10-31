@@ -2,7 +2,7 @@
   "id": "PP-CON-001",
   "file": "polka-portals-ui-inventory-concept.webp",
   "title": "Polka Portals — UI components: artifact inventory concept",
-  "status": "UNCLEAR",
+  "status": "REFERENCE",
   "canon_version": "1.2.0",
   "kind": "raster",
   "format": "webp",
@@ -13,7 +13,7 @@
   "rules": [
     "Rarity in gold, purple and green is off-palette — the canon screen redraws rarity as ink pips.",
     "Crimson weight 16% (canon 5–10%).",
-    "Name \"Polka Portals\" and the shield logo are unresolved (C-09, C-10)."
+    "Name \"Polka Portals\" and the shield logo were adopted on 2026-10-31 (ADR-0014, ADR-0015)."
   ],
   "tags": [
     "concept",

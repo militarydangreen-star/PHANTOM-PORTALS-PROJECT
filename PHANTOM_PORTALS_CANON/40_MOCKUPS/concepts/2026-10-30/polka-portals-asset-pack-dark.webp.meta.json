@@ -2,7 +2,7 @@
   "id": "PP-CON-002",
   "file": "polka-portals-asset-pack-dark.webp",
   "title": "Polka Portals — asset pack sheet (grey/dark)",
-  "status": "UNCLEAR",
+  "status": "REFERENCE",
   "canon_version": "1.2.0",
   "kind": "raster",
   "format": "webp",
@@ -11,7 +11,7 @@
   "sha256": "5aada618a0aae1804be084b42797f73beae5227dd1ada6c3ee1e8b8ecc45d623",
   "usage": "Brand sheet: four shield-logo variations, icon set, UI elements, frames, graphic elements, portal rings, textures, geometric shapes, character illustrations, environment assets, poster compositions, palette and type specimen.",
   "rules": [
-    "Shield-mask logo differs from the canon emblem (C-10).",
+    "Source of the shield-mask logo, adopted and redrawn on 2026-10-31 (ADR-0015, PP-BRAND-013 … 032).",
     "Swatch labels match the canon hexes; rendered chips approximate them; #686868 grey is not a canon token.",
     "Type specimen glyphs are garbled."
   ],

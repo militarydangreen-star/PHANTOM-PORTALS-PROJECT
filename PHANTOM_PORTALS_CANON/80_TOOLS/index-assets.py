@@ -63,7 +63,7 @@ def new_sidecar(args):
         'id': args.id, 'file': f.name, 'title': args.title, 'status': args.status, 'canon_version': CANON_VERSION,
         'kind': args.kind, 'format': f.suffix.lstrip('.'), 'dimensions': None, 'bytes': f.stat().st_size,
         'sha256': sha256(f), 'usage': '', 'rules': [], 'tags': [],
-        'license': 'Project-original artwork for Phantom Portals. Owner-controlled; all rights reserved by the project owner.',
+        'license': 'Project-original artwork for Polka Portals. Owner-controlled; all rights reserved by the project owner.',
         'source': {'origin': 'TODO: where this file came from (tool, prompt id, author, date)'},
     }))
     print(f'Wrote {rel(side)} — fill in usage, rules, tags and source.')

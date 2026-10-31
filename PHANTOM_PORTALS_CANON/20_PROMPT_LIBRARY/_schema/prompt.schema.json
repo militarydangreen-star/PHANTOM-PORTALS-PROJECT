@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://phantom-portals.local/schema/prompt.schema.json",
-  "title": "Phantom Portals prompt front matter",
+  "title": "Polka Portals prompt front matter",
   "description": "Front matter at the top of every prompt file (YAML subset: key: value, key: [a, b], or key: followed by '  - item' lines). Validated by 80_TOOLS/index-prompts.py.",
   "type": "object",
   "required": ["id", "title", "category", "status", "version", "targets", "output", "canon_refs", "updated"],

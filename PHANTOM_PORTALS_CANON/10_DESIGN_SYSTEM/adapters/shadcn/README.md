@@ -1,4 +1,4 @@
-# shadcn/ui theme — Phantom Portals
+# shadcn/ui theme — Polka Portals
 
 A shadcn/ui `registry:theme` for Tailwind CSS v4, generated from the canon tokens. **Light** (`:root`) is the white-forward product UI. **Dark** (`.dark`) is for inverse *regions* — boot screen, terminal stage, media previews — put the class on the region, not on `<html>`. The product is never a dark-mode site.
 

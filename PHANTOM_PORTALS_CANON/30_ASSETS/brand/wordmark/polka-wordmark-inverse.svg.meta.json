@@ -1,0 +1,34 @@
+{
+  "id": "PP-BRAND-029",
+  "file": "polka-wordmark-inverse.svg",
+  "title": "Polka Portals wordmark, inverse",
+  "status": "CURRENT",
+  "canon_version": "1.3.0",
+  "kind": "vector",
+  "format": "svg",
+  "dimensions": "992x70",
+  "bytes": 3004,
+  "sha256": "e4c2735ca0cabc133064d1220dcd20a4a4424d4528d4f32a113da7edfec93f86",
+  "usage": "Name on its own, paper on ink.",
+  "rules": [
+    "Clear space: the cap height on every side.",
+    "Minimum width: 120 px on screen, 30 mm in print.",
+    "Never retype the name in another font, re-track it, or set it in crimson."
+  ],
+  "tags": [
+    "polka-portals",
+    "wordmark",
+    "inverse"
+  ],
+  "license": "Project-original artwork for Polka Portals. Owner-controlled; all rights reserved by the project owner. Wordmark letterforms are outlined from Space Grotesk (SIL Open Font License 1.1).",
+  "source": {
+    "system": "Polka Portals canon (White / Crimson / Black)",
+    "decision": "ADR-0015",
+    "generator": "80_TOOLS/generators/make-shield-logo.py",
+    "derived_from": [
+      "PP-CON-002 polka-portals-asset-pack-dark.webp",
+      "PP-CON-004 phantom-portals-plate-01-operator-spec.webp"
+    ],
+    "drawn": "2026-10-31"
+  }
+}

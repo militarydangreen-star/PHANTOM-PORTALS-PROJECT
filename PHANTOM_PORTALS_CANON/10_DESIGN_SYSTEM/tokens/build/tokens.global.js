@@ -1,4 +1,4 @@
-// Phantom Portals canon — tokens.global.js
+// Polka Portals canon — tokens.global.js
 // GENERATED from 10_DESIGN_SYSTEM/tokens/tokens.json by 80_TOOLS/build-tokens. Do not edit.
 window.PhantomTokens = [
   {

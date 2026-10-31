@@ -1,13 +1,15 @@
-# PHANTOM PORTALS — CANON
+<img src="30_ASSETS/brand/logo/polka-lockup-horizontal.svg" alt="Polka Portals" height="64">
 
-The single folder that holds everything current for the Phantom Portals project: the design system, the prompt library, the asset library, mockups, agent instructions, templates, tooling, the retired canon and every release.
+# POLKA PORTALS — CANON
+
+The single folder that holds everything current for the Polka Portals project: the design system, the prompt library, the asset library, mockups, agent instructions, templates, tooling, the retired canon and every release.
 
 **Start here → [00_START_HERE/README.md](00_START_HERE/README.md)**
 
 | | |
 |---|---|
-| Canon version | **1.2.0** (see [VERSION](VERSION) and [CHANGELOG](00_START_HERE/CHANGELOG.md)) |
-| Visual identity | White-forward Trash Polka × isometric cybernetic HUD — white, matte black, blood crimson; one hooded Phantom |
+| Canon version | **1.3.0** (see [VERSION](VERSION) and [CHANGELOG](00_START_HERE/CHANGELOG.md)) |
+| Visual identity | White-forward Trash Polka × isometric cybernetic HUD — white, matte black, blood crimson; the shield-mask logo; one hooded Phantom as the character |
 | Quality gate | `python3 80_TOOLS/validate-canon.py` must print `11/11 checks passed` |
 | Offline gallery | [10_DESIGN_SYSTEM/gallery/index.html](10_DESIGN_SYSTEM/gallery/index.html) — open in a browser, no network needed |
 

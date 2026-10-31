@@ -166,13 +166,13 @@ text = (f'<text class="mono" x="64" y="120" font-size="26" fill="{CRIMSON}">EP. 
         f'<text class="display" x="64" y="362" font-size="104" fill="{INK}">GOES HERE</text>'
         f'<rect x="64" y="400" width="140" height="10" fill="{CRIMSON}"/>'
         f'<text class="body" x="64" y="470" font-size="34" fill="#55525A">Optional subtitle, 1 line</text>'
-        f'<image x="64" y="600" width="260" height="70" preserveAspectRatio="xMinYMid meet" href="../../brand/wordmark/phantom-wordmark.svg" xlink:href="../../brand/wordmark/phantom-wordmark.svg"/>')
+        f'<image x="64" y="600" width="260" height="70" preserveAspectRatio="xMinYMid meet" href="../../brand/logo/polka-lockup-horizontal.svg" xlink:href="../../brand/logo/polka-lockup-horizontal.svg"/>')
 guides = (f'<rect x="64" y="64" width="{W - 128}" height="{H - 128}" fill="none" stroke="#2F80ED" stroke-dasharray="8 6" stroke-width="2"/>'
           f'<rect x="{W - 180}" y="{H - 70}" width="164" height="54" fill="#2F80ED" opacity="0.25"/>'
           f'<text x="{W - 176}" y="{H - 38}" font-size="14" fill="#2F80ED" font-family="monospace">timestamp overlay</text>'
           f'<line x1="704" y1="0" x2="704" y2="{H}" stroke="#2F80ED" stroke-width="2" stroke-dasharray="4 4"/>'
           f'<text x="712" y="40" font-size="14" fill="#2F80ED" font-family="monospace">art zone → (or place PP-IMG-THUMB art full-bleed)</text>')
-tpl1 = doc(W, H, 'Phantom Portals — YouTube thumbnail 1280×720 (PP-TPL-001)',
+tpl1 = doc(W, H, 'Polka Portals — YouTube thumbnail 1280×720 (PP-TPL-001)',
            'Edit the TEXT layer. Replace the ART layer with art generated from PP-IMG-THUMB-001/002, or keep the drawn art. Show the GUIDES layer while editing; it is hidden for export. Fonts: Space Grotesk 700, Inter 400, JetBrains Mono 500 (30_ASSETS/fonts). The wordmark is linked from 30_ASSETS/brand — keep the folder structure or embed on export.',
            layer('ART', art) + layer('TEXT', text) + layer('GUIDES', guides, hidden=True), depth=2)
 
@@ -188,7 +188,7 @@ text = (f'<text class="heading" x="{x0 + 40}" y="{y0 + 62}" font-size="48" fill=
 guides = (f'<rect x="96" y="54" width="{W - 192}" height="{H - 108}" fill="none" stroke="#2F80ED" stroke-dasharray="8 6" stroke-width="2"/>'
           f'<text x="104" y="84" font-size="18" fill="#2F80ED" font-family="monospace">title-safe (5 %)</text>'
           f'<rect width="{W}" height="{H}" fill="#9AA0A6" opacity="0.35"/>')
-tpl2 = doc(W, H, 'Phantom Portals — lower third 1920×1080 (PP-TPL-002)',
+tpl2 = doc(W, H, 'Polka Portals — lower third 1920×1080 (PP-TPL-002)',
            'Transparent background for video editors. Black plate with a dry-brush crimson spine that breaks out above the plate; name in white (18.2:1), role in on-inverse-secondary (8.61:1). Crimson stays on the spine only — crimson text on black is forbidden (2.26:1). Edit the TEXT layer; GUIDES (hidden) shows title-safe. Motion: see 30_ASSETS/video/lower-thirds/README.md.',
            layer('GUIDES', guides, hidden=True) + layer('PLATE', plate) + layer('TEXT', text), depth=2, bg=False)
 
@@ -207,9 +207,9 @@ centre = (f'<rect x="1050" y="930" width="900" height="900" fill="none" stroke="
           f'<rect x="150" y="150" width="2700" height="2700" fill="none" stroke="#2F80ED" stroke-width="6" stroke-dasharray="24 18"/>'
           f'<text x="170" y="210" font-size="44" fill="#2F80ED" font-family="monospace">5 % margin — keep type inside</text>')
 text = (f'<text class="display" x="180" y="2700" font-size="210" fill="{INK}">RELEASE TITLE</text>'
-        f'<text class="mono" x="186" y="2820" font-size="72" fill="{CRIMSON}">PHANTOM PORTALS</text>'
+        f'<text class="mono" x="186" y="2820" font-size="72" fill="{CRIMSON}">POLKA PORTALS</text>'
         f'<text class="mono" x="186" y="280" font-size="56" fill="{INK}">VOL. 01</text>')
-tpl3 = doc(W, H, 'Phantom Portals — album / single cover 3000×3000 (PP-TPL-003)',
+tpl3 = doc(W, H, 'Polka Portals — album / single cover 3000×3000 (PP-TPL-003)',
            'Streaming services require 3000×3000 RGB, no URLs or social handles in the art. Must read at 64 px: keep the title short or drop it. Paper ground (#F6F5F2); for the dark edition swap the paper rect to #151519 and the ink to #FFFFFF. GUIDES are hidden for export.',
            layer('ART', art) + layer('TEXT', text) + layer('GUIDES', centre, hidden=True), depth=1)
 
@@ -221,14 +221,14 @@ band = (halftone(0, 360, 520, 720, 22, INK, 'l') + halftone(2040, 360, 520, 720,
         + slash(1570, 470, 1370, 990, 90, CRIMSON, bristles=10, seed=13)
         + ruler(560, 895, 1440, INK, every=12)
         + iso_grid(0, 0, 2560, 1440, 120, INK, 0.05))
-logo = (f'<image x="{sx + 60}" y="{sy + 50}" width="720" height="170" preserveAspectRatio="xMinYMid meet" href="../brand/wordmark/phantom-wordmark.svg" xlink:href="../brand/wordmark/phantom-wordmark.svg"/>'
+logo = (f'<image x="{sx + 60}" y="{sy + 50}" width="720" height="170" preserveAspectRatio="xMinYMid meet" href="../brand/logo/polka-lockup-horizontal.svg" xlink:href="../brand/logo/polka-lockup-horizontal.svg"/>'
         f'<text class="mono" x="{sx + 1506}" y="{sy + 120}" font-size="34" fill="{INK}" text-anchor="end">CHANNEL TAGLINE</text>'
         f'<text class="mono" x="{sx + 1506}" y="{sy + 168}" font-size="34" fill="{CRIMSON}" text-anchor="end">NEW UPLOAD DAY</text>')
 guides = ''.join(f'<rect x="{(W - gw) / 2}" y="{(H - gh) / 2}" width="{gw}" height="{gh}" fill="none" stroke="#2F80ED" stroke-width="4" stroke-dasharray="20 12"/>'
                  f'<text x="{(W - gw) / 2 + 12}" y="{(H - gh) / 2 + 40}" font-size="30" fill="#2F80ED" font-family="monospace">{label}</text>'
                  for gw, gh, label in [(2560, 1440, 'TV 2560×1440'), (2560, 423, 'desktop max 2560×423'),
                                        (1855, 423, 'tablet 1855×423'), (1546, 423, 'SAFE — all devices 1546×423')])
-tpl4 = doc(W, H, 'Phantom Portals — channel banner 2560×1440 (PP-TPL-004)',
+tpl4 = doc(W, H, 'Polka Portals — channel banner 2560×1440 (PP-TPL-004)',
            'YouTube channel art. Only the central 1546×423 band is visible on every device; keep the wordmark and tagline there. Max file 6 MB. GUIDES (hidden) show the TV, desktop, tablet and all-device crops.',
            layer('ART', band) + layer('LOGO', logo) + layer('GUIDES', guides, hidden=True), depth=1)
 
