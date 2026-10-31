@@ -22,7 +22,7 @@ import subprocess
 import sys
 from pathlib import Path
 
-from canon_common import (ROOT, SIDECAR_REQUIRED, SIDECAR_ROOTS, STATUSES, load_sidecar, rel, sha256, sidecar_exempt, walk)
+from canon_common import (ROOT, SIDECAR_REQUIRED, SIDECAR_ROOTS, STATUSES, load_sidecar, local_only, rel, sha256, sidecar_exempt, walk, withheld)
 
 TOOLS = ROOT / '80_TOOLS'
 results = []
@@ -101,7 +101,8 @@ def sidecar_check():
                 if meta.get('status') not in STATUSES:
                     p.append(f'{rel(f)}: status {meta.get("status")!r} not in {sorted(STATUSES)}')
                 if not asset.exists():
-                    p.append(f'{rel(f)}: no file beside it')
+                    if not local_only(meta):  # local-only files are absent from public clones by design
+                        p.append(f'{rel(f)}: no file beside it')
                 elif meta.get('sha256') != sha256(asset) or meta.get('bytes') != asset.stat().st_size:
                     p.append(f'{rel(asset)}: hash/bytes differ from its sidecar')
             elif not f.with_name(f.name + '.meta.json').exists():
@@ -154,7 +155,7 @@ LINK_SKIP = ('90_ARCHIVE', '10_DESIGN_SYSTEM/_source', '10_DESIGN_SYSTEM/compone
 
 @check('links')
 def links():
-    p = []
+    p, held = [], withheld(ROOT)
     for md in walk(ROOT):
         if md.suffix != '.md' or rel(md).startswith(LINK_SKIP):
             continue
@@ -164,7 +165,8 @@ def links():
             target = (m.group(1) or m.group(2)).split('#')[0]
             if not target or re.match(r'^[a-z]+:', target):
                 continue
-            if not (md.parent / target).resolve().exists():
+            dest = (md.parent / target).resolve()
+            if not dest.exists() and not (dest.is_relative_to(ROOT) and dest.relative_to(ROOT).as_posix() in held):
                 p.append(f'{rel(md)}: broken link → {target}')
     return p
 

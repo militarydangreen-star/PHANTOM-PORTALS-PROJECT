@@ -8,7 +8,7 @@ The single folder that holds everything current for the Polka Portals project: t
 
 | | |
 |---|---|
-| Canon version | **1.3.0** (see [VERSION](VERSION) and [CHANGELOG](00_START_HERE/CHANGELOG.md)) |
+| Canon version | **1.3.1** (see [VERSION](VERSION) and [CHANGELOG](00_START_HERE/CHANGELOG.md)) |
 | Visual identity | White-forward Trash Polka × isometric cybernetic HUD — white, matte black, blood crimson; the shield-mask logo; one hooded Phantom as the character |
 | Quality gate | `python3 80_TOOLS/validate-canon.py` must print `11/11 checks passed` |
 | Offline gallery | [10_DESIGN_SYSTEM/gallery/index.html](10_DESIGN_SYSTEM/gallery/index.html) — open in a browser, no network needed |

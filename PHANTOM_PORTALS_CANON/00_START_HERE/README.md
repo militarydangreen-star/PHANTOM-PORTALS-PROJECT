@@ -2,7 +2,7 @@
 
 ![Polka Portals](../30_ASSETS/brand/logo/polka-lockup-horizontal.svg)
 
-**Polka Portals Canon — version 1.3.0 (2026-10-31)**
+**Polka Portals Canon — version 1.3.1 (2026-10-31)**
 
 This folder is the single source of truth for what Polka Portals looks like, sounds like and is built with. If something is not here, or is here with a status other than **CURRENT**, it is not canon.
 

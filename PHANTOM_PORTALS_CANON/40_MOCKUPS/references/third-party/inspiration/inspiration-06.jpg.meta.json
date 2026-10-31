@@ -28,5 +28,7 @@
     "asset_id": "2fe9172f2889b9af55556e3e80b1a93a",
     "fetched": "2026-10-29",
     "original_name": "images (5).jpg"
-  }
+  },
+  "distribution": "local-only",
+  "distribution_note": "Third-party or unverified image: kept in the owner's local canon for reference, never committed to the public repository (ADR-0007). The sidecar keeps its hash and origin."
 }

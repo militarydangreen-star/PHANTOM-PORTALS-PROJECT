@@ -5,6 +5,21 @@ All notable changes to the Polka Portals canon (called Phantom Portals until 1.3
 
 Dates before 1.0.0 are reconstructed from the version stamps of the owner's Claude artifacts.
 
+## [1.3.1] — 2026-10-31
+
+Ready for the public GitHub repository. The owner chose to publish it as is, without making it private first.
+
+### Changed
+- **Local-only files.** These 30 files stay in the owner's local copy and are never committed:
+  - the 25 third-party inspiration images (PP-REF-001 … 025)
+  - 3 saved result pages (PP-REF-SRC-001 … 003)
+  - 2 UNCLEAR logos (PP-UNC-001, 002)
+
+  Their sidecars stay, now marked `"distribution": "local-only"`, and `.gitignore` lists the files ([ADR-0007](decisions/ADR-0007-third-party-references.md)).
+- **Tools.** `validate-canon.py` (sidecars, links) and `hash-manifest.py verify` accept local-only files as absent. That way a public clone still validates 11/11 and verifies its release. A file that is absent and not marked local-only still fails.
+- `.gitignore` now ignores every `node_modules/` folder, not only `80_TOOLS/node_modules/`.
+- The Codex hand-off now says the canon is on the public repository without the reference files.
+
 ## [1.3.0] — 2026-10-31
 
 The project is renamed **Polka Portals** and the **shield mask** becomes its logo, redrawn as clean vectors. The hooded Phantom stays as the character. These close conflicts C-09 and C-10.

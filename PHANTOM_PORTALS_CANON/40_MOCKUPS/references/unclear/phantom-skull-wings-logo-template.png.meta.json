@@ -27,5 +27,7 @@
     "fetched": "2026-10-29",
     "original_name": "file.png"
   },
-  "notes": "Appears to be a stock logo template (placeholder TAGLINE text, orange-red palette). Not canon."
+  "notes": "Appears to be a stock logo template (placeholder TAGLINE text, orange-red palette). Not canon.",
+  "distribution": "local-only",
+  "distribution_note": "Third-party or unverified image: kept in the owner's local canon for reference, never committed to the public repository (ADR-0007). The sidecar keeps its hash and origin."
 }

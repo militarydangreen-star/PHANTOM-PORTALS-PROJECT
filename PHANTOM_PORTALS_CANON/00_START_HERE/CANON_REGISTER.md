@@ -3,7 +3,7 @@
 
 Every canon item and its status. Per-file detail (hash, size, licence, origin) lives in each asset's `.meta.json` and in the generated catalogs [`30_ASSETS/INDEX.json`](../30_ASSETS/INDEX.json) and [`20_PROMPT_LIBRARY/INDEX.json`](../20_PROMPT_LIBRARY/INDEX.json).
 
-**Canon 1.3.0 · 2026-10-31** · Statuses: **CURRENT** · **RETIRED** · **UNCLEAR** · REFERENCE · DRAFT (defined in [README](README.md#status-vocabulary)).
+**Canon 1.3.1 · 2026-10-31** · Statuses: **CURRENT** · **RETIRED** · **UNCLEAR** · REFERENCE · DRAFT (defined in [README](README.md#status-vocabulary)).
 
 ## Identity
 
@@ -84,9 +84,9 @@ Every canon item and its status. Per-file detail (hash, size, licence, origin) l
 |---|---|---|---|
 | CR-060 | Claude Design canvas: Command Center desktop + phone, Diagnostics, Boot, Poster light + dark | **UNCLEAR** | Not owner-approved; built on the v1 flat vectors before the Ink Protocol art landed; sample telemetry — see C-06 |
 | CR-061 | Canvas recolours (ensō, drips, brush stroke, HUD ring) | **UNCLEAR** | PP-MOCK-001 … 004, derived from retired v1 vectors |
-| CR-062 | 25 Trash Polka inspiration images + 3 source pages | REFERENCE | PP-REF-001 … 025, PP-REF-SRC-001 … 003 — third-party, some watermarked stock |
-| CR-063 | "PHANTOM / TAGLINE" skull-and-wings logo | **UNCLEAR** | PP-UNC-001 — looks like a stock logo template |
-| CR-064 | Hooded "PHANTOM" esports mascot | **UNCLEAR** | PP-UNC-002 — gaming style conflicts with canon |
+| CR-062 | 25 Trash Polka inspiration images + 3 source pages | REFERENCE | PP-REF-001 … 025, PP-REF-SRC-001 … 003 — third-party, some watermarked stock; **local-only**, never in the public repository |
+| CR-063 | "PHANTOM / TAGLINE" skull-and-wings logo | **UNCLEAR** | PP-UNC-001 — looks like a stock logo template; local-only |
+| CR-064 | Hooded "PHANTOM" esports mascot | **UNCLEAR** | PP-UNC-002 — gaming style conflicts with canon; local-only |
 | CR-068 | Owner concept sheets 2026-10-30: Polka Portals UI inventory, two asset packs, Plate 01 specimen, asset-pack vector trace (PP-CON-001 … 005) | **REFERENCE** — source of the name and the logo (ADR-0014, 0015); direction, not finished assets | [concepts/](../40_MOCKUPS/concepts/README.md) | Owner-made, may be published; audited, not shipped |
 | CR-069 | Artifact inventory screen (canon rebuild of PP-CON-001) | **DRAFT** | [screens/catalog/artifact-inventory.html](../40_MOCKUPS/screens/catalog/artifact-inventory.html) | Canon components; rarity as ink pips; SAMPLE data |
 | CR-066 | DGAS Design "Trash Polka" Photoshop action (.atn, brushes, patterns) | **REFERENCE** — licensed third-party tool, files not stored | [references/third-party/tools](../40_MOCKUPS/references/third-party/tools/README.md) | Pointer with SHA-256 only; never redistribute |

@@ -312,7 +312,7 @@
       h('div', { className: 'g-wrap' },
         h('header', { className: 'g-head' },
           h('img', { src: ASSETS + 'brand/logo/polka-lockup-horizontal.svg', alt: 'Polka Portals' }),
-          h('div', { className: 'g-meta' }, 'DESIGN SYSTEM GALLERY · CANON 1.3.0', h('br'), 'TOKENS v2 · OFFLINE · ' + TOKENS.length + ' TOKENS')),
+          h('div', { className: 'g-meta' }, 'DESIGN SYSTEM GALLERY · CANON 1.3.1', h('br'), 'TOKENS v2 · OFFLINE · ' + TOKENS.length + ' TOKENS')),
         h('div', { className: 'g-nav' }, h(P.BookmarksBar, { items: nav.map(function (n) { return { label: n[1], href: '#' + n[0], icon: n[2] }; }) })),
         h('main', null, h(Colors), h(Type), h(Scale), h(Icons), h(Components), h(Status), h(Shell), h(Assets)),
         h('footer', { className: 'g-foot' }, 'Generated views of 10_DESIGN_SYSTEM/tokens/tokens.json and 30_ASSETS/INDEX.json. Rebuild with 80_TOOLS/build-tokens and index-assets; validate with 80_TOOLS/validate-canon.py.')));

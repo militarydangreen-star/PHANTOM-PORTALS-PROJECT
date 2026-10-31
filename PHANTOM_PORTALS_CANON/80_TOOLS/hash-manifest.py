@@ -12,7 +12,7 @@ Excluded: 99_RELEASES/, 80_TOOLS/node_modules/, .git/, caches.
 import sys
 from pathlib import Path
 
-from canon_common import ROOT, rel, sha256, walk
+from canon_common import ROOT, rel, sha256, walk, withheld
 
 EXCLUDE_TOP = {'99_RELEASES'}
 
@@ -35,19 +35,21 @@ def write(manifest, files, base=ROOT):
 def verify(manifest):
     manifest = Path(manifest).resolve()
     base = ROOT if manifest.parent.parent.name == '99_RELEASES' else manifest.parent
-    bad = missing = 0
-    listed = set()
+    bad = missing = held = 0
+    listed, local = set(), withheld(ROOT)
     for line in manifest.read_text().splitlines():
         digest, path = line.split('  ', 1)
         listed.add(path)
         p = base / path
-        if not p.exists():
+        if not p.exists() and base == ROOT and path in local:
+            held += 1  # local-only: kept in the owner's copy, absent from public clones (ADR-0007)
+        elif not p.exists():
             missing += 1
             print('  MISSING', path)
         elif sha256(p) != digest:
             bad += 1
             print('  CHANGED', path)
-    print(f'{rel(manifest)}: {len(listed)} listed, {bad} changed, {missing} missing')
+    print(f'{rel(manifest)}: {len(listed)} listed, {bad} changed, {missing} missing' + (f', {held} local-only not present (expected in public clones)' if held else ''))
     return 1 if (bad or missing) else 0
 
 

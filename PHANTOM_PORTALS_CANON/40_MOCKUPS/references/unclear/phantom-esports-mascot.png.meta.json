@@ -27,5 +27,7 @@
     "fetched": "2026-10-29",
     "original_name": "file11.png"
   },
-  "notes": "Gaming/esports mascot style, orange-red palette — conflicts with the canon (\"not a gaming interface\"). Origin unknown."
+  "notes": "Gaming/esports mascot style, orange-red palette — conflicts with the canon (\"not a gaming interface\"). Origin unknown.",
+  "distribution": "local-only",
+  "distribution_note": "Third-party or unverified image: kept in the owner's local canon for reference, never committed to the public repository (ADR-0007). The sidecar keeps its hash and origin."
 }

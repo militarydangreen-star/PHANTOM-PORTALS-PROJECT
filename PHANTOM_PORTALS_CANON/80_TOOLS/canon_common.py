@@ -19,6 +19,28 @@ SIDECAR_EXEMPT = {'OFL.txt', 'INDEX.json', 'INDEX.js', '.gitkeep', 'icons.data.j
 def sidecar_exempt(path):
     p = Path(path)
     return p.suffix == '.md' or p.name in SIDECAR_EXEMPT
+LOCAL_ONLY = 'local-only'  # sidecar "distribution": the file stays in the owner's copy and is never published (ADR-0007)
+
+
+def local_only(meta):
+    return meta.get('distribution') == LOCAL_ONLY
+
+
+def withheld(root):
+    """Relative paths of files whose sidecar marks them local-only (absent from public clones by design)."""
+    out = set()
+    for side in Path(root).rglob('*.meta.json'):
+        if SKIP_DIRS.intersection(side.parts):
+            continue
+        try:
+            meta = json.loads(side.read_text())
+        except Exception:
+            continue
+        if local_only(meta):
+            out.add(side.with_name(side.name[:-len('.meta.json')]).relative_to(root).as_posix())
+    return out
+
+
 SKIP_DIRS = {'node_modules', '.git', '__pycache__'}
 
 

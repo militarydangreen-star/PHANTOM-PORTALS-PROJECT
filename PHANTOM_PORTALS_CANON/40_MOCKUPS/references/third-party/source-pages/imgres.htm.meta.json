@@ -1,7 +1,7 @@
 {
   "id": "PP-REF-SRC-003",
   "file": "imgres.htm",
-  "title": "Google Images result page \u2192 www.pinterest.com",
+  "title": "Google Images result page → www.pinterest.com",
   "status": "REFERENCE",
   "canon_version": "1.0.0",
   "kind": "reference",
@@ -27,5 +27,7 @@
     "artifact": "https://claude.ai/artifact/HG2ihDf5JsALbo4fxCXcmV",
     "path": "assets/INSPIRATION/imgres.htm",
     "fetched": "2026-10-29"
-  }
+  },
+  "distribution": "local-only",
+  "distribution_note": "Third-party or unverified image: kept in the owner's local canon for reference, never committed to the public repository (ADR-0007). The sidecar keeps its hash and origin."
 }

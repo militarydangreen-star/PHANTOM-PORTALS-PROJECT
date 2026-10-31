@@ -17,3 +17,9 @@ Thumbs.db
 80_TOOLS/tests/*/fonts/
 80_TOOLS/tests/*/globals.css
 80_TOOLS/tests/*/phantom-fonts.css
+
+# Third-party and unverified reference files: local-only, never published (ADR-0007).
+# Their sidecars (*.meta.json) stay in the repository with hash and origin.
+40_MOCKUPS/references/third-party/inspiration/*.jpg
+40_MOCKUPS/references/third-party/source-pages/*.htm
+40_MOCKUPS/references/unclear/*.png
